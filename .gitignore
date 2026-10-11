@@ -1,0 +1,5 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+knowledge/index/*.sqlite3
+knowledge/index/*.sqlite3-*

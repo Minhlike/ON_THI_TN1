@@ -1,0 +1,84 @@
+# Chỉ mục câu hỏi đề cương
+
+Các ID là định danh theo thứ tự xuất hiện; mục con dùng hậu tố a–d. Đọc `questions.jsonl` để xem nguyên văn và trang PDF.
+
+- [TN1-Q001](questions.jsonl): trang PDF 1, ĐỊNH DANH VÀ XÁC THỰC — Bài 1. Trình bày khái niệm hiểm họa an toàn thông tin. Hãy lấy một số ví dụ cụ thể về hiểm họa an toàn thông tin đối với hệ thống
+- [TN1-Q002](questions.jsonl): trang PDF 1, ĐỊNH DANH VÀ XÁC THỰC — Bài 2. Trình bày khái niệm định danh và xác thực và vai trò của nó đối với việc đảm bảo an toàn cho hệ thống thông tin
+- [TN1-Q003](questions.jsonl): trang PDF 1, ĐỊNH DANH VÀ XÁC THỰC — Bài 3. Trình bày các nhân tố xác thực phổ biến và các ưu nhược điểm của chúng.
+- [TN1-Q004](questions.jsonl): trang PDF 1, ĐỊNH DANH VÀ XÁC THỰC — Bài 4. Xác thực đa nhân tố là gì? Nêu ví dụ
+- [TN1-Q005](questions.jsonl): trang PDF 1, ĐỊNH DANH VÀ XÁC THỰC — Bài 5. Trình bày khái niệm mật khẩu, hãy cho biết những nguyên nhân gây ra sự thiếu an toàn đối với mật khẩu.
+- [TN1-Q006](questions.jsonl): trang PDF 1, ĐỊNH DANH VÀ XÁC THỰC — Bài 6. Trình bày các hiểm họa an toàn đối với mật khẩu
+- [TN1-Q007](questions.jsonl): trang PDF 1, ĐỊNH DANH VÀ XÁC THỰC — Bài 7. Với vai trò là một nhà quản trị hệ thống, bạn được giao nhiệm vụ xây dựng chính sách mật khẩu an toàn cho hệ thống. Hãy trì
+- [TN1-Q008](questions.jsonl): trang PDF 1, ĐỊNH DANH VÀ XÁC THỰC — Bài 8. Trình bày các quy tắc sử dụng mật khẩu an toàn.
+- [TN1-Q009](questions.jsonl): trang PDF 1, ĐỊNH DANH VÀ XÁC THỰC — Bài 9. Cho sơ đồ giao thức xác thực bằng mật khẩu Anh/chị hãy trình bày: a) Điều kiện ban đầu của giao thức b) Các bước hoạt động
+- [TN1-Q010](questions.jsonl): trang PDF 2, ĐỊNH DANH VÀ XÁC THỰC — Câu 10. Cho sơ đồ giao thức xác thực bằng mật khẩu Anh/chị hãy trình bày: a) Điều kiện ban đầu của giao thức b) Các bước hoạt động
+- [TN1-Q011](questions.jsonl): trang PDF 2, ĐỊNH DANH VÀ XÁC THỰC — Câu 11. Cho sơ đồ giao thức xác thực bằng mật khẩu Anh/chị hãy trình bày: a) Điều kiện ban đầu của giao thức b) Các bước hoạt động
+- [TN1-Q012](questions.jsonl): trang PDF 4, ÔN TẬP KIỂM SOÁT TRUY CẬP — Câu 12. Trình bày khái niệm kiểm soát truy cập và ý nghĩa của nó trong việc đảm bảo an toàn thông tin cho hệ thống
+- [TN1-Q013](questions.jsonl): trang PDF 4, ÔN TẬP KIỂM SOÁT TRUY CẬP — Câu 13. Trình bày nguyên tắc đặc quyền tối thiểu. Hãy lấy một ví dụ thể hiện nguyên tắc này trong thực tế.
+- [TN1-Q014](questions.jsonl): trang PDF 4, ÔN TẬP KIỂM SOÁT TRUY CẬP — Câu 14. Trình bày đặc điểm của mô hình kiểm soát truy cập tùy chọn. Nó thường được sử dụng trong những hệ thống nào? Tại sao
+- [TN1-Q015](questions.jsonl): trang PDF 4, ÔN TẬP KIỂM SOÁT TRUY CẬP — Câu 15. Trình bày đặc điểm của mô hình kiểm soát truy cập bắt buộc. Nó thường được sử dụng trong những hệ thống nào? Tại sao?
+- [TN1-Q016](questions.jsonl): trang PDF 4, ÔN TẬP KIỂM SOÁT TRUY CẬP — Câu 16. Trình bày đặc điểm của mô hình kiểm soát truy cập dựa trên vai trò. Nó thường được sử dụng trong những hệ thống nào? Tại s
+- [TN1-Q017](questions.jsonl): trang PDF 5, MẬT MÃ + MÃ ĐỘC — Câu 17. Trình bày khái niệm mật mã khóa bí mật và mật mã khóa công khai. Nêu sự khác biệt và các trường hợp ứng dụng của hai loại
+- [TN1-Q018](questions.jsonl): trang PDF 5, MẬT MÃ + MÃ ĐỘC — Câu 18. Chữ ký số là gì, trình bày ứng dụng của chữ ký số.
+- [TN1-Q019](questions.jsonl): trang PDF 5, MẬT MÃ + MÃ ĐỘC — Câu 19. Mã độc là gì. Trình bày đặc điểm của một số loại mã độc thường gặp trong thực tế. Trình bày các kênh lây nhiễm, và cách th
+- [TN1-Q020](questions.jsonl): trang PDF 6, ÔN TẬP AN TOÀN MẠNG — Câu 20. Trình bày một số hình thức tấn công mạng phổ biến.
+- [TN1-Q021](questions.jsonl): trang PDF 6, ÔN TẬP AN TOÀN MẠNG — Câu 21. Anh/chị hãy trình bày khái niệm tường lửa, phân loại tường lửa theo mức hoạt động và theo vị trí triển khai. Trình bày một
+- [TN1-Q022](questions.jsonl): trang PDF 6, ÔN TẬP AN TOÀN MẠNG — Câu 22. Anh/chị hãy trình bày khái niệm IDS và IPS, phân loại IDS theo vị trí triển khai. Trình bày một số sản phẩm IDS/IPS mà anh
+- [TN1-Q023](questions.jsonl): trang PDF 6, ÔN TẬP AN TOÀN MẠNG — Câu 23 . Anh/chị hãy trình bày khái niệm VPN, phân loại VPN theo mô hình kết nối, chức năng của VPN trong an toàn thông tin; trình
+- [TN1-Q024](questions.jsonl): trang PDF 6, ÔN TẬP AN TOÀN MẠNG — Câu 24. Anh chị hãy trình bày khái niệm SIEM. Nguyên tắc hoạt động của SIEM là gì? Hãy nêu tên một số sản phẩm SIEM mà anh chị biế
+- [TN1-Q025](questions.jsonl): trang PDF 7, Dạng 1. Mô tả lỗ hổng — Câu 1. Anh/chị hãy trình bày khái niệm lỗ hổng tràn bộ đệm; phân loại lỗ hổng tràn bộ đệm; lấy ví dụ đoạn mã có lỗ hổng tràn bộ đệ
+- [TN1-Q026](questions.jsonl): trang PDF 7, Dạng 1. Mô tả lỗ hổng — Câu 2. Anh/chị hãy trình bày khái niệm tấn công XSS; phân loại tấn công XSS; lấy ví dụ đoạn mã có lỗ hổng XSS; trình bày cơ chế kh
+- [TN1-Q027](questions.jsonl): trang PDF 7, Dạng 1. Mô tả lỗ hổng — Câu 3. Anh/chị hãy trình bày khái niệm tấn công SQL Injection; phân loại tấn công SQL Injection; lấy ví dụ đoạn mã có lỗ hổng SQL
+- [TN1-Q028](questions.jsonl): trang PDF 7, Dạng 2. Xác định loại lỗ hổng và cơ chế khai thác — Bài 1. Cho đoạn mã sau: #include <stdio.h> #include <string.h> void function(const char *input) { char buffer[10]; strcpy(buffer,
+- [TN1-Q029](questions.jsonl): trang PDF 7, Dạng 2. Xác định loại lỗ hổng và cơ chế khai thác — Bài 2. Cho đoạn mã sau: #include <stdio.h> void function() { char buffer[8]; printf("Enter your name: "); gets(buffer); printf("We
+- [TN1-Q030](questions.jsonl): trang PDF 8, Dạng 2. Xác định loại lỗ hổng và cơ chế khai thác — Bài 3. Cho đoạn mã sau: <?php // Kết nối tới cơ sở dữ liệu $servername = "localhost"; $username = "username"; $password = "passwor
+- [TN1-Q031](questions.jsonl): trang PDF 9, Dạng 2. Xác định loại lỗ hổng và cơ chế khai thác — Bài 4. Cho đoạn mã sau: <?php // Kết nối tới cơ sở dữ liệu $servername = "localhost"; $username = "username"; $password = "passwor
+- [TN1-Q032](questions.jsonl): trang PDF 10, BÀI TẬP TUẦN 01 — Câu 1. An toàn thông tin là gì? Hãy nêu ví dụ về việc đảm bảo an toàn thông tin cho một hệ thống cụ thể mà em biết.
+- [TN1-Q033](questions.jsonl): trang PDF 10, BÀI TẬP TUẦN 01 — Câu 2. Nêu các nguyên tắc trong việc đảm bảo an toàn thông tin cho hệ thống. Theo em nguyên tắc nào là quan trọng nhất
+- [TN1-Q034](questions.jsonl): trang PDF 10, BÀI TẬP TUẦN 01 — Câu 3. Nêu các lớp phương pháp được sử dụng để đảm bảo an toàn thông tin. Công nghệ tường lửa, IDS, SIEM thuộc lớp phương pháp nào
+- [TN1-Q035](questions.jsonl): trang PDF 10, BÀI TẬP TUẦN 01 — Câu 4. Có những lớp phương tiện nào được sử dụng để đảm bảo an toàn thông tin cho hệ thống? Với mỗi phương tiện em hãy liệt kê một
+- [TN1-Q036](questions.jsonl): trang PDF 10, BÀI TẬP TUẦN 01 — Câu 5. Việc đảm bảo an toàn thông tin cho hệ thống cần xoay quay các yếu tố: công nghệ, chính sách và con người. Em hãy phân tích
+- [TN1-Q037](questions.jsonl): trang PDF 11, Dạng 1. Mã hóa giải mã RSA — Bài 1. Trong hệ mật RSA, cho P=17, Q=31, e=7, Hãy xác định bản mã của thông điệp m=32.
+- [TN1-Q038](questions.jsonl): trang PDF 11, Dạng 1. Mã hóa giải mã RSA — Bài 2. Trong hệ mật RSA, cho P=29, Q=13, e=5, Hãy giải mã bản mã c=301.
+- [TN1-Q039](questions.jsonl): trang PDF 11, Dạng 1. Mã hóa giải mã RSA — Bài 3. Hệ mật RSA mã hoá ra C=6, khoá công khai là n=p.q=187, e=107 - Xác định khoá bí mật - Tìm M
+- [TN1-Q040](questions.jsonl): trang PDF 11, Dạng 1. Mã hóa giải mã RSA — Bài 4. Cho n=143, e = 23 là khoá công khai của hệ mật RSA, với bản mã C=9. - Xác định khoá bí mật - Tìm M
+- [TN1-Q041](questions.jsonl): trang PDF 11, Dạng 1. Mã hóa giải mã RSA — Bài 5. Giả sử khoá công khai của hệ mật RSA là (143, 11) - Tìm khoá bí mật - Giải mã thông điệp (111,4,88,57,116,67) (chuyển đổi b
+- [TN1-Q042](questions.jsonl): trang PDF 11, Dạng 1. Mã hóa giải mã RSA — Bài 6. Khóa công khai của hệ mật RSA là (N, e) = (629, 17). - Hãy mã hóa ký tự A trong bảng mã ASCII sử dụng khóa công khai trên -
+- [TN1-Q043](questions.jsonl): trang PDF 11, Dạng 1. Mã hóa giải mã RSA — Câu 7. Tìm khóa bí mật của hệ mật RSA với p=61, q=29 biết khóa công khai e=19. Tính bản mã của bản rõ m=37 và tiến hành giải mã ng
+- [TN1-Q044](questions.jsonl): trang PDF 11, Dạng 1. Mã hóa giải mã RSA — Câu 8. Cho biết A và B sử dụng mật mã khóa công khai RSA trong đảm bảo an toàn thông tin, A có khóa bí mật KSA = (1517, 1051) và k
+- [TN1-Q045](questions.jsonl): trang PDF 11, Dạng 2. Mã hóa, giải mã Elgamal — Bài 1. Trong hệ mật Elgamal, trên Z113*, với phần tử sinh g=3, khoá bí mật là x=86, Hãy tìm khoá công khai của hệ mật và sử dụng k
+- [TN1-Q046](questions.jsonl): trang PDF 12, Dạng 2. Mã hóa, giải mã Elgamal — Bài 2. Sử dụng hệ mật Elgamal với số nguyên tố p = 211, phần tử sinh  = 39 của Z*211. Giả sử người dùng A chọn khóa bí mật a = 11
+- [TN1-Q047](questions.jsonl): trang PDF 12, Dạng 2. Mã hóa, giải mã Elgamal — Bài 3. Cho khoá công khai của hệ mật Elgamal là (p,a,X)= (53,2,16) và bản mã thu được của hệ mật sau phép mã hoá là (C1,C2)=(15,50
+- [TN1-Q048](questions.jsonl): trang PDF 12, Dạng 3. Mã hóa, giải mã ECC — Bài 1. Cho đường cong E={(x,y) :y2=x3+x+ 6 mod 11} - Xác định tất cả các điểm của đường cong - Tính tất cả các giá trị của kα với
+- [TN1-Q049](questions.jsonl): trang PDF 12, Dạng 3. Mã hóa, giải mã ECC — Bài 2. Cho đường cong y^2=x^3+5x+4 mod 1, điểm sinh α =(10,3), khoá bí mật d=5. - Tìm khoá công khai - Chọn ngẫu nhiên k=2, mã hoá
+- [TN1-Q050](questions.jsonl): trang PDF 13, Dạng 4. Trao đổi khóa Diffie-Hellman — Bài 1. Giả sử A và B chọn p = 11 và α = 2 là tham số công khai chung. Xác định khóa chia sẻ trong giao thức Diffie-Hellman biết kh
+- [TN1-Q051](questions.jsonl): trang PDF 13, Dạng 5. Diffie-Hellman trên đường cong Elliptic — Bài 1. Cho đường cong Ellipic: E={(x,y) :y2=x3+x+ 6 mod 11} và C=(2,7). Xác định khóa chia sẻ trong giao thức Diffie-Hellman trên
+- [TN1-Q052](questions.jsonl): trang PDF 13, Dạng 5. Diffie-Hellman trên đường cong Elliptic — Bài 2. Cho đường cong Ellipic: E={(x,y) :y2=x3+ 2x+ 7 mod 19} và C=(6,8). Xác định khóa chia sẻ trong giao thức Difie-Hellman trên
+- [TN1-Q053](questions.jsonl): trang PDF 14, ĐỀ THI MẪU ĐỀ SỐ 1 — Câu 1. (2 điểm) Anh/chị hãy trình bày các khái niệm "tính bí mật", "tính toàn vẹn" và "tính khả dụng" của thông tin; đối với mỗi t
+- [TN1-Q054](questions.jsonl): trang PDF 14, ĐỀ THI MẪU ĐỀ SỐ 1 — Câu 2 (2 điểm). Giả sử A và B trao đổi khóa bằng giao thức Diffie-Hellman sử dụng bộ tham số p=89, g=15; trong quá trình đó A và B
+- [TN1-Q055](questions.jsonl): trang PDF 14, ĐỀ THI MẪU ĐỀ SỐ 1 — Câu 3 (2 điểm). Cho sơ đồ giao thức xác thực bằng mật khẩu Anh/chị hãy trình bày: a) Điều kiện ban đầu của giao thức b) Các bước h
+- [TN1-Q056](questions.jsonl): trang PDF 14, ĐỀ THI MẪU ĐỀ SỐ 1 — Câu 4 (2 điểm). Anh/chị hãy trình bày khái niệm lỗ hổng tràn bộ đệm; phân loại lỗ hổng tràn bộ đệm; lấy ví dụ đoạn mã có lỗ hổng t
+- [TN1-Q057](questions.jsonl): trang PDF 14, ĐỀ THI MẪU ĐỀ SỐ 1 — Câu 5 (2 điểm). Anh/chị hãy trình bày khái niệm VPN, phân loại VPN theo mô hình kết nối, chức năng của VPN trong an toàn thông tin
+- [TN1-Q058](questions.jsonl): trang PDF 15, ĐỀ THI MẪU ĐỀ SỐ 2 — Câu 1. Anh/chị hãy nêu khái niệm "nhân tố xác thực", "xác thực đa nhân tố"; phân loại nhân tố xác thực, lấy ví dụ cho từng loại nh
+- [TN1-Q059](questions.jsonl): trang PDF 15, ĐỀ THI MẪU ĐỀ SỐ 2 — Câu 2. Giả sử A muốn sử dụng mật mã khóa công khai RSA và để sinh cặp khóa cho mình, A đã đã sinh được hai số nguyên tố p=23, q=17
+- [TN1-Q060](questions.jsonl): trang PDF 15, ĐỀ THI MẪU ĐỀ SỐ 2 — Câu 3. Cho sơ đồ giao thức xác thực bằng mật khẩu Anh/chị hãy trình bày: a) Điều kiện ban đầu của giao thức b) Các bước hoạt động
+- [TN1-Q061](questions.jsonl): trang PDF 15, ĐỀ THI MẪU ĐỀ SỐ 2 — Câu 4. Anh/chị hãy trình bày khái niệm tấn công XSS; phân loại tấn công XSS; lấy ví dụ đoạn mã có lỗ hổng XSS; trình bày cơ chế kh
+- [TN1-Q062](questions.jsonl): trang PDF 15, ĐỀ THI MẪU ĐỀ SỐ 2 — Câu 5. Anh/chị hãy trình bày khái niệm IDS và IPS, phân loại IDS theo vị trí triển khai. Lấy ví dụ về một luật cho IDS Snort và gi
+- [TN1-Q063](questions.jsonl): trang PDF 16, ĐỀ THI MẪU ĐỀ SỐ 3 — Câu 1. Anh/chị hãy trình bày phân loại mã độc và trình bày các giải pháp phòng chống mã độc.
+- [TN1-Q064](questions.jsonl): trang PDF 16, ĐỀ THI MẪU ĐỀ SỐ 3 — Câu 2. Cho biết A và B sử dụng mật mã khóa công khai RSA trong đảm bảo an toàn thông tin, A có khóa bí mật KSA = (377, 269) và khó
+- [TN1-Q065](questions.jsonl): trang PDF 16, ĐỀ THI MẪU ĐỀ SỐ 3 — Câu 3. Cho sơ đồ giao thức xác thực bằng mật khẩu Anh/chị hãy trình bày: a) Điều kiện ban đầu của giao thức b) Các bước hoạt động
+- [TN1-Q066](questions.jsonl): trang PDF 16, ĐỀ THI MẪU ĐỀ SỐ 3 — Câu 4. Anh/chị hãy trình bày khái niệm tấn công SQL Injection; phân loại tấn công SQL Injection; lấy ví dụ đoạn mã có lỗ hổng SQL
+- [TN1-Q067](questions.jsonl): trang PDF 16, ĐỀ THI MẪU ĐỀ SỐ 3 — Câu 5. Anh/chị hãy trình bày khái niệm tường lửa, phân loại tường lửa theo mức hoạt động và theo vị trí triển khai. Lấy ví dụ về m
+- [TN1-Q068](questions.jsonl): trang PDF 17, Chương 1. Tổng quan an toàn mạng máy tính — 1. Trình bày khái niệm về mạng máy tính? Các thành phần mạng máy tính?
+- [TN1-Q069](questions.jsonl): trang PDF 17, Chương 1. Tổng quan an toàn mạng máy tính — 2. Một mạng máy tính được xem là an toàn khi nó đảm bảo được những tính chất nào? Phân tích và cho ví dụ minh họa
+- [TN1-Q070](questions.jsonl): trang PDF 17, Chương 1. Tổng quan an toàn mạng máy tính — 3. Trình bày khái niệm hiểm họa đối với mạng máy tính? Phân loại các hiểm họa, phân tích và cho ví dụ minh họa
+- [TN1-Q071](questions.jsonl): trang PDF 17, Chương 1. Tổng quan an toàn mạng máy tính — 4. Trình bày khái niệm tấn công mạng máy tính? Phân loại các tấn công, phân tích và cho ví dụ minh họa.
+- [TN1-Q072](questions.jsonl): trang PDF 17, Chương 1. Tổng quan an toàn mạng máy tính — 5. Trình bày khái niệm về lỗ hổng trong mạng máy tính? Phân loại các lỗ hổng đó , phân tích và cho ví dụ minh họa.
+- [TN1-Q073](questions.jsonl): trang PDF 17, Chương 1. Tổng quan an toàn mạng máy tính — 6. Trình bày khái niệm phòng thủ theo chiều sâu? Phân tích và cho ví dụ minh họa.
+- [TN1-Q074](questions.jsonl): trang PDF 17, Chương 1. Tổng quan an toàn mạng máy tính — 7. Cho một mô hình mạng, yêu cầu sinh viên/học viên đề xuất giải pháp an toàn cho mô hình đó.
+- [TN1-Q075](questions.jsonl): trang PDF 18, Chương 2. Công nghệ tường lửa — 1. Trình bày khái niệm, chức năng, ưu nhược điểm của tường lửa ? Phân loại tường lửa?
+- [TN1-Q076](questions.jsonl): trang PDF 18, Chương 2. Công nghệ tường lửa — 2. Trình bày nguyên tắc hoạt động của tường lửa? Phân tích và lấy ví dụ minh họa?
+- [TN1-Q077](questions.jsonl): trang PDF 18, Chương 2. Công nghệ tường lửa — 3. Trình bày các kiến trúc tường lửa điển hình? Vẽ hình và giải thích cơ chế hoạt động của từng kiến trúc tường lửa.
+- [TN1-Q078](questions.jsonl): trang PDF 18, Chương 2. Công nghệ tường lửa — 4. Trình bày công nghệ tường lửa (lọc gói, cổng chuyển mạch, cổng ứng dụng, trạng thái)? Nêu ưu nhược điểm
+- [TN1-Q079](questions.jsonl): trang PDF 18, Chương 2. Công nghệ tường lửa — 5. Trình bày kiến trúc, thành phần và nguyên lý hoạt động của tường lửa Iptables?
+- [TN1-Q080](questions.jsonl): trang PDF 18, Chương 2. Công nghệ tường lửa — 6. Phân tích luật iptables

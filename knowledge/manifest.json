@@ -1,0 +1,4290 @@
+{
+  "schema_version": 1,
+  "generator_version": 1,
+  "review_sha256": "ebd7d3d12ca93c9596c539cdcaae8bca5185ff277c1c9bc933dbc8f25c6f328f",
+  "sources": {
+    "slide": {
+      "file": "CSATTT_SLIDE_FULL.pdf",
+      "sha256": "75e22524b318039d960b72339afed37b56b492e94d60e5f1e03aada2ddfe7ec6",
+      "page_count": 497,
+      "extractor": "pymupdf4llm-1.28.2",
+      "pages": [
+        {
+          "pdf_page": 1,
+          "path": "knowledge/slide/pages/p0001.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "e8a44f66956d9040b28b963a73d8d83f06ef0ace20680f3d99b0c630e83d22d9"
+        },
+        {
+          "pdf_page": 2,
+          "path": "knowledge/slide/pages/p0002.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT",
+            "DUPLICATE_PAGE_NUMBER"
+          ],
+          "content_sha256": "8c596dacde05fe3cf8a84da6a30faf3e0b73565180b22892c83b5abb6530f0dd"
+        },
+        {
+          "pdf_page": 3,
+          "path": "knowledge/slide/pages/p0003.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [
+            "DUPLICATE_PAGE_NUMBER"
+          ],
+          "content_sha256": "4f5d27ad25e043d9f4c0c2e6d78dd021593d7f34fdfa5fa88544e32828d15883"
+        },
+        {
+          "pdf_page": 4,
+          "path": "knowledge/slide/pages/p0004.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [
+            "DUPLICATE_PAGE_NUMBER"
+          ],
+          "content_sha256": "87c770c5e442af683aef7dc97a002c0723eccc9db3e630bdc859aa089903ee00"
+        },
+        {
+          "pdf_page": 5,
+          "path": "knowledge/slide/pages/p0005.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "5d6013607a0db744a2f3f93cb0d9565d0d1f80c75076eaac2812c744ff35a2b9"
+        },
+        {
+          "pdf_page": 6,
+          "path": "knowledge/slide/pages/p0006.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT",
+            "DUPLICATE_PAGE_NUMBER"
+          ],
+          "content_sha256": "325831cfe48995214e5102321fc02ce8c4e4298f270a658cca6109ff4ac117ca"
+        },
+        {
+          "pdf_page": 7,
+          "path": "knowledge/slide/pages/p0007.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT",
+            "DUPLICATE_PAGE_NUMBER"
+          ],
+          "content_sha256": "8e73fde486ce14e9cd36bbbfb8bbf114ab652722aeca08e20408f3525eccfa01"
+        },
+        {
+          "pdf_page": 8,
+          "path": "knowledge/slide/pages/p0008.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT",
+            "DUPLICATE_PAGE_NUMBER"
+          ],
+          "content_sha256": "98684190b8922bcf4509feaac90eddb8d51521dd5c116b499bbf9704a33d75f2"
+        },
+        {
+          "pdf_page": 9,
+          "path": "knowledge/slide/pages/p0009.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [
+            "DUPLICATE_PAGE_NUMBER"
+          ],
+          "content_sha256": "9ed060f10bc9b4caaea3e2b1a115e0c4978a2049288b61abd47e849a4f04577e"
+        },
+        {
+          "pdf_page": 10,
+          "path": "knowledge/slide/pages/p0010.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT",
+            "DUPLICATE_PAGE_NUMBER"
+          ],
+          "content_sha256": "55944ca46ffc08e0ed439035bfdf66441d008829e04b143c870da44c487f99ef"
+        },
+        {
+          "pdf_page": 11,
+          "path": "knowledge/slide/pages/p0011.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT",
+            "DUPLICATE_PAGE_NUMBER"
+          ],
+          "content_sha256": "0d7110598faf011d762aca62f0282f53e844da7e5ee7e2b785bb9a3d59be47b8"
+        },
+        {
+          "pdf_page": 12,
+          "path": "knowledge/slide/pages/p0012.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT",
+            "MATH_REVIEW_REQUIRED",
+            "DUPLICATE_PAGE_NUMBER"
+          ],
+          "content_sha256": "78df97527fa2e377a5054f2da786b979800f94d465feeb25781d06bdfa8b4221"
+        },
+        {
+          "pdf_page": 13,
+          "path": "knowledge/slide/pages/p0013.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [
+            "DUPLICATE_PAGE_NUMBER"
+          ],
+          "content_sha256": "cefcbfdf23a5808bce37d07de3ea664c3ed9739a214cf719494943b023b2daa7"
+        },
+        {
+          "pdf_page": 14,
+          "path": "knowledge/slide/pages/p0014.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [
+            "DUPLICATE_PAGE_NUMBER"
+          ],
+          "content_sha256": "e5a18eb04ff4b051eef1323f930edb05d03c5cb88bc5370f80a7ed9c33b4fb00"
+        },
+        {
+          "pdf_page": 15,
+          "path": "knowledge/slide/pages/p0015.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT",
+            "DUPLICATE_PAGE_NUMBER"
+          ],
+          "content_sha256": "c83c9347f00aab6db1a91bf0089de145534a6dace0e39fce3a9d4d31c60fe586"
+        },
+        {
+          "pdf_page": 16,
+          "path": "knowledge/slide/pages/p0016.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT",
+            "DUPLICATE_PAGE_NUMBER"
+          ],
+          "content_sha256": "37ce2d2fb676beeb7814caaaf47332c6426a2ade7d552b55d0a51207cb7446ef"
+        },
+        {
+          "pdf_page": 17,
+          "path": "knowledge/slide/pages/p0017.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT",
+            "DUPLICATE_PAGE_NUMBER"
+          ],
+          "content_sha256": "323c8b27b7e362015847d78517f536ba7f3224216b32fe252bb13a0eb02a1ae1"
+        },
+        {
+          "pdf_page": 18,
+          "path": "knowledge/slide/pages/p0018.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT",
+            "DUPLICATE_PAGE_NUMBER"
+          ],
+          "content_sha256": "6bc673cc82baccd65b92187fbeec84100bcd6c0c1c7439ddd18ffb4d87136c8f"
+        },
+        {
+          "pdf_page": 19,
+          "path": "knowledge/slide/pages/p0019.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT",
+            "DUPLICATE_PAGE_NUMBER"
+          ],
+          "content_sha256": "6e5d8bfe9212813526ceb8c6a8a7e13f2e866318304f04c73daf044f390f01c2"
+        },
+        {
+          "pdf_page": 20,
+          "path": "knowledge/slide/pages/p0020.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT",
+            "DUPLICATE_PAGE_NUMBER"
+          ],
+          "content_sha256": "df772123bae46db7596d417e0fb084b652d224835491d07cf19ba62121404251"
+        },
+        {
+          "pdf_page": 21,
+          "path": "knowledge/slide/pages/p0021.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT",
+            "DUPLICATE_PAGE_NUMBER"
+          ],
+          "content_sha256": "adfa644738853ba0f6b73c057a6c7639eed5b52f6ea958ed17005e256c21eeb5"
+        },
+        {
+          "pdf_page": 22,
+          "path": "knowledge/slide/pages/p0022.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "LOW_TEXT",
+            "IMAGE_PRESENT",
+            "DUPLICATE_PAGE_NUMBER"
+          ],
+          "content_sha256": "cab2f796904bdd0a9e8076597ffd750aca61b82ab30a53bf52e9cba61e5ba78d"
+        },
+        {
+          "pdf_page": 23,
+          "path": "knowledge/slide/pages/p0023.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT",
+            "DUPLICATE_PAGE_NUMBER"
+          ],
+          "content_sha256": "b5eb2314fb30b1bc4e5159b2cbaa321a85125f52ecb65cb29d898e95dcd85d30"
+        },
+        {
+          "pdf_page": 24,
+          "path": "knowledge/slide/pages/p0024.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [
+            "DUPLICATE_PAGE_NUMBER"
+          ],
+          "content_sha256": "3495103a4d9a0c604a5418558841cb798823605471c8a6acd586de55c4b83875"
+        },
+        {
+          "pdf_page": 25,
+          "path": "knowledge/slide/pages/p0025.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [
+            "DUPLICATE_PAGE_NUMBER"
+          ],
+          "content_sha256": "c56e087e0272573f8dca783a0468447b8e516b97f3f940b72390cbbefe3fc51f"
+        },
+        {
+          "pdf_page": 26,
+          "path": "knowledge/slide/pages/p0026.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "3460408570333989cf4e6d0bc763ab57acd248723bbe2723d298c37029ed7dbf"
+        },
+        {
+          "pdf_page": 27,
+          "path": "knowledge/slide/pages/p0027.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [
+            "DUPLICATE_PAGE_NUMBER"
+          ],
+          "content_sha256": "254d72b80ef1b69aca75e35e539b3ef2ad73e5dd0bcfbddff2b683b9c43bff4d"
+        },
+        {
+          "pdf_page": 28,
+          "path": "knowledge/slide/pages/p0028.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [
+            "DUPLICATE_PAGE_NUMBER"
+          ],
+          "content_sha256": "0103cc004e3888834c4e9125b4f878eb0f2926190f65159a37aae45bd7c55340"
+        },
+        {
+          "pdf_page": 29,
+          "path": "knowledge/slide/pages/p0029.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT",
+            "DUPLICATE_PAGE_NUMBER"
+          ],
+          "content_sha256": "8077718c220daf34c67e9d1cdfb0a7ca6b1a01f050f65e2914ff72e4768d9618"
+        },
+        {
+          "pdf_page": 30,
+          "path": "knowledge/slide/pages/p0030.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [
+            "DUPLICATE_PAGE_NUMBER"
+          ],
+          "content_sha256": "0eb7e0b6f939925fd431fb2ced4d767e1cb122de33dc857e169698653e58c0e7"
+        },
+        {
+          "pdf_page": 31,
+          "path": "knowledge/slide/pages/p0031.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "LOW_TEXT",
+            "IMAGE_PRESENT",
+            "DUPLICATE_PAGE_NUMBER"
+          ],
+          "content_sha256": "27e12715cdf5273b3bb15e28816dc922873bb2cadb67e36c33e770f169ef51f8"
+        },
+        {
+          "pdf_page": 32,
+          "path": "knowledge/slide/pages/p0032.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT",
+            "DUPLICATE_PAGE_NUMBER"
+          ],
+          "content_sha256": "ae4edffdf0f94952f9efc9512929a34908c4d36f1a61126b8e1c97c11208f1b7"
+        },
+        {
+          "pdf_page": 33,
+          "path": "knowledge/slide/pages/p0033.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT",
+            "DUPLICATE_PAGE_NUMBER"
+          ],
+          "content_sha256": "67386794899ab3e6503069bc59afc333795c6572ac787aaebeec4f281fff62d2"
+        },
+        {
+          "pdf_page": 34,
+          "path": "knowledge/slide/pages/p0034.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT",
+            "DUPLICATE_PAGE_NUMBER"
+          ],
+          "content_sha256": "c76fda1ddac4365356b9c6c96af24876333f88d76c0a4904eb77a23eb57c7744"
+        },
+        {
+          "pdf_page": 35,
+          "path": "knowledge/slide/pages/p0035.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "5ecbf6942e0467b14e325bc8b40edf88d3d33277d78ba3f1c7a465c85922585e"
+        },
+        {
+          "pdf_page": 36,
+          "path": "knowledge/slide/pages/p0036.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [
+            "DUPLICATE_PAGE_NUMBER"
+          ],
+          "content_sha256": "3a0cc3076875b55caffe0847cd300f7549e84ce16c11664914bb3a1b07930cbc"
+        },
+        {
+          "pdf_page": 37,
+          "path": "knowledge/slide/pages/p0037.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT",
+            "DUPLICATE_PAGE_NUMBER"
+          ],
+          "content_sha256": "a199de2b2a64eb39e9fc8a01a3da4e597c8273fc5a46aa7a43c0da695d6b8607"
+        },
+        {
+          "pdf_page": 38,
+          "path": "knowledge/slide/pages/p0038.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT",
+            "DUPLICATE_PAGE_NUMBER"
+          ],
+          "content_sha256": "aabbba80f7788cc15694e13ccb35840411477e156b9e098fe524718018376005"
+        },
+        {
+          "pdf_page": 39,
+          "path": "knowledge/slide/pages/p0039.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [
+            "DUPLICATE_PAGE_NUMBER"
+          ],
+          "content_sha256": "baeadd6e5fbe1ba85ec56b5afd12c3459a6d1235f3d5cf668612f685886dcbab"
+        },
+        {
+          "pdf_page": 40,
+          "path": "knowledge/slide/pages/p0040.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [
+            "DUPLICATE_PAGE_NUMBER"
+          ],
+          "content_sha256": "2fbe68ddc8e22294d184989b991260488fdf38fd8a8730ecd09e922a5b80878e"
+        },
+        {
+          "pdf_page": 41,
+          "path": "knowledge/slide/pages/p0041.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT",
+            "DUPLICATE_PAGE_NUMBER"
+          ],
+          "content_sha256": "34052a68c3ed4d7954e0e14dba7165ab94cdcef65d4a9a4d9be323b9c98e6419"
+        },
+        {
+          "pdf_page": 42,
+          "path": "knowledge/slide/pages/p0042.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "LOW_TEXT",
+            "IMAGE_PRESENT",
+            "DUPLICATE_PAGE_NUMBER"
+          ],
+          "content_sha256": "33d789e4b942f4113b4e94f5f207a1c0f5428c62aaba5321954e80e3cf943e2b"
+        },
+        {
+          "pdf_page": 43,
+          "path": "knowledge/slide/pages/p0043.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "LOW_TEXT",
+            "IMAGE_PRESENT",
+            "DUPLICATE_PAGE_NUMBER"
+          ],
+          "content_sha256": "b77ffa36078ab9e8ef0899ea65f4344897a2dce6b69f9a42e0544f9d9acbd560"
+        },
+        {
+          "pdf_page": 44,
+          "path": "knowledge/slide/pages/p0044.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "LOW_TEXT",
+            "IMAGE_PRESENT",
+            "DUPLICATE_PAGE_NUMBER"
+          ],
+          "content_sha256": "82d910569bfe5ca87a8436fd3fa014ed1bfa2eeaa34891e2ef74c104f55be85b"
+        },
+        {
+          "pdf_page": 45,
+          "path": "knowledge/slide/pages/p0045.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT",
+            "DUPLICATE_PAGE_NUMBER"
+          ],
+          "content_sha256": "10f2bb87ee03bcfa0610fb2d36b348dc52101532f062e6ef456f50d9c52074bc"
+        },
+        {
+          "pdf_page": 46,
+          "path": "knowledge/slide/pages/p0046.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "3dc1e76dec323be26fda8062a0f90a487a8ebacfe46ebba923c313164aff78dc"
+        },
+        {
+          "pdf_page": 47,
+          "path": "knowledge/slide/pages/p0047.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "e7a70611a050af75b00978b766a742b5d10ec5f94191d858a41ee9f64ba56a77"
+        },
+        {
+          "pdf_page": 48,
+          "path": "knowledge/slide/pages/p0048.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "79d98a707029580e6f39fb835bd2360b052c8970746ae562c080883ee516c6da"
+        },
+        {
+          "pdf_page": 49,
+          "path": "knowledge/slide/pages/p0049.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT",
+            "UNICODE_REPLACEMENT"
+          ],
+          "content_sha256": "ae7e91adb0c091e90f464e07f5d84505b0d1a6b4da7aa8978207358d2a0f9856"
+        },
+        {
+          "pdf_page": 50,
+          "path": "knowledge/slide/pages/p0050.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "26c6018b2a56fd75b9340993fa5bdde09a55cae492ff96e24f89153ef9325fbb"
+        },
+        {
+          "pdf_page": 51,
+          "path": "knowledge/slide/pages/p0051.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "49a413ac16e407ad9dd18e7191923929419c6f2138e1680bdfe588c658b537e9"
+        },
+        {
+          "pdf_page": 52,
+          "path": "knowledge/slide/pages/p0052.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "d583cca0eb1bd030f440f98b48b527503ea9a67563351827e31782a73c3f67ae"
+        },
+        {
+          "pdf_page": 53,
+          "path": "knowledge/slide/pages/p0053.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "MATH_REVIEW_REQUIRED"
+          ],
+          "content_sha256": "c51a6737cbd55446d5b0290fe65143953c2e9f72910a3c6874c047f09d7d6e1d"
+        },
+        {
+          "pdf_page": 54,
+          "path": "knowledge/slide/pages/p0054.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "8f07e216db9c78af42906b6e5719d25f521495f5c59fb6b45cac7cabd8e7b6ed"
+        },
+        {
+          "pdf_page": 55,
+          "path": "knowledge/slide/pages/p0055.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "0759adaabe38c81294870e47dd18d3bcf11500c1c0e8cfe8558f71f3a35409cc"
+        },
+        {
+          "pdf_page": 56,
+          "path": "knowledge/slide/pages/p0056.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "504a33619d4bf499c9cb9a47a5a071318338dd5346dec48c1096795fc501d22d"
+        },
+        {
+          "pdf_page": 57,
+          "path": "knowledge/slide/pages/p0057.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "8fc790f2eb1594d6d40170a40548d0fd58cfd7dfc060dd27b1fad3dd060608da"
+        },
+        {
+          "pdf_page": 58,
+          "path": "knowledge/slide/pages/p0058.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "ce69b9a57947c4360c627b6b209fd32bb4009d28019c0323f2ec4d3050a43480"
+        },
+        {
+          "pdf_page": 59,
+          "path": "knowledge/slide/pages/p0059.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "1120da0ee62147211143a05b0aeabcd1e4453bb5f1dcf94c5282b6160815065c"
+        },
+        {
+          "pdf_page": 60,
+          "path": "knowledge/slide/pages/p0060.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "2d963335bb158a7cad5fcde09225fc1b12052ce717af423400dfa51e48e649f5"
+        },
+        {
+          "pdf_page": 61,
+          "path": "knowledge/slide/pages/p0061.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "5eb9dd39e755fbbf979c7b39ed1a05f271ef062acf63f18f8175c764c37e9e4b"
+        },
+        {
+          "pdf_page": 62,
+          "path": "knowledge/slide/pages/p0062.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "357764ff07a4449206208be8d9115ab9fdc6a5a3044ca29b7931841fb41ffe96"
+        },
+        {
+          "pdf_page": 63,
+          "path": "knowledge/slide/pages/p0063.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "ff72fe7803a6c3d7e00261b1ac0f34ec3cd48b3d75f7442fafc11c23df7d827f"
+        },
+        {
+          "pdf_page": 64,
+          "path": "knowledge/slide/pages/p0064.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "e6b7f57bc20406c89f39f5036adf13f4b9168551b1ed6641b39befc7ff473f3a"
+        },
+        {
+          "pdf_page": 65,
+          "path": "knowledge/slide/pages/p0065.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "732b4535f535b822ee4ebfb608ba6f98561576279c90ee6b1d14aea266c7c0af"
+        },
+        {
+          "pdf_page": 66,
+          "path": "knowledge/slide/pages/p0066.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "d1590957b748af673bf7bc1aeff5ea03209896f3ad088af0c5c2ac836a23fbf3"
+        },
+        {
+          "pdf_page": 67,
+          "path": "knowledge/slide/pages/p0067.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "1b404bbeab44382b9de0d2ca38d6718698b630663fa18554c402e78c431f1ac1"
+        },
+        {
+          "pdf_page": 68,
+          "path": "knowledge/slide/pages/p0068.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "646e0aa93b1b201248d3ead4ae99404241e2e723a9593fb1dbcf717b0861e637"
+        },
+        {
+          "pdf_page": 69,
+          "path": "knowledge/slide/pages/p0069.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "69a61ba06fdd29716cfc0a6684d64c1698152811a993929ecae7af84b8b4f026"
+        },
+        {
+          "pdf_page": 70,
+          "path": "knowledge/slide/pages/p0070.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "LOW_TEXT",
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "4a531defab1f305cde1c61382fb4a0547f94eb4e574e39ca93189c36881cb3e7"
+        },
+        {
+          "pdf_page": 71,
+          "path": "knowledge/slide/pages/p0071.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "9022b8363197e2ae325f7dfacddb9084d5f30e73cd47f3cf0f822768c22051d4"
+        },
+        {
+          "pdf_page": 72,
+          "path": "knowledge/slide/pages/p0072.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "bf01a776889223a19faf2f4001c466cb30d125c21bacfea74b27a4c3d81764d5"
+        },
+        {
+          "pdf_page": 73,
+          "path": "knowledge/slide/pages/p0073.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "394422aca507777440f9416e9caf496ff485014404de30123a0a0db8ae6655df"
+        },
+        {
+          "pdf_page": 74,
+          "path": "knowledge/slide/pages/p0074.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "08626c06d6cf315d8db532e9487d2a6ecd8d418b494732c4ed0bbb379f30a766"
+        },
+        {
+          "pdf_page": 75,
+          "path": "knowledge/slide/pages/p0075.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "6b8fabaef87ac3433272396b82a65f10ba950ed9e158aea665670adea7fcb27e"
+        },
+        {
+          "pdf_page": 76,
+          "path": "knowledge/slide/pages/p0076.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "aa205396a6e76ec78f669ca99f2a7bf94d1f6e55ea79a0b4d39f562003cfe8e3"
+        },
+        {
+          "pdf_page": 77,
+          "path": "knowledge/slide/pages/p0077.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "803a9c3c52a4a4fadfd35d606e4e01d4423dcf9802e067adc2cffa387d54e613"
+        },
+        {
+          "pdf_page": 78,
+          "path": "knowledge/slide/pages/p0078.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "d955586ba211b0ad39481ca8d200ac43f8513bbe7187e0eca3059e7b7d75c59b"
+        },
+        {
+          "pdf_page": 79,
+          "path": "knowledge/slide/pages/p0079.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "4a93dd2c55f211851fa2689e87380849aaa8b350b601a781e5c9803491753443"
+        },
+        {
+          "pdf_page": 80,
+          "path": "knowledge/slide/pages/p0080.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "0409ee4f06f82d33ade207759a853c68d5279f607b73c23e253676feab028b36"
+        },
+        {
+          "pdf_page": 81,
+          "path": "knowledge/slide/pages/p0081.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "1ce0311824af651e8f1fd8c9042d5a0d14887898900f8d98d57b4efdde57e87a"
+        },
+        {
+          "pdf_page": 82,
+          "path": "knowledge/slide/pages/p0082.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "74910b09bb2eb26fa89c3d69dcdffa1dd89922d6f6d53c2522d714d22b10de5f"
+        },
+        {
+          "pdf_page": 83,
+          "path": "knowledge/slide/pages/p0083.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "47c2e13ea61ed2e5998218ad84156d3c4b8d69a6b74d0b0b04766996c277ccf1"
+        },
+        {
+          "pdf_page": 84,
+          "path": "knowledge/slide/pages/p0084.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "6de069537118cbeda04f5ccef19dbbaff9128a152bbc2abb2bee734ce2114a2a"
+        },
+        {
+          "pdf_page": 85,
+          "path": "knowledge/slide/pages/p0085.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "205b3309295591c9c06466cdde08d0a8e5c169dfec568cdc85220912ae4805c6"
+        },
+        {
+          "pdf_page": 86,
+          "path": "knowledge/slide/pages/p0086.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "4821b71a3ef810559bebfefe4636ac17e51aed95d26e999ee2abd0d1cbdb4483"
+        },
+        {
+          "pdf_page": 87,
+          "path": "knowledge/slide/pages/p0087.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "LOW_TEXT",
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "c08a0c23430394c25c2e55b143335f30c45909f2ea77302c618b83e2fe7492b2"
+        },
+        {
+          "pdf_page": 88,
+          "path": "knowledge/slide/pages/p0088.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "3ecfecb11e1c0a25112c77b95efd9bbb835b90b48cbbb95d96266afce2352527"
+        },
+        {
+          "pdf_page": 89,
+          "path": "knowledge/slide/pages/p0089.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "e3a66c53693c276a71bae75ae499747c4aab5d6eca024df798a3ccd5e105fb69"
+        },
+        {
+          "pdf_page": 90,
+          "path": "knowledge/slide/pages/p0090.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "ff25f7b7fcf53565b23c1f73db62819b37de6b934bcc25a078250e1c7b029601"
+        },
+        {
+          "pdf_page": 91,
+          "path": "knowledge/slide/pages/p0091.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "8a6d3854c69ae0856929f602cc4871f5985f585c726b68675f2f5784de9102a7"
+        },
+        {
+          "pdf_page": 92,
+          "path": "knowledge/slide/pages/p0092.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "d55b47ea78c3dcc42895f9e58109c5dbbd28ce57b8055ef7db642d7d48faa23b"
+        },
+        {
+          "pdf_page": 93,
+          "path": "knowledge/slide/pages/p0093.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "ac306ea430937a629ee8cfb047ab00f1e7a3ed29bb524b38b94a44df9c65cfd6"
+        },
+        {
+          "pdf_page": 94,
+          "path": "knowledge/slide/pages/p0094.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "abf7ce141f910e94e97e116ce7bd1d014662eeec24244eb26665b5f2d9d9b1ba"
+        },
+        {
+          "pdf_page": 95,
+          "path": "knowledge/slide/pages/p0095.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "bf1284133d731daefd42d8bf2b91f1b0556f7cdc7220a8099139efe5315ea2cc"
+        },
+        {
+          "pdf_page": 96,
+          "path": "knowledge/slide/pages/p0096.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "2b7daec7f5d556ac6e9d3d753c3df91531d7126b23a4d4c7ab41788250a31b2c"
+        },
+        {
+          "pdf_page": 97,
+          "path": "knowledge/slide/pages/p0097.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "d995065f2a004e9c4373b1579c5d22e4cfb4b4e536f077d5563f46f217d57730"
+        },
+        {
+          "pdf_page": 98,
+          "path": "knowledge/slide/pages/p0098.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "LOW_TEXT",
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "893e11e7dc3289de8e6067c4c7dd7083ccd3c69ed50a501ca723cf53233e5427"
+        },
+        {
+          "pdf_page": 99,
+          "path": "knowledge/slide/pages/p0099.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "899813f15d2fcd9b63fe5355624dda1f408523b0d09fec45ef32ba6d2245e2a0"
+        },
+        {
+          "pdf_page": 100,
+          "path": "knowledge/slide/pages/p0100.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "f56ee2058c357ac59d580fbbaac1d9be291b72faa45de247a9e3c9257e0dc620"
+        },
+        {
+          "pdf_page": 101,
+          "path": "knowledge/slide/pages/p0101.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "cbf48b095e8d5d63a9c61e9652533fdbdf0f6a580a4527b6c24d0eb8d48d48bc"
+        },
+        {
+          "pdf_page": 102,
+          "path": "knowledge/slide/pages/p0102.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "LOW_TEXT",
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "d344f3923475a43baca2783dc4377ef602c36ba0097919b83405db8214cd1b53"
+        },
+        {
+          "pdf_page": 103,
+          "path": "knowledge/slide/pages/p0103.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT",
+            "MATH_REVIEW_REQUIRED"
+          ],
+          "content_sha256": "cf00262dd4734ba24d026a400a3dc1f91db0114540baa1587e4e16f7c73e7810"
+        },
+        {
+          "pdf_page": 104,
+          "path": "knowledge/slide/pages/p0104.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT",
+            "MATH_REVIEW_REQUIRED"
+          ],
+          "content_sha256": "f2f4ed206b13f30a857bd9547b2183b8e2bc00e3b475331b83ccd88641a407a9"
+        },
+        {
+          "pdf_page": 105,
+          "path": "knowledge/slide/pages/p0105.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT",
+            "MATH_REVIEW_REQUIRED"
+          ],
+          "content_sha256": "419140ce9ba76d296c550fe0b41af4e1c24b4f805def44aabeb3a4060663a479"
+        },
+        {
+          "pdf_page": 106,
+          "path": "knowledge/slide/pages/p0106.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "9e7d56d5d2cedbd4b272fdbe221f236e301c2b4ff01c955ee8b5452d5e463abb"
+        },
+        {
+          "pdf_page": 107,
+          "path": "knowledge/slide/pages/p0107.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "40011a2c03bb5d23ddbb569a4db3000b2ddaabf5536e28dd8c4f8a101d41e4f2"
+        },
+        {
+          "pdf_page": 108,
+          "path": "knowledge/slide/pages/p0108.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "5438f3bfcf3fa8fb5cda5f4d77d58c4e3982144e49688cd36ce85aab5230bfcd"
+        },
+        {
+          "pdf_page": 109,
+          "path": "knowledge/slide/pages/p0109.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "c6e5ce1c1260ca951d3e753832e55e4e7ed9d913b24113f314d7bb93ca8db1a7"
+        },
+        {
+          "pdf_page": 110,
+          "path": "knowledge/slide/pages/p0110.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "65ab2fe9b54476c829ea0bd205b40721a543c09de4cb733b6a68c3263b5c51b9"
+        },
+        {
+          "pdf_page": 111,
+          "path": "knowledge/slide/pages/p0111.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "LOW_TEXT",
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "0315aa6776f9dae512ae2540f2ea7815e371b225d9ccd8289b320cedb81166db"
+        },
+        {
+          "pdf_page": 112,
+          "path": "knowledge/slide/pages/p0112.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "867fa54214a19cc3593cd7ccf89ede1bc42c3f5860e13ccc08839ee6346e3dc3"
+        },
+        {
+          "pdf_page": 113,
+          "path": "knowledge/slide/pages/p0113.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "a2df972ff46121b943d71c4278f802a4e8521d09e7206acc5edc8f625b7a62d0"
+        },
+        {
+          "pdf_page": 114,
+          "path": "knowledge/slide/pages/p0114.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "46185bc45a47179e361f5ae84bc3b761942f955cad9191ef8cf2c67c30faa9bd"
+        },
+        {
+          "pdf_page": 115,
+          "path": "knowledge/slide/pages/p0115.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "39e719dfefe0ec0cb57e91486a993c9af6fe37e6813be6cc94245b7471282bad"
+        },
+        {
+          "pdf_page": 116,
+          "path": "knowledge/slide/pages/p0116.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "16ecb67b1a08d094b31a4d54868c8b1af13aabde12cb9afae4f3d7955362da66"
+        },
+        {
+          "pdf_page": 117,
+          "path": "knowledge/slide/pages/p0117.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "cf7659e1afac47b4244525427c169f1af85c5fa98a56e2a6eb668560c98934ac"
+        },
+        {
+          "pdf_page": 118,
+          "path": "knowledge/slide/pages/p0118.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "3393c05ee11db4095d6a7cf2d0d0c47c62f386fa041de3c1c8cbc3834abfd3a5"
+        },
+        {
+          "pdf_page": 119,
+          "path": "knowledge/slide/pages/p0119.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "94eaef6b46c97539649b697a9b9eb6996342ecdb62f702487cf039e56b57909e"
+        },
+        {
+          "pdf_page": 120,
+          "path": "knowledge/slide/pages/p0120.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "36f2063396887028db3ab761ad16666f8bc9fa58c79454620ba912684abb5758"
+        },
+        {
+          "pdf_page": 121,
+          "path": "knowledge/slide/pages/p0121.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "447618c0bf41f4a2b6193a54588846b2ab2fe4fd0b53d55dcf370c6fac9ada3c"
+        },
+        {
+          "pdf_page": 122,
+          "path": "knowledge/slide/pages/p0122.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "MATH_REVIEW_REQUIRED"
+          ],
+          "content_sha256": "b6b806740d0be239296cff627971f7d2b3d507db207b7833ccd5b6f8f78dc2a3"
+        },
+        {
+          "pdf_page": 123,
+          "path": "knowledge/slide/pages/p0123.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "c0ce4d190cbf778d7b32f80019a09d5e666a94702ba63a66d2d58d0bc2a5faf9"
+        },
+        {
+          "pdf_page": 124,
+          "path": "knowledge/slide/pages/p0124.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "eebdfa85bb797b01c7e48b0fa6b487b3474f5b609472d84510c677fc9186fd33"
+        },
+        {
+          "pdf_page": 125,
+          "path": "knowledge/slide/pages/p0125.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "036072925a2c398ef7c1c72a9ecd553813fce4b439fc1b3c3ce595782c0ffede"
+        },
+        {
+          "pdf_page": 126,
+          "path": "knowledge/slide/pages/p0126.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "618613cc0819a961f5250b15287e207c1d6034025468365c65b666bc0c4b2d66"
+        },
+        {
+          "pdf_page": 127,
+          "path": "knowledge/slide/pages/p0127.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "a7a4ad2659e295f2f1c66130ec71da23abd696c7818460af7bd96dbdffb8a0cb"
+        },
+        {
+          "pdf_page": 128,
+          "path": "knowledge/slide/pages/p0128.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "cf45137f4ab04f1a6010e672fb205e6552c9e0125b05780412dc4560069f2d43"
+        },
+        {
+          "pdf_page": 129,
+          "path": "knowledge/slide/pages/p0129.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "2c10c30c9a16304bcbd5543e2bfb332c76598fae84e03a832979f1c3b0b5d1be"
+        },
+        {
+          "pdf_page": 130,
+          "path": "knowledge/slide/pages/p0130.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "f06b46410169e817c41ff6e683f774766a474fcf4524616167071e510dc0378f"
+        },
+        {
+          "pdf_page": 131,
+          "path": "knowledge/slide/pages/p0131.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "a5d761acca83c3719fa099144654bde2eccd78ae367e1576dac4fd00b7fde5a6"
+        },
+        {
+          "pdf_page": 132,
+          "path": "knowledge/slide/pages/p0132.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "1fa9afdb981c312bdc03dbb7e668c748743863d62c923672eddfcaae9126c839"
+        },
+        {
+          "pdf_page": 133,
+          "path": "knowledge/slide/pages/p0133.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "7273b7f85d449dbd27494c6ddb2474128912daabbfe0df8ac966e60a6f6882d3"
+        },
+        {
+          "pdf_page": 134,
+          "path": "knowledge/slide/pages/p0134.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "1dddb746b126a4d161d1de8899d0616febe88179fcf91fd95cc305efe69d512c"
+        },
+        {
+          "pdf_page": 135,
+          "path": "knowledge/slide/pages/p0135.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "45772eb5cf6b13a58c4ee3db6f631ef5e48a1c073aad4954e589b72621866058"
+        },
+        {
+          "pdf_page": 136,
+          "path": "knowledge/slide/pages/p0136.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "95dc84f7ddb9b1abad118d987111350893025cec0973189f5884e899b8f998f0"
+        },
+        {
+          "pdf_page": 137,
+          "path": "knowledge/slide/pages/p0137.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "e899003fba1eb03620ad5ce8fb012d321a79b32c7f7d738ff9fa7bfbd4083b77"
+        },
+        {
+          "pdf_page": 138,
+          "path": "knowledge/slide/pages/p0138.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "595437be23279e59eeb5828a767624efd5b2694c8adf228c90a9e279e839df91"
+        },
+        {
+          "pdf_page": 139,
+          "path": "knowledge/slide/pages/p0139.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "cfedf0b51dec0edd8fca7323e1a7a3e9639018f189c53d17f672d897ebb353d6"
+        },
+        {
+          "pdf_page": 140,
+          "path": "knowledge/slide/pages/p0140.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "464b455d78f2cbc67da85d85d9dba2bd9c7c8bc0493ffafe7b431ac2dd63906c"
+        },
+        {
+          "pdf_page": 141,
+          "path": "knowledge/slide/pages/p0141.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "c8dc979abec6bc27485463cce272245f54517ad564b866df8ff4cf2c1a01edc3"
+        },
+        {
+          "pdf_page": 142,
+          "path": "knowledge/slide/pages/p0142.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "8afcc42f9bdc882de6bb077db98c656378870e0a9fe3d7c2e8c78e9857dc4bac"
+        },
+        {
+          "pdf_page": 143,
+          "path": "knowledge/slide/pages/p0143.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "fa065472e36bde9f9f1e9d9188f419286a508af0cdd602eb03db4a118bf0f319"
+        },
+        {
+          "pdf_page": 144,
+          "path": "knowledge/slide/pages/p0144.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "2723694c095ce14af2b7f0d3027f016350993b9ec891754e7b990ff3bd4da17b"
+        },
+        {
+          "pdf_page": 145,
+          "path": "knowledge/slide/pages/p0145.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "LOW_TEXT",
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "eaf5f6e4865d46991cadc9c863cf4c8e78072206621bdbbb81e8e04c4ea75ec0"
+        },
+        {
+          "pdf_page": 146,
+          "path": "knowledge/slide/pages/p0146.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "3119ef1fae64862a99e044f9a8485eb9ef954e36c5fd6e1945ae5e4544e6dbe0"
+        },
+        {
+          "pdf_page": 147,
+          "path": "knowledge/slide/pages/p0147.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "ea94c1833442dc2c7c70a62f519c11996ad51ae99296ee00c4ab25573880bc46"
+        },
+        {
+          "pdf_page": 148,
+          "path": "knowledge/slide/pages/p0148.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "f42b4c3317c1a1d58c874079a37af9a42ca9d8e11ed4cde622d776fc99e2234a"
+        },
+        {
+          "pdf_page": 149,
+          "path": "knowledge/slide/pages/p0149.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "10fa763b32a6e2d6288268a00d4f2b19379edeb283443b958407ba62f256e680"
+        },
+        {
+          "pdf_page": 150,
+          "path": "knowledge/slide/pages/p0150.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "MATH_REVIEW_REQUIRED"
+          ],
+          "content_sha256": "5edec3823397488cbfcef37bc3240973c74abe819501da19b7bed3f3e0efb012"
+        },
+        {
+          "pdf_page": 151,
+          "path": "knowledge/slide/pages/p0151.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "7300d986a007910fe6c3940e136d24497d5d0a7c648d55425f23a0c837d6e335"
+        },
+        {
+          "pdf_page": 152,
+          "path": "knowledge/slide/pages/p0152.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "f6471785f1f12b90264674cfd32211b5a47fe1f91ddafbf03f4cb66f92e89691"
+        },
+        {
+          "pdf_page": 153,
+          "path": "knowledge/slide/pages/p0153.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "4ff1dbe31260aad561da13c8160fc33feabd481b4490d42d7c6c44d0dae6f639"
+        },
+        {
+          "pdf_page": 154,
+          "path": "knowledge/slide/pages/p0154.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "MATH_REVIEW_REQUIRED"
+          ],
+          "content_sha256": "d4b6924a43b17055dd3c1c73d8656cc2f1dc72a01e006d0eec4a5cd9a884e722"
+        },
+        {
+          "pdf_page": 155,
+          "path": "knowledge/slide/pages/p0155.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "MATH_REVIEW_REQUIRED"
+          ],
+          "content_sha256": "3520b6088623567cc5798319a4cb4a7ea02afc2713854c71d265442e74db2f67"
+        },
+        {
+          "pdf_page": 156,
+          "path": "knowledge/slide/pages/p0156.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "795a297629a1ad61c734c50b06403ebe2202c96e51633b6dbc17762c684fa706"
+        },
+        {
+          "pdf_page": 157,
+          "path": "knowledge/slide/pages/p0157.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "2eeb1afba047435a01dfee9db451582cceb025fcfe4089e166181cc80c5634bd"
+        },
+        {
+          "pdf_page": 158,
+          "path": "knowledge/slide/pages/p0158.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "c9f0d18ad0e6fba4356928444aa788533cd38917c1eed1d6b30bd46ff148d807"
+        },
+        {
+          "pdf_page": 159,
+          "path": "knowledge/slide/pages/p0159.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "LOW_TEXT",
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "461346724849b556279e0c8f9b39cdcbe4dd00b8c2019cf64113b26c0f8e4745"
+        },
+        {
+          "pdf_page": 160,
+          "path": "knowledge/slide/pages/p0160.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "2908e39f922249e03f07eb5ac9b4136c8515fb14bd2be1910f082c51fa935e13"
+        },
+        {
+          "pdf_page": 161,
+          "path": "knowledge/slide/pages/p0161.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "ed084252f38a762f5b29df2fefb0e54e9a1f419c8f42075ac5e53a293fd322ff"
+        },
+        {
+          "pdf_page": 162,
+          "path": "knowledge/slide/pages/p0162.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "358a16fc5783dda9d8ea014173d8ac4c371c26d0ee91a42b3d2231e486e61e85"
+        },
+        {
+          "pdf_page": 163,
+          "path": "knowledge/slide/pages/p0163.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "203bcb83b5349ab1a69e2baac35b4a3afcc65c92ba84c4aaf077882e4379d3ae"
+        },
+        {
+          "pdf_page": 164,
+          "path": "knowledge/slide/pages/p0164.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "MATH_REVIEW_REQUIRED"
+          ],
+          "content_sha256": "219384b432c338231265ba1f208a275af5cb00069fee0797c5d856ece3078d3c"
+        },
+        {
+          "pdf_page": 165,
+          "path": "knowledge/slide/pages/p0165.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "3bb5328f7cbc65cb6804efbe84525d39bae962014b398dae697f3925e05b6018"
+        },
+        {
+          "pdf_page": 166,
+          "path": "knowledge/slide/pages/p0166.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "1d99853dcba09d365a7f2e89b35dea911829433b3ca5a044f47fab462e757b0c"
+        },
+        {
+          "pdf_page": 167,
+          "path": "knowledge/slide/pages/p0167.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "LOW_TEXT",
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "1324865d068c6ede9b4c6c322154c6398eaa8c434221d9f99936b9675143b241"
+        },
+        {
+          "pdf_page": 168,
+          "path": "knowledge/slide/pages/p0168.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "LOW_TEXT",
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "85348ccbe2c9b9c077f8c329d1317279ab9f1b4863e62c153703183c58344749"
+        },
+        {
+          "pdf_page": 169,
+          "path": "knowledge/slide/pages/p0169.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "f4ad16c7315d1953ae39acd39eee0041e83b9ff854d131ef94a653abd8e2d89b"
+        },
+        {
+          "pdf_page": 170,
+          "path": "knowledge/slide/pages/p0170.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "38746e909c991adf1da7e9b306a7d36004a25eb066b4a892a30267a73b4fe060"
+        },
+        {
+          "pdf_page": 171,
+          "path": "knowledge/slide/pages/p0171.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "LOW_TEXT",
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "7ac07f34a17c99050054be9ce090d3867603b6661f898fe8f1c516e51f7b9cfb"
+        },
+        {
+          "pdf_page": 172,
+          "path": "knowledge/slide/pages/p0172.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "f43104646a356af1b74ad8a950276134c15e9ac192346a0d6320fb334dd85314"
+        },
+        {
+          "pdf_page": 173,
+          "path": "knowledge/slide/pages/p0173.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "f5574e7d02443b3dd77b297fe9c8b7acc613c498a282d8b69223c6460622ce24"
+        },
+        {
+          "pdf_page": 174,
+          "path": "knowledge/slide/pages/p0174.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "c53a94b7c34eb9237d79e03523c040f024d4e60e1db5a92695a9ed7d5c03e6dc"
+        },
+        {
+          "pdf_page": 175,
+          "path": "knowledge/slide/pages/p0175.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "3efc1900f6085f8f15e972602f5f57dcecf9a4f6c7ff7b77451fd70d0f269a4c"
+        },
+        {
+          "pdf_page": 176,
+          "path": "knowledge/slide/pages/p0176.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "244aa03fb83a75613f2b292a7740d4bc63afd45db1b76f2f6e278d03be6f806a"
+        },
+        {
+          "pdf_page": 177,
+          "path": "knowledge/slide/pages/p0177.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "b714a44e1eb72207645316ddba1416e82ecd91463db47e09dc030d2bb186be7e"
+        },
+        {
+          "pdf_page": 178,
+          "path": "knowledge/slide/pages/p0178.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT",
+            "MATH_REVIEW_REQUIRED"
+          ],
+          "content_sha256": "441572d43a809e91dde0a0115b3bd86876c6dd9d4371e50215e712b2bcb0372f"
+        },
+        {
+          "pdf_page": 179,
+          "path": "knowledge/slide/pages/p0179.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "014ca989e36df7eadb679aada0593ed00b0e59bde1810e36fd5555b92bf373a6"
+        },
+        {
+          "pdf_page": 180,
+          "path": "knowledge/slide/pages/p0180.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "bef79e0e9088dcbee73117495dcab8ad593e53080033bef1e2f6b86f91db1982"
+        },
+        {
+          "pdf_page": 181,
+          "path": "knowledge/slide/pages/p0181.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "a191cdf279dbdae219c97d9751e6eddb646976756b7e7b77e7fe341f07e1758e"
+        },
+        {
+          "pdf_page": 182,
+          "path": "knowledge/slide/pages/p0182.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "468a8fb3c571d2e7c6dee83c188f2c0de45e8bd31a1d8f991ab4b9d338952750"
+        },
+        {
+          "pdf_page": 183,
+          "path": "knowledge/slide/pages/p0183.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "ce412b3277184196dc2b927d451c0ba812daefb3e88cdc6615365ad59ec092db"
+        },
+        {
+          "pdf_page": 184,
+          "path": "knowledge/slide/pages/p0184.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT",
+            "MATH_REVIEW_REQUIRED"
+          ],
+          "content_sha256": "950599257ab6f65eafd59c4898f332303dd05f4d62aa9020b1883c6a1b3a2d38"
+        },
+        {
+          "pdf_page": 185,
+          "path": "knowledge/slide/pages/p0185.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "25bb7a2034d504b7666303074837cf20d25bfb3300403fcbad461dea0f63d095"
+        },
+        {
+          "pdf_page": 186,
+          "path": "knowledge/slide/pages/p0186.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "30a4a1c833c7e32a89484ee6203c05990ac5f464e77a5398a6a46390622232bc"
+        },
+        {
+          "pdf_page": 187,
+          "path": "knowledge/slide/pages/p0187.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "f3338e4cdf8b20fb65fc7b99f9ecd7e4de96c695329eba155346e7e5b3250f65"
+        },
+        {
+          "pdf_page": 188,
+          "path": "knowledge/slide/pages/p0188.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT",
+            "MATH_REVIEW_REQUIRED"
+          ],
+          "content_sha256": "7020d61efbd9d808eca4670e6dcc40b507812a596cf64abcc1ced674dbae0a17"
+        },
+        {
+          "pdf_page": 189,
+          "path": "knowledge/slide/pages/p0189.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT",
+            "MATH_REVIEW_REQUIRED"
+          ],
+          "content_sha256": "02c76e68db8c03411d1f468b338edfb127b42d159249b36cbb2e4bd593b3006b"
+        },
+        {
+          "pdf_page": 190,
+          "path": "knowledge/slide/pages/p0190.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "a592b646eb6f9ebfa8ce7eb976d75f3305671b068e41afa6f822119e5361a33d"
+        },
+        {
+          "pdf_page": 191,
+          "path": "knowledge/slide/pages/p0191.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "fbc83ef8c696b589cbc18db6fdd0d8df682154b71b218a4f9c41742f3ee834fa"
+        },
+        {
+          "pdf_page": 192,
+          "path": "knowledge/slide/pages/p0192.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "7936d495e82233f356de9aed8d549c0d0b602513556825d73b7c5c4b56311ed6"
+        },
+        {
+          "pdf_page": 193,
+          "path": "knowledge/slide/pages/p0193.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "a3010da7ea27e9b00345ec65c65407dca3ea76d68cfd2af885535164fc1954e0"
+        },
+        {
+          "pdf_page": 194,
+          "path": "knowledge/slide/pages/p0194.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "c974f718d399eacef68e54f3b94a3770932c2a284c9a8008f998fc2657294a64"
+        },
+        {
+          "pdf_page": 195,
+          "path": "knowledge/slide/pages/p0195.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "45fa0e038dfb58b151e6a33a4b115e7cb554d9b7e0a487a2316c062cc9c79d8f"
+        },
+        {
+          "pdf_page": 196,
+          "path": "knowledge/slide/pages/p0196.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "8c5fcf2c55f0e0f3a3e29ab617a1cf3ecb245ef0168e1b978c010475c4a9992c"
+        },
+        {
+          "pdf_page": 197,
+          "path": "knowledge/slide/pages/p0197.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "4daea228f88baaf1e28c8df611477c9abd7214507cb8ef5f6489530d7cc1b984"
+        },
+        {
+          "pdf_page": 198,
+          "path": "knowledge/slide/pages/p0198.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT",
+            "MATH_REVIEW_REQUIRED"
+          ],
+          "content_sha256": "3da9b0afcdd774fba322f3e42900a6315cea86e308012757af11b8ee8a9b4700"
+        },
+        {
+          "pdf_page": 199,
+          "path": "knowledge/slide/pages/p0199.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "c876384e5d06ba406d0bb96a3a5857d5382bd7ab9353fec87c5d1c7a1b66c94a"
+        },
+        {
+          "pdf_page": 200,
+          "path": "knowledge/slide/pages/p0200.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "680bdce6aeb901e9b65a1e8466ae264a0420b48d6b957a1866d07d9d60de534a"
+        },
+        {
+          "pdf_page": 201,
+          "path": "knowledge/slide/pages/p0201.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "c40697d57f540a8b3e8f281ee4eef8d244f0106413f8ebd035788ad556ba7fd4"
+        },
+        {
+          "pdf_page": 202,
+          "path": "knowledge/slide/pages/p0202.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "0f614ca2e03ebc6e7acde182b7b733347ae752e77176a02f8d62163037284859"
+        },
+        {
+          "pdf_page": 203,
+          "path": "knowledge/slide/pages/p0203.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "17e1497601ae92ec42c36a9d3727da6c33cdf55b29fdc515dde082a672176621"
+        },
+        {
+          "pdf_page": 204,
+          "path": "knowledge/slide/pages/p0204.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "3748175110489e4c264704e93e6fb6c4155a4a061c18d57390d6674eef93a894"
+        },
+        {
+          "pdf_page": 205,
+          "path": "knowledge/slide/pages/p0205.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "94a77ee815a8178d7a02d727be0a51f077238141290693673a0308d72b2f490b"
+        },
+        {
+          "pdf_page": 206,
+          "path": "knowledge/slide/pages/p0206.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "005bf206b24cb151ac5f5f57a748f5ec211c1dd9b773d425e609139b21151851"
+        },
+        {
+          "pdf_page": 207,
+          "path": "knowledge/slide/pages/p0207.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "7c8df725539564f8ca685192ed49e557d57e0879ccbb768b8b8104e2e84d9f5b"
+        },
+        {
+          "pdf_page": 208,
+          "path": "knowledge/slide/pages/p0208.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "f9b8154f5ef304df89e6bd72b0ec507b664516fbc9efd8dab04c3101e71193bd"
+        },
+        {
+          "pdf_page": 209,
+          "path": "knowledge/slide/pages/p0209.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "d999d3e6b5f38bbc578cb4b1c21f6a10bef0f78f79b35eafb54345e27be14965"
+        },
+        {
+          "pdf_page": 210,
+          "path": "knowledge/slide/pages/p0210.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "2ae294cabf0ce936bfecc423d7acc95557f171874833915dbdf2044213b11364"
+        },
+        {
+          "pdf_page": 211,
+          "path": "knowledge/slide/pages/p0211.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "4803ceb82d2f21596c00c2d43dac6b44eb09f4912d920cb5c6555593c106d5ec"
+        },
+        {
+          "pdf_page": 212,
+          "path": "knowledge/slide/pages/p0212.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "95ec5d1419f86ed73d3f49e9a41b0ca01c7bfdf53a4d88d9487f637d92869028"
+        },
+        {
+          "pdf_page": 213,
+          "path": "knowledge/slide/pages/p0213.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "67f29d463863a7e63e95240b84890656fedfad951de54e7199d333104429ed80"
+        },
+        {
+          "pdf_page": 214,
+          "path": "knowledge/slide/pages/p0214.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "c33fb7a52f152079328a33daf1498ecea5333e8e6ad2aa3c827be1bb044c439b"
+        },
+        {
+          "pdf_page": 215,
+          "path": "knowledge/slide/pages/p0215.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "LOW_TEXT",
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "a6ed3915f6acd87f556975dd0a80c27b53f3b7c814fc935118507f00d00f3778"
+        },
+        {
+          "pdf_page": 216,
+          "path": "knowledge/slide/pages/p0216.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "LOW_TEXT",
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "a717f06d3ddfa3eb6fe9b535c06304e78ed85440b2f3cf467a746546791c2e89"
+        },
+        {
+          "pdf_page": 217,
+          "path": "knowledge/slide/pages/p0217.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "b63516d2b27966fbc01aedc15734835bff6b12269db3e562d49670c893236612"
+        },
+        {
+          "pdf_page": 218,
+          "path": "knowledge/slide/pages/p0218.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "9ae21fe774c3a738b72d7c42c49c7e195843fb086c1aab62cc6e83994b979b47"
+        },
+        {
+          "pdf_page": 219,
+          "path": "knowledge/slide/pages/p0219.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "2ed418f924cbe343ff038562985bbbfb4d873f6452b577f6596e81b25598230a"
+        },
+        {
+          "pdf_page": 220,
+          "path": "knowledge/slide/pages/p0220.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "d8de8ee79a3dd710a807c559a17a8a85fd8136e5786e0856d6868de28c5391ec"
+        },
+        {
+          "pdf_page": 221,
+          "path": "knowledge/slide/pages/p0221.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "e75ae747ee9ddd5e34b8b96440df35f1932277a4776548538dc2d313b20efa9e"
+        },
+        {
+          "pdf_page": 222,
+          "path": "knowledge/slide/pages/p0222.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "d5dc8b0c149b1d2f5549ec6162fe38046af698b517491442848c24c6267078ec"
+        },
+        {
+          "pdf_page": 223,
+          "path": "knowledge/slide/pages/p0223.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "35ba9200ad2d27f411617bb105871b10c56c530edf5766db8f424a398a553b24"
+        },
+        {
+          "pdf_page": 224,
+          "path": "knowledge/slide/pages/p0224.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "LOW_TEXT",
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "8788adda8d6d42a08ebde9cf2d5d95921ab79398c91c75ada9e2638bc83dba1e"
+        },
+        {
+          "pdf_page": 225,
+          "path": "knowledge/slide/pages/p0225.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "6801008715ca7a72c9f4e1700f0daf754e36f796fc391b25ccadc7c694372782"
+        },
+        {
+          "pdf_page": 226,
+          "path": "knowledge/slide/pages/p0226.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "266e4b418616c242ce969c54b5816f5c1e0906e667320faef891e756b3134747"
+        },
+        {
+          "pdf_page": 227,
+          "path": "knowledge/slide/pages/p0227.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "LOW_TEXT",
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "a20ab9f35ac1b2f186a04201454d72b1895187a6659f46d6bf2c6089a1588c7e"
+        },
+        {
+          "pdf_page": 228,
+          "path": "knowledge/slide/pages/p0228.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "c4015fb910f95300020f0477dab8f58845eddcf214fafcdf3aca4225fae1dfec"
+        },
+        {
+          "pdf_page": 229,
+          "path": "knowledge/slide/pages/p0229.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "ce08be7aa9c46a1c2b030cf54befd9930d3bc6ec9f409c2f1e2098d90d20daaa"
+        },
+        {
+          "pdf_page": 230,
+          "path": "knowledge/slide/pages/p0230.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "LOW_TEXT",
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "18c6bb8b684d93d6e05573ff1d5c41041e349f664f24962dce2fe5e600bc51c8"
+        },
+        {
+          "pdf_page": 231,
+          "path": "knowledge/slide/pages/p0231.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "368b9a811e3ebcdbfbfb2757f86c533ec63d3ed2cb4fcee69102a08567eed0d2"
+        },
+        {
+          "pdf_page": 232,
+          "path": "knowledge/slide/pages/p0232.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "2252dfededbb05dd081954da998a8681c20aef53a964fe70232660cf37511688"
+        },
+        {
+          "pdf_page": 233,
+          "path": "knowledge/slide/pages/p0233.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT",
+            "MATH_REVIEW_REQUIRED"
+          ],
+          "content_sha256": "b408224e267d67685241c88335e18d4b273ff2698c275a56338c332533de3952"
+        },
+        {
+          "pdf_page": 234,
+          "path": "knowledge/slide/pages/p0234.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "a331fce3b1c90c43e2f70ee5ea4952454b4937adc203615f31d1938ab6c8d8a9"
+        },
+        {
+          "pdf_page": 235,
+          "path": "knowledge/slide/pages/p0235.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "LOW_TEXT",
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "53889250300b78124bbce4094c14dd543e6a87f024b55181b232940449bf64dd"
+        },
+        {
+          "pdf_page": 236,
+          "path": "knowledge/slide/pages/p0236.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "7dc5abc21073f53479434d7a01a9364a3b8b118972ae1e7c9621bd9c149c746a"
+        },
+        {
+          "pdf_page": 237,
+          "path": "knowledge/slide/pages/p0237.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "28ae7bfabddc1f17b7e0cf5f3f5aef3785e51db3cd48d9a699d17fa6f5c2d543"
+        },
+        {
+          "pdf_page": 238,
+          "path": "knowledge/slide/pages/p0238.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "01556709808d11004bcc8c89dc02a35ff12d5e1daa61dba4576561b7c1b693e0"
+        },
+        {
+          "pdf_page": 239,
+          "path": "knowledge/slide/pages/p0239.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "LOW_TEXT",
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "217f31e304723ac0823a3c21ce242558db75e07076d3dbdee47644cc46c59ec1"
+        },
+        {
+          "pdf_page": 240,
+          "path": "knowledge/slide/pages/p0240.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "3fecf2130cb4757ccd109e4535cbb7d702dbf43e8c426d2504220bdf370dc62c"
+        },
+        {
+          "pdf_page": 241,
+          "path": "knowledge/slide/pages/p0241.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "b9d377650c182bdf41ce004a4f0a25561bf2bd0bc422f8240f63e22c0e72c89d"
+        },
+        {
+          "pdf_page": 242,
+          "path": "knowledge/slide/pages/p0242.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "2271cac2806e476eb014df8c7d166612af5396bf6bbd3c2bc115ceabf562f81c"
+        },
+        {
+          "pdf_page": 243,
+          "path": "knowledge/slide/pages/p0243.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "75b762acb2213c395565bd0ba92362a64fe8d7184965ec34d9cfd9520e527148"
+        },
+        {
+          "pdf_page": 244,
+          "path": "knowledge/slide/pages/p0244.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "c4ffdcd51529c0fee5f170182438787873c175ea2efd96538d840edee34810d4"
+        },
+        {
+          "pdf_page": 245,
+          "path": "knowledge/slide/pages/p0245.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "d2c2d952510cc7804cbfba3d0f1fe0d3a571b414e7207dbeeeecba851321f257"
+        },
+        {
+          "pdf_page": 246,
+          "path": "knowledge/slide/pages/p0246.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "68a9de4d44585dcfbf32c7d533c934634d84d3a5a76ac7b67ce04445cb909a99"
+        },
+        {
+          "pdf_page": 247,
+          "path": "knowledge/slide/pages/p0247.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "91803118952ea59ec10c92f285b348fac2871610b48d727b0d5592acdcce1493"
+        },
+        {
+          "pdf_page": 248,
+          "path": "knowledge/slide/pages/p0248.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "641337baeda04aefc373c2d2fbe84ebe1f792774f44096728ef8ed442bd80662"
+        },
+        {
+          "pdf_page": 249,
+          "path": "knowledge/slide/pages/p0249.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "cb65f4de1cacfce8825b699a04ec9af7b9adfad4d7f97a6e0b8de4f3d99cd5fd"
+        },
+        {
+          "pdf_page": 250,
+          "path": "knowledge/slide/pages/p0250.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "cf86b71bf9cda701a19eb061c454757bac944f8b09491fe9c7549d800ffec202"
+        },
+        {
+          "pdf_page": 251,
+          "path": "knowledge/slide/pages/p0251.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "4770b16635b4b73e71c60996d0d08b2464f718f031c884ba970f4d5b69fa4a9c"
+        },
+        {
+          "pdf_page": 252,
+          "path": "knowledge/slide/pages/p0252.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "c9fc534ea8bd08dc17a57b2ea0b4378f916a6a48258977a1b5a76c1b481b536c"
+        },
+        {
+          "pdf_page": 253,
+          "path": "knowledge/slide/pages/p0253.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "c0ec33bb3843ff0468405db31b1612eb83072fde2d725232d0b0a609d5feecde"
+        },
+        {
+          "pdf_page": 254,
+          "path": "knowledge/slide/pages/p0254.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "32d381d3022f7b1cefeab8df0404b6c09e4d17badaa4b651337eb505756cdd92"
+        },
+        {
+          "pdf_page": 255,
+          "path": "knowledge/slide/pages/p0255.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "2ac326df8cdb6b28511ffec3cf88573cf475c87ec676d65d9a67730c64d39432"
+        },
+        {
+          "pdf_page": 256,
+          "path": "knowledge/slide/pages/p0256.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "LOW_TEXT",
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "56fdc039304073ebb3256b7ac09394c0d579ddb3f22496ea7045f5dd853d787f"
+        },
+        {
+          "pdf_page": 257,
+          "path": "knowledge/slide/pages/p0257.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "9e11c23c15d68331310d46603717536976f165397098968338c065bec1714ac0"
+        },
+        {
+          "pdf_page": 258,
+          "path": "knowledge/slide/pages/p0258.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "8887116e64d024ea6e39e51bcc5a807a3bdcdc521628bf0280abc8f62767a839"
+        },
+        {
+          "pdf_page": 259,
+          "path": "knowledge/slide/pages/p0259.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "f7769f067d7840c30f9ab20edefe60f7d75be37ce74c3e8beb7b33591da7b16a"
+        },
+        {
+          "pdf_page": 260,
+          "path": "knowledge/slide/pages/p0260.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "583fd43663d709fb5d64d8293a1b9f4d965f0f8c7546a88cba8f14fed08e276f"
+        },
+        {
+          "pdf_page": 261,
+          "path": "knowledge/slide/pages/p0261.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "8a729763b49be69647de2b5c872b501ccceb028757ae587f20ecd4859c3d06c3"
+        },
+        {
+          "pdf_page": 262,
+          "path": "knowledge/slide/pages/p0262.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "b9a3f0cf94b42d3974efc4393af5cad33133f21df8f3b74a638716609332cd6d"
+        },
+        {
+          "pdf_page": 263,
+          "path": "knowledge/slide/pages/p0263.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "3181f47d9353be088eebc4c2260f333040a14647d796abd744de82afb0889c00"
+        },
+        {
+          "pdf_page": 264,
+          "path": "knowledge/slide/pages/p0264.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "LOW_TEXT",
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "d09fef79c6b63470bd76f77bc0a0cc933946f2e310939ae243b19e0a65900c91"
+        },
+        {
+          "pdf_page": 265,
+          "path": "knowledge/slide/pages/p0265.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "41bab8a179bfe1682d70859cbe3c693b37bba5b802db0731c91f803f2174dc01"
+        },
+        {
+          "pdf_page": 266,
+          "path": "knowledge/slide/pages/p0266.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "d7555701e02ff5ef655382a3a11b0432e41085295aa5d09069a884b1b02e0dee"
+        },
+        {
+          "pdf_page": 267,
+          "path": "knowledge/slide/pages/p0267.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "41e77835093fa5138a0b1e6792c24bf4753b6f6739b5cd79c7475f0297fa98f5"
+        },
+        {
+          "pdf_page": 268,
+          "path": "knowledge/slide/pages/p0268.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "LOW_TEXT",
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "7224ab90bdad7473b99be74a252d88c5c712c0b100b70d8e189716c54c8ca6dc"
+        },
+        {
+          "pdf_page": 269,
+          "path": "knowledge/slide/pages/p0269.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "87d82932c43e4ff11a647ce3e7b9d8c7677eacd0503d9114d9a27ffd8cf02df4"
+        },
+        {
+          "pdf_page": 270,
+          "path": "knowledge/slide/pages/p0270.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "b241f17549d0179c307888390c2407597d19dc638e5d2f3b3c0c14239042ced1"
+        },
+        {
+          "pdf_page": 271,
+          "path": "knowledge/slide/pages/p0271.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "dd3545825f29a277dc1589597a6cc5b385f4876a064619e088d95f03f022b8ae"
+        },
+        {
+          "pdf_page": 272,
+          "path": "knowledge/slide/pages/p0272.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "dbad99a3b216906825d6aaeee04b3cf604c0d270214f2ad4aa24fbafe239f979"
+        },
+        {
+          "pdf_page": 273,
+          "path": "knowledge/slide/pages/p0273.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "8262ab9ff20b14f21fef9ff556665472b580bb70aca62e619e6faea5b475f37b"
+        },
+        {
+          "pdf_page": 274,
+          "path": "knowledge/slide/pages/p0274.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "28ef4b7e6c08b854526727da8ac01979d80dd20a18a5938aba87d42d65991adc"
+        },
+        {
+          "pdf_page": 275,
+          "path": "knowledge/slide/pages/p0275.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "c775394a8c9862a284fffa9b8f2b955247f3bdc957253dc8f1c7c850bf1cf28e"
+        },
+        {
+          "pdf_page": 276,
+          "path": "knowledge/slide/pages/p0276.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "9fe3f163a3b06ee972b48cf7ee7b5f2bd683a9f726705029d229ecfed4c1bbf3"
+        },
+        {
+          "pdf_page": 277,
+          "path": "knowledge/slide/pages/p0277.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "917aa0dd24a6be25244d5bfb61815cc59a915ea9a4870ed47b9ad86f414b986d"
+        },
+        {
+          "pdf_page": 278,
+          "path": "knowledge/slide/pages/p0278.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "d22fb982d9b37ea1d65f30e2f72992a4437ea21bb7e79336bc0460ebe635533a"
+        },
+        {
+          "pdf_page": 279,
+          "path": "knowledge/slide/pages/p0279.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT",
+            "MATH_REVIEW_REQUIRED"
+          ],
+          "content_sha256": "3793032235b8249931e1f7814a41157f4c79727f6251614e392a0bb5014bc58f"
+        },
+        {
+          "pdf_page": 280,
+          "path": "knowledge/slide/pages/p0280.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT",
+            "MATH_REVIEW_REQUIRED"
+          ],
+          "content_sha256": "41e67d1d225b93a423febff73fd109f834054663a0fdeb24d03e067cfb0045a2"
+        },
+        {
+          "pdf_page": 281,
+          "path": "knowledge/slide/pages/p0281.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT",
+            "MATH_REVIEW_REQUIRED"
+          ],
+          "content_sha256": "eb085ad40afcdf9e82a3032a7f69ab8972119122aa51186006fcfadc3be13dd5"
+        },
+        {
+          "pdf_page": 282,
+          "path": "knowledge/slide/pages/p0282.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "661abde8416e698a5676ab215d2d9bb2b9e0136c66e14e0022efc6779b8309d0"
+        },
+        {
+          "pdf_page": 283,
+          "path": "knowledge/slide/pages/p0283.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "LOW_TEXT",
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "d06ca3ea26e078d8922fb26e3c1d8a7ef5a569ab8b81dcdac2e0da9b5bdc5343"
+        },
+        {
+          "pdf_page": 284,
+          "path": "knowledge/slide/pages/p0284.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "fcd8ffc9669620cc88eb0526a15bf1f3d03abeebf824a8e56026c3f2dc3e0174"
+        },
+        {
+          "pdf_page": 285,
+          "path": "knowledge/slide/pages/p0285.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "LOW_TEXT",
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "254f24924901a5a0de1ecb9d7412584ebf433594a61f2ae4a807152625644943"
+        },
+        {
+          "pdf_page": 286,
+          "path": "knowledge/slide/pages/p0286.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "LOW_TEXT",
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "423d117c6d8b024bdf6eb06deb5fc67a605f19a2f38f25ceb73473e139c1c6ed"
+        },
+        {
+          "pdf_page": 287,
+          "path": "knowledge/slide/pages/p0287.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT",
+            "MATH_REVIEW_REQUIRED"
+          ],
+          "content_sha256": "117db7de7c6a87d7e700d0d775e52b7e9b08d4d2851437972247340a77df80d5"
+        },
+        {
+          "pdf_page": 288,
+          "path": "knowledge/slide/pages/p0288.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "LOW_TEXT",
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "a851fcc6f5f81a7c109af7c5dfdeafb6fde414af2f1082619e592cd7071e0a76"
+        },
+        {
+          "pdf_page": 289,
+          "path": "knowledge/slide/pages/p0289.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "LOW_TEXT",
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "8c4369dc91be2d70e6823ff01bbfd273a3731c0a5b43e17a1f188fecd4963956"
+        },
+        {
+          "pdf_page": 290,
+          "path": "knowledge/slide/pages/p0290.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "d0bc1373f3ab09e1a72de06215c3e05df0aea0d27321c8d7bac8979373185ee5"
+        },
+        {
+          "pdf_page": 291,
+          "path": "knowledge/slide/pages/p0291.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "76caaabddd3e91c54187f1d048c55b8544276a035b7abac7bf2ca12fab07c6e8"
+        },
+        {
+          "pdf_page": 292,
+          "path": "knowledge/slide/pages/p0292.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "7f66ce0173f84697c0b740f69ea3a6a1cc24285a2d7e783d72b7ea6988e8d2bc"
+        },
+        {
+          "pdf_page": 293,
+          "path": "knowledge/slide/pages/p0293.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "LOW_TEXT",
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "49d333b442bab1590b82b80c37d9d32261ca4406f6f4a683ba900944f3a2e547"
+        },
+        {
+          "pdf_page": 294,
+          "path": "knowledge/slide/pages/p0294.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT",
+            "MATH_REVIEW_REQUIRED"
+          ],
+          "content_sha256": "c7884eb5ab2421bcf65aeb664fba7f6a6f0860a03c6de328b5b74d976d7e1293"
+        },
+        {
+          "pdf_page": 295,
+          "path": "knowledge/slide/pages/p0295.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "LOW_TEXT",
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "0871350fb8366f7a3d9a0973f91d99a994c64244508344f1c6b3c677c66d4dbb"
+        },
+        {
+          "pdf_page": 296,
+          "path": "knowledge/slide/pages/p0296.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "MATH_REVIEW_REQUIRED"
+          ],
+          "content_sha256": "9ef8af4ae7f8d564382f1468b27ab8df6e5ca274480fd57cea721c348f12ef6b"
+        },
+        {
+          "pdf_page": 297,
+          "path": "knowledge/slide/pages/p0297.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "b99cc59d85f2ebaadffb2e5440cc2f45e4a3f97435b9c4fbc9e41c9fa6f01f14"
+        },
+        {
+          "pdf_page": 298,
+          "path": "knowledge/slide/pages/p0298.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "e55e50d0dd28c720a7649434e9af85a1542e96bf4f88a40fac60d3439828e21d"
+        },
+        {
+          "pdf_page": 299,
+          "path": "knowledge/slide/pages/p0299.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "6ed5c5c44bd6b5f08460c939e8df75de4590f12ce0bc329ca22cbbb4caa5ffa4"
+        },
+        {
+          "pdf_page": 300,
+          "path": "knowledge/slide/pages/p0300.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "LOW_TEXT",
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "9adb091c981f9bd76dbecf33d81046a7493e3193762b641fbb71f6679697c04e"
+        },
+        {
+          "pdf_page": 301,
+          "path": "knowledge/slide/pages/p0301.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "2d6d98c5e5dc4606aa932eab4d764c6b8784cd7c1e050cc3efcd584954e514f4"
+        },
+        {
+          "pdf_page": 302,
+          "path": "knowledge/slide/pages/p0302.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "cfa191fceca17d3e471bb6ca382f7c8e157077b47857dc1a5785a56d5595d669"
+        },
+        {
+          "pdf_page": 303,
+          "path": "knowledge/slide/pages/p0303.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "b5ea68644375f679511b60943eec0943bdb891865df0713332cd7ee7508bb528"
+        },
+        {
+          "pdf_page": 304,
+          "path": "knowledge/slide/pages/p0304.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "LOW_TEXT",
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "d3bf9a9d5c4ab5c0ebbaaa7145aaf629204495b4d6fcf162ce2bcaa41997c3ce"
+        },
+        {
+          "pdf_page": 305,
+          "path": "knowledge/slide/pages/p0305.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "cce6faff0731dd96c5bce4c98f221ccc204717a6d620a725088c5a9f475e9836"
+        },
+        {
+          "pdf_page": 306,
+          "path": "knowledge/slide/pages/p0306.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "LOW_TEXT",
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "2519636ce5dff456d95b8a9b7d83fe6136e8d94f5e2982f8036ee18e4bdfc11f"
+        },
+        {
+          "pdf_page": 307,
+          "path": "knowledge/slide/pages/p0307.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "bec3c46580a1d30a2ca607b337f8e05926fb389fe00a886bf5e8876309f1bd87"
+        },
+        {
+          "pdf_page": 308,
+          "path": "knowledge/slide/pages/p0308.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "LOW_TEXT",
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "1902182ecc18cc7214e177025a064ec71965e01664f622a2370a045352910a97"
+        },
+        {
+          "pdf_page": 309,
+          "path": "knowledge/slide/pages/p0309.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "dc3d53deded08fac8dbd075b68c1abb68cb0a73ec7c16cad09cb2f2af6edf386"
+        },
+        {
+          "pdf_page": 310,
+          "path": "knowledge/slide/pages/p0310.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "LOW_TEXT",
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "328f9f4d49c5758e207e3a246db498c1dddaae84fcd1dbcef23980b936f8cac4"
+        },
+        {
+          "pdf_page": 311,
+          "path": "knowledge/slide/pages/p0311.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "LOW_TEXT",
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "600e1fb91d2a074308302bbde3d735de98bc22e4458858f227a426394e7c9d30"
+        },
+        {
+          "pdf_page": 312,
+          "path": "knowledge/slide/pages/p0312.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "956e158d5dc6d3a03058cd1c92387deccc7e5340d812127c83906d4f396ac538"
+        },
+        {
+          "pdf_page": 313,
+          "path": "knowledge/slide/pages/p0313.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "e0977709c95b431873e8c82cc1e137e7e4f98c58329c897e110d8bc44ace0447"
+        },
+        {
+          "pdf_page": 314,
+          "path": "knowledge/slide/pages/p0314.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "f8b6466704f9791795ac6e7b2596e836709666038898cc03c56c9992a63be4a5"
+        },
+        {
+          "pdf_page": 315,
+          "path": "knowledge/slide/pages/p0315.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "902875368841038fd912a6a5ea073bc4463a0db826e05409cd30c31fd68a3c07"
+        },
+        {
+          "pdf_page": 316,
+          "path": "knowledge/slide/pages/p0316.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "8cdc6202fb9c83a9ef788cc749f9211f67eba4dba6e9e816734c5f551285b85b"
+        },
+        {
+          "pdf_page": 317,
+          "path": "knowledge/slide/pages/p0317.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "d5782268b32bf8aa7b3bfb4b0a3e34a0f43578fbeb1b372fe0da4e574e50227f"
+        },
+        {
+          "pdf_page": 318,
+          "path": "knowledge/slide/pages/p0318.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "33ca589a7957fcd3fd6809d11c02493b184046992759ad11ed55977b791a4216"
+        },
+        {
+          "pdf_page": 319,
+          "path": "knowledge/slide/pages/p0319.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "a0953d1b2a4322d33508170e9959f0461b486801b108038b738021703232c0b4"
+        },
+        {
+          "pdf_page": 320,
+          "path": "knowledge/slide/pages/p0320.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "706ce4408ae8400b7691d5b4dac4737c5ce8fb27a94e95b2262a1296c363e27b"
+        },
+        {
+          "pdf_page": 321,
+          "path": "knowledge/slide/pages/p0321.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "9361301229f693a40b175f2bfc639c36e7f72cb607ae833ab55b0c582b1b9eee"
+        },
+        {
+          "pdf_page": 322,
+          "path": "knowledge/slide/pages/p0322.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "5a2e03fcfe5c1b8701f942600d74430f0df33d3a54e8563084f1bd6590ab91e3"
+        },
+        {
+          "pdf_page": 323,
+          "path": "knowledge/slide/pages/p0323.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "MATH_REVIEW_REQUIRED"
+          ],
+          "content_sha256": "11dc69c17b5854f0e1b9e6034732b90968b9260bd0c049f437a1e73b79853cc3"
+        },
+        {
+          "pdf_page": 324,
+          "path": "knowledge/slide/pages/p0324.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "f964d2fd47bcbab927f5d5c878492e7576c0eb9c83d84ccaaeff0b6d2ba2b511"
+        },
+        {
+          "pdf_page": 325,
+          "path": "knowledge/slide/pages/p0325.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "51e32299eedaca16c069a09b2a7b9c4185da236d4bda28e112b2d55fc8587d34"
+        },
+        {
+          "pdf_page": 326,
+          "path": "knowledge/slide/pages/p0326.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "8b27080d7ffc22559b2901d1af8f7a725801bdf1044cfe19db2a163f544eec11"
+        },
+        {
+          "pdf_page": 327,
+          "path": "knowledge/slide/pages/p0327.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "d830c1402d090ac666be42c96cbf19db66ad5b3a92b097eefccee13ad728cfa2"
+        },
+        {
+          "pdf_page": 328,
+          "path": "knowledge/slide/pages/p0328.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "b8383f6583dec9f6a564d1cc7252c7d74a28b3140b710d6299a5c2cdfd734a35"
+        },
+        {
+          "pdf_page": 329,
+          "path": "knowledge/slide/pages/p0329.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "ded5af2043de7b16e9dd009d5677f90dfa22f43dd795c8b77a1bfe1ca5dd51f1"
+        },
+        {
+          "pdf_page": 330,
+          "path": "knowledge/slide/pages/p0330.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "LOW_TEXT",
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "ab41ad83ca826612be0861404ea921c9322936399859528dae5f62d41b84ebd4"
+        },
+        {
+          "pdf_page": 331,
+          "path": "knowledge/slide/pages/p0331.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "LOW_TEXT",
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "f7ea3b6b4696e9f29152c2e5b6576fe796ef8789cac2568ac7e6ed121337af99"
+        },
+        {
+          "pdf_page": 332,
+          "path": "knowledge/slide/pages/p0332.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "LOW_TEXT",
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "ab9d994781ba9f4ecb5f03c1341e872cc704143f753a93a3cf4ee6d9c4f3e261"
+        },
+        {
+          "pdf_page": 333,
+          "path": "knowledge/slide/pages/p0333.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "199fd172c70583629dc67a56d73068b9da736338a478f5c9a3f9b7b8b5a2b864"
+        },
+        {
+          "pdf_page": 334,
+          "path": "knowledge/slide/pages/p0334.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "MATH_REVIEW_REQUIRED"
+          ],
+          "content_sha256": "1e5ec4cdf123a2624287052441b819e1dbfa5ed59de372833d6d50fde652a3c7"
+        },
+        {
+          "pdf_page": 335,
+          "path": "knowledge/slide/pages/p0335.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "4c18c3c67f6ed3c9ea29ef16178a637af40357d523a8c0bf96742ef4491d0a53"
+        },
+        {
+          "pdf_page": 336,
+          "path": "knowledge/slide/pages/p0336.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "3533b77e26334e5ee42715aebf5230701c30c0edfe096ee798ac57671f44151b"
+        },
+        {
+          "pdf_page": 337,
+          "path": "knowledge/slide/pages/p0337.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "ff7d69389651c27cec3f51c0fc8a1f37b5ce00d864ca644bb908a317bc84855e"
+        },
+        {
+          "pdf_page": 338,
+          "path": "knowledge/slide/pages/p0338.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "0727250dcae240292710e6a6aa14bc9d8d386c0464effb67a34f1ac8677f557a"
+        },
+        {
+          "pdf_page": 339,
+          "path": "knowledge/slide/pages/p0339.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "55285dbec6853a59818f7080aeb44c29f4559fe06e6011c54170c886b66ef925"
+        },
+        {
+          "pdf_page": 340,
+          "path": "knowledge/slide/pages/p0340.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "7ce1010eec7f88c5221d56e974c9970b2e79a24fce33072bc79aaae3307627c4"
+        },
+        {
+          "pdf_page": 341,
+          "path": "knowledge/slide/pages/p0341.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "17602411f1082f84e4aaed96d80d73c39c239e89e7f7440966060f1fc0783c30"
+        },
+        {
+          "pdf_page": 342,
+          "path": "knowledge/slide/pages/p0342.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "9a9c246cabbe7ace2f287c44f510e85ee91f994ce3f62cc3bb6b0a2a305603e6"
+        },
+        {
+          "pdf_page": 343,
+          "path": "knowledge/slide/pages/p0343.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "14c355082ed7d8d13df718006879ad3460fc1ee96b4b4cbdff949ff755d49a32"
+        },
+        {
+          "pdf_page": 344,
+          "path": "knowledge/slide/pages/p0344.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "49be8bcac30ead07eee8247c36ff417add60c59c19f874418523acdf59dae655"
+        },
+        {
+          "pdf_page": 345,
+          "path": "knowledge/slide/pages/p0345.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "b69997d9e4878c54153eb1b6a672655a67247e0a8bde8ae3221857c14d5f84d2"
+        },
+        {
+          "pdf_page": 346,
+          "path": "knowledge/slide/pages/p0346.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "3718013f4bfa1279c7dd61dff125956e78d3a394f9e78cb8189cfdf99b71ff5c"
+        },
+        {
+          "pdf_page": 347,
+          "path": "knowledge/slide/pages/p0347.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "d0a3af231f2b9bb971e04f9dd78fba9c8868eb7715d8715a592dd29393fbc2b3"
+        },
+        {
+          "pdf_page": 348,
+          "path": "knowledge/slide/pages/p0348.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "4c22c233775f7d8fd6ccf70ab0d784c20d69d6200b7b1e4641fe7073ac41d6bc"
+        },
+        {
+          "pdf_page": 349,
+          "path": "knowledge/slide/pages/p0349.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "b748061cc7cd0669a87d1a54c336b2722c060c4b1d7cb9b0e389633aeefcaee1"
+        },
+        {
+          "pdf_page": 350,
+          "path": "knowledge/slide/pages/p0350.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "22e9916475c4e17886a73f2e17eebdb35030a908cc015094bd53e2beaa1e9709"
+        },
+        {
+          "pdf_page": 351,
+          "path": "knowledge/slide/pages/p0351.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "a0ed51dd930037e1aaf7be1abeb651d98683d5118a2a8329216dd9e6936c5711"
+        },
+        {
+          "pdf_page": 352,
+          "path": "knowledge/slide/pages/p0352.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "350e4a0c276b83ae51f782654f79168bee6167e12e998d6e74deb77e33fffcd1"
+        },
+        {
+          "pdf_page": 353,
+          "path": "knowledge/slide/pages/p0353.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "4fd243a4514c37bb79dfd6a7e6e005c55b722daff4b31e01e09a7e3a7f953058"
+        },
+        {
+          "pdf_page": 354,
+          "path": "knowledge/slide/pages/p0354.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "dec6f3c99d101cb415b7ddff1016d46f4517038a31a329c636ad7352b29886fb"
+        },
+        {
+          "pdf_page": 355,
+          "path": "knowledge/slide/pages/p0355.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "a34b50b7e50a6e0492f5ad3224b711cf9f65783bd72690cd6e948fa4d6472cac"
+        },
+        {
+          "pdf_page": 356,
+          "path": "knowledge/slide/pages/p0356.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "314a717544757592c6de19439cd6f616e1cf594eea5cd612731140f9d9b3cbdc"
+        },
+        {
+          "pdf_page": 357,
+          "path": "knowledge/slide/pages/p0357.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "d05295b543c5e670a432aef16e695f725fe8d352439e3ad718fc3e494ae5111e"
+        },
+        {
+          "pdf_page": 358,
+          "path": "knowledge/slide/pages/p0358.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "MATH_REVIEW_REQUIRED"
+          ],
+          "content_sha256": "92b3dbac6a12bd017723b3cc45baebaa2c7d77f53a4abdc91ac6ae0daca59662"
+        },
+        {
+          "pdf_page": 359,
+          "path": "knowledge/slide/pages/p0359.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "e0c3a0bb92b3552b15ba8d878dc897d44a8162129d76eff70ce3c5658a191e5e"
+        },
+        {
+          "pdf_page": 360,
+          "path": "knowledge/slide/pages/p0360.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "b8fd3f8ea68d35cd2766d46bbed501c30abe95d02f8b36808dd3642fec49c7b5"
+        },
+        {
+          "pdf_page": 361,
+          "path": "knowledge/slide/pages/p0361.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "c46758f9fe2d6c7d186b533d87434742ea48085715ed0c21e768b0e0f2323925"
+        },
+        {
+          "pdf_page": 362,
+          "path": "knowledge/slide/pages/p0362.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "168c77a47f3b2df7e0059b7f83d134348c565990389ef764e5cb9d473e0efd39"
+        },
+        {
+          "pdf_page": 363,
+          "path": "knowledge/slide/pages/p0363.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "83688c50595cd2331096f81353d3a602aefeb88d08920a7a079af6b8c7a257de"
+        },
+        {
+          "pdf_page": 364,
+          "path": "knowledge/slide/pages/p0364.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "06f82f149b4a8af3b461ef8410d92638a76159d8050e3c3a28633a7d90bb98b3"
+        },
+        {
+          "pdf_page": 365,
+          "path": "knowledge/slide/pages/p0365.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "a252c80e84ed731525b5dc815412851cc9c5df783a76a46215992157ba021745"
+        },
+        {
+          "pdf_page": 366,
+          "path": "knowledge/slide/pages/p0366.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "7e052cf46fc1b7f3b76056d39e6f3d76b22657702a716922c8d0c466b9d63db8"
+        },
+        {
+          "pdf_page": 367,
+          "path": "knowledge/slide/pages/p0367.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "0b610d16dcdcaad4e2293139904f8219325c5527c5a36c22d247b1694cf82dfc"
+        },
+        {
+          "pdf_page": 368,
+          "path": "knowledge/slide/pages/p0368.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "LOW_TEXT",
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "203184d99776bfa7ed687a66b36d698e4f68620ba84d2533b342eae399af3658"
+        },
+        {
+          "pdf_page": 369,
+          "path": "knowledge/slide/pages/p0369.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "LOW_TEXT",
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "e19ff96dc2a30d8b0fe16f1a35b83025848775677814eeb05636b722b3d66c3b"
+        },
+        {
+          "pdf_page": 370,
+          "path": "knowledge/slide/pages/p0370.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "5487cb073fb453d00a11a74275c41a1aa0df20440b0f764ab521c25f0266e137"
+        },
+        {
+          "pdf_page": 371,
+          "path": "knowledge/slide/pages/p0371.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "LOW_TEXT",
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "be003ca5a273b683a23c843c78159ff84db7f930854ab2465eb44233acccd05d"
+        },
+        {
+          "pdf_page": 372,
+          "path": "knowledge/slide/pages/p0372.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "LOW_TEXT",
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "fcc1585e2e245cf5f572927fc01e422811ff81b13616eb7c2c1e668b400459bb"
+        },
+        {
+          "pdf_page": 373,
+          "path": "knowledge/slide/pages/p0373.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "LOW_TEXT",
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "388598e03fe2df2a8221cd8d5c23f674cc4343924916fc243b264833d98621b2"
+        },
+        {
+          "pdf_page": 374,
+          "path": "knowledge/slide/pages/p0374.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "c77ece224d7a324c5c42299c35855e55e7b5f51651406a6fb424c88d3a848ea6"
+        },
+        {
+          "pdf_page": 375,
+          "path": "knowledge/slide/pages/p0375.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "509d748b60ada30f24740cc10443de81136e37181974806a50b827e8d69127c3"
+        },
+        {
+          "pdf_page": 376,
+          "path": "knowledge/slide/pages/p0376.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "dd7cac06c274ab4126fb661259cf0b1d86321b1ae0df468979157b9fc8f09ef4"
+        },
+        {
+          "pdf_page": 377,
+          "path": "knowledge/slide/pages/p0377.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "6dc601ffdcda49870b2ce496adc080367385054b050cae6f9e298feaae0240a7"
+        },
+        {
+          "pdf_page": 378,
+          "path": "knowledge/slide/pages/p0378.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "cff50cec35d505b9d0406ebb422a827e102656c01dd70f91dae94ae31f3b569e"
+        },
+        {
+          "pdf_page": 379,
+          "path": "knowledge/slide/pages/p0379.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "LOW_TEXT",
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "a24dfa1f4808facd2052aafe4e9b69e48ec9eb93e4dff3a69f4566d180b6d155"
+        },
+        {
+          "pdf_page": 380,
+          "path": "knowledge/slide/pages/p0380.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "e9a8c004d053c76e4c826f0bae0c773da8a12dacf1238e3a3c4702678eeb0828"
+        },
+        {
+          "pdf_page": 381,
+          "path": "knowledge/slide/pages/p0381.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "LOW_TEXT",
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "22c39ff74cb02d91a57b04f87edead127c8721bdb1a99605be0d5cf25e07302c"
+        },
+        {
+          "pdf_page": 382,
+          "path": "knowledge/slide/pages/p0382.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "d9b0c1c2bf5e3753c808b034b335c836da4ec1ec48e737e257dc3056cfef0888"
+        },
+        {
+          "pdf_page": 383,
+          "path": "knowledge/slide/pages/p0383.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "b45eb4491b85631f2de42de3b7d289aa162cf4b4fd2a214493c8b059fea2590f"
+        },
+        {
+          "pdf_page": 384,
+          "path": "knowledge/slide/pages/p0384.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "944043db6c4dcdc3fe8de641161966452b57d9554460fa15a4fb751898a72005"
+        },
+        {
+          "pdf_page": 385,
+          "path": "knowledge/slide/pages/p0385.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "LOW_TEXT",
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "7a6127f8b895cafaf542483b702213c4d6ab3fc9db95215ef3fb6dd8deac4aae"
+        },
+        {
+          "pdf_page": 386,
+          "path": "knowledge/slide/pages/p0386.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "07d99007643e96ae9b0562cca2fad43bdc12a772dfed612bd4159c97ea82e71a"
+        },
+        {
+          "pdf_page": 387,
+          "path": "knowledge/slide/pages/p0387.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "e3d0ba41a3b6795eeb51c6d49c93fe377e84a8f3fc48936483605146cfa724b0"
+        },
+        {
+          "pdf_page": 388,
+          "path": "knowledge/slide/pages/p0388.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "ea3310d440a9ec9245d5d07fb4211a7a9761aac44e3905fa8511088924292e5c"
+        },
+        {
+          "pdf_page": 389,
+          "path": "knowledge/slide/pages/p0389.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "LOW_TEXT",
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "374482b90d87c9325000a713f7da12d1514b77ab8e9a506b53e64cc089730580"
+        },
+        {
+          "pdf_page": 390,
+          "path": "knowledge/slide/pages/p0390.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "7e8b24a39fc07a75118eeebf12c6148d85a5f55cf4db171e79094852bdeacf62"
+        },
+        {
+          "pdf_page": 391,
+          "path": "knowledge/slide/pages/p0391.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "07fdb3bccda5d509bef5257dbf331cd8b2d345762fd7231457ad249c26ada6b7"
+        },
+        {
+          "pdf_page": 392,
+          "path": "knowledge/slide/pages/p0392.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "1ee6248494546f66bae9ad27468dad4e202474c236f461d85da50856bb754679"
+        },
+        {
+          "pdf_page": 393,
+          "path": "knowledge/slide/pages/p0393.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "2acf7d0fa840db1e21c61792b6b0df2ffb46be5337b56781d035f9cc74f5bb4e"
+        },
+        {
+          "pdf_page": 394,
+          "path": "knowledge/slide/pages/p0394.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "b0c8a2dabf116d0e7a5515ae842f5058534330863ae3f48ff79529426fe85b4f"
+        },
+        {
+          "pdf_page": 395,
+          "path": "knowledge/slide/pages/p0395.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "LOW_TEXT",
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "6df007c683e53f847dd2bf8869b89ba2654169ae322e7321a6982382e5bd90e7"
+        },
+        {
+          "pdf_page": 396,
+          "path": "knowledge/slide/pages/p0396.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "b4cc2b38c7d1034cb532ace5adc180b2dc90606881da1bc501d0eac7d471a78f"
+        },
+        {
+          "pdf_page": 397,
+          "path": "knowledge/slide/pages/p0397.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "ec6966f6671056f2c80d37f75412edf8840f80cfe250b8e163534f8b550a6822"
+        },
+        {
+          "pdf_page": 398,
+          "path": "knowledge/slide/pages/p0398.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "LOW_TEXT"
+          ],
+          "content_sha256": "801fb83469e99d240a7ebf31945371da7cbd95865c6294979f9de098a2619f90"
+        },
+        {
+          "pdf_page": 399,
+          "path": "knowledge/slide/pages/p0399.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "44acd0cadb575200a96e0ac339aef123eb8f3b1a484587aadb2d65b623a517b8"
+        },
+        {
+          "pdf_page": 400,
+          "path": "knowledge/slide/pages/p0400.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "LOW_TEXT",
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "c71cc5bbe663628a58eda9b4cd6b63a62e24522db566506a1559a0cdad148e83"
+        },
+        {
+          "pdf_page": 401,
+          "path": "knowledge/slide/pages/p0401.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "68324c6ae21dfa583fd253585615a5724ed3088dc53ccde080644f6cf5f019af"
+        },
+        {
+          "pdf_page": 402,
+          "path": "knowledge/slide/pages/p0402.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "2ee034f3efda64b3ade64b80a47acedc818a5bcc123d5b0b9a6b422e99e13a19"
+        },
+        {
+          "pdf_page": 403,
+          "path": "knowledge/slide/pages/p0403.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "dd1ee55817a827d18052046937c17ebf976c88b2086bf31abd64507b48854df1"
+        },
+        {
+          "pdf_page": 404,
+          "path": "knowledge/slide/pages/p0404.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "3c0fffd3d211ab7d8fd3fef450b700d84ced9478a576660f8c948a83e00ac63c"
+        },
+        {
+          "pdf_page": 405,
+          "path": "knowledge/slide/pages/p0405.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "MATH_REVIEW_REQUIRED"
+          ],
+          "content_sha256": "7d338714deddaec7ce3f2ff1bbb84a77e4c90c1025d80792070a3c4b0870e738"
+        },
+        {
+          "pdf_page": 406,
+          "path": "knowledge/slide/pages/p0406.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "21d9535de2c480f6dbefe7f9bf20fdc15f83da6300500fae6250a9d3f189c04c"
+        },
+        {
+          "pdf_page": 407,
+          "path": "knowledge/slide/pages/p0407.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "0dcb813be9d348cf450e84ed879856c6baef5ec2b8419cbf47f1f5e52a9cf60f"
+        },
+        {
+          "pdf_page": 408,
+          "path": "knowledge/slide/pages/p0408.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "66b32b5a223b879a12fa4a5b1a7ff8b9356bac79d62c9ee75260601fdf11c6cb"
+        },
+        {
+          "pdf_page": 409,
+          "path": "knowledge/slide/pages/p0409.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "fc11da26bb0597a65fc320f71e0efb7d62d6e1173b800389d5560e11d2bfc199"
+        },
+        {
+          "pdf_page": 410,
+          "path": "knowledge/slide/pages/p0410.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "4ff40b6591d5655e61082574177ed5fce5fa2e9eed92bc44c5fb8da83b9f6e93"
+        },
+        {
+          "pdf_page": 411,
+          "path": "knowledge/slide/pages/p0411.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "9ff3b720615696c2766dad7f4d4226827bf6c88b852617814c6f45d0de95ccc1"
+        },
+        {
+          "pdf_page": 412,
+          "path": "knowledge/slide/pages/p0412.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "449fdd3d95002b509c2162a8aded386021801c733d001382f07c60a6ede2a148"
+        },
+        {
+          "pdf_page": 413,
+          "path": "knowledge/slide/pages/p0413.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "219b5e66c8343c1a0e9b91e293b1b2c316f25a1bed7769040a8c38a451a3082d"
+        },
+        {
+          "pdf_page": 414,
+          "path": "knowledge/slide/pages/p0414.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "61ca034220a9ca661ff5f95a52728d1bb268e42f82438ad5e5c6e11c34dffecb"
+        },
+        {
+          "pdf_page": 415,
+          "path": "knowledge/slide/pages/p0415.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "c2e621c3d07d3798b61deaaaf6facfac16b4c209d9f0654766feb85242e9f0b6"
+        },
+        {
+          "pdf_page": 416,
+          "path": "knowledge/slide/pages/p0416.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "fb1c8dcabf20f5506d2bc1a17e176aa80c164d11220bed981a97a398cf7cc533"
+        },
+        {
+          "pdf_page": 417,
+          "path": "knowledge/slide/pages/p0417.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "6db42e45e319100a8f2a116aa72ddb9f5fb2474615260a025334a8e4141a962a"
+        },
+        {
+          "pdf_page": 418,
+          "path": "knowledge/slide/pages/p0418.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "22a8d5849ad037651ab587873c906c1a3c4158bbc1c5688dd9ce47f11fd7e270"
+        },
+        {
+          "pdf_page": 419,
+          "path": "knowledge/slide/pages/p0419.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "837e89ceea7752382b80e35663a4a01199237fd7d2179e2b6de19f75393ce296"
+        },
+        {
+          "pdf_page": 420,
+          "path": "knowledge/slide/pages/p0420.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "20232f15a645a1cb7b1513ee4e98abf1f325898da5c47b94617398794e12d63c"
+        },
+        {
+          "pdf_page": 421,
+          "path": "knowledge/slide/pages/p0421.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "463bbc39bc7da0daaf79cad66b9946a4e855b9e5a5e62ba36764a36c2247ad60"
+        },
+        {
+          "pdf_page": 422,
+          "path": "knowledge/slide/pages/p0422.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "fd3fae8a0373fbeeac8df4bd8d969b39783c4c6f5d09025183f549a944235e72"
+        },
+        {
+          "pdf_page": 423,
+          "path": "knowledge/slide/pages/p0423.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "4827b07607f31460f63b22282af1d01b317b398ea52ec725b674b65af37ac018"
+        },
+        {
+          "pdf_page": 424,
+          "path": "knowledge/slide/pages/p0424.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "4fec5999e37b54f4a17903c2c1026581a46f7c140174fc463c048ed59b8c5aaa"
+        },
+        {
+          "pdf_page": 425,
+          "path": "knowledge/slide/pages/p0425.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "d552a586d5140fbf51f202bd566ede032f3413562893f777e44ba6c05f689fde"
+        },
+        {
+          "pdf_page": 426,
+          "path": "knowledge/slide/pages/p0426.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "361c4d05c88b42dee8360810750eb4b9e503d37a6ee5cd9d43fb605632f42785"
+        },
+        {
+          "pdf_page": 427,
+          "path": "knowledge/slide/pages/p0427.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "f7c946fb7ac36e9c6e026387239996ddb3ae3a312de8e52e2358a8def89f7c0f"
+        },
+        {
+          "pdf_page": 428,
+          "path": "knowledge/slide/pages/p0428.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "4405977ebb64babbd46495d13b180263d919220d88dd0963c618b98b70647de7"
+        },
+        {
+          "pdf_page": 429,
+          "path": "knowledge/slide/pages/p0429.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "d513ec3f56871de3c36941a2298916f30b0758daf86cc17a89167b6afa0f62fd"
+        },
+        {
+          "pdf_page": 430,
+          "path": "knowledge/slide/pages/p0430.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "e19ef98011b5f1a76863406e8cb6a820c3c393fe89641d932168f79648876f87"
+        },
+        {
+          "pdf_page": 431,
+          "path": "knowledge/slide/pages/p0431.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "662bffa070747424f05c2f281811bf363b3a796d06f8b01707bec3aa8f0a58fd"
+        },
+        {
+          "pdf_page": 432,
+          "path": "knowledge/slide/pages/p0432.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "d1a02b6249435ab74a870b6b43b353de38a94d0174500f936869b8b0eceb89a9"
+        },
+        {
+          "pdf_page": 433,
+          "path": "knowledge/slide/pages/p0433.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "7271ecb5110e9533b98ca85202648eb85a32d63daa6342172b89ae033bc227c3"
+        },
+        {
+          "pdf_page": 434,
+          "path": "knowledge/slide/pages/p0434.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "13a29a7e933ad4eb02591b2d5495e130491dc8bf2ae66524dcc0558b8fb5b07b"
+        },
+        {
+          "pdf_page": 435,
+          "path": "knowledge/slide/pages/p0435.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "23f9338c1cebd4be9b10533e36ae544664b349071896951a253e25ab97ba65b4"
+        },
+        {
+          "pdf_page": 436,
+          "path": "knowledge/slide/pages/p0436.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "38d784f39a44dbc2fa9cdb2f680c7f26182afe691317ca59219897dcb717abd4"
+        },
+        {
+          "pdf_page": 437,
+          "path": "knowledge/slide/pages/p0437.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "664fd39a5b6f9a601694bf707996dab1e1e1d3a949931e12376f98e6c82fa763"
+        },
+        {
+          "pdf_page": 438,
+          "path": "knowledge/slide/pages/p0438.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "4178f706d207b6cebe62efc7c60fc2622426ee1759e0a1ed41843c975e095c88"
+        },
+        {
+          "pdf_page": 439,
+          "path": "knowledge/slide/pages/p0439.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "4609fcce6cc57f6388f31f5ec9c95fb4ebe3bc2ab73c8bef8bec15d0da72b374"
+        },
+        {
+          "pdf_page": 440,
+          "path": "knowledge/slide/pages/p0440.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "6bec3e99c308c42e20c6b4d20e0c3da851a20c1ddecd41efc9c12399da9899de"
+        },
+        {
+          "pdf_page": 441,
+          "path": "knowledge/slide/pages/p0441.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "768ca8a089074896b577851d1533c617fb3b58764ef111ac34f358af6cc332fb"
+        },
+        {
+          "pdf_page": 442,
+          "path": "knowledge/slide/pages/p0442.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "4f011107719d44dfa3a2c651d4b50d3233a6581e6d6fcf45dd940990087ac379"
+        },
+        {
+          "pdf_page": 443,
+          "path": "knowledge/slide/pages/p0443.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "3cfabb70e68edbaf93b831275dbb112b107254e721500ea9e2c9e63ec70f9206"
+        },
+        {
+          "pdf_page": 444,
+          "path": "knowledge/slide/pages/p0444.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "34fe9ab263819ade3da0ad3a112523187bb48e042ae8f05fc69b79ce8e72eac1"
+        },
+        {
+          "pdf_page": 445,
+          "path": "knowledge/slide/pages/p0445.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "b5599668355a015e2416642c3037348116b29064ec324ef15d492f992fb0e53c"
+        },
+        {
+          "pdf_page": 446,
+          "path": "knowledge/slide/pages/p0446.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "7b9e6c27400141e29a1a04d4156d2b556ea1b2ca6021f6035e367bdaff7fd591"
+        },
+        {
+          "pdf_page": 447,
+          "path": "knowledge/slide/pages/p0447.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "b1b38a0ccb7d536c8f31d32be64423d214073b30b5f3c1260feab684b0b9dbe1"
+        },
+        {
+          "pdf_page": 448,
+          "path": "knowledge/slide/pages/p0448.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "LOW_TEXT",
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "1872da03f52cd7663d9145d633f93d61dfe14ac432799b9d01dac554831e6528"
+        },
+        {
+          "pdf_page": 449,
+          "path": "knowledge/slide/pages/p0449.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "f5face9786994d194ce9500625f37439ca8616fd319628bd024fbf05b70dd353"
+        },
+        {
+          "pdf_page": 450,
+          "path": "knowledge/slide/pages/p0450.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "9037222ef6beb5131766613b44095746aaa84d10e776d8686031639f6f1333fc"
+        },
+        {
+          "pdf_page": 451,
+          "path": "knowledge/slide/pages/p0451.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "a6b27f93671d77a82bb55fa5386bf49db0fb0a7f9f2d2c0ac0bea6693c10291a"
+        },
+        {
+          "pdf_page": 452,
+          "path": "knowledge/slide/pages/p0452.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "2f3bfb040aa4c102eea40371f420177f54170396396762449b1f2ed08f639c72"
+        },
+        {
+          "pdf_page": 453,
+          "path": "knowledge/slide/pages/p0453.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "bc50a9bb2924312c8ae6d5fca5fb3c1156c3f6de1767dca0e21a48083f0cf2c4"
+        },
+        {
+          "pdf_page": 454,
+          "path": "knowledge/slide/pages/p0454.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "d98583824817691cfcdd9b0fe7240ee2e46244bfe9837e703bb405d96bf52fe4"
+        },
+        {
+          "pdf_page": 455,
+          "path": "knowledge/slide/pages/p0455.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "0b1c083a4864093758fb91cf843de2cc59d0acca143d93bc534d514d732713ab"
+        },
+        {
+          "pdf_page": 456,
+          "path": "knowledge/slide/pages/p0456.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "437b252423a77ca6bc6c4c6cbbc102984b8eb4b0217323414f7010e948fd9d30"
+        },
+        {
+          "pdf_page": 457,
+          "path": "knowledge/slide/pages/p0457.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "fc1a5ca7d2913e9c065b61fee3d9115345725e1c892d6aac7c306829d684260c"
+        },
+        {
+          "pdf_page": 458,
+          "path": "knowledge/slide/pages/p0458.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "6d486ec96fd0b9bdd177920d0d00fa4d3bd049cc6b67e612154ca0f1f89e434a"
+        },
+        {
+          "pdf_page": 459,
+          "path": "knowledge/slide/pages/p0459.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "ea555691e7194196751b514493831a3e42b0f043d01da371c0beb69906253ae5"
+        },
+        {
+          "pdf_page": 460,
+          "path": "knowledge/slide/pages/p0460.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "a30db6d16c565ac05c9c6403b48e42268e275a0df731bef5be67b6e5883c5708"
+        },
+        {
+          "pdf_page": 461,
+          "path": "knowledge/slide/pages/p0461.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "95e3a6bd74de4357c99df027ea9f8ab32ead2506b5678837536302b27922c11b"
+        },
+        {
+          "pdf_page": 462,
+          "path": "knowledge/slide/pages/p0462.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "458b68c6d9ffb74bb274153f188f47cc0cb3912e5000178a973605f2411d036b"
+        },
+        {
+          "pdf_page": 463,
+          "path": "knowledge/slide/pages/p0463.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "4fed9969ef44674be9dd54509d8f7f62806354ad325702b070d7e48a4f0c5f1c"
+        },
+        {
+          "pdf_page": 464,
+          "path": "knowledge/slide/pages/p0464.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "51c82d3d988ca49a3d63f1de392102fbcfa2acfbd57fc3a5dbdd2fe6697795ab"
+        },
+        {
+          "pdf_page": 465,
+          "path": "knowledge/slide/pages/p0465.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "3ea8d819f283fec8786be8b7aec82e6af5a1f34b2c186a0534e99d01ab218b8b"
+        },
+        {
+          "pdf_page": 466,
+          "path": "knowledge/slide/pages/p0466.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "30dea656ef739301ef599e74afdc1223e04c16dd14684a91545fac61128ef0e1"
+        },
+        {
+          "pdf_page": 467,
+          "path": "knowledge/slide/pages/p0467.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "156dd919b1bd24d97a01f46f57abe9042c5c1e18dd16d4ee9eec69adfaebd727"
+        },
+        {
+          "pdf_page": 468,
+          "path": "knowledge/slide/pages/p0468.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "8ee639e71514abaaa97ec4b63eda2514550a75854e74c38bc17634f83b0a0954"
+        },
+        {
+          "pdf_page": 469,
+          "path": "knowledge/slide/pages/p0469.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "d68628d623593dbbe2b61cc8a13ffb21196d5e4b2ff15b42fe838fcecc98d6e4"
+        },
+        {
+          "pdf_page": 470,
+          "path": "knowledge/slide/pages/p0470.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "5fad9d25dc25dc2cce8d80840d6098a85376359fc21f3babd5daa69845e7aa5b"
+        },
+        {
+          "pdf_page": 471,
+          "path": "knowledge/slide/pages/p0471.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "f2b5057ae32644c4251a6adc71a658360f833a8d73515a64975ac48f954e51f7"
+        },
+        {
+          "pdf_page": 472,
+          "path": "knowledge/slide/pages/p0472.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "496597f03fdbdfebd9eefecaee2523f60929cbf8e0fc412af846e354733c77c4"
+        },
+        {
+          "pdf_page": 473,
+          "path": "knowledge/slide/pages/p0473.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "2cf03e6b61f91dc3a8e380547e835cb34a2b6c060c02772f1cd0105768fb254b"
+        },
+        {
+          "pdf_page": 474,
+          "path": "knowledge/slide/pages/p0474.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "5094ef127040333febe07429106ec39b98ff601bab73c46fb5565a9fd03d1de0"
+        },
+        {
+          "pdf_page": 475,
+          "path": "knowledge/slide/pages/p0475.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "954aa904c4831f84e967d63b0059a8c22ffd9f3702b72d14917cdf13665eb1d2"
+        },
+        {
+          "pdf_page": 476,
+          "path": "knowledge/slide/pages/p0476.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "MATH_REVIEW_REQUIRED"
+          ],
+          "content_sha256": "c5806dcb890391af3c458d4faa78a3aa3691d33b251f30dab464ffad4e2a1072"
+        },
+        {
+          "pdf_page": 477,
+          "path": "knowledge/slide/pages/p0477.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "20bb67da0bfd0807fa5b62e384864c4e30b1abc6c03e5d048fe8cde081cfefe2"
+        },
+        {
+          "pdf_page": 478,
+          "path": "knowledge/slide/pages/p0478.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "c4abd467dfd5d5c3b8bdce98fd8fa0fd1747f8343d3d8dcaa859f44ee347ce71"
+        },
+        {
+          "pdf_page": 479,
+          "path": "knowledge/slide/pages/p0479.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "ac41c5bec88e6574fff6a4c2f01834af50c553a920726219dedf19bd996b3487"
+        },
+        {
+          "pdf_page": 480,
+          "path": "knowledge/slide/pages/p0480.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "362bf7ec91035b6567e5d2b7ae70137968536fd6ee6053a4dee0a6a3b1393a73"
+        },
+        {
+          "pdf_page": 481,
+          "path": "knowledge/slide/pages/p0481.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "bb01122b8479c906a7b5b3d5ec0f269127d93199ea368fb2d2c501a7685f3a6a"
+        },
+        {
+          "pdf_page": 482,
+          "path": "knowledge/slide/pages/p0482.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "765c737185b2a78ae8d30932f1b27d581213cd957adb60357e052613df75e2d2"
+        },
+        {
+          "pdf_page": 483,
+          "path": "knowledge/slide/pages/p0483.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "2368c358ecc85ed122398d252f030930fda6a48b2c9193478130ff18d969b373"
+        },
+        {
+          "pdf_page": 484,
+          "path": "knowledge/slide/pages/p0484.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "c600240e9f75f3d2e43063eec2d0b668c51ceb0febdf4c3077346ad4f4e437a2"
+        },
+        {
+          "pdf_page": 485,
+          "path": "knowledge/slide/pages/p0485.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "b610eaa1f8c24743340f2ed73e1742658bcb74b2ffc2d820a2fa356a5dff6416"
+        },
+        {
+          "pdf_page": 486,
+          "path": "knowledge/slide/pages/p0486.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "ccd9631cecb762e7b89bc7e4a3d49e2b32124d4c934bcdbf8b1e9753d5f4e01e"
+        },
+        {
+          "pdf_page": 487,
+          "path": "knowledge/slide/pages/p0487.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "699d8c9219da26a1e3bc21ac943c18d1f0466bdbdda3ff58f62b6c9640f4bbc1"
+        },
+        {
+          "pdf_page": 488,
+          "path": "knowledge/slide/pages/p0488.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "18d7fd41d9b17e98a6fb73e36d989c210ba2dd463555c0eb81c4302d82a5dc16"
+        },
+        {
+          "pdf_page": 489,
+          "path": "knowledge/slide/pages/p0489.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "ce786d4f89a1093996fd5f606c2f0d0ea0fa18d45ffd10140b977a56df9ad660"
+        },
+        {
+          "pdf_page": 490,
+          "path": "knowledge/slide/pages/p0490.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "bca73266c6e1ab1cfc280e1c75e39a5b7178f263504187678e55b482eea88f7e"
+        },
+        {
+          "pdf_page": 491,
+          "path": "knowledge/slide/pages/p0491.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "87eb4cb92d82aa4fd13abb8ed6da04a6e7c996cf301c3da20a6662e5c1ccbc19"
+        },
+        {
+          "pdf_page": 492,
+          "path": "knowledge/slide/pages/p0492.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "MATH_REVIEW_REQUIRED"
+          ],
+          "content_sha256": "99cd6d5b06ce0a7051d3384361f7aa1fc8acec9d7f5ac86194273a8a438cd803"
+        },
+        {
+          "pdf_page": 493,
+          "path": "knowledge/slide/pages/p0493.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "7346da5149d41e22d467ef2c820fc69865737b420c1825fbf0ac82b02d956ed3"
+        },
+        {
+          "pdf_page": 494,
+          "path": "knowledge/slide/pages/p0494.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "22b8a510bf74aee39bab6b2ddf4a9d68bdb761dad5015aa05a7094fab1923d6e"
+        },
+        {
+          "pdf_page": 495,
+          "path": "knowledge/slide/pages/p0495.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "d95d3e534f4c72976219c4eb325eb80be999fdb8a9bf286219c60a7561a4236c"
+        },
+        {
+          "pdf_page": 496,
+          "path": "knowledge/slide/pages/p0496.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "af0790b0c3a603b967dc316d1476d0458e7337b2e6a95260c2bd5393434b82a2"
+        },
+        {
+          "pdf_page": 497,
+          "path": "knowledge/slide/pages/p0497.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "659ef3915543c52425a1bf93b50564b7ba0548e50f7458706068d472ed0a329d"
+        }
+      ]
+    },
+    "outline": {
+      "file": "Đề cương HPTTN1.pdf",
+      "sha256": "7814c8ba2ca321647cc6e575b29744c25a305a15920ef9d2bd560f8179b35739",
+      "page_count": 18,
+      "extractor": "pymupdf4llm-1.28.2",
+      "pages": [
+        {
+          "pdf_page": 1,
+          "path": "knowledge/outline/pages/p0001.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "b51692511046e4eccbc1009921c5337c467884b43daa742cc2e325c525291692"
+        },
+        {
+          "pdf_page": 2,
+          "path": "knowledge/outline/pages/p0002.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "d0c4eda03203be0ffbb26817a43d1decf8eec59dd0762ddbc2e78c78fe544d8b"
+        },
+        {
+          "pdf_page": 3,
+          "path": "knowledge/outline/pages/p0003.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT"
+          ],
+          "content_sha256": "dbbbf71b9977213a2d0959aab9b9abbb0d5d3837a66e85d93a4b96cd5a35b86e"
+        },
+        {
+          "pdf_page": 4,
+          "path": "knowledge/outline/pages/p0004.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "32f6d8b0013576144e0ee0f84946942ba04ebd96ad87a5eeac794327c999f27b"
+        },
+        {
+          "pdf_page": 5,
+          "path": "knowledge/outline/pages/p0005.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "a304b9e0b0e3789bf1e4aab08bcc34439ce2d6fa1f50bfd8889e0c73bd5163d2"
+        },
+        {
+          "pdf_page": 6,
+          "path": "knowledge/outline/pages/p0006.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "85a06872b5d238c0ef2ce265bb6b7ddb905596c25d6bc4cacea9f44acdc58598"
+        },
+        {
+          "pdf_page": 7,
+          "path": "knowledge/outline/pages/p0007.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "MATH_REVIEW_REQUIRED"
+          ],
+          "content_sha256": "94f847ed14e11b59ca32a72220a8e4b9d1d0d33b2dbde4640b3cc4ca3255edda"
+        },
+        {
+          "pdf_page": 8,
+          "path": "knowledge/outline/pages/p0008.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "MATH_REVIEW_REQUIRED"
+          ],
+          "content_sha256": "bea9f38431badf1ed543e9084f152e29d86ad73af8abe2ac28e7dc660f695090"
+        },
+        {
+          "pdf_page": 9,
+          "path": "knowledge/outline/pages/p0009.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "MATH_REVIEW_REQUIRED"
+          ],
+          "content_sha256": "c81f19b856292657bb802039c72383afe3f94ee145c802ee42838295b44c3fb3"
+        },
+        {
+          "pdf_page": 10,
+          "path": "knowledge/outline/pages/p0010.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "fa479cba7c49aa966eab56a37461f4268885b8af031b1b81332c77cb523e62f6"
+        },
+        {
+          "pdf_page": 11,
+          "path": "knowledge/outline/pages/p0011.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "MATH_REVIEW_REQUIRED"
+          ],
+          "content_sha256": "ff8ff3859b7e1a8c7293782d355b22b60ba3ded739b9ab0bba8adabaea55c38c"
+        },
+        {
+          "pdf_page": 12,
+          "path": "knowledge/outline/pages/p0012.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "MATH_REVIEW_REQUIRED"
+          ],
+          "content_sha256": "176d1d1d84738dc1ca1ac21eb949fb0ed61a048e05d607d04fe01b2f7c53e09d"
+        },
+        {
+          "pdf_page": 13,
+          "path": "knowledge/outline/pages/p0013.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "MATH_REVIEW_REQUIRED"
+          ],
+          "content_sha256": "9ded9f4b8217d107c0475c205cadd63c044ff27e1955242dd116018cc2549107"
+        },
+        {
+          "pdf_page": 14,
+          "path": "knowledge/outline/pages/p0014.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT",
+            "MATH_REVIEW_REQUIRED"
+          ],
+          "content_sha256": "4f0a8cae0f35c6e744994d5b9425ade393556774f7a7c412f01b3f7a531aaeda"
+        },
+        {
+          "pdf_page": 15,
+          "path": "knowledge/outline/pages/p0015.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT",
+            "MATH_REVIEW_REQUIRED"
+          ],
+          "content_sha256": "721cd756ef34842d839a9668d69675201a5d2d00210d90f95ede4a2a7734e1a3"
+        },
+        {
+          "pdf_page": 16,
+          "path": "knowledge/outline/pages/p0016.md",
+          "status": "VISUAL_REVIEW_REQUIRED",
+          "flags": [
+            "IMAGE_PRESENT",
+            "MATH_REVIEW_REQUIRED"
+          ],
+          "content_sha256": "eb109849355c435125ad999442e728f4539650765be5b9791d65ad8eb0d98b6f"
+        },
+        {
+          "pdf_page": 17,
+          "path": "knowledge/outline/pages/p0017.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "8ca9d0cc79b0013b0138e26e770daedcfd2cf7f6c73e03403080f31c2e4b192d"
+        },
+        {
+          "pdf_page": 18,
+          "path": "knowledge/outline/pages/p0018.md",
+          "status": "EXTRACTED_UNREVIEWED",
+          "flags": [],
+          "content_sha256": "868dabfec8a779006592a9db5d5e4bd5e23de7a2346b7aadc2c645458308a4cc"
+        }
+      ]
+    },
+    "law": {
+      "file": "Thông tư-09-2020-TT-NHNN .pdf",
+      "sha256": "877afd9336574a2c0077a1d247587973458590d1b9fee5226ce445d9228cc20e",
+      "page_count": 38,
+      "processing": "not extracted; supplementary source only"
+    }
+  }
+}
