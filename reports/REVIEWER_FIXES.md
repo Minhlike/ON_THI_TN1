@@ -1,6 +1,7 @@
 # Sửa lỗi reviewer và mốc học đến 19/10 — 11/10/2026
 
 Baseline được review: `1b32c557f712bc2e3c61966ffb99990fa5f086c8`.
+Commit mã và bằng chứng đã kiểm thử: [`9dd9f4b844c8c22a34fdd2dc156d94a1e10de0e2`](https://github.com/Minhlike/ON_THI_TN1/commit/9dd9f4b844c8c22a34fdd2dc156d94a1e10de0e2). Commit tài liệu kế tiếp chỉ ghi lại SHA này; không đổi mã đã kiểm thử.
 Mốc này sửa P0, bổ sung Q012–Q016 theo thứ tự lịch và kiểm kê mục con; **chưa nghiệm thu nội dung đủ 51 ngày**.
 
 ## Phạm vi
