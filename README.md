@@ -1,5 +1,13 @@
 # Ôn thi Tốt nghiệp 1
 
+## Ứng dụng học offline
+
+Nhấp đúp **[MO_UNG_DUNG.cmd](MO_UNG_DUNG.cmd)** để mở ứng dụng tại **http://127.0.0.1:8765**. Có thể tự trả lời, đối chiếu rubric, luyện toán/sơ đồ/mã nguồn, thi tự luận và lưu tiến độ trên máy.
+
+**Bản hiện tại học được tuần đầu (23 câu đã đối chiếu).** Lịch đủ 51 ngày; đáp án các phần sau vẫn đang chờ kiểm chứng. [Hướng dẫn và phạm vi](study_app/README.md) · [Báo cáo kiểm thử](reports/STUDY_APP_WEEK1.md).
+
+## Kho tài liệu và truy xuất
+
 Kho tri thức cục bộ cho học phần Tốt nghiệp 1 (An toàn thông tin). Ba PDF gốc ở thư mục root. Văn bản trích xuất theo từng trang nằm ở `knowledge/`; mỗi trang ghi SHA của PDF và trạng thái kiểm chứng. Nội dung trích xuất là dữ liệu nguồn, chưa phải đáp án.
 
 ## Cài đặt và sử dụng

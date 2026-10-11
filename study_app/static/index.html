@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Tốt nghiệp 1 · Không gian học tập</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/vendor/katex/katex.min.css" />
+    <link rel="stylesheet" href="/style.css" />
+    <script defer src="/vendor/katex/katex.min.js"></script>
+    <script defer src="/app.js"></script>
+  </head>
+  <body>
+    <aside class="sidebar">
+      <a class="brand" href="#day/1"
+        ><span class="brand-icon">T1</span
+        ><span>Tốt nghiệp 1<small>KHÔNG GIAN HỌC TẬP</small></span></a
+      >
+      <div class="side-label">HỌC MỖI NGÀY</div>
+      <nav id="nav">
+        <a href="#day/1" data-nav="day"><span>◷</span> Phiên học hôm nay</a>
+        <a href="#plan" data-nav="plan"><span>▦</span> Lộ trình 51 ngày</a>
+        <a href="#review" data-nav="review"
+          ><span>↻</span> Ôn tập & câu sai <b id="due-count">0</b></a
+        >
+        <a href="#bank" data-nav="bank"><span>▤</span> Đề cương & nguồn</a>
+      </nav>
+      <div class="side-label">THỰC HÀNH</div>
+      <nav>
+        <a href="#math" data-nav="math"><span>∑</span> Bảng toán mật mã</a>
+        <a href="#diagrams" data-nav="diagrams"
+          ><span>⇄</span> Giao thức & mạng</a
+        >
+        <a href="#code" data-nav="code"><span>⌘</span> Đọc mã tìm lỗi</a>
+        <a href="#exams" data-nav="exams"><span>▣</span> Phòng thi tự luận</a>
+      </nav>
+      <div class="side-foot">
+        <span class="online-dot"></span> Học offline · Dữ liệu trên máy<br /><a
+          href="#settings"
+          >Lịch học & sao lưu</a
+        >
+      </div>
+    </aside>
+    <div class="workspace">
+      <header class="topbar">
+        <span id="breadcrumb">Phiên học</span
+        ><span class="top-meta"
+          >12.10 — 01.12.2026 <span class="pill">51 ngày</span></span
+        >
+      </header>
+      <main id="main" tabindex="-1"><p>Đang mở không gian học tập…</p></main>
+      <footer>Ôn bằng truy xuất • Đối chiếu nguồn • Sửa lỗi rồi ôn lại</footer>
+    </div>
+    <div id="toast" role="status" aria-live="polite"></div>
+  </body>
+</html>

@@ -4,3 +4,7 @@ __pycache__/
 knowledge/index/*.sqlite3
 knowledge/index/*.sqlite3-*
 .qa/
+.local/
+*.sqlite3
+*.sqlite3-wal
+*.sqlite3-shm

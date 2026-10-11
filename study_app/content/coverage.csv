@@ -1,0 +1,343 @@
+﻿id,section,outline_page,learning_status,verified_slide_pages,evidence_label,first_day,question
+TN1-Q001,ĐỊNH DANH VÀ XÁC THỰC,1,REVIEWED,57;66,VERIFIED_WITH_DERIVATIONS,1,"Bài 1. Trình bày khái niệm hiểm họa an toàn thông tin. Hãy lấy một số ví dụ cụ thể
+về hiểm họa an toàn thông tin đối với hệ thống mạng wifi của Học viện Kỹ thuật
+mật mã"
+TN1-Q002,ĐỊNH DANH VÀ XÁC THỰC,1,REVIEWED,108;110,VERIFIED_WITH_DERIVATIONS,1,"Bài 2. Trình bày khái niệm định danh và xác thực và vai trò của nó đối với việc
+đảm bảo an toàn cho hệ thống thông tin"
+TN1-Q003,ĐỊNH DANH VÀ XÁC THỰC,1,REVIEWED,112;113;114;115,SLIDE_GROUNDED,5,Bài 3. Trình bày các nhân tố xác thực phổ biến và các ưu nhược điểm của chúng.
+TN1-Q004,ĐỊNH DANH VÀ XÁC THỰC,1,REVIEWED,112;118,VERIFIED_WITH_DERIVATIONS,5,Bài 4. Xác thực đa nhân tố là gì? Nêu ví dụ
+TN1-Q005,ĐỊNH DANH VÀ XÁC THỰC,1,REVIEWED,121;122;126;135,SLIDE_GROUNDED,6,"Bài 5. Trình bày khái niệm mật khẩu, hãy cho biết những nguyên nhân gây ra sự
+thiếu an toàn đối với mật khẩu."
+TN1-Q006,ĐỊNH DANH VÀ XÁC THỰC,1,REVIEWED,125;126;127;129,VERIFIED_WITH_DERIVATIONS,6,Bài 6. Trình bày các hiểm họa an toàn đối với mật khẩu
+TN1-Q007,ĐỊNH DANH VÀ XÁC THỰC,1,REVIEWED,131;132;133;134;135,SLIDE_GROUNDED,6,"Bài 7. Với vai trò là một nhà quản trị hệ thống, bạn được giao nhiệm vụ xây dựng
+chính sách mật khẩu an toàn cho hệ thống. Hãy trình bày chính sách này và giải
+thích ý nghĩa của các quy định được đề xuất trong chính sách."
+TN1-Q008,ĐỊNH DANH VÀ XÁC THỰC,1,REVIEWED,135;136,SLIDE_GROUNDED,6,Bài 8. Trình bày các quy tắc sử dụng mật khẩu an toàn.
+TN1-Q009,ĐỊNH DANH VÀ XÁC THỰC,1,REVIEWED,139;141,SLIDE_GROUNDED,1,"Bài 9. Cho sơ đồ giao thức xác thực bằng mật khẩu
+
+Anh/chị hãy trình bày:
+a) Điều kiện ban đầu của giao thức
+b) Các bước hoạt động của giao thức
+c) Cơ sở cho quyết định cuối cùng của bên xác thực
+d) Tấn công từ điển sử dụng bảng băm sẵn (precomputed hash table) lên cơ sở
+dữ liệu tài khoản người dùng trong trường hợp có được cơ sở dữ liệu đó."
+TN1-Q010,ĐỊNH DANH VÀ XÁC THỰC,2,REVIEWED,140;141,VERIFIED_WITH_DERIVATIONS,7,"Câu 10. Cho sơ đồ giao thức xác thực bằng mật khẩu
+
+Anh/chị hãy trình bày:
+a) Điều kiện ban đầu của giao thức
+b) Các bước hoạt động của giao thức
+c) Cơ sở cho quyết định cuối cùng của bên xác thực
+d) Ý nghĩa của việc sử dụng ""salt"" trong giao thức"
+TN1-Q011,ĐỊNH DANH VÀ XÁC THỰC,2,REVIEWED,142,VERIFIED_WITH_DERIVATIONS,7,"Câu 11. Cho sơ đồ giao thức xác thực bằng mật khẩu
+
+Anh/chị hãy trình bày:
+a) Điều kiện ban đầu của giao thức
+b) Các bước hoạt động của giao thức
+c) Cơ sở cho quyết định cuối cùng của bên xác thực
+d) Tấn công kiểu man-in-the-middle lên giao thức"
+TN1-Q012,ÔN TẬP KIỂM SOÁT TRUY CẬP,4,AWAITING_REVIEW,,UNVERIFIED,8,"Câu 12. Trình bày khái niệm kiểm soát truy cập và ý nghĩa của nó trong việc đảm
+bảo an toàn thông tin cho hệ thống"
+TN1-Q013,ÔN TẬP KIỂM SOÁT TRUY CẬP,4,AWAITING_REVIEW,,UNVERIFIED,8,"Câu 13. Trình bày nguyên tắc đặc quyền tối thiểu. Hãy lấy một ví dụ thể hiện nguyên
+tắc này trong thực tế."
+TN1-Q014,ÔN TẬP KIỂM SOÁT TRUY CẬP,4,AWAITING_REVIEW,,UNVERIFIED,8,"Câu 14. Trình bày đặc điểm của mô hình kiểm soát truy cập tùy chọn. Nó thường
+được sử dụng trong những hệ thống nào? Tại sao"
+TN1-Q015,ÔN TẬP KIỂM SOÁT TRUY CẬP,4,AWAITING_REVIEW,,UNVERIFIED,8,"Câu 15. Trình bày đặc điểm của mô hình kiểm soát truy cập bắt buộc. Nó thường
+được sử dụng trong những hệ thống nào? Tại sao?"
+TN1-Q016,ÔN TẬP KIỂM SOÁT TRUY CẬP,4,AWAITING_REVIEW,,UNVERIFIED,8,"Câu 16. Trình bày đặc điểm của mô hình kiểm soát truy cập dựa trên vai trò. Nó
+thường được sử dụng trong những hệ thống nào? Tại sao?"
+TN1-Q017,MẬT MÃ + MÃ ĐỘC,5,AWAITING_REVIEW,,UNVERIFIED,9,"Câu 17. Trình bày khái niệm mật mã khóa bí mật và mật mã khóa công khai. Nêu sự
+khác biệt và các trường hợp ứng dụng của hai loại nguyên thủy mật mã này."
+TN1-Q018,MẬT MÃ + MÃ ĐỘC,5,AWAITING_REVIEW,,UNVERIFIED,9,"Câu 18. Chữ ký số là gì, trình bày ứng dụng của chữ ký số."
+TN1-Q019,MẬT MÃ + MÃ ĐỘC,5,AWAITING_REVIEW,,UNVERIFIED,10,"Câu 19. Mã độc là gì. Trình bày đặc điểm của một số loại mã độc thường gặp trong
+thực tế. Trình bày các kênh lây nhiễm, và cách thức để phòng chống mã độc."
+TN1-Q020,ÔN TẬP AN TOÀN MẠNG,6,AWAITING_REVIEW,,UNVERIFIED,11,Câu 20. Trình bày một số hình thức tấn công mạng phổ biến.
+TN1-Q021,ÔN TẬP AN TOÀN MẠNG,6,AWAITING_REVIEW,,UNVERIFIED,12,"Câu 21. Anh/chị hãy trình bày khái niệm tường lửa, phân loại tường lửa theo mức
+hoạt động và theo vị trí triển khai. Trình bày một số sản phẩm tường lửa mà anh chị
+biết. Lấy ví dụ về một luật cho tường lửa iptables và giải thích luật đó."
+TN1-Q022,ÔN TẬP AN TOÀN MẠNG,6,AWAITING_REVIEW,,UNVERIFIED,14,"Câu 22. Anh/chị hãy trình bày khái niệm IDS và IPS, phân loại IDS theo vị trí triển
+khai. Trình bày một số sản phẩm IDS/IPS mà anh chị biết. Lấy ví dụ về một luật cho
+IDS Snort và giải thích luật đó."
+TN1-Q023,ÔN TẬP AN TOÀN MẠNG,6,AWAITING_REVIEW,,UNVERIFIED,15,"Câu 23 . Anh/chị hãy trình bày khái niệm VPN, phân loại VPN theo mô hình kết
+nối, chức năng của VPN trong an toàn thông tin; trình bày các giao thức con ESP
+của IPsec ở hai chế độ transport và tunnel (có vẽ hình minh họa)"
+TN1-Q024,ÔN TẬP AN TOÀN MẠNG,6,AWAITING_REVIEW,,UNVERIFIED,16,"Câu 24. Anh chị hãy trình bày khái niệm SIEM. Nguyên tắc hoạt động của SIEM là
+gì? Hãy nêu tên một số sản phẩm SIEM mà anh chị biết."
+TN1-Q025,Dạng 1. Mô tả lỗ hổng,7,AWAITING_REVIEW,,UNVERIFIED,17,"Câu 1. Anh/chị hãy trình bày khái niệm lỗ hổng tràn bộ đệm; phân loại lỗ hổng tràn
+bộ đệm; lấy ví dụ đoạn mã có lỗ hổng tràn bộ đệm; trình bày cơ chế khai thác lỗ
+hổng trong đoạn mã đó."
+TN1-Q026,Dạng 1. Mô tả lỗ hổng,7,AWAITING_REVIEW,,UNVERIFIED,18,"Câu 2. Anh/chị hãy trình bày khái niệm tấn công XSS; phân loại tấn công XSS; lấy
+ví dụ đoạn mã có lỗ hổng XSS; trình bày cơ chế khai thác lỗ hổng trong đoạn mã đó."
+TN1-Q027,Dạng 1. Mô tả lỗ hổng,7,AWAITING_REVIEW,,UNVERIFIED,19,"Câu 3. Anh/chị hãy trình bày khái niệm tấn công SQL Injection; phân loại tấn công
+SQL Injection; lấy ví dụ đoạn mã có lỗ hổng SQL Injection; trình bày cơ chế khai
+thác lỗ hổng trong đoạn mã đó."
+TN1-Q028,Dạng 2. Xác định loại lỗ hổng và cơ chế khai thác,7,PRACTICE_READY_PARTIAL,,DERIVED/EXTERNAL,17,"Bài 1. Cho đoạn mã sau:
+#include <stdio.h>
+#include <string.h>
+
+void function(const char *input) {
+    char buffer[10];
+    strcpy(buffer, input);
+    printf(""Data copied: %s\n"", buffer);
+}
+
+int main() {
+    char large_string[30] = ""This is a very long string!"";
+    function(large_string);
+    return 0;
+}
+Hãy xác định lỗ hổng xảy ra trong đoạn mã trên. Mô tả cơ chế khai thác và cách
+thức xử lý và loại bỏ lỗ hổng này."
+TN1-Q029,Dạng 2. Xác định loại lỗ hổng và cơ chế khai thác,7,PRACTICE_READY_PARTIAL,,DERIVED/EXTERNAL,17,"Bài 2. Cho đoạn mã sau:
+#include <stdio.h>
+
+void function() {
+    char buffer[8];
+    printf(""Enter your name: "");
+    gets(buffer);
+    printf(""Welcome, %s!\n"", buffer);
+}
+
+int main() {
+    function();
+    return 0;
+}
+Hãy xác định lỗ hổng xảy ra trong đoạn mã trên. Mô tả cơ chế khai thác và cách
+thức xử lý và loại bỏ lỗ hổng này."
+TN1-Q030,Dạng 2. Xác định loại lỗ hổng và cơ chế khai thác,8,AWAITING_REVIEW,,UNVERIFIED,19,"Bài 3. Cho đoạn mã sau:
+<?php
+// Kết nối tới cơ sở dữ liệu
+$servername = ""localhost"";
+$username = ""username"";
+$password = ""password"";
+$dbname = ""myDB"";
+
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+if ($conn->connect_error) {
+    die(""Connection failed: "" . $conn->connect_error);
+}
+
+// Lấy dữ liệu từ URL
+$userInput = $_GET['username'];
+
+$sql = ""SELECT * FROM users WHERE username = '$userInput'"";
+$result = $conn->query($sql);
+
+if ($result->num_rows > 0) {
+    while($row = $result->fetch_assoc()) {
+        echo ""Username: "" . $row[""username""]. ""<br>"";
+        echo ""Email: "" . $row[""email""]. ""<br>"";
+    }
+} else {
+    echo ""0 results"";
+}
+
+$conn->close();
+?>
+Hãy xác định lỗ hổng xảy ra trong đoạn mã trên. Mô tả cơ chế khai thác và cách
+thức xử lý và loại bỏ lỗ hổng này."
+TN1-Q031,Dạng 2. Xác định loại lỗ hổng và cơ chế khai thác,9,AWAITING_REVIEW,,UNVERIFIED,19,"Bài 4. Cho đoạn mã sau:
+<?php
+// Kết nối tới cơ sở dữ liệu
+$servername = ""localhost"";
+$username = ""username"";
+$password = ""password"";
+$dbname = ""productsDB"";
+
+// Tạo kết nối đến cơ sở dữ liệu
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+// Kiểm tra kết nối
+if ($conn->connect_error) {
+    die(""Connection failed: "" . $conn->connect_error);
+}
+
+// Lấy dữ liệu từ biểu mẫu tìm kiếm
+$searchTerm = $_POST['search'];
+
+// Truy vấn SQL để tìm kiếm sản phẩm theo tên
+$sql = ""SELECT * FROM products WHERE product_name =
+'$searchTerm'"";
+$result = $conn->query($sql);
+
+if ($result->num_rows > 0) {
+    // Hiển thị thông tin sản phẩm
+    while($row = $result->fetch_assoc()) {
+        echo ""Product Name: "" . $row[""product_name""]. ""<br>"";
+        echo ""Description: "" . $row[""description""]. ""<br>"";
+        echo ""Price: $"" . $row[""price""]. ""<br>"";
+    }
+} else {
+    echo ""No products found"";
+}
+
+$conn->close();
+?>
+Hãy xác định lỗ hổng xảy ra trong đoạn mã trên. Mô tả cơ chế khai thác và cách
+thức xử lý và loại bỏ lỗ hổng này."
+TN1-Q032,BÀI TẬP TUẦN 01,10,REVIEWED,36;37;38;39;40,VERIFIED_WITH_DERIVATIONS,1,"Câu 1. An toàn thông tin là gì? Hãy nêu ví dụ về việc đảm bảo an toàn thông tin cho
+một hệ thống cụ thể mà em biết."
+TN1-Q033,BÀI TẬP TUẦN 01,10,REVIEWED,68;69;71;72;73,VERIFIED_WITH_DERIVATIONS,2,"Câu 2. Nêu các nguyên tắc trong việc đảm bảo an toàn thông tin cho hệ thống. Theo
+em nguyên tắc nào là quan trọng nhất"
+TN1-Q034,BÀI TẬP TUẦN 01,10,REVIEWED,75;76;77;364;365;375;378,VERIFIED_WITH_DERIVATIONS,2,"Câu 3. Nêu các lớp phương pháp được sử dụng để đảm bảo an toàn thông tin. Công
+nghệ tường lửa, IDS, SIEM thuộc lớp phương pháp nào?"
+TN1-Q035,BÀI TẬP TUẦN 01,10,REVIEWED,75;78,VERIFIED_WITH_DERIVATIONS,2,"Câu 4. Có những lớp phương tiện nào được sử dụng để đảm bảo an toàn thông tin
+cho hệ thống? Với mỗi phương tiện em hãy liệt kê một số giải pháp cụ thể để minh
+họa."
+TN1-Q036,BÀI TẬP TUẦN 01,10,REVIEWED,68;69;75;77;78,VERIFIED_WITH_DERIVATIONS,2,"Câu 5. Việc đảm bảo an toàn thông tin cho hệ thống cần xoay quay các yếu tố: công
+nghệ, chính sách và con người. Em hãy phân tích sự tương quan và tầm quan trọng
+của các yếu tố này trong việc đảm bảo an toàn thông tin cho hệ thống."
+TN1-Q037,Dạng 1. Mã hóa giải mã RSA,11,PRACTICE_READY_PARTIAL,,DERIVED/EXTERNAL,20,"Bài 1. Trong hệ mật RSA, cho P=17, Q=31, e=7, Hãy xác định bản mã của thông
+điệp m=32."
+TN1-Q038,Dạng 1. Mã hóa giải mã RSA,11,AWAITING_REVIEW,,UNVERIFIED,20,"Bài 2. Trong hệ mật RSA, cho P=29, Q=13, e=5, Hãy giải mã bản mã c=301."
+TN1-Q039,Dạng 1. Mã hóa giải mã RSA,11,AWAITING_REVIEW,,UNVERIFIED,20,"Bài 3. Hệ mật RSA mã hoá ra C=6, khoá công khai là n=p.q=187, e=107
+-
+Xác định khoá bí mật
+-
+Tìm M"
+TN1-Q040,Dạng 1. Mã hóa giải mã RSA,11,AWAITING_REVIEW,,UNVERIFIED,20,"Bài 4. Cho n=143, e = 23 là khoá công khai của hệ mật RSA, với bản mã C=9.
+-
+Xác định khoá bí mật
+-
+Tìm M"
+TN1-Q041,Dạng 1. Mã hóa giải mã RSA,11,AWAITING_REVIEW,,UNVERIFIED,21,"Bài 5. Giả sử khoá công khai của hệ mật RSA là (143, 11)
+-
+Tìm khoá bí mật
+-
+Giải mã thông điệp (111,4,88,57,116,67) (chuyển đổi bản rõ ra dạng ASCII"
+TN1-Q042,Dạng 1. Mã hóa giải mã RSA,11,AWAITING_REVIEW,,UNVERIFIED,21,"Bài 6. Khóa công khai của hệ mật RSA là (N, e) = (629, 17).
+-
+Hãy mã hóa ký tự A trong bảng mã ASCII sử dụng khóa công khai trên
+-
+Cho văn bản bí mật là 247, 337, 322, 463, 15, 73, 440, 15, 342, 323, 435
+được mã bằng khóa công khai trên. Hãy tìm cách giải mật thông điệp trên."
+TN1-Q043,Dạng 1. Mã hóa giải mã RSA,11,AWAITING_REVIEW,,UNVERIFIED,21,"Câu 7. Tìm khóa bí mật của hệ mật RSA với p=61, q=29 biết khóa công khai e=19.
+Tính bản mã của bản rõ m=37 và tiến hành giải mã ngược lại để kiểm tra lại kết
+quả."
+TN1-Q044,Dạng 1. Mã hóa giải mã RSA,11,AWAITING_REVIEW,,UNVERIFIED,21,"Câu 8. Cho biết A và B sử dụng mật mã khóa công khai RSA trong đảm bảo an
+toàn thông tin, A có khóa bí mật KSA = (1517, 1051) và khóa công khai KPA =
+(1517, 211), B có khóa bí mật KSB = (437, 317) và khóa công khai KPB = (437, 5).
+Giả sử A muốn gửi thông điệp bí mật m=10 cho B. Anh/chị hãy trình bày quá trình
+mã hóa và giải mã mà A và B cần thực hiện để gửi/nhận thông điệp nói trên."
+TN1-Q045,"Dạng 2. Mã hóa, giải mã Elgamal",11,AWAITING_REVIEW,,UNVERIFIED,22,"Bài 1. Trong hệ mật Elgamal, trên Z113*, với phần tử sinh g=3, khoá bí mật là
+x=86, Hãy tìm khoá công khai của hệ mật và sử dụng khoá công khai để mã hoá
+thông điệp m=18."
+TN1-Q046,"Dạng 2. Mã hóa, giải mã Elgamal",12,PRACTICE_READY_PARTIAL,,DERIVED/EXTERNAL,22,"Bài 2. Sử dụng hệ mật Elgamal với số nguyên tố p = 211, phần tử sinh  = 39 của
+Z*211. Giả sử người dùng A chọn khóa bí mật a = 113.
+- Hãy tìm khoá công khai của A?
+- Giả sử chọn số ngẫu nhiên k = 23, hãy thực hiện mã hoá bản tin x = 34 với
+khoá công khai của A, và giả mã bản mã vừa thu được."
+TN1-Q047,"Dạng 2. Mã hóa, giải mã Elgamal",12,AWAITING_REVIEW,,UNVERIFIED,22,"Bài 3. Cho khoá công khai của hệ mật Elgamal là (p,a,X)= (53,2,16) và bản mã thu
+được của hệ mật sau phép mã hoá là (C1,C2)=(15,50). Hãy tìm bản rõ tương ứng."
+TN1-Q048,"Dạng 3. Mã hóa, giải mã ECC",12,PRACTICE_READY_PARTIAL,,DERIVED/EXTERNAL,23,"Bài 1. Cho đường cong E={(x,y) :y2=x3+x+ 6 mod 11}
+- Xác định tất cả các điểm của đường cong
+- Tính tất cả các giá trị của kα với 1< k <14, trong đó α= (2,7)
+- ECC ElGamal encryption:
++ Tính khóa công khai biết khóa bí mật là 6
++ Tính khóa công khai biết khóa bí mật là 2
++ Tính khóa công khai biết khóa bí mật là 7
+- Với khóa bí mật của người nhận là 7. Tham số ngẫu nhiên là 3.
++ Mã hóa thông điệp 10
++ Giải mã và kiểm chứng"
+TN1-Q049,"Dạng 3. Mã hóa, giải mã ECC",12,AWAITING_REVIEW,,UNVERIFIED,26,"Bài 2. Cho đường cong y^2=x^3+5x+4 mod 1, điểm sinh α =(10,3), khoá bí mật
+d=5.
+-
+Tìm khoá công khai
+-
+Chọn ngẫu nhiên k=2, mã hoá thông điệp x=(2,0)
+-
+Giải mã ngược lại"
+TN1-Q050,Dạng 4. Trao đổi khóa Diffie-Hellman,13,PRACTICE_READY_PARTIAL,,DERIVED/EXTERNAL,27,"Bài 1. Giả sử A và B chọn p = 11 và α = 2 là tham số công khai chung. Xác định
+khóa chia sẻ trong giao thức Diffie-Hellman biết khóa bí mật của A và B lần
+luowjg là 4 và 7. Trình bày rõ các bước tính toán khóa chia sẻ chung của A và B."
+TN1-Q051,Dạng 5. Diffie-Hellman trên đường cong Elliptic,13,PRACTICE_READY_PARTIAL,,DERIVED/EXTERNAL,27,"Bài 1. Cho đường cong Ellipic:
+E={(x,y) :y2=x3+x+ 6 mod 11}
+và C=(2,7). Xác định khóa chia sẻ trong giao thức Diffie-Hellman trên đường cong
+E, biết hai khóa bí mật của 2 bên tham gia là 3 và 5."
+TN1-Q052,Dạng 5. Diffie-Hellman trên đường cong Elliptic,13,AWAITING_REVIEW,,UNVERIFIED,28,"Bài 2. Cho đường cong Ellipic:
+E={(x,y) :y2=x3+ 2x+ 7 mod 19}
+và C=(6,8). Xác định khóa chia sẻ trong giao thức Difie-Hellman trên đường cong
+E, biết hai khóa bí mật của 2 bên tham gia là 4 và 7."
+TN1-Q053,ĐỀ THI MẪU ĐỀ SỐ 1,14,AWAITING_REVIEW,,UNVERIFIED,36,"Câu 1. (2 điểm) Anh/chị hãy trình bày các khái niệm ""tính bí mật"", ""tính toàn vẹn"" và ""tính khả
+dụng"" của thông tin; đối với mỗi tính chất an toàn trên đây của thông tin, hãy chỉ ra 2 nguyên nhân
+chung dẫn đến tính chất đó bị xâm phạm."
+TN1-Q054,ĐỀ THI MẪU ĐỀ SỐ 1,14,AWAITING_REVIEW,,UNVERIFIED,36,"Câu 2 (2 điểm). Giả sử A và B trao đổi khóa bằng giao thức Diffie-Hellman sử dụng bộ tham số
+p=89, g=15; trong quá trình đó A và B lần lượt sinh được các giá trị ngẫu nhiên xA=10 và xB=20.
+Anh/chị hãy:
+a) Tính giá trị công khai yA của A và yB của B.
+b) Tính giá trị của khóa chia sẻ ZAB giữa A và B."
+TN1-Q055,ĐỀ THI MẪU ĐỀ SỐ 1,14,AWAITING_REVIEW,,UNVERIFIED,36,"Câu 3 (2 điểm). Cho sơ đồ giao thức xác thực bằng mật khẩu
+
+Anh/chị hãy trình bày:
+a) Điều kiện ban đầu của giao thức
+b) Các bước hoạt động của giao thức
+c) Cơ sở cho quyết định cuối cùng của bên xác thực
+d) Tấn công từ điển sử dụng bảng băm sẵn (precomputed hash table) lên cơ sở dữ liệu tài
+khoản người dùng trong trường hợp có được cơ sở dữ liệu đó."
+TN1-Q056,ĐỀ THI MẪU ĐỀ SỐ 1,14,AWAITING_REVIEW,,UNVERIFIED,36,"Câu 4 (2 điểm). Anh/chị hãy trình bày khái niệm lỗ hổng tràn bộ đệm; phân loại lỗ hổng tràn bộ
+đệm; lấy ví dụ đoạn mã có lỗ hổng tràn bộ đệm; trình bày cơ chế khai thác lỗ hổng trong đoạn mã
+đó."
+TN1-Q057,ĐỀ THI MẪU ĐỀ SỐ 1,14,AWAITING_REVIEW,,UNVERIFIED,36,"Câu 5 (2 điểm). Anh/chị hãy trình bày khái niệm VPN, phân loại VPN theo mô hình kết nối, chức
+năng của VPN trong an toàn thông tin; trình bày các giao thức con ESP của IPsec ở hai chế độ
+transport và tunnel (có vẽ hình minh họa)"
+TN1-Q058,ĐỀ THI MẪU ĐỀ SỐ 2,15,AWAITING_REVIEW,,UNVERIFIED,38,"Câu 1. Anh/chị hãy nêu khái niệm ""nhân tố xác thực"", ""xác thực đa nhân tố""; phân loại nhân tố
+xác thực, lấy ví dụ cho từng loại nhân tố xác thực; phân tích ưu, nhược điểm của mật khẩu khi
+được sử dụng làm nhân tố xác thực."
+TN1-Q059,ĐỀ THI MẪU ĐỀ SỐ 2,15,AWAITING_REVIEW,,UNVERIFIED,38,"Câu 2. Giả sử A muốn sử dụng mật mã khóa công khai RSA và để sinh cặp khóa cho mình, A đã
+đã sinh được hai số nguyên tố p=23, q=17 và chọn số mũ công khai e=7. Anh/chị hãy xác định cặp
+khóa của A."
+TN1-Q060,ĐỀ THI MẪU ĐỀ SỐ 2,15,AWAITING_REVIEW,,UNVERIFIED,38,"Câu 3. Cho sơ đồ giao thức xác thực bằng mật khẩu
+
+Anh/chị hãy trình bày:
+a) Điều kiện ban đầu của giao thức
+b) Các bước hoạt động của giao thức
+c) Cơ sở cho quyết định cuối cùng của bên xác thực
+d) Ý nghĩa của việc sử dụng ""salt"" trong giao thức"
+TN1-Q061,ĐỀ THI MẪU ĐỀ SỐ 2,15,AWAITING_REVIEW,,UNVERIFIED,18,"Câu 4. Anh/chị hãy trình bày khái niệm tấn công XSS; phân loại tấn công XSS; lấy ví dụ đoạn mã
+có lỗ hổng XSS; trình bày cơ chế khai thác lỗ hổng trong đoạn mã đó."
+TN1-Q062,ĐỀ THI MẪU ĐỀ SỐ 2,15,AWAITING_REVIEW,,UNVERIFIED,38,"Câu 5. Anh/chị hãy trình bày khái niệm IDS và IPS, phân loại IDS theo vị trí triển khai. Lấy ví dụ
+về một luật cho IDS Snort và giải thích luật đó.
+//Phương án 2: Yêu cầu viết luật để phát hiện một/một số tấn công cụ thể"
+TN1-Q063,ĐỀ THI MẪU ĐỀ SỐ 3,16,AWAITING_REVIEW,,UNVERIFIED,40,Câu 1. Anh/chị hãy trình bày phân loại mã độc và trình bày các giải pháp phòng chống mã độc.
+TN1-Q064,ĐỀ THI MẪU ĐỀ SỐ 3,16,AWAITING_REVIEW,,UNVERIFIED,40,"Câu 2. Cho biết A và B sử dụng mật mã khóa công khai RSA trong đảm bảo an toàn thông tin, A có khóa
+bí mật KSA = (377, 269) và khóa công khai KPA = (377, 5), B có khóa bí mật KSB = (437, 317) và khóa
+công khai KPB = (437, 5). Giả sử A muốn gửi thông điệp bí mật m=10 cho B. Anh/chị hãy trình bày quá
+trình mã hóa và giải mã mà A và B cần thực hiện để gửi/nhận thông điệp nói trên.
+//Ghi chú: A(p=29, q=13), B(p=23, q=19)"
+TN1-Q065,ĐỀ THI MẪU ĐỀ SỐ 3,16,AWAITING_REVIEW,,UNVERIFIED,40,"Câu 3. Cho sơ đồ giao thức xác thực bằng mật khẩu
+
+Anh/chị hãy trình bày:
+a) Điều kiện ban đầu của giao thức
+b) Các bước hoạt động của giao thức
+c) Cơ sở cho quyết định cuối cùng của bên xác thực
+d) Tấn công kiểu man-in-the-middle lên giao thức"
+TN1-Q066,ĐỀ THI MẪU ĐỀ SỐ 3,16,AWAITING_REVIEW,,UNVERIFIED,40,"Câu 4. Anh/chị hãy trình bày khái niệm tấn công SQL Injection; phân loại tấn công SQL Injection; lấy
+ví dụ đoạn mã có lỗ hổng SQL Injection; trình bày cơ chế khai thác lỗ hổng trong đoạn mã đó."
+TN1-Q067,ĐỀ THI MẪU ĐỀ SỐ 3,16,AWAITING_REVIEW,,UNVERIFIED,40,"Câu 5. Anh/chị hãy trình bày khái niệm tường lửa, phân loại tường lửa theo mức hoạt động và theo vị trí
+triển khai. Lấy ví dụ về một luật cho tường lửa iptables và giải thích luật đó.
+//Phương án 2: cho một mô hình mạng, yêu cầu viết luật iptables để cho phép/ngăn chặn gì đó"
+TN1-Q068,Chương 1. Tổng quan an toàn mạng máy tính,17,REVIEWED,30;330;331;332,VERIFIED_WITH_DERIVATIONS,3,"1. Trình bày khái niệm về mạng máy tính? Các thành phần mạng
+máy tính?"
+TN1-Q069,Chương 1. Tổng quan an toàn mạng máy tính,17,REVIEWED,37;38;39;40,VERIFIED_WITH_DERIVATIONS,1,"2. Một mạng máy tính được xem là an toàn khi nó đảm bảo được
+những tính chất nào? Phân tích và cho ví dụ minh họa"
+TN1-Q070,Chương 1. Tổng quan an toàn mạng máy tính,17,REVIEWED,333;59;60;61;62;63;64,VERIFIED_WITH_DERIVATIONS,3,"3. Trình bày khái niệm hiểm họa đối với mạng máy tính? Phân loại
+các hiểm họa, phân tích và cho ví dụ minh họa"
+TN1-Q071,Chương 1. Tổng quan an toàn mạng máy tính,17,REVIEWED,334;335;336;337;338,VERIFIED_WITH_DERIVATIONS,4,"4. Trình bày khái niệm tấn công mạng máy tính? Phân loại các tấn
+công, phân tích và cho ví dụ minh họa."
+TN1-Q072,Chương 1. Tổng quan an toàn mạng máy tính,17,REVIEWED,52,VERIFIED_WITH_DERIVATIONS,4,"5. Trình bày khái niệm về lỗ hổng trong mạng máy tính? Phân loại
+các lỗ hổng đó , phân tích và cho ví dụ minh họa."
+TN1-Q073,Chương 1. Tổng quan an toàn mạng máy tính,17,REVIEWED,69,VERIFIED_WITH_DERIVATIONS,4,"6. Trình bày khái niệm phòng thủ theo chiều sâu? Phân tích và cho
+ví dụ minh họa."
+TN1-Q074,Chương 1. Tổng quan an toàn mạng máy tính,17,REVIEWED,69;330;331;365;375;378,VERIFIED_WITH_DERIVATIONS,4,"7. Cho một mô hình mạng, yêu cầu sinh viên/học viên đề xuất giải
+pháp an toàn cho mô hình đó."
+TN1-Q075,Chương 2. Công nghệ tường lửa,18,AWAITING_REVIEW,,UNVERIFIED,12,"1. Trình bày khái niệm, chức năng, ưu nhược điểm của tường lửa ?
+Phân loại tường lửa?"
+TN1-Q076,Chương 2. Công nghệ tường lửa,18,AWAITING_REVIEW,,UNVERIFIED,12,"2. Trình bày nguyên tắc hoạt động của tường lửa? Phân tích và lấy
+ví dụ minh họa?"
+TN1-Q077,Chương 2. Công nghệ tường lửa,18,AWAITING_REVIEW,,UNVERIFIED,13,"3. Trình bày các kiến trúc tường lửa điển hình?  Vẽ hình và giải thích
+cơ chế hoạt động của từng kiến trúc tường lửa."
+TN1-Q078,Chương 2. Công nghệ tường lửa,18,AWAITING_REVIEW,,UNVERIFIED,13,"4. Trình bày công nghệ tường lửa (lọc gói, cổng chuyển mạch, cổng
+ứng dụng, trạng thái)? Nêu ưu nhược điểm"
+TN1-Q079,Chương 2. Công nghệ tường lửa,18,AWAITING_REVIEW,,UNVERIFIED,13,"5. Trình bày kiến trúc, thành phần và nguyên lý hoạt động của tường
+lửa Iptables?"
+TN1-Q080,Chương 2. Công nghệ tường lửa,18,AWAITING_REVIEW,,UNVERIFIED,13,6. Phân tích luật iptables
