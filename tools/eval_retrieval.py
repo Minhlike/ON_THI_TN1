@@ -7,7 +7,7 @@ import sys
 import time
 from pathlib import Path
 
-from study import ROOT, KNOW, fold, parse_page, page_path, search_db, read_jsonl, audit_data
+from study import ROOT, KNOW, fold, parse_page, page_path, search_db, read_jsonl, audit_data, unknown_slide_terms
 import json
 
 # Each cited reference page was inspected against the source PDF text layer.
@@ -22,7 +22,7 @@ CASES = [
     ("mã hóa kênh truyền VPN", {218}),
     ("Diffie-Hellman", {178}),
 ]
-NEGATIVE = "zyxwvu987654321notpresent"
+NEGATIVE = "Định lý Poincaré được chứng minh như thế nào?"
 
 
 def baseline(query: str, page_count: int) -> list[int]:
@@ -62,7 +62,7 @@ def run_eval() -> None:
         context_sizes.append(sum(min(len(x["text"]), 600) for x in rows))
         safe = query.replace("|", "\\|")
         lines.append(f"| {safe} | {sorted(gold)} | {got} | {int(hit)} | {precision[-1]:.2f} | {ftime:.1f} | {scanned} | {stime:.1f} |")
-    negative = not search_db(NEGATIVE, 5, "slide")
+    negative = bool(unknown_slide_terms(NEGATIVE))
     q = read_jsonl(KNOW / "questions/questions.jsonl")
     mappings = read_jsonl(KNOW / "questions/question_slide_map.jsonl")
     integrity = audit_data(manifest)

@@ -27,6 +27,7 @@ class Retrieval(unittest.TestCase):
     def test_negative_query_returns_no_evidence(self):
         self.assertEqual(search_db("zyxwvu987654321notpresent", 5, "slide"), [])
         root = Path(__file__).resolve().parents[1]
-        result = subprocess.run([sys.executable, str(root / "tools/study.py"), "context", "zyxwvu987654321notpresent"], cwd=root, capture_output=True, text=True, encoding="utf-8")
+        result = subprocess.run([sys.executable, str(root / "tools/study.py"), "context", "Định lý Poincaré được chứng minh như thế nào?"], cwd=root, capture_output=True, text=True, encoding="utf-8")
         self.assertEqual(result.returncode, 0, result.stderr)
         self.assertIn("Chưa tìm được căn cứ đủ tin cậy", result.stdout)
+        self.assertIn("poincare", result.stdout)

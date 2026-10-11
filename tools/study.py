@@ -418,6 +418,22 @@ def search_db(query: str, limit: int = 5, source_id: str | None = None) -> list[
     return hits[:limit]
 
 
+def unknown_slide_terms(query: str) -> list[str]:
+    """Flag long query terms absent from every slide page."""
+    if not DB.exists():
+        raise RuntimeError("Index missing. Run build first.")
+    db = sqlite3.connect(DB)
+    missing = []
+    for term in set(tokens(query)):
+        if len(term) < 5:
+            continue
+        count = db.execute("SELECT count(*) FROM chunks_fts JOIN chunks c ON c.id=chunks_fts.id WHERE chunks_fts MATCH ? AND c.source_id='slide'", ('"' + term + '"',)).fetchone()[0]
+        if count == 0:
+            missing.append(term)
+    db.close()
+    return sorted(missing)
+
+
 def excerpt(text: str, query: str, max_chars: int = 500) -> str:
     lines = [x.strip() for x in text.splitlines() if x.strip()]
     words = set(tokens(query))
@@ -619,6 +635,10 @@ def main() -> None:
             query = next(q["original_text"] for q in all_questions if q["question_id"] == qs[0]["parent_question_id"])
         if qs:
             print(f"QUESTION {qs[0]['question_id']} [outline PDF p.{qs[0]['pdf_page']}; {qs[0]['mapping_status']}]\n{query}\n")
+        elif unknown := unknown_slide_terms(query):
+            print("Chưa tìm được căn cứ đủ tin cậy trong tài liệu hiện có.")
+            print("Thuật ngữ chưa xuất hiện trong slide: " + ", ".join(unknown))
+            return
         hits = search_db(query, min(max(args.limit, 1), 10), "slide")
         mapped = {r["slide_page"]: r for r in read_jsonl(MAP) if qs and r["question_id"] == qs[0]["question_id"]}
         verified_pages = [n for n, r in mapped.items() if r["mapping_status"] == "VERIFIED_MAPPING"]
