@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "start": "2026-10-12",
   "end": "2026-12-01",
   "slide_sha256": "75e22524b318039d960b72339afed37b56b492e94d60e5f1e03aada2ddfe7ec6",
@@ -2081,6 +2081,461 @@
       "note": "",
       "derivations": "Phương pháp làm bài và sơ đồ luyện là DERIVED; chức năng công cụ có căn cứ ở slide 365,375,378.",
       "difficulty": 2
+    },
+    {
+      "id": "TN1-Q012",
+      "title": "Kiểm soát truy cập và ý nghĩa",
+      "topic": "ÔN TẬP KIỂM SOÁT TRUY CẬP",
+      "question": "Câu 12. Trình bày khái niệm kiểm soát truy cập và ý nghĩa của nó trong việc đảm\nbảo an toàn thông tin cho hệ thống",
+      "outline_page": 4,
+      "type": "theory",
+      "status": "VERIFIED_WITH_DERIVATIONS",
+      "answer": "Kiểm soát truy cập là tập hợp cơ chế cho phép người quản trị tác động lên hành vi, công dụng và nội dung của hệ thống. Nó xác định người dùng được làm gì, truy cập tài nguyên nào và thực thi tác vụ nào. Cần phân biệt chủ thể yêu cầu truy cập với đối tượng được truy cập và quyền thực hiện thao tác. Ý nghĩa: giới hạn hoạt động theo quyền được cấp, ngăn truy cập trái phép; quyền đọc hỗ trợ bí mật, quyền ghi hỗ trợ toàn vẹn, quyền sử dụng dịch vụ hỗ trợ truy cập hợp lệ. Ví dụ một sinh viên được đọc điểm của mình nhưng không sửa điểm. Kiểm soát truy cập phải đi cùng xác thực chủ thể và các biện pháp bảo vệ khác; không tự bảo đảm mọi thuộc tính ATTT.",
+      "rubric": [
+        {
+          "id": "r1",
+          "label": "Định nghĩa cơ chế xác định chủ thể được làm gì, trên tài nguyên nào, bằng thao tác nào.",
+          "essential": true,
+          "keywords": [
+            "định",
+            "nghĩa",
+            "cơ",
+            "chế",
+            "xác",
+            "định",
+            "chủ"
+          ]
+        },
+        {
+          "id": "r2",
+          "label": "Phân biệt chủ thể, đối tượng và quyền truy cập.",
+          "essential": false,
+          "keywords": [
+            "phân",
+            "biệt",
+            "chủ",
+            "thể",
+            "đối",
+            "tượng",
+            "và"
+          ]
+        },
+        {
+          "id": "r3",
+          "label": "Giải thích ý nghĩa bảo vệ, nêu ví dụ đọc/ghi đúng quyền và giới hạn của cơ chế.",
+          "essential": false,
+          "keywords": [
+            "giải",
+            "thích",
+            "ý",
+            "nghĩa",
+            "bảo",
+            "vệ",
+            "nêu"
+          ]
+        }
+      ],
+      "hints": [
+        "Tách ba câu hỏi: ai, tài nguyên gì, thao tác gì?",
+        "So sánh quyền xem điểm và quyền sửa điểm."
+      ],
+      "sources": [
+        {
+          "page": 149,
+          "sha256": "75e22524b318039d960b72339afed37b56b492e94d60e5f1e03aada2ddfe7ec6",
+          "excerpt": "# **Kiểm soát truy cập**\n\n• **Kiểm soát truy cập (Access control)** là tập hợp các cơ chế cho phép người quản trị hệ thống tác động lên hành vi, công dụng và nội dung của hệ thống đó. • Nó cho phép xác định người dùng được làm những gì, được truy cập những tài nguyên nào, và được thực thi những tác vụ nào trong hệ thống.\n\n**6**\n\n149",
+          "label": "SLIDE_GROUNDED",
+          "visual_reviewed": true
+        },
+        {
+          "page": 150,
+          "sha256": "75e22524b318039d960b72339afed37b56b492e94d60e5f1e03aada2ddfe7ec6",
+          "excerpt": "# **Kiểm soát truy cập**\n\nq **Thực thể trong kiểm soát truy cập**\n\n• Tập các chủ thể truy cập (subject): S = {s}\n\n- Tập các đối tượng truy cập (object): O = {o}\n\n- Mỗi một chủ thể cũng là đối tượng\n\nS  O\n\n**7**\n\n150",
+          "label": "SLIDE_GROUNDED",
+          "visual_reviewed": true
+        }
+      ],
+      "note": "",
+      "derivations": "Ý nghĩa theo CIA và ví dụ sinh viên là DERIVED từ chức năng slide 149; chủ thể/đối tượng ở slide 150.",
+      "difficulty": 2
+    },
+    {
+      "id": "TN1-Q013",
+      "title": "Nguyên tắc đặc quyền tối thiểu",
+      "topic": "ÔN TẬP KIỂM SOÁT TRUY CẬP",
+      "question": "Câu 13. Trình bày nguyên tắc đặc quyền tối thiểu. Hãy lấy một ví dụ thể hiện nguyên\ntắc này trong thực tế.",
+      "outline_page": 4,
+      "type": "theory",
+      "status": "VERIFIED_WITH_DERIVATIONS",
+      "answer": "Chỉ cấp cho chủ thể tập hợp tối thiểu quyền truy cập đủ để thực hiện chức trách hoặc chức năng của mình trong hệ thống. Quyền phải gắn với nhu cầu nhiệm vụ, tránh cấp rộng chỉ vì thuận tiện. Ví dụ của slide: nhân viên bán hàng không được xem số liệu kế toán; người dùng thông thường không được cài phần mềm hoặc cấu hình mạng. Với ví dụ bán hàng, cấp quyền xử lý đơn hàng cần thiết nhưng không cấp quyền đọc sổ kế toán nếu công việc không yêu cầu. Cách cấp này giảm phạm vi tác động khi thao tác nhầm hoặc tài khoản bị chiếm, đồng thời vẫn bảo đảm làm được việc.",
+      "rubric": [
+        {
+          "id": "r1",
+          "label": "Nêu đủ tối thiểu quyền và đủ thực hiện chức trách/chức năng.",
+          "essential": true,
+          "keywords": [
+            "nêu",
+            "đủ",
+            "tối",
+            "thiểu",
+            "quyền",
+            "và",
+            "đủ"
+          ]
+        },
+        {
+          "id": "r2",
+          "label": "Ví dụ cụ thể: công việc, quyền cần có và quyền không cần cấp.",
+          "essential": false,
+          "keywords": [
+            "ví",
+            "dụ",
+            "cụ",
+            "thể",
+            "công",
+            "việc",
+            "quyền"
+          ]
+        },
+        {
+          "id": "r3",
+          "label": "Giải thích vì sao giảm quyền thừa vẫn bảo đảm hoàn thành nhiệm vụ.",
+          "essential": false,
+          "keywords": [
+            "giải",
+            "thích",
+            "vì",
+            "sao",
+            "giảm",
+            "quyền",
+            "thừa"
+          ]
+        }
+      ],
+      "hints": [
+        "Tối thiểu nhưng phải đủ để làm việc.",
+        "Nhân viên bán hàng cần quyền gì, có cần xem kế toán không?"
+      ],
+      "sources": [
+        {
+          "page": 148,
+          "sha256": "75e22524b318039d960b72339afed37b56b492e94d60e5f1e03aada2ddfe7ec6",
+          "excerpt": "# **Nguyên tắc Đặc quyền tối thiểu**\n\nq **Nguyên tắc** : chỉ cấp cho chủ thể tập hợp tối thiểu các quyền truy cập đủ để chủ thể đó thực hiện chức trách/chức năng của mình trong hệ thống\n\nq **Ví dụ:**\n\n• Bán hàng không được xem số liệu kế toán • Người dùng không được cài đặt phần mềm, cấu hình mạng...\n\n**5**\n\n148",
+          "label": "SLIDE_GROUNDED",
+          "visual_reviewed": true
+        }
+      ],
+      "note": "",
+      "derivations": "Quyền xử lý đơn hàng và phân tích giảm hậu quả là DERIVED; ví dụ bán hàng/người dùng có ở slide 148.",
+      "difficulty": 2
+    },
+    {
+      "id": "TN1-Q014",
+      "title": "Kiểm soát truy cập tùy chọn (DAC)",
+      "topic": "ÔN TẬP KIỂM SOÁT TRUY CẬP",
+      "question": "Câu 14. Trình bày đặc điểm của mô hình kiểm soát truy cập tùy chọn. Nó thường\nđược sử dụng trong những hệ thống nào? Tại sao",
+      "outline_page": 4,
+      "type": "theory",
+      "status": "VERIFIED_WITH_DERIVATIONS",
+      "answer": "DAC dựa trên định danh chủ thể hoặc nhóm. Tính tùy chọn thể hiện ở việc chủ thể có một số quyền nhất định có thể chuyển quyền cho chủ thể khác, kể cả gián tiếp, theo cơ chế cho phép. Biểu diễn bằng ma trận kiểm soát truy cập: hàng là chủ thể, cột là đối tượng, ô là các quyền. Lưu theo cột tạo ACL; theo hàng tạo danh sách khả năng/quyền. Slide nêu mô hình owner trong Linux, Windows: chủ sở hữu cấp quyền cho chủ thể khác; mô hình capabilities cho phép chuyển các quyền mình có khi có quyền đối với bên nhận. DAC phù hợp chia sẻ tài nguyên linh hoạt do chủ sở hữu quản lý. ACM mô tả chi tiết nhưng khó quản lý, dễ cấu hình sai khi nhiều người dùng và tài nguyên. Không suy ra Linux hoặc Windows chỉ hỗ trợ duy nhất DAC.",
+      "rubric": [
+        {
+          "id": "r1",
+          "label": "Dựa trên định danh cá nhân/nhóm; giải thích chuyển quyền tùy chọn.",
+          "essential": true,
+          "keywords": [
+            "dựa",
+            "trên",
+            "định",
+            "danh",
+            "cá",
+            "nhân",
+            "nhóm"
+          ]
+        },
+        {
+          "id": "r2",
+          "label": "ACM: hàng chủ thể, cột đối tượng, ô quyền; phân biệt ACL và quyền theo hàng.",
+          "essential": false,
+          "keywords": [
+            "acm",
+            "hàng",
+            "chủ",
+            "thể",
+            "cột",
+            "đối",
+            "tượng"
+          ]
+        },
+        {
+          "id": "r3",
+          "label": "Nêu hệ thống Linux/Windows với owner hoặc cơ chế capabilities theo slide.",
+          "essential": false,
+          "keywords": [
+            "nêu",
+            "hệ",
+            "thống",
+            "linux",
+            "windows",
+            "với",
+            "owner"
+          ]
+        },
+        {
+          "id": "r4",
+          "label": "Giải thích phù hợp chia sẻ linh hoạt và hạn chế quản lý khi quy mô lớn.",
+          "essential": false,
+          "keywords": [
+            "giải",
+            "thích",
+            "phù",
+            "hợp",
+            "chia",
+            "sẻ",
+            "linh"
+          ]
+        }
+      ],
+      "hints": [
+        "Ai được quyết định chia sẻ quyền cho người khác?",
+        "Nhớ owner, ACM, ACL và khả năng chuyển quyền."
+      ],
+      "sources": [
+        {
+          "page": 154,
+          "sha256": "75e22524b318039d960b72339afed37b56b492e94d60e5f1e03aada2ddfe7ec6",
+          "excerpt": "# **Kiểm soát truy cập tùy chọn**\n\n• DAC = Discretionary Access Control • Kiểm soát truy cập dựa trên định danh của chủ thể hoặc định danh của nhóm • “Tùy chọn”: chủ thể với một số quyền nhất định có thể chuyển quyền của mình cho chủ thể khác (có thể gián tiếp)\n\n• Được biểu diễn bởi ma trận kiểm soát truy cập (ACM: Access Control Matrix)\n\n**11**\n\n154",
+          "label": "SLIDE_GROUNDED",
+          "visual_reviewed": true
+        },
+        {
+          "page": 155,
+          "sha256": "75e22524b318039d960b72339afed37b56b492e94d60e5f1e03aada2ddfe7ec6",
+          "excerpt": "# **Lampson’s Access Control Matrix**\n\n|• Đề xu|ất bởi|Lamps|on nă|m 1971||\n|---|---|---|---|---|---|\n|• Dòng|= sub|ject,  C|ột = o|bject||\n||OS|Accounting<br>program|Accounting<br>data|Insurance<br>data|Payroll<br>data|\n|Bob|rx|rx|r|---|---|\n|Alice|rx|rx|r|rw|rw|\n|Sam|rwx|rwx|r|rw|rw|\n|Accounting<br>program|rx|rx|rw|rw|rw|\n\n\n\n**12**\n\n155",
+          "label": "SLIDE_GROUNDED",
+          "visual_reviewed": true
+        },
+        {
+          "page": 156,
+          "sha256": "75e22524b318039d960b72339afed37b56b492e94d60e5f1e03aada2ddfe7ec6",
+          "excerpt": "# **Đặc điểm của ACM**\n\nq **Đặc điểm của ACM**\n\n• Mô tả đầy đủ, chi tiết các quyền truy cập\n\n• Khó quản lý, có thể cấu hình sai\n\n• Không phù hợp cho những hệ thống có số lượng lớn người dùng và số lượng lớn tài nguyên\n\n**13**\n\n156",
+          "label": "SLIDE_GROUNDED",
+          "visual_reviewed": true
+        },
+        {
+          "page": 157,
+          "sha256": "75e22524b318039d960b72339afed37b56b492e94d60e5f1e03aada2ddfe7ec6",
+          "excerpt": "**Biến thể của ACM**\n\n# q **Biến thể**\n\n• Lưu ACM theo từng cột  Access Control List\n\n• Lưu ACM theo từng dòng  Access Capbability (Profile)\n\n**14**\n\n157",
+          "label": "SLIDE_GROUNDED",
+          "visual_reviewed": true
+        },
+        {
+          "page": 162,
+          "sha256": "75e22524b318039d960b72339afed37b56b492e94d60e5f1e03aada2ddfe7ec6",
+          "excerpt": "**DAC trong thực tế**\n\nq **Mô hình với “owner”**\n\n• Có một chủ thể là “owner” • Owner có thể cấp quyền cho mọi chủ thể khác (Linux, Windows) q **Mô hình với “capabilities”** • Một chủ thể có thể chuyển giao cho chủ thể khác mọi quyền mình có\n\n• Phải có quyền đối với chủ thể nhận\n\n**19**\n\n162",
+          "label": "SLIDE_GROUNDED",
+          "visual_reviewed": true
+        }
+      ],
+      "note": "",
+      "derivations": "Lý do phù hợp chia sẻ linh hoạt là DERIVED từ owner/chuyển quyền; hạn chế ACM có ở slide 156.",
+      "difficulty": 2
+    },
+    {
+      "id": "TN1-Q015",
+      "title": "Kiểm soát truy cập bắt buộc (MAC)",
+      "topic": "ÔN TẬP KIỂM SOÁT TRUY CẬP",
+      "question": "Câu 15. Trình bày đặc điểm của mô hình kiểm soát truy cập bắt buộc. Nó thường\nđược sử dụng trong những hệ thống nào? Tại sao?",
+      "outline_page": 4,
+      "type": "theory",
+      "status": "VERIFIED_WITH_DERIVATIONS",
+      "answer": "MAC gắn nhãn an toàn cho các thực thể. Nhãn gồm mức an toàn có thứ bậc và hạng mục an toàn không thứ bậc. Hệ thống quyết định truy cập dựa trên quan hệ nhãn của người dùng và tài liệu cùng các quy tắc truy cập của hệ thống. Việc người dùng là chủ sở hữu không tự cho phép vượt chính sách nhãn. Slide nêu hệ thống đòi hỏi tính bảo mật cao, ví dụ quân sự; phù hợp vì cần kiểm soát thống nhất luồng truy cập giữa các mức nhạy cảm. Ví dụ một tài liệu ở mức Secret cần người dùng có nhãn phù hợp và thỏa quy tắc đọc; có mức cao mà thiếu hạng mục cần thiết vẫn không đủ. Phải kiểm tra thao tác và quy tắc cụ thể, không dùng cùng một điều kiện cho mọi thao tác đọc/ghi.",
+      "rubric": [
+        {
+          "id": "r1",
+          "label": "Giải thích nhãn gồm mức có thứ bậc và hạng mục không thứ bậc.",
+          "essential": true,
+          "keywords": [
+            "giải",
+            "thích",
+            "nhãn",
+            "gồm",
+            "mức",
+            "có",
+            "thứ"
+          ]
+        },
+        {
+          "id": "r2",
+          "label": "Quyết định theo nhãn và quy tắc của hệ thống; không tùy ý vượt chính sách.",
+          "essential": false,
+          "keywords": [
+            "quyết",
+            "định",
+            "theo",
+            "nhãn",
+            "và",
+            "quy",
+            "tắc"
+          ]
+        },
+        {
+          "id": "r3",
+          "label": "Nêu quân sự/hệ thống bảo mật cao và lý do kiểm soát thống nhất.",
+          "essential": false,
+          "keywords": [
+            "nêu",
+            "quân",
+            "sự",
+            "hệ",
+            "thống",
+            "bảo",
+            "mật"
+          ]
+        },
+        {
+          "id": "r4",
+          "label": "Ví dụ xét cả mức, hạng mục và thao tác; không chỉ so mức.",
+          "essential": false,
+          "keywords": [
+            "ví",
+            "dụ",
+            "xét",
+            "cả",
+            "mức",
+            "hạng",
+            "mục"
+          ]
+        }
+      ],
+      "hints": [
+        "Nhãn an toàn có hai thành phần nào?",
+        "Quyền do quy tắc hệ thống xét theo nhãn; nghĩ tới tài liệu quân sự."
+      ],
+      "sources": [
+        {
+          "page": 164,
+          "sha256": "75e22524b318039d960b72339afed37b56b492e94d60e5f1e03aada2ddfe7ec6",
+          "excerpt": "# **Mandatory Access Control**\n\nq **Cơ chế kiểm soát**\n\n- Tất cả các thực thể trong hệ thống đều được gắn một **Mức an toàn** tương ứng với độ nhạy cảm an toàn cao nhất của thực thể đó (Có thứ bậc)\n\n- • **Hạng mục an toàn** được định nghĩa như sự phân nhóm không thứ bậc các thực thể của hệ thống để giúp chỉ ra mức độ nhạy cảm an toàn của chúng\n\n- Tất cả thực thể trong hệ thống sẽ được gắn một **Nhãn an toàn = Mức AT x Hạng mục AT**\n\n**21**\n\n164",
+          "label": "SLIDE_GROUNDED",
+          "visual_reviewed": true
+        },
+        {
+          "page": 165,
+          "sha256": "75e22524b318039d960b72339afed37b56b492e94d60e5f1e03aada2ddfe7ec6",
+          "excerpt": "# **Mandatory Access Control**\n\nq **Cơ chế kiểm soát** • Người dùng sẽ được phép truy cập tới những tài liệu dựa vào việc tính trội nhãn AT của người dùng với nhãn AT của tài liệu và các quy tắc truy cập của HT.  Chỉ phù hợp với hệ thống đòi hỏi tính bảo mật cao, ví dụ như trong quân sự.\n\n**22**\n\n165",
+          "label": "SLIDE_GROUNDED",
+          "visual_reviewed": true
+        },
+        {
+          "page": 167,
+          "sha256": "75e22524b318039d960b72339afed37b56b492e94d60e5f1e03aada2ddfe7ec6",
+          "excerpt": "# **Mandatory Access Control**\n\n## q **Mức an toàn:**\n\n\n\n**24**\n\n167",
+          "label": "SLIDE_GROUNDED",
+          "visual_reviewed": true
+        }
+      ],
+      "note": "Slide 166 viết quan hệ mức bằng dấu >, còn hình 168 có liên hệ giữa nhãn cùng mức. Đáp án này không áp một công thức so mức duy nhất cho mọi thao tác; khi đề yêu cầu mô hình cụ thể phải giữ quy tắc đọc/ghi của mô hình đó.",
+      "derivations": "Giải thích quản lý thống nhất, không vượt chính sách và ví dụ kiểm tra hạng mục/thao tác là DERIVED từ cơ chế nhãn + quy tắc ở slide 164–165; ví dụ mức phân loại ở 167.",
+      "difficulty": 2
+    },
+    {
+      "id": "TN1-Q016",
+      "title": "Kiểm soát truy cập theo vai trò (RBAC)",
+      "topic": "ÔN TẬP KIỂM SOÁT TRUY CẬP",
+      "question": "Câu 16. Trình bày đặc điểm của mô hình kiểm soát truy cập dựa trên vai trò. Nó\nthường được sử dụng trong những hệ thống nào? Tại sao?",
+      "outline_page": 4,
+      "type": "theory",
+      "status": "VERIFIED_WITH_DERIVATIONS",
+      "answer": "RBAC xác định các vai trò trong hệ thống, gán quyền truy cập đối tượng cho vai trò/nhóm, rồi gán chủ thể vào một hoặc nhiều vai trò. Theo slide, chủ thể có các quyền của các nhóm mà nó thuộc về. Quan hệ người dùng–vai trò và vai trò–quyền tách việc quản lý người dùng khỏi việc cấp từng quyền trực tiếp. Hình slide minh họa Professor, PhD student, IT coordinator với các quyền như dùng máy, cập nhật phần mềm, dạy, hỗ trợ; không phải mọi vai trò có cùng quyền. Phù hợp cơ quan, trường học, doanh nghiệp có chức trách lặp lại: tạo vai trò theo nhiệm vụ, gán/thay vai trò khi công việc đổi, giảm việc cấp quyền riêng lẻ. Ví dụ nhân viên phòng đào tạo có vai trò cập nhật hồ sơ; sinh viên có vai trò xem hồ sơ. Khi giữ nhiều vai trò phải rà soát tổng quyền theo đặc quyền tối thiểu.",
+      "rubric": [
+        {
+          "id": "r1",
+          "label": "Nêu quan hệ người dùng–vai trò–quyền; một chủ thể có thể có nhiều vai trò.",
+          "essential": true,
+          "keywords": [
+            "nêu",
+            "quan",
+            "hệ",
+            "người",
+            "dùng",
+            "vai",
+            "trò"
+          ]
+        },
+        {
+          "id": "r2",
+          "label": "Giải thích quyền của các nhóm và việc tách quản lý người dùng khỏi cấp quyền.",
+          "essential": false,
+          "keywords": [
+            "giải",
+            "thích",
+            "quyền",
+            "của",
+            "các",
+            "nhóm",
+            "và"
+          ]
+        },
+        {
+          "id": "r3",
+          "label": "Nêu hệ thống có chức trách lặp lại và lý do quản trị thuận tiện.",
+          "essential": false,
+          "keywords": [
+            "nêu",
+            "hệ",
+            "thống",
+            "có",
+            "chức",
+            "trách",
+            "lặp"
+          ]
+        },
+        {
+          "id": "r4",
+          "label": "Ví dụ phân biệt hai vai trò, quyền tương ứng; lưu ý quyền khi kiêm nhiệm.",
+          "essential": false,
+          "keywords": [
+            "ví",
+            "dụ",
+            "phân",
+            "biệt",
+            "hai",
+            "vai",
+            "trò"
+          ]
+        }
+      ],
+      "hints": [
+        "Quyền được gán cho người hay cho chức trách trước?",
+        "Dùng hai vai trò sinh viên và phòng đào tạo; xét người kiêm nhiều vai trò."
+      ],
+      "sources": [
+        {
+          "page": 148,
+          "sha256": "75e22524b318039d960b72339afed37b56b492e94d60e5f1e03aada2ddfe7ec6",
+          "excerpt": "# **Nguyên tắc Đặc quyền tối thiểu**\n\nq **Nguyên tắc** : chỉ cấp cho chủ thể tập hợp tối thiểu các quyền truy cập đủ để chủ thể đó thực hiện chức trách/chức năng của mình trong hệ thống\n\nq **Ví dụ:**\n\n• Bán hàng không được xem số liệu kế toán • Người dùng không được cài đặt phần mềm, cấu hình mạng...\n\n**5**\n\n148",
+          "label": "SLIDE_GROUNDED",
+          "visual_reviewed": true
+        },
+        {
+          "page": 170,
+          "sha256": "75e22524b318039d960b72339afed37b56b492e94d60e5f1e03aada2ddfe7ec6",
+          "excerpt": "# **Role Based Access Control**\n\nq **RBAC – Role-Based Access Control** • Trong hệ thống, xác định các vai trò có thể có đối với mọi chủ thể.\n\n- Đối với mỗi đối tượng O, liệt kê danh sách các nhóm G với các quyền truy cập tới O\n\n• Mỗi chủ thể có thể là thành viên của một hoặc một số nhóm (có một hoặc nhiều vai trò)\n\n• Chủ thể có tất cả các quyền của tất cả các nhóm mà nó thuộc về 170\n\n**27**\n\n170",
+          "label": "SLIDE_GROUNDED",
+          "visual_reviewed": true
+        },
+        {
+          "page": 171,
+          "sha256": "75e22524b318039d960b72339afed37b56b492e94d60e5f1e03aada2ddfe7ec6",
+          "excerpt": "# **Role Based Access Control**\n\n\n\n**28**\n\n171",
+          "label": "SLIDE_GROUNDED",
+          "visual_reviewed": true
+        }
+      ],
+      "note": "",
+      "derivations": "Hệ thống phù hợp, ví dụ phòng đào tạo và rà soát quyền kiêm nhiệm là DERIVED từ slide 170–171 và nguyên tắc 148; sơ đồ gán quyền/vai trò có ở slide 171.",
+      "difficulty": 2
     }
   ],
   "plan": [
@@ -3521,88 +3976,16 @@
     {
       "day": 42,
       "date": "2026-11-22",
-      "title": "Kiểm tra ngẫu nhiên toàn phạm vi",
+      "title": "Đánh giá chọn lọc giữa các nhóm",
       "card_ids": [
-        "TN1-Q001",
         "TN1-Q002",
-        "TN1-Q003",
-        "TN1-Q004",
-        "TN1-Q005",
-        "TN1-Q006",
-        "TN1-Q007",
-        "TN1-Q008",
-        "TN1-Q009",
-        "TN1-Q010",
-        "TN1-Q011",
-        "TN1-Q012",
         "TN1-Q013",
-        "TN1-Q014",
-        "TN1-Q015",
-        "TN1-Q016",
-        "TN1-Q017",
-        "TN1-Q018",
         "TN1-Q019",
-        "TN1-Q020",
-        "TN1-Q021",
-        "TN1-Q022",
         "TN1-Q023",
-        "TN1-Q024",
-        "TN1-Q025",
-        "TN1-Q026",
-        "TN1-Q027",
-        "TN1-Q028",
-        "TN1-Q029",
         "TN1-Q030",
-        "TN1-Q031",
-        "TN1-Q032",
-        "TN1-Q033",
-        "TN1-Q034",
-        "TN1-Q035",
-        "TN1-Q036",
         "TN1-Q037",
-        "TN1-Q038",
-        "TN1-Q039",
-        "TN1-Q040",
-        "TN1-Q041",
-        "TN1-Q042",
-        "TN1-Q043",
-        "TN1-Q044",
-        "TN1-Q045",
-        "TN1-Q046",
-        "TN1-Q047",
         "TN1-Q048",
-        "TN1-Q049",
-        "TN1-Q050",
-        "TN1-Q051",
-        "TN1-Q052",
-        "TN1-Q053",
-        "TN1-Q054",
-        "TN1-Q055",
-        "TN1-Q056",
-        "TN1-Q057",
-        "TN1-Q058",
-        "TN1-Q059",
-        "TN1-Q060",
-        "TN1-Q061",
-        "TN1-Q062",
-        "TN1-Q063",
-        "TN1-Q064",
-        "TN1-Q065",
-        "TN1-Q066",
-        "TN1-Q067",
-        "TN1-Q068",
-        "TN1-Q069",
-        "TN1-Q070",
-        "TN1-Q071",
-        "TN1-Q072",
-        "TN1-Q073",
-        "TN1-Q074",
-        "TN1-Q075",
-        "TN1-Q076",
-        "TN1-Q077",
-        "TN1-Q078",
-        "TN1-Q079",
-        "TN1-Q080"
+        "TN1-Q069"
       ],
       "minutes": 150,
       "phase": 6,
@@ -3909,88 +4292,16 @@
     {
       "day": 51,
       "date": "2026-12-01",
-      "title": "Kiểm tra đầu ra và lịch duy trì",
+      "title": "Đánh giá đầu ra chọn lọc và lịch duy trì",
       "card_ids": [
-        "TN1-Q001",
-        "TN1-Q002",
-        "TN1-Q003",
-        "TN1-Q004",
-        "TN1-Q005",
-        "TN1-Q006",
-        "TN1-Q007",
-        "TN1-Q008",
-        "TN1-Q009",
-        "TN1-Q010",
-        "TN1-Q011",
-        "TN1-Q012",
-        "TN1-Q013",
-        "TN1-Q014",
-        "TN1-Q015",
-        "TN1-Q016",
-        "TN1-Q017",
-        "TN1-Q018",
-        "TN1-Q019",
-        "TN1-Q020",
-        "TN1-Q021",
-        "TN1-Q022",
-        "TN1-Q023",
-        "TN1-Q024",
-        "TN1-Q025",
-        "TN1-Q026",
-        "TN1-Q027",
-        "TN1-Q028",
-        "TN1-Q029",
-        "TN1-Q030",
-        "TN1-Q031",
         "TN1-Q032",
-        "TN1-Q033",
-        "TN1-Q034",
-        "TN1-Q035",
-        "TN1-Q036",
+        "TN1-Q011",
+        "TN1-Q015",
+        "TN1-Q023",
+        "TN1-Q028",
         "TN1-Q037",
-        "TN1-Q038",
-        "TN1-Q039",
-        "TN1-Q040",
-        "TN1-Q041",
-        "TN1-Q042",
-        "TN1-Q043",
-        "TN1-Q044",
-        "TN1-Q045",
-        "TN1-Q046",
-        "TN1-Q047",
-        "TN1-Q048",
-        "TN1-Q049",
         "TN1-Q050",
-        "TN1-Q051",
-        "TN1-Q052",
-        "TN1-Q053",
-        "TN1-Q054",
-        "TN1-Q055",
-        "TN1-Q056",
-        "TN1-Q057",
-        "TN1-Q058",
-        "TN1-Q059",
-        "TN1-Q060",
-        "TN1-Q061",
-        "TN1-Q062",
-        "TN1-Q063",
-        "TN1-Q064",
-        "TN1-Q065",
-        "TN1-Q066",
-        "TN1-Q067",
-        "TN1-Q068",
-        "TN1-Q069",
-        "TN1-Q070",
-        "TN1-Q071",
-        "TN1-Q072",
-        "TN1-Q073",
-        "TN1-Q074",
-        "TN1-Q075",
-        "TN1-Q076",
-        "TN1-Q077",
-        "TN1-Q078",
-        "TN1-Q079",
-        "TN1-Q080"
+        "TN1-Q074"
       ],
       "minutes": 150,
       "phase": 8,
@@ -6912,6 +7223,632 @@
         "Text extracted from PDF; diagram/formula may require visual check"
       ],
       "parent_question_id": "TN1-Q065"
+    }
+  ],
+  "child_coverage": [
+    {
+      "id": "TN1-Q009-a",
+      "parent_id": "TN1-Q009",
+      "question": "a) Điều kiện ban đầu của giao thức",
+      "status": "REVIEWED",
+      "rubric_ids": [
+        "r1"
+      ],
+      "required_steps": [
+        "a) Điều kiện ban đầu của giao thức"
+      ],
+      "slide_pages": [
+        139,
+        141
+      ],
+      "first_day": 1,
+      "note": ""
+    },
+    {
+      "id": "TN1-Q009-b",
+      "parent_id": "TN1-Q009",
+      "question": "b) Các bước hoạt động của giao thức",
+      "status": "REVIEWED",
+      "rubric_ids": [
+        "r2"
+      ],
+      "required_steps": [
+        "b) Các bước hoạt động của giao thức"
+      ],
+      "slide_pages": [
+        139,
+        141
+      ],
+      "first_day": 1,
+      "note": ""
+    },
+    {
+      "id": "TN1-Q009-c",
+      "parent_id": "TN1-Q009",
+      "question": "c) Cơ sở cho quyết định cuối cùng của bên xác thực",
+      "status": "REVIEWED",
+      "rubric_ids": [
+        "r3"
+      ],
+      "required_steps": [
+        "c) Cơ sở cho quyết định cuối cùng của bên xác thực"
+      ],
+      "slide_pages": [
+        139,
+        141
+      ],
+      "first_day": 1,
+      "note": ""
+    },
+    {
+      "id": "TN1-Q009-d",
+      "parent_id": "TN1-Q009",
+      "question": "d) Tấn công từ điển sử dụng bảng băm sẵn (precomputed hash table) lên cơ sở\ndữ liệu tài khoản người dùng trong trường hợp có được cơ sở dữ liệu đó.",
+      "status": "REVIEWED",
+      "rubric_ids": [
+        "r4"
+      ],
+      "required_steps": [
+        "d) Tấn công từ điển sử dụng bảng băm sẵn (precomputed hash table) lên cơ sở\ndữ liệu tài khoản người dùng trong trường hợp có được cơ sở dữ liệu đó."
+      ],
+      "slide_pages": [
+        139,
+        141
+      ],
+      "first_day": 1,
+      "note": ""
+    },
+    {
+      "id": "TN1-Q010-a",
+      "parent_id": "TN1-Q010",
+      "question": "a) Điều kiện ban đầu của giao thức",
+      "status": "REVIEWED",
+      "rubric_ids": [
+        "r1"
+      ],
+      "required_steps": [
+        "a) Điều kiện ban đầu của giao thức"
+      ],
+      "slide_pages": [
+        140,
+        141
+      ],
+      "first_day": 7,
+      "note": ""
+    },
+    {
+      "id": "TN1-Q010-b",
+      "parent_id": "TN1-Q010",
+      "question": "b) Các bước hoạt động của giao thức",
+      "status": "REVIEWED",
+      "rubric_ids": [
+        "r2"
+      ],
+      "required_steps": [
+        "b) Các bước hoạt động của giao thức"
+      ],
+      "slide_pages": [
+        140,
+        141
+      ],
+      "first_day": 7,
+      "note": ""
+    },
+    {
+      "id": "TN1-Q010-c",
+      "parent_id": "TN1-Q010",
+      "question": "c) Cơ sở cho quyết định cuối cùng của bên xác thực",
+      "status": "REVIEWED",
+      "rubric_ids": [
+        "r3"
+      ],
+      "required_steps": [
+        "c) Cơ sở cho quyết định cuối cùng của bên xác thực"
+      ],
+      "slide_pages": [
+        140,
+        141
+      ],
+      "first_day": 7,
+      "note": ""
+    },
+    {
+      "id": "TN1-Q010-d",
+      "parent_id": "TN1-Q010",
+      "question": "d) Ý nghĩa của việc sử dụng \"salt\" trong giao thức",
+      "status": "REVIEWED",
+      "rubric_ids": [
+        "r4"
+      ],
+      "required_steps": [
+        "d) Ý nghĩa của việc sử dụng \"salt\" trong giao thức"
+      ],
+      "slide_pages": [
+        140,
+        141
+      ],
+      "first_day": 7,
+      "note": ""
+    },
+    {
+      "id": "TN1-Q011-a",
+      "parent_id": "TN1-Q011",
+      "question": "a) Điều kiện ban đầu của giao thức",
+      "status": "REVIEWED",
+      "rubric_ids": [
+        "r1"
+      ],
+      "required_steps": [
+        "a) Điều kiện ban đầu của giao thức"
+      ],
+      "slide_pages": [
+        142
+      ],
+      "first_day": 7,
+      "note": ""
+    },
+    {
+      "id": "TN1-Q011-b",
+      "parent_id": "TN1-Q011",
+      "question": "b) Các bước hoạt động của giao thức",
+      "status": "REVIEWED",
+      "rubric_ids": [
+        "r2"
+      ],
+      "required_steps": [
+        "b) Các bước hoạt động của giao thức"
+      ],
+      "slide_pages": [
+        142
+      ],
+      "first_day": 7,
+      "note": ""
+    },
+    {
+      "id": "TN1-Q011-c",
+      "parent_id": "TN1-Q011",
+      "question": "c) Cơ sở cho quyết định cuối cùng của bên xác thực",
+      "status": "REVIEWED",
+      "rubric_ids": [
+        "r3"
+      ],
+      "required_steps": [
+        "c) Cơ sở cho quyết định cuối cùng của bên xác thực"
+      ],
+      "slide_pages": [
+        142
+      ],
+      "first_day": 7,
+      "note": ""
+    },
+    {
+      "id": "TN1-Q011-d",
+      "parent_id": "TN1-Q011",
+      "question": "d) Tấn công kiểu man-in-the-middle lên giao thức",
+      "status": "REVIEWED",
+      "rubric_ids": [
+        "r4"
+      ],
+      "required_steps": [
+        "d) Tấn công kiểu man-in-the-middle lên giao thức"
+      ],
+      "slide_pages": [
+        142
+      ],
+      "first_day": 7,
+      "note": ""
+    },
+    {
+      "id": "TN1-Q039-a",
+      "parent_id": "TN1-Q039",
+      "question": "-\nXác định khoá bí mật",
+      "status": "AWAITING_REVIEW",
+      "rubric_ids": [],
+      "required_steps": [
+        "-\nXác định khoá bí mật"
+      ],
+      "slide_pages": [],
+      "first_day": 20,
+      "note": ""
+    },
+    {
+      "id": "TN1-Q039-b",
+      "parent_id": "TN1-Q039",
+      "question": "-\nTìm M",
+      "status": "AWAITING_REVIEW",
+      "rubric_ids": [],
+      "required_steps": [
+        "-\nTìm M"
+      ],
+      "slide_pages": [],
+      "first_day": 20,
+      "note": ""
+    },
+    {
+      "id": "TN1-Q040-a",
+      "parent_id": "TN1-Q040",
+      "question": "-\nXác định khoá bí mật",
+      "status": "AWAITING_REVIEW",
+      "rubric_ids": [],
+      "required_steps": [
+        "-\nXác định khoá bí mật"
+      ],
+      "slide_pages": [],
+      "first_day": 20,
+      "note": ""
+    },
+    {
+      "id": "TN1-Q040-b",
+      "parent_id": "TN1-Q040",
+      "question": "-\nTìm M",
+      "status": "AWAITING_REVIEW",
+      "rubric_ids": [],
+      "required_steps": [
+        "-\nTìm M"
+      ],
+      "slide_pages": [],
+      "first_day": 20,
+      "note": ""
+    },
+    {
+      "id": "TN1-Q041-a",
+      "parent_id": "TN1-Q041",
+      "question": "-\nTìm khoá bí mật",
+      "status": "AWAITING_REVIEW",
+      "rubric_ids": [],
+      "required_steps": [
+        "-\nTìm khoá bí mật"
+      ],
+      "slide_pages": [],
+      "first_day": 21,
+      "note": ""
+    },
+    {
+      "id": "TN1-Q041-b",
+      "parent_id": "TN1-Q041",
+      "question": "-\nGiải mã thông điệp (111,4,88,57,116,67) (chuyển đổi bản rõ ra dạng ASCII",
+      "status": "AWAITING_REVIEW",
+      "rubric_ids": [],
+      "required_steps": [
+        "-\nGiải mã thông điệp (111,4,88,57,116,67) (chuyển đổi bản rõ ra dạng ASCII"
+      ],
+      "slide_pages": [],
+      "first_day": 21,
+      "note": ""
+    },
+    {
+      "id": "TN1-Q042-a",
+      "parent_id": "TN1-Q042",
+      "question": "-\nHãy mã hóa ký tự A trong bảng mã ASCII sử dụng khóa công khai trên",
+      "status": "AWAITING_REVIEW",
+      "rubric_ids": [],
+      "required_steps": [
+        "-\nHãy mã hóa ký tự A trong bảng mã ASCII sử dụng khóa công khai trên"
+      ],
+      "slide_pages": [],
+      "first_day": 21,
+      "note": ""
+    },
+    {
+      "id": "TN1-Q042-b",
+      "parent_id": "TN1-Q042",
+      "question": "-\nCho văn bản bí mật là 247, 337, 322, 463, 15, 73, 440, 15, 342, 323, 435\nđược mã bằng khóa công khai trên. Hãy tìm cách giải mật thông điệp trên.",
+      "status": "AWAITING_REVIEW",
+      "rubric_ids": [],
+      "required_steps": [
+        "Tìm khóa giải mã",
+        "Giải mã đủ 11 khối",
+        "Ghép thông điệp"
+      ],
+      "slide_pages": [],
+      "first_day": 21,
+      "note": ""
+    },
+    {
+      "id": "TN1-Q046-a",
+      "parent_id": "TN1-Q046",
+      "question": "- Hãy tìm khoá công khai của A?",
+      "status": "PRACTICE_READY_PARTIAL",
+      "rubric_ids": [],
+      "required_steps": [
+        "- Hãy tìm khoá công khai của A?"
+      ],
+      "slide_pages": [],
+      "first_day": 22,
+      "note": ""
+    },
+    {
+      "id": "TN1-Q046-b",
+      "parent_id": "TN1-Q046",
+      "question": "- Giả sử chọn số ngẫu nhiên k = 23, hãy thực hiện mã hoá bản tin x = 34 với\nkhoá công khai của A, và giả mã bản mã vừa thu được.",
+      "status": "PRACTICE_READY_PARTIAL",
+      "rubric_ids": [],
+      "required_steps": [
+        "Mã hóa với k=23",
+        "Giải mã bản mã vừa tạo",
+        "Kiểm chứng bản rõ"
+      ],
+      "slide_pages": [],
+      "first_day": 22,
+      "note": ""
+    },
+    {
+      "id": "TN1-Q048-a",
+      "parent_id": "TN1-Q048",
+      "question": "- Xác định tất cả các điểm của đường cong",
+      "status": "PRACTICE_READY_PARTIAL",
+      "rubric_ids": [],
+      "required_steps": [
+        "- Xác định tất cả các điểm của đường cong"
+      ],
+      "slide_pages": [],
+      "first_day": 23,
+      "note": ""
+    },
+    {
+      "id": "TN1-Q048-b",
+      "parent_id": "TN1-Q048",
+      "question": "- Tính tất cả các giá trị của kα với 1< k <14, trong đó α= (2,7)",
+      "status": "PRACTICE_READY_PARTIAL",
+      "rubric_ids": [],
+      "required_steps": [
+        "- Tính tất cả các giá trị của kα với 1< k <14, trong đó α= (2,7)"
+      ],
+      "slide_pages": [],
+      "first_day": 23,
+      "note": ""
+    },
+    {
+      "id": "TN1-Q048-c",
+      "parent_id": "TN1-Q048",
+      "question": "- ECC ElGamal encryption:\n+ Tính khóa công khai biết khóa bí mật là 6\n+ Tính khóa công khai biết khóa bí mật là 2\n+ Tính khóa công khai biết khóa bí mật là 7",
+      "status": "PRACTICE_READY_PARTIAL",
+      "rubric_ids": [],
+      "required_steps": [
+        "Khóa công khai với d=6",
+        "Khóa công khai với d=2",
+        "Khóa công khai với d=7"
+      ],
+      "slide_pages": [],
+      "first_day": 23,
+      "note": ""
+    },
+    {
+      "id": "TN1-Q048-d",
+      "parent_id": "TN1-Q048",
+      "question": "- Với khóa bí mật của người nhận là 7. Tham số ngẫu nhiên là 3.\n+ Mã hóa thông điệp 10\n+ Giải mã và kiểm chứng",
+      "status": "PRACTICE_READY_PARTIAL",
+      "rubric_ids": [],
+      "required_steps": [
+        "Xác định ánh xạ thông điệp 10 (đề thiếu)",
+        "Mã hóa với d=7, k=3",
+        "Giải mã",
+        "Kiểm chứng"
+      ],
+      "slide_pages": [],
+      "first_day": 23,
+      "note": "Thiếu ánh xạ thông điệp số sang điểm; không có bản mã duy nhất."
+    },
+    {
+      "id": "TN1-Q049-a",
+      "parent_id": "TN1-Q049",
+      "question": "-\nTìm khoá công khai",
+      "status": "AWAITING_REVIEW",
+      "rubric_ids": [],
+      "required_steps": [
+        "-\nTìm khoá công khai"
+      ],
+      "slide_pages": [],
+      "first_day": 26,
+      "note": "Đề ghi mod 1; chưa xác định miền ECC hợp lệ."
+    },
+    {
+      "id": "TN1-Q049-b",
+      "parent_id": "TN1-Q049",
+      "question": "-\nChọn ngẫu nhiên k=2, mã hoá thông điệp x=(2,0)",
+      "status": "AWAITING_REVIEW",
+      "rubric_ids": [],
+      "required_steps": [
+        "-\nChọn ngẫu nhiên k=2, mã hoá thông điệp x=(2,0)"
+      ],
+      "slide_pages": [],
+      "first_day": 26,
+      "note": "Đề ghi mod 1; chưa xác định miền ECC hợp lệ."
+    },
+    {
+      "id": "TN1-Q049-c",
+      "parent_id": "TN1-Q049",
+      "question": "-\nGiải mã ngược lại",
+      "status": "AWAITING_REVIEW",
+      "rubric_ids": [],
+      "required_steps": [
+        "-\nGiải mã ngược lại"
+      ],
+      "slide_pages": [],
+      "first_day": 26,
+      "note": "Đề ghi mod 1; chưa xác định miền ECC hợp lệ."
+    },
+    {
+      "id": "TN1-Q054-a",
+      "parent_id": "TN1-Q054",
+      "question": "a) Tính giá trị công khai yA của A và yB của B.",
+      "status": "AWAITING_REVIEW",
+      "rubric_ids": [],
+      "required_steps": [
+        "a) Tính giá trị công khai yA của A và yB của B."
+      ],
+      "slide_pages": [],
+      "first_day": 36,
+      "note": ""
+    },
+    {
+      "id": "TN1-Q054-b",
+      "parent_id": "TN1-Q054",
+      "question": "b) Tính giá trị của khóa chia sẻ ZAB giữa A và B.",
+      "status": "AWAITING_REVIEW",
+      "rubric_ids": [],
+      "required_steps": [
+        "b) Tính giá trị của khóa chia sẻ ZAB giữa A và B."
+      ],
+      "slide_pages": [],
+      "first_day": 36,
+      "note": ""
+    },
+    {
+      "id": "TN1-Q055-a",
+      "parent_id": "TN1-Q055",
+      "question": "a) Điều kiện ban đầu của giao thức",
+      "status": "AWAITING_REVIEW",
+      "rubric_ids": [],
+      "required_steps": [
+        "a) Điều kiện ban đầu của giao thức"
+      ],
+      "slide_pages": [],
+      "first_day": 36,
+      "note": ""
+    },
+    {
+      "id": "TN1-Q055-b",
+      "parent_id": "TN1-Q055",
+      "question": "b) Các bước hoạt động của giao thức",
+      "status": "AWAITING_REVIEW",
+      "rubric_ids": [],
+      "required_steps": [
+        "b) Các bước hoạt động của giao thức"
+      ],
+      "slide_pages": [],
+      "first_day": 36,
+      "note": ""
+    },
+    {
+      "id": "TN1-Q055-c",
+      "parent_id": "TN1-Q055",
+      "question": "c) Cơ sở cho quyết định cuối cùng của bên xác thực",
+      "status": "AWAITING_REVIEW",
+      "rubric_ids": [],
+      "required_steps": [
+        "c) Cơ sở cho quyết định cuối cùng của bên xác thực"
+      ],
+      "slide_pages": [],
+      "first_day": 36,
+      "note": ""
+    },
+    {
+      "id": "TN1-Q055-d",
+      "parent_id": "TN1-Q055",
+      "question": "d) Tấn công từ điển sử dụng bảng băm sẵn (precomputed hash table) lên cơ sở dữ liệu tài\nkhoản người dùng trong trường hợp có được cơ sở dữ liệu đó.",
+      "status": "AWAITING_REVIEW",
+      "rubric_ids": [],
+      "required_steps": [
+        "d) Tấn công từ điển sử dụng bảng băm sẵn (precomputed hash table) lên cơ sở dữ liệu tài\nkhoản người dùng trong trường hợp có được cơ sở dữ liệu đó."
+      ],
+      "slide_pages": [],
+      "first_day": 36,
+      "note": ""
+    },
+    {
+      "id": "TN1-Q060-a",
+      "parent_id": "TN1-Q060",
+      "question": "a) Điều kiện ban đầu của giao thức",
+      "status": "AWAITING_REVIEW",
+      "rubric_ids": [],
+      "required_steps": [
+        "a) Điều kiện ban đầu của giao thức"
+      ],
+      "slide_pages": [],
+      "first_day": 38,
+      "note": ""
+    },
+    {
+      "id": "TN1-Q060-b",
+      "parent_id": "TN1-Q060",
+      "question": "b) Các bước hoạt động của giao thức",
+      "status": "AWAITING_REVIEW",
+      "rubric_ids": [],
+      "required_steps": [
+        "b) Các bước hoạt động của giao thức"
+      ],
+      "slide_pages": [],
+      "first_day": 38,
+      "note": ""
+    },
+    {
+      "id": "TN1-Q060-c",
+      "parent_id": "TN1-Q060",
+      "question": "c) Cơ sở cho quyết định cuối cùng của bên xác thực",
+      "status": "AWAITING_REVIEW",
+      "rubric_ids": [],
+      "required_steps": [
+        "c) Cơ sở cho quyết định cuối cùng của bên xác thực"
+      ],
+      "slide_pages": [],
+      "first_day": 38,
+      "note": ""
+    },
+    {
+      "id": "TN1-Q060-d",
+      "parent_id": "TN1-Q060",
+      "question": "d) Ý nghĩa của việc sử dụng \"salt\" trong giao thức",
+      "status": "AWAITING_REVIEW",
+      "rubric_ids": [],
+      "required_steps": [
+        "d) Ý nghĩa của việc sử dụng \"salt\" trong giao thức"
+      ],
+      "slide_pages": [],
+      "first_day": 38,
+      "note": ""
+    },
+    {
+      "id": "TN1-Q065-a",
+      "parent_id": "TN1-Q065",
+      "question": "a) Điều kiện ban đầu của giao thức",
+      "status": "AWAITING_REVIEW",
+      "rubric_ids": [],
+      "required_steps": [
+        "a) Điều kiện ban đầu của giao thức"
+      ],
+      "slide_pages": [],
+      "first_day": 40,
+      "note": ""
+    },
+    {
+      "id": "TN1-Q065-b",
+      "parent_id": "TN1-Q065",
+      "question": "b) Các bước hoạt động của giao thức",
+      "status": "AWAITING_REVIEW",
+      "rubric_ids": [],
+      "required_steps": [
+        "b) Các bước hoạt động của giao thức"
+      ],
+      "slide_pages": [],
+      "first_day": 40,
+      "note": ""
+    },
+    {
+      "id": "TN1-Q065-c",
+      "parent_id": "TN1-Q065",
+      "question": "c) Cơ sở cho quyết định cuối cùng của bên xác thực",
+      "status": "AWAITING_REVIEW",
+      "rubric_ids": [],
+      "required_steps": [
+        "c) Cơ sở cho quyết định cuối cùng của bên xác thực"
+      ],
+      "slide_pages": [],
+      "first_day": 40,
+      "note": ""
+    },
+    {
+      "id": "TN1-Q065-d",
+      "parent_id": "TN1-Q065",
+      "question": "d) Tấn công kiểu man-in-the-middle lên giao thức",
+      "status": "AWAITING_REVIEW",
+      "rubric_ids": [],
+      "required_steps": [
+        "d) Tấn công kiểu man-in-the-middle lên giao thức"
+      ],
+      "slide_pages": [],
+      "first_day": 40,
+      "note": ""
     }
   ],
   "reviewed_on": "2026-10-11"

@@ -699,6 +699,9 @@ th {
 .diagram .hidden-label {
   fill: #b5c4c5;
 }
+.grid > * {
+  min-width: 0;
+}
 .code-view {
   font-family: Consolas, "Cascadia Code", monospace;
   font-size: 13px;

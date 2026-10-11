@@ -100,14 +100,37 @@ card(74, 'Đề xuất an toàn cho mô hình mạng', [69,330,331,365,375,378],
  'Đọc mô hình để xác định tài sản, vùng tin cậy, điểm kết nối và dịch vụ. Đề xuất bảo vệ theo lớp: firewall ở biên với luật tối thiểu cần thiết; tách dịch vụ công khai khỏi mạng nội bộ; phân vùng người dùng/máy chủ; kiểm soát quyền, bảo vệ máy chủ; giám sát bằng IDS và tập trung log để phân tích sự kiện. Mỗi biện pháp cần nêu vị trí, lưu lượng được phép và nguy cơ giảm được. Vì đề không cho một mô hình cố định, đây là phương pháp làm bài, không phải cấu hình áp dụng cho mọi mạng.',
  ['Nhận diện tài sản, luồng dữ liệu và vùng tin cậy của mô hình được cho.', 'Đặt các biện pháp theo lớp, vị trí và quyền tối thiểu.', 'Giải thích từng biện pháp xử lý nguy cơ nào và cách giám sát.'], ['Bắt đầu từ tài sản và đường đi của dữ liệu.', 'Không liệt kê tên sản phẩm; giải thích vị trí và chức năng.'], derivations='Phương pháp làm bài và sơ đồ luyện là DERIVED; chức năng công cụ có căn cứ ở slide 365,375,378.')
 
+card(12, 'Kiểm soát truy cập và ý nghĩa', [149,150],
+ 'Kiểm soát truy cập là tập hợp cơ chế cho phép người quản trị tác động lên hành vi, công dụng và nội dung của hệ thống. Nó xác định người dùng được làm gì, truy cập tài nguyên nào và thực thi tác vụ nào. Cần phân biệt chủ thể yêu cầu truy cập với đối tượng được truy cập và quyền thực hiện thao tác. Ý nghĩa: giới hạn hoạt động theo quyền được cấp, ngăn truy cập trái phép; quyền đọc hỗ trợ bí mật, quyền ghi hỗ trợ toàn vẹn, quyền sử dụng dịch vụ hỗ trợ truy cập hợp lệ. Ví dụ một sinh viên được đọc điểm của mình nhưng không sửa điểm. Kiểm soát truy cập phải đi cùng xác thực chủ thể và các biện pháp bảo vệ khác; không tự bảo đảm mọi thuộc tính ATTT.',
+ ['Định nghĩa cơ chế xác định chủ thể được làm gì, trên tài nguyên nào, bằng thao tác nào.', 'Phân biệt chủ thể, đối tượng và quyền truy cập.', 'Giải thích ý nghĩa bảo vệ, nêu ví dụ đọc/ghi đúng quyền và giới hạn của cơ chế.'],
+ ['Tách ba câu hỏi: ai, tài nguyên gì, thao tác gì?', 'So sánh quyền xem điểm và quyền sửa điểm.'], derivations='Ý nghĩa theo CIA và ví dụ sinh viên là DERIVED từ chức năng slide 149; chủ thể/đối tượng ở slide 150.')
+card(13, 'Nguyên tắc đặc quyền tối thiểu', [148],
+ 'Chỉ cấp cho chủ thể tập hợp tối thiểu quyền truy cập đủ để thực hiện chức trách hoặc chức năng của mình trong hệ thống. Quyền phải gắn với nhu cầu nhiệm vụ, tránh cấp rộng chỉ vì thuận tiện. Ví dụ của slide: nhân viên bán hàng không được xem số liệu kế toán; người dùng thông thường không được cài phần mềm hoặc cấu hình mạng. Với ví dụ bán hàng, cấp quyền xử lý đơn hàng cần thiết nhưng không cấp quyền đọc sổ kế toán nếu công việc không yêu cầu. Cách cấp này giảm phạm vi tác động khi thao tác nhầm hoặc tài khoản bị chiếm, đồng thời vẫn bảo đảm làm được việc.',
+ ['Nêu đủ tối thiểu quyền và đủ thực hiện chức trách/chức năng.', 'Ví dụ cụ thể: công việc, quyền cần có và quyền không cần cấp.', 'Giải thích vì sao giảm quyền thừa vẫn bảo đảm hoàn thành nhiệm vụ.'],
+ ['Tối thiểu nhưng phải đủ để làm việc.', 'Nhân viên bán hàng cần quyền gì, có cần xem kế toán không?'], derivations='Quyền xử lý đơn hàng và phân tích giảm hậu quả là DERIVED; ví dụ bán hàng/người dùng có ở slide 148.')
+card(14, 'Kiểm soát truy cập tùy chọn (DAC)', [154,155,156,157,162],
+ 'DAC dựa trên định danh chủ thể hoặc nhóm. Tính tùy chọn thể hiện ở việc chủ thể có một số quyền nhất định có thể chuyển quyền cho chủ thể khác, kể cả gián tiếp, theo cơ chế cho phép. Biểu diễn bằng ma trận kiểm soát truy cập: hàng là chủ thể, cột là đối tượng, ô là các quyền. Lưu theo cột tạo ACL; theo hàng tạo danh sách khả năng/quyền. Slide nêu mô hình owner trong Linux, Windows: chủ sở hữu cấp quyền cho chủ thể khác; mô hình capabilities cho phép chuyển các quyền mình có khi có quyền đối với bên nhận. DAC phù hợp chia sẻ tài nguyên linh hoạt do chủ sở hữu quản lý. ACM mô tả chi tiết nhưng khó quản lý, dễ cấu hình sai khi nhiều người dùng và tài nguyên. Không suy ra Linux hoặc Windows chỉ hỗ trợ duy nhất DAC.',
+ ['Dựa trên định danh cá nhân/nhóm; giải thích chuyển quyền tùy chọn.', 'ACM: hàng chủ thể, cột đối tượng, ô quyền; phân biệt ACL và quyền theo hàng.', 'Nêu hệ thống Linux/Windows với owner hoặc cơ chế capabilities theo slide.', 'Giải thích phù hợp chia sẻ linh hoạt và hạn chế quản lý khi quy mô lớn.'],
+ ['Ai được quyết định chia sẻ quyền cho người khác?', 'Nhớ owner, ACM, ACL và khả năng chuyển quyền.'], derivations='Lý do phù hợp chia sẻ linh hoạt là DERIVED từ owner/chuyển quyền; hạn chế ACM có ở slide 156.')
+card(15, 'Kiểm soát truy cập bắt buộc (MAC)', [164,165,167],
+ 'MAC gắn nhãn an toàn cho các thực thể. Nhãn gồm mức an toàn có thứ bậc và hạng mục an toàn không thứ bậc. Hệ thống quyết định truy cập dựa trên quan hệ nhãn của người dùng và tài liệu cùng các quy tắc truy cập của hệ thống. Việc người dùng là chủ sở hữu không tự cho phép vượt chính sách nhãn. Slide nêu hệ thống đòi hỏi tính bảo mật cao, ví dụ quân sự; phù hợp vì cần kiểm soát thống nhất luồng truy cập giữa các mức nhạy cảm. Ví dụ một tài liệu ở mức Secret cần người dùng có nhãn phù hợp và thỏa quy tắc đọc; có mức cao mà thiếu hạng mục cần thiết vẫn không đủ. Phải kiểm tra thao tác và quy tắc cụ thể, không dùng cùng một điều kiện cho mọi thao tác đọc/ghi.',
+ ['Giải thích nhãn gồm mức có thứ bậc và hạng mục không thứ bậc.', 'Quyết định theo nhãn và quy tắc của hệ thống; không tùy ý vượt chính sách.', 'Nêu quân sự/hệ thống bảo mật cao và lý do kiểm soát thống nhất.', 'Ví dụ xét cả mức, hạng mục và thao tác; không chỉ so mức.'],
+ ['Nhãn an toàn có hai thành phần nào?', 'Quyền do quy tắc hệ thống xét theo nhãn; nghĩ tới tài liệu quân sự.'],
+ note='Slide 166 viết quan hệ mức bằng dấu >, còn hình 168 có liên hệ giữa nhãn cùng mức. Đáp án này không áp một công thức so mức duy nhất cho mọi thao tác; khi đề yêu cầu mô hình cụ thể phải giữ quy tắc đọc/ghi của mô hình đó.',
+ derivations='Giải thích quản lý thống nhất, không vượt chính sách và ví dụ kiểm tra hạng mục/thao tác là DERIVED từ cơ chế nhãn + quy tắc ở slide 164–165; ví dụ mức phân loại ở 167.')
+card(16, 'Kiểm soát truy cập theo vai trò (RBAC)', [148,170,171],
+ 'RBAC xác định các vai trò trong hệ thống, gán quyền truy cập đối tượng cho vai trò/nhóm, rồi gán chủ thể vào một hoặc nhiều vai trò. Theo slide, chủ thể có các quyền của các nhóm mà nó thuộc về. Quan hệ người dùng–vai trò và vai trò–quyền tách việc quản lý người dùng khỏi việc cấp từng quyền trực tiếp. Hình slide minh họa Professor, PhD student, IT coordinator với các quyền như dùng máy, cập nhật phần mềm, dạy, hỗ trợ; không phải mọi vai trò có cùng quyền. Phù hợp cơ quan, trường học, doanh nghiệp có chức trách lặp lại: tạo vai trò theo nhiệm vụ, gán/thay vai trò khi công việc đổi, giảm việc cấp quyền riêng lẻ. Ví dụ nhân viên phòng đào tạo có vai trò cập nhật hồ sơ; sinh viên có vai trò xem hồ sơ. Khi giữ nhiều vai trò phải rà soát tổng quyền theo đặc quyền tối thiểu.',
+ ['Nêu quan hệ người dùng–vai trò–quyền; một chủ thể có thể có nhiều vai trò.', 'Giải thích quyền của các nhóm và việc tách quản lý người dùng khỏi cấp quyền.', 'Nêu hệ thống có chức trách lặp lại và lý do quản trị thuận tiện.', 'Ví dụ phân biệt hai vai trò, quyền tương ứng; lưu ý quyền khi kiêm nhiệm.'],
+ ['Quyền được gán cho người hay cho chức trách trước?', 'Dùng hai vai trò sinh viên và phòng đào tạo; xét người kiêm nhiều vai trò.'], derivations='Hệ thống phù hợp, ví dụ phòng đào tạo và rà soát quyền kiêm nhiệm là DERIVED từ slide 170–171 và nguyên tắc 148; sơ đồ gán quyền/vai trò có ở slide 171.')
+
 rows = [
  ('Kiểm tra đầu vào', [32,2,69,1,9]), ('Năm câu lý thuyết nền tảng',[32,33,34,35,36]), ('Tổng quan mạng: câu 1–3',[68,69,70]), ('Tổng quan mạng: câu 4–7',[71,72,73,74]), ('Định danh và nhân tố xác thực',[1,2,3,4]), ('Mật khẩu và chính sách',[5,6,7,8]), ('Ba giao thức xác thực',[9,10,11]),
  ('Kiểm soát truy cập',[12,13,14,15,16]), ('Mật mã và chữ ký số',[17,18]), ('Mã độc',[19]), ('Tấn công mạng',[20]), ('Tường lửa: chức năng và phân loại',[21,75,76]), ('Tường lửa: kiến trúc và iptables',[77,78,79,80]), ('IDS/IPS và Snort',[22]),
  ('VPN, IPsec và ESP',[23]), ('SIEM và giám sát',[24]), ('Buffer Overflow: hai bài C',[25,28,29]), ('XSS và phân loại',[26,61]), ('SQL Injection: hai bài PHP',[27,30,31]), ('RSA bài 1–4',[37,38,39,40]), ('RSA bài 5–8',[41,42,43,44]),
  ('ElGamal bài 1–3',[45,46,47]), ('ECC: liệt kê điểm',[48]), ('ECC: cộng và bội điểm',[48]), ('ECC: khóa, mã hóa và giải mã',[48]), ('ECC bài 2: kiểm tra dữ kiện',[49]), ('DH và ECDH bài 1',[50,51]), ('ECDH bài 2 và luyện trộn',[52,37,45,48,50]),
  ('Truy xuất nền tảng và mạng',[32,33,34,35,36,68,69,70,71,72,73,74]), ('Xác thực và truy cập',[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16]), ('Mã độc, tấn công, tường lửa',[19,20,21,75,76,77,78,79,80]), ('IDS, VPN, SIEM và sơ đồ',[22,23,24]), ('Phân tích mã nguồn trộn',[25,26,27,28,29,30,31]), ('RSA và ElGamal trộn',[37,38,39,40,41,42,43,44,45,46,47]), ('ECC, ECDH và DH trộn',[48,49,50,51,52]),
- ('Thi thử đề mẫu số 1',[53,54,55,56,57]), ('Chữa đề mẫu số 1',[53,54,55,56,57]), ('Thi thử đề mẫu số 2',[58,59,60,61,62]), ('Chữa đề mẫu số 2',[58,59,60,61,62]), ('Thi thử đề mẫu số 3',[63,64,65,66,67]), ('Chữa đề mẫu số 3',[63,64,65,66,67]), ('Kiểm tra ngẫu nhiên toàn phạm vi',list(range(1,81))),
- ('Mười câu lý thuyết trọng điểm',[32,33,2,3,9,11,13,19,21,23]), ('Tốc độ RSA và ElGamal',[37,38,39,40,41,42,43,44,45,46,47]), ('ECC/ECDH và dữ kiện thiếu',[48,49,51,52]), ('Tái hiện giao thức và mạng',[9,10,11,23,74,77]), ('Mã nguồn, Snort và iptables',[28,29,30,31,22,80]), ('Thi thử tổng hợp A',[32,9,37,28,74]), ('Chữa tổng hợp A',[32,9,37,28,74]), ('Thi thử tổng hợp B và chữa lỗi',[69,11,50,29,35]), ('Kiểm tra đầu ra và lịch duy trì',list(range(1,81)))
+ ('Thi thử đề mẫu số 1',[53,54,55,56,57]), ('Chữa đề mẫu số 1',[53,54,55,56,57]), ('Thi thử đề mẫu số 2',[58,59,60,61,62]), ('Chữa đề mẫu số 2',[58,59,60,61,62]), ('Thi thử đề mẫu số 3',[63,64,65,66,67]), ('Chữa đề mẫu số 3',[63,64,65,66,67]), ('Đánh giá chọn lọc giữa các nhóm',[2,13,19,23,30,37,48,69]),
+ ('Mười câu lý thuyết trọng điểm',[32,33,2,3,9,11,13,19,21,23]), ('Tốc độ RSA và ElGamal',[37,38,39,40,41,42,43,44,45,46,47]), ('ECC/ECDH và dữ kiện thiếu',[48,49,51,52]), ('Tái hiện giao thức và mạng',[9,10,11,23,74,77]), ('Mã nguồn, Snort và iptables',[28,29,30,31,22,80]), ('Thi thử tổng hợp A',[32,9,37,28,74]), ('Chữa tổng hợp A',[32,9,37,28,74]), ('Thi thử tổng hợp B và chữa lỗi',[69,11,50,29,35]), ('Đánh giá đầu ra chọn lọc và lịch duy trì',[32,11,15,23,28,37,50,74])
 ]
 assert len(rows) == 51
 plan = []
@@ -117,7 +140,26 @@ for i,(title,nums) in enumerate(rows):
     tasks=[{'title':'Thi tự luận không xem tài liệu; chữa vào phiên sau','minutes':180}] if exam_day else [{'title':'Ôn câu đến hạn','minutes':20},{'title':'Truy xuất chủ đề chính','minutes':45},{'title':'Luyện chuyên sâu','minutes':40},{'title':'Kiểm tra không xem đáp án','minutes':30},{'title':'Chữa lỗi và ghi lịch ôn','minutes':15}]
     plan.append({'day':i+1,'date':str(date(2026,10,12)+timedelta(days=i)),'title':title,'card_ids':ids,'minutes':180 if exam_day else 150,'phase':min(i//7+1,8),'week':min(i//7+1,8),'tasks':tasks})
 
-bank = {'version':1,'start':'2026-10-12','end':'2026-12-01','slide_sha256':SHA,'outline_sha256':manifest['sources']['outline']['sha256'],'cards':cards,'plan':plan,'questions':list(primary.values()),'subquestions':[q for q in questions if q['question_id'] not in primary], 'reviewed_on':'2026-10-11'}
+children=[q for q in questions if q['question_id'] not in primary]
+child_coverage=[]
+for child in children:
+    parent=child['parent_question_id'];c=next((c for c in cards if c['id']==parent),None)
+    verified=parent in ['TN1-Q009','TN1-Q010','TN1-Q011']
+    ordinal='abcd'.index(child['subquestion'])+1
+    partial=parent in ['TN1-Q046','TN1-Q048']
+    required_steps={
+        'TN1-Q046-b':['Mã hóa với k=23','Giải mã bản mã vừa tạo','Kiểm chứng bản rõ'],
+        'TN1-Q048-c':['Khóa công khai với d=6','Khóa công khai với d=2','Khóa công khai với d=7'],
+        'TN1-Q048-d':['Xác định ánh xạ thông điệp 10 (đề thiếu)','Mã hóa với d=7, k=3','Giải mã','Kiểm chứng'],
+        'TN1-Q042-b':['Tìm khóa giải mã','Giải mã đủ 11 khối','Ghép thông điệp'],
+    }.get(child['question_id'],[child['original_text']])
+    child_coverage.append({'id':child['question_id'],'parent_id':parent,'question':child['original_text'],
+        'status':'REVIEWED' if verified else 'PRACTICE_READY_PARTIAL' if partial else 'AWAITING_REVIEW',
+        'rubric_ids':[f'r{ordinal}'] if verified else [],'required_steps':required_steps,
+        'slide_pages':[s['page'] for s in c['sources']] if verified else [],
+        'first_day':min(p['day'] for p in plan if parent in p['card_ids']),
+        'note':'Thiếu ánh xạ thông điệp số sang điểm; không có bản mã duy nhất.' if child['question_id']=='TN1-Q048-d' else 'Đề ghi mod 1; chưa xác định miền ECC hợp lệ.' if parent=='TN1-Q049' else ''})
+bank = {'version':2,'start':'2026-10-12','end':'2026-12-01','slide_sha256':SHA,'outline_sha256':manifest['sources']['outline']['sha256'],'cards':cards,'plan':plan,'questions':list(primary.values()),'subquestions':children,'child_coverage':child_coverage, 'reviewed_on':'2026-10-11'}
 (OUT/'bank.json').write_text(json.dumps(bank,ensure_ascii=False,indent=2),'utf-8')
 with (OUT/'coverage.csv').open('w',encoding='utf-8-sig',newline='') as f:
     w=csv.writer(f); w.writerow(['id','section','outline_page','learning_status','verified_slide_pages','evidence_label','first_day','question'])
@@ -131,4 +173,14 @@ with (OUT/'coverage.csv').open('w',encoding='utf-8-sig',newline='') as f:
 with (OUT/'plan.csv').open('w',encoding='utf-8-sig',newline='') as f:
     w=csv.writer(f); w.writerow(['day','date','title','minutes','question_ids'])
     for p in plan: w.writerow([p['day'],p['date'],p['title'],p['minutes'],';'.join(p['card_ids'])])
+with (OUT/'child_coverage.csv').open('w',encoding='utf-8-sig',newline='') as f:
+    w=csv.writer(f);w.writerow(['id','parent_id','first_day','status','rubric_ids','slide_pages','required_steps','note','question'])
+    for c in child_coverage: w.writerow([c['id'],c['parent_id'],c['first_day'],c['status'],';'.join(c['rubric_ids']),';'.join(map(str,c['slide_pages'])),'; '.join(c['required_steps']),c['note'],c['question']])
+with (OUT/'day_coverage.csv').open('w',encoding='utf-8-sig',newline='') as f:
+    w=csv.writer(f);w.writerow(['day','date','main_total','main_reviewed','main_pending','children_total','children_reviewed','children_pending','pending_main_ids','pending_child_ids'])
+    for p in plan:
+        pending=[cid for cid in p['card_ids'] if cid not in ready]
+        sub=[c for c in child_coverage if c['parent_id'] in p['card_ids']]
+        pending_sub=[c['id'] for c in sub if c['status']!='REVIEWED']
+        w.writerow([p['day'],p['date'],len(p['card_ids']),len(p['card_ids'])-len(pending),len(pending),len(sub),len(sub)-len(pending_sub),len(pending_sub),';'.join(pending),';'.join(pending_sub)])
 print(f'{len(primary)} primary questions, {len(cards)} reviewed cards, {len(plan)} days')

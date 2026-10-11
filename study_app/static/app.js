@@ -9,6 +9,26 @@ let boot,
   examTimer = null;
 const main = document.querySelector("#main");
 const pendingSaves = new Map();
+const examWrites = new Set();
+const examFinishes = new Map();
+let serverAnchor = { time: Date.now(), tick: performance.now() };
+const serverNow = () =>
+  serverAnchor.time + performance.now() - serverAnchor.tick;
+const recoveryKey = (key) => "tn1-recovery-" + key;
+function remember(key, value) {
+  localStorage.setItem(recoveryKey(key), JSON.stringify(value));
+}
+function remembered(key) {
+  try {
+    return JSON.parse(localStorage.getItem(recoveryKey(key)));
+  } catch {
+    return null;
+  }
+}
+function forget(key, value) {
+  if (JSON.stringify(remembered(key)) === JSON.stringify(value))
+    localStorage.removeItem(recoveryKey(key));
+}
 function scheduleSave(key, job) {
   const previous = pendingSaves.get(key);
   if (previous) clearTimeout(previous.timer);
@@ -44,6 +64,7 @@ async function flushSaves() {
   await Promise.all(
     [...pendingSaves].map(([key, entry]) => performSave(key, entry)),
   );
+  await Promise.all([...examWrites]);
 }
 
 const esc = (v) =>
@@ -61,6 +82,7 @@ const dateText = (d) =>
   new Date(d + "T12:00:00").toLocaleDateString("vi-VN", {
     day: "2-digit",
     month: "2-digit",
+    year: "numeric",
   });
 const due = () =>
   Object.entries(state.progress)
@@ -90,6 +112,7 @@ async function api(path, data) {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify(data),
+          keepalive: JSON.stringify(data).length < 16000,
         },
   );
   const result = await response.json();
@@ -107,14 +130,41 @@ function guarded(fn) {
 }
 async function refresh() {
   boot = await api("bootstrap");
+  if (!boot.server_time)
+    throw Error(
+      "Máy chủ đang chạy bản cũ. Chạy DUNG_UNG_DUNG.cmd rồi MO_UNG_DUNG.cmd để nạp bản sửa mới; tiến độ học vẫn được giữ.",
+    );
+  serverAnchor = {
+    time: new Date(boot.server_time).getTime(),
+    tick: performance.now(),
+  };
   bank = boot.bank;
   state = boot.state;
+  for (let i = 0; i < localStorage.length; i++) {
+    const key = localStorage.key(i);
+    if (key.startsWith("tn1-recovery-draft-")) {
+      const draft = remembered(key.slice("tn1-recovery-".length));
+      if (draft) {
+        state.drafts[draft.key] = draft.answer;
+        const pendingKey = "draft-" + draft.key;
+        if (!pendingSaves.has(pendingKey))
+          scheduleSave(pendingKey, async () => {
+            await api("draft", draft);
+            forget(pendingKey, draft);
+          });
+      }
+    }
+  }
+  document.querySelector("#date-range").innerHTML =
+    `${dateText(state.settings.schedule?.[1] || bank.start)} — ${dateText(state.settings.schedule?.[51] || bank.end)} <span class="pill">51 ngày</span>`;
   document.querySelector("#due-count").textContent = due().length;
 }
 const src = (kind, page, label) =>
   `<a href="/sources/${kind}.pdf#page=${page}" target="_blank" rel="noopener">${esc(label || `${kind === "slide" ? "Slide" : "Đề cương"} · PDF ${page}`)} ↗</a>`;
 const heading = (eyebrow, title, description) =>
   `<div class="eyebrow">${eyebrow}</div><h1>${title}</h1><p class="muted">${description}</p>`;
+const coverageSummary = () =>
+  `<section class="panel soft"><h2>Bao phủ toàn bộ ngân hàng</h2><p>Đáp án đã kiểm chứng: ${bank.reviewed}/80 câu chính · ${bank.child_coverage.filter((c) => c.status === "REVIEWED").length}/43 mục con. Đã tự đối chiếu bài làm: ${state.coverage.reviewed_count}/80 câu chính. Số liệu này độc lập với các câu chọn cho phiên đánh giá.</p><a href="#bank">Xem đủ câu gốc và phần còn thiếu →</a></section>`;
 function cardRows(ids) {
   return ids
     .map((id) => {
@@ -145,11 +195,11 @@ function dayView(n) {
   const learned = ready.filter((id) => graded.has(id)).length;
   const next = ready.find((id) => !graded.has(id)) || ready[0];
   const effective = (state.settings.schedule || {})[day] || p.date;
-  main.innerHTML = `<div class="row calendar-info"><span>TUẦN ${p.week} · NGÀY ${day}/51 · ${dateText(effective)}/2026${effective !== p.date ? " · Lịch đã điều chỉnh" : ""}</span><div class="actions">${day > 1 ? `<a href="#day/${day - 1}">← Hôm trước</a>` : ""}${day < 51 ? `<a href="#day/${day + 1}">Hôm sau →</a>` : ""}</div></div>
+  main.innerHTML = `${[42, 51].includes(day) ? coverageSummary() : ""}<div class="row calendar-info"><span>TUẦN ${p.week} · NGÀY ${day}/51 · ${dateText(effective)}${effective !== p.date ? " · Lịch đã điều chỉnh" : ""}</span><div class="actions">${day > 1 ? `<a href="#day/${day - 1}">← Hôm trước</a>` : ""}${day < 51 ? `<a href="#day/${day + 1}">Hôm sau →</a>` : ""}</div></div>
 <section class="hero"><div><div class="eyebrow">MỖI LẦN NHỚ LẠI LÀ MỘT LẦN HỌC</div><h1>${esc(p.title)}</h1><p>${day === 1 ? "Bắt đầu bằng việc tự nhớ. Viết điều bạn biết, đối chiếu từng ý, rồi để lịch ôn đưa những câu chưa chắc trở lại." : "Một phiên học rõ mục tiêu: tự trả lời trước, thực hành, kiểm tra lại và ghi điều cần sửa."}</p><div class="actions">${next ? `<a class="button primary" href="#card/${next}/${day}">${learned ? "Tiếp tục phiên học" : "Bắt đầu tự trả lời"} →</a>` : `<a class="button primary" href="#bank">Mở câu hỏi của ngày</a>`}<a class="button" href="${day === 1 ? "#exams" : "#review"}">${day === 1 ? "Kiểm tra đầu vào" : "Ôn câu đến hạn"}</a></div></div><div class="hero-stat"><strong>${learned}<span> / ${ready.length}</span></strong><span>CÂU ĐÃ LÀM & ĐỐI CHIẾU</span><div class="progress-bar" style="--progress:${ready.length ? (learned / ready.length) * 100 : 0}%"><i></i></div></div></section>
 <div class="stats"><div class="stat"><span>Thời gian dự kiến</span><strong>${p.minutes} <small>phút</small></strong></div><div class="stat"><span>Đến hạn hôm nay</span><strong>${due().length} <small>câu</small></strong></div><div class="stat"><span>Cần củng cố</span><strong>${weak().length} <small>câu</small></strong></div><div class="stat"><span>Nhớ độc lập ổn định</span><strong>${Object.values(state.progress).filter((x) => x.mastered).length} <small>/ ${bank.reviewed}</small></strong></div></div>
 <div class="grid"><section class="panel"><div class="row"><h2>Câu hỏi của phiên học</h2><span class="pill green">${ready.length}/${p.card_ids.length} đáp án đã đối chiếu</span></div>${cardRows(p.card_ids)}${ready.length < p.card_ids.length ? '<div class="note">Câu hỏi giữ nguyên theo đề cương. Một số đáp án của ngày này chưa được kiểm chứng; hiện chỉ có thể đọc câu gốc, không được tính là đã học xong.</div>' : ""}</section><div><section class="panel"><h2>Nhịp học hôm nay</h2><p class="hint-text">Đánh dấu sau khi thực sự làm xong nhiệm vụ. Việc mở trang không được tính hoàn thành.</p>${taskHtml(p)}</section><section class="panel soft"><div class="eyebrow">THỰC HÀNH CÓ PHẢN HỒI</div><h3>${day >= 5 && day <= 7 ? "Tái hiện giao thức xác thực" : "Chuyển từ nhớ sang hiểu"}</h3><p class="hint-text">Tô sáng từng bước, thử điền thông điệp còn thiếu hoặc kiểm tra một phép tính.</p><div class="actions"><a class="button small" href="#diagrams">Mở sơ đồ ⇄</a><a class="button small" href="#math">Bảng toán ∑</a></div></section></div></div>
-<h2>Tuần đầu · 12–18 tháng 10</h2><div class="day-strip">${bank.plan
+<h2>Tuần đầu · ${dateText(state.settings.schedule?.[1] || bank.start)}–${dateText(state.settings.schedule?.[7] || bank.plan[6].date)}</h2><div class="day-strip">${bank.plan
     .slice(0, 7)
     .map(
       (d) =>
@@ -176,9 +226,9 @@ function planView() {
     heading(
       "LỘ TRÌNH CÓ THỂ ĐIỀU CHỈNH",
       "51 ngày, từng phiên học rõ ràng",
-      "12/10–01/12/2026. Câu đến hạn được thêm vào phiên học; lịch có thể dời mà vẫn giữ lịch sử bài làm.",
+      `${dateText(state.settings.schedule?.[1] || bank.start)}–${dateText(state.settings.schedule?.[51] || bank.end)}. Câu đến hạn được thêm vào phiên học; lịch có thể dời mà vẫn giữ lịch sử bài làm.`,
     ) +
-    `<div class="info">Tuần 1 có ${bank.reviewed} câu với đáp án và rubric đã đối chiếu. Lộ trình các tuần sau đã có câu hỏi nguyên văn; cần bổ sung đáp án kiểm chứng trước khi nghiệm thu toàn bộ 51 ngày.</div>` +
+    `<div class="info">Hiện có ${bank.reviewed} câu với đáp án và rubric đã đối chiếu, đủ phiên học đến 19/10. Lộ trình các ngày sau đã có câu hỏi nguyên văn; cần bổ sung đáp án kiểm chứng trước khi nghiệm thu toàn bộ 51 ngày.</div>` +
     Array.from(
       { length: 8 },
       (_, i) =>
@@ -254,10 +304,13 @@ function bindDraft(key) {
   on("#answer", "input", () => {
     const val = document.querySelector("#answer").value;
     state.drafts[key] = val;
+    const snapshot = { key, answer: val };
+    remember("draft-" + key, snapshot);
     const status = document.querySelector("#save-status");
     status.textContent = "Đang lưu…";
     scheduleSave("draft-" + key, async () => {
       await api("draft", { key, answer: val });
+      forget("draft-" + key, snapshot);
       if (document.querySelector("#save-status"))
         document.querySelector("#save-status").textContent = "Đã lưu trên máy.";
     });
@@ -292,7 +345,7 @@ function showFeedback(result) {
       document.querySelector("#grade").disabled = true;
       await refresh();
       document.querySelector("#grade-result").innerHTML =
-        `<div class="${r.passed ? "success" : "error-box"}" style="margin-top:18px"><b>${r.score}% · ${r.passed ? "Đủ ý theo tự đối chiếu" : "Cần bổ sung"}</b><br>Ôn lại: ${dateText(r.due)}/2026. ${r.independent ? "Đã ghi một lần nhớ độc lập." : "Lần này có gợi ý, sai hoặc chưa chắc; chưa tính nhớ độc lập."}${r.mastered ? " Hai lần liên tiếp đã nhớ độc lập." : ""}${r.missing.length ? `<ul>${r.missing.map((x) => `<li>${esc(x)}</li>`).join("")}</ul>` : ""}</div><div class="actions" style="margin-top:18px"><a class="button primary" href="#card/${nextCard(c.id)}/${day}">Câu tiếp theo →</a><a class="button" href="#day/${day}">Về phiên học</a></div>`;
+        `<div class="${r.passed ? "success" : "error-box"}" style="margin-top:18px"><b>${r.score}% · ${r.passed ? "Đủ ý theo tự đối chiếu" : "Cần bổ sung"}</b><br>Ôn lại: ${dateText(r.due)}. ${r.independent ? "Đã ghi một lần nhớ độc lập." : "Lần này có gợi ý, sai hoặc chưa chắc; chưa tính nhớ độc lập."}${r.mastered ? " Hai lần liên tiếp đã nhớ độc lập." : ""}${r.missing.length ? `<ul>${r.missing.map((x) => `<li>${esc(x)}</li>`).join("")}</ul>` : ""}</div><div class="actions" style="margin-top:18px"><a class="button primary" href="#card/${nextCard(c.id)}/${day}">Câu tiếp theo →</a><a class="button" href="#day/${day}">Về phiên học</a></div>`;
       toast("Đã lưu bài làm và ngày ôn lại.");
     }),
   );
@@ -315,7 +368,7 @@ function reviewView() {
       "Ôn câu đến hạn, sửa đúng chỗ",
       "Lịch +1, +3, +7, +14, +30 ngày. Sai, dùng gợi ý hoặc thiếu tự tin sẽ ôn lại sau 1 ngày. Hai lần nhớ độc lập liên tiếp mới được ghi nhận ổn định.",
     ) +
-    `<div class="grid"><div><section class="panel"><h2>Đến hạn · ${dateText(boot.today)}/2026</h2>${due().length ? cardRows(due()) : '<div class="empty">Chưa có câu đến hạn. Hãy học phiên đầu hoặc luyện lại một câu chưa chắc.</div>'}</section><section class="panel"><h2>Cần củng cố</h2>${weak().length ? cardRows(weak()) : '<div class="empty">Sổ này sẽ xuất hiện sau khi bạn nộp và đối chiếu bài đầu tiên.</div>'}</section></div><section class="panel"><h2>Sổ câu sai & ý thiếu</h2>${
+    `<div class="grid"><div><section class="panel"><h2>Đến hạn · ${dateText(boot.today)}</h2>${due().length ? cardRows(due()) : '<div class="empty">Chưa có câu đến hạn. Hãy học phiên đầu hoặc luyện lại một câu chưa chắc.</div>'}</section><section class="panel"><h2>Cần củng cố</h2>${weak().length ? cardRows(weak()) : '<div class="empty">Sổ này sẽ xuất hiện sau khi bạn nộp và đối chiếu bài đầu tiên.</div>'}</section></div><section class="panel"><h2>Sổ câu sai & ý thiếu</h2>${
       errors.length
         ? errors
             .slice(0, 30)
@@ -342,8 +395,9 @@ function bankView() {
     heading(
       "80 MỤC CHÍNH · GIỮ NGUYÊN ĐỀ",
       "Đề cương & chứng cứ",
-      "Đáp án tuần đầu được đối chiếu theo trang slide. Câu chưa có đáp án vẫn đọc được nguyên văn; không có điểm thành thạo giả.",
+      "Đáp án được đối chiếu theo trang slide. Câu chưa có đáp án vẫn đọc được nguyên văn; không có điểm thành thạo giả.",
     ) +
+    coverageSummary() +
     `<input id="search" class="search" type="text" placeholder="Tìm theo chủ đề, câu hỏi hoặc mã Q…" aria-label="Tìm câu hỏi"><div class="panel"><div id="bank-rows">${cardRows(bank.questions.map((q) => q.question_id))}</div></div>`;
   on("#search", "input", (e) => {
     const val = e.target.value.toLocaleLowerCase("vi");
@@ -691,8 +745,11 @@ function codeView(id = codeKind) {
   });
   on("#code-answer", "input", () => {
     const answer = document.querySelector("#code-answer").value;
-    scheduleSave("code-" + id, async () => {
+    const snapshot = { key: "code-" + id, answer };
+    remember("draft-code-" + id, snapshot);
+    scheduleSave("draft-code-" + id, async () => {
       await api("draft", { key: "code-" + id, answer });
+      forget("draft-code-" + id, snapshot);
       state.drafts["code-" + id] = answer;
       if (document.querySelector("#save-status"))
         document.querySelector("#save-status").textContent = "Đã lưu bản nháp.";
@@ -801,54 +858,122 @@ function examView(id) {
   if (!exam) return examsView();
   if (exam.finished) return examReport();
   const ids = boot.exam_sets[exam.kind];
-  main.innerHTML = `<div class="narrow"><div class="exam-head row"><div><div class="eyebrow">${exam.kind.startsWith("sample") ? "ĐỀ MẪU NGUYÊN VĂN" : "ĐỀ LUYỆN TỰ CHỌN"}</div><h2 style="margin-bottom:0">Phiên thi tự luận</h2><span class="hint-text" id="exam-save">Bài được tự lưu.</span></div><div class="timer" id="timer"></div><button id="exam-finish" class="primary">Nộp bài & đối chiếu</button></div><div class="note">${exam.kind.startsWith("sample") ? "Đề mẫu gốc được giữ nguyên. Những câu chưa có đáp án kiểm chứng chỉ lưu bài và ghi trạng thái chờ; chưa chấm điểm cho chúng." : "Rubric được mở sau khi nộp. Tự đối chiếu từng ý, không chấm ngữ nghĩa bằng từ khóa."}</div>${ids.map((id, i) => `<section class="panel"><div class="row"><h2>Câu ${i + 1}</h2>${src("outline", q(id).pdf_page)}</div><div class="long-question">${esc(q(id).original_text)}</div>${/sơ đồ|mô hình/i.test(q(id).original_text) ? `<details><summary>Mở trang đề gốc có hình</summary><a href="/sources/outline.pdf#page=${q(id).pdf_page}" target="_blank" rel="noopener"><img src="/figures/outline-${q(id).pdf_page}.png" style="width:100%;height:auto" alt="Trang ${q(id).pdf_page} đề cương nguyên gốc"></a></details>` : ""}<label class="field" for="exam-${id}">Bài làm của bạn</label><textarea id="exam-${id}" data-exam-answer="${id}" rows="8">${esc(exam.answers[id] || "")}</textarea></section>`).join("")}</div>`;
+  main.innerHTML = `<div class="narrow"><div class="exam-head row"><div><div class="eyebrow">${exam.kind.startsWith("sample") ? "ĐỀ MẪU NGUYÊN VĂN" : "ĐỀ LUYỆN TỰ CHỌN"}</div><h2 style="margin-bottom:0">Phiên thi tự luận</h2><span class="hint-text" id="exam-save" role="status">Tự lưu ngay khi nhập; máy chủ quyết định giờ hết hạn.</span></div><div class="timer" id="timer"></div><button id="exam-finish" class="primary">Nộp bài & đối chiếu</button></div><div class="info">Lưu ngay khi nhập. Bản máy chủ nhận trước giờ hết hạn được tính; yêu cầu đến sau giờ chỉ giữ nháp phục hồi, không tính vào bài nộp. Khi mất kết nối, hãy chờ báo “Đã lưu trên máy chủ”.</div><div class="note">${exam.kind.startsWith("sample") ? "Đề mẫu gốc được giữ nguyên. Những câu chưa có đáp án kiểm chứng chỉ lưu bài và ghi trạng thái chờ; chưa chấm điểm cho chúng." : "Rubric được mở sau khi nộp. Tự đối chiếu từng ý, không chấm ngữ nghĩa bằng từ khóa."}</div>${ids.map((id, i) => `<section class="panel"><div class="row"><h2>Câu ${i + 1}</h2>${src("outline", q(id).pdf_page)}</div><div class="long-question">${esc(q(id).original_text)}</div>${/sơ đồ|mô hình/i.test(q(id).original_text) ? `<details><summary>Mở trang đề gốc có hình</summary><a href="/sources/outline.pdf#page=${q(id).pdf_page}" target="_blank" rel="noopener"><img src="/figures/outline-${q(id).pdf_page}.png" style="width:100%;height:auto" alt="Trang ${q(id).pdf_page} đề cương nguyên gốc"></a></details>` : ""}<label class="field" for="exam-${id}">Bài làm của bạn</label><textarea id="exam-${id}" data-exam-answer="${id}" rows="8">${esc(exam.answers[id] || "")}</textarea></section>`).join("")}</div>`;
+  const current = exam;
+  current.revision = current.revision || 0;
+  let frozen = false;
+  const status = (text) => {
+    const el = document.querySelector("#exam-save");
+    if (el) el.textContent = text;
+  };
+  const freeze = () => {
+    frozen = true;
+    document
+      .querySelectorAll("[data-exam-answer]")
+      .forEach((el) => (el.readOnly = true));
+  };
+  const save = (snapshot) => {
+    remember("exam-" + current.id, snapshot);
+    status("Đang lưu… bản nháp phục hồi đã giữ trong trình duyệt.");
+    const promise = api("exam/save", snapshot)
+      .then((saved) => {
+        if (saved.revision >= snapshot.revision) {
+          forget("exam-" + current.id, snapshot);
+          if (current.revision === snapshot.revision)
+            status("Đã lưu trên máy chủ.");
+        } else
+          status(
+            "Đã hết giờ: phần chưa được máy chủ nhận giữ ở nháp phục hồi, không tính vào bài nộp.",
+          );
+      })
+      .catch((e) => {
+        status(
+          "Chưa lưu lên máy chủ; nháp phục hồi còn trong trình duyệt. " +
+            e.message,
+        );
+        // Keep text durably; finish can still submit the acknowledged server version.
+      })
+      .finally(() => examWrites.delete(promise));
+    examWrites.add(promise);
+    return promise;
+  };
+  const local = remembered("exam-" + current.id);
+  if (
+    local &&
+    local.revision > current.revision &&
+    serverNow() < new Date(current.deadline).getTime()
+  ) {
+    current.answers = { ...current.answers, ...local.answers };
+    current.revision = local.revision;
+    document
+      .querySelectorAll("[data-exam-answer]")
+      .forEach(
+        (el) => (el.value = current.answers[el.dataset.examAnswer] || ""),
+      );
+    save(local);
+  }
   on(
     "[data-exam-answer]",
     "input",
     guarded(async (e) => {
-      const current = exam;
+      if (frozen || serverNow() >= new Date(current.deadline).getTime()) {
+        e.target.value = current.answers[e.target.dataset.examAnswer] || "";
+        freeze();
+        return;
+      }
       current.answers[e.target.dataset.examAnswer] = e.target.value;
-      document.querySelector("#exam-save").textContent = "Đang lưu…";
-      scheduleSave("exam-" + current.id, async () => {
-        const saved = await api("exam/save", {
-          id: current.id,
-          answers: current.answers,
-        });
-        exam = saved;
-        if (document.querySelector("#exam-save"))
-          document.querySelector("#exam-save").textContent = "Đã lưu trên máy.";
-        if (saved.finished) setTimeout(() => route(), 0);
+      current.revision = (current.revision || 0) + 1;
+      // Immutable snapshot, immediate dispatch; no 400ms exam debounce.
+      save({
+        id: current.id,
+        revision: current.revision,
+        answers: { ...current.answers },
       });
     }),
   );
   const finish = guarded(async () => {
+    if (examFinishes.has(current.id)) return examFinishes.get(current.id);
+    freeze();
+    clearInterval(examTimer);
     const button = document.querySelector("#exam-finish");
     if (button) button.disabled = true;
-    await flushSaves();
-    exam = await api("exam/finish", { id: exam.id, answers: exam.answers });
-    await refresh();
-    clearInterval(examTimer);
-    examReport();
+    const job = (async () => {
+      try {
+        await Promise.all([...examWrites]);
+        // Finish never introduces unacknowledged/late text into the submitted paper.
+        exam = await api("exam/finish", { id: current.id });
+        await refresh();
+        examReport();
+      } catch (e) {
+        if (button) button.disabled = false;
+        status("Chưa nộp được. Nháp vẫn còn; bấm Nộp bài để thử lại.");
+        throw e;
+      } finally {
+        examFinishes.delete(current.id);
+      }
+    })();
+    examFinishes.set(current.id, job);
+    return job;
   });
   on("#exam-finish", "click", finish);
   const tick = () => {
-    const seconds = Math.max(
-      0,
-      Math.ceil((new Date(exam.deadline) - Date.now()) / 1000),
-    );
+    const remaining = new Date(current.deadline).getTime() - serverNow();
+    const seconds = Math.max(0, Math.ceil(remaining / 1000));
     const timer = document.querySelector("#timer");
     if (!timer) return;
     timer.textContent = `${String(Math.floor(seconds / 60)).padStart(2, "0")}:${String(seconds % 60).padStart(2, "0")}`;
-    if (seconds <= 0) {
+    if (remaining <= 0) {
+      freeze();
       clearInterval(examTimer);
       finish();
     }
   };
+  examTimer = setInterval(tick, 100);
   tick();
-  examTimer = setInterval(tick, 1000);
 }
 function examReport() {
   const current = exam;
+  const recovery = remembered("exam-" + current.id);
   main.innerHTML = `<div class="narrow">${heading("BÀI THI ĐÃ LƯU", "Báo cáo đối chiếu", "Ứng dụng giữ nguyên bài bạn viết. Thang dưới đây đánh giá độ phủ ý theo tự đối chiếu; điểm tự luận chính thức cần người chấm.")}<p class="hint-text">Phiên ${esc(current.kind)} · ${new Date(current.started).toLocaleString("vi-VN")}</p>${Object.entries(
     current.report || {},
   )
@@ -856,7 +981,18 @@ function examReport() {
       const already = state.attempts.find((a) => a.id === r.attempt_id);
       return `<section class="panel"><h2>Câu ${i + 1} · ${short(id)}</h2><div class="long-question">${esc(q(id).original_text)}</div><details open><summary>Bài đã nộp</summary><p style="white-space:pre-wrap;margin-top:12px">${esc(r.answer || "(Chưa trả lời)")}</p></details>${r.card ? `<h3 style="margin-top:20px">Đáp án & thang tự đối chiếu</h3><p class="answer">${esc(r.card.answer)}</p>${sourcePanel(r.card)}<div class="rubric" data-exam-rubric="${id}">${rubricHtml(r.card, "exam-" + id)}</div>${already?.graded ? `<div class="info">Đã lưu: ${already.score}%. ${esc(already.error || "Đủ ý theo tự đối chiếu.")}</div>` : r.attempt_id ? `<button class="primary" data-exam-grade="${id}" style="margin-top:15px">Lưu rubric & báo ý thiếu</button>` : '<div class="note">Không có bài trả lời, chưa tính một lần ôn. Hãy học lại câu này.</div>'}<div id="result-${id}"></div>` : '<div class="note">AWAITING_REVIEW · Chưa có đáp án/rubric kiểm chứng. Bài đã được lưu, không tạo điểm giả.</div>'}</section>`;
     })
-    .join("")}<a class="button" href="#exams">Về phòng thi</a></div>`;
+    .join("")}${
+    recovery
+      ? `<section class="panel"><h2>Nháp phục hồi · không tính vào bài đã nộp</h2><p class="muted">Phần này chưa được máy chủ xác nhận trước giờ hết hạn. Giữ để đối chiếu và học lại.</p>${Object.entries(
+          recovery.answers,
+        )
+          .map(
+            ([id, text]) =>
+              `<h3>${esc(short(id))}</h3><p style="white-space:pre-wrap">${esc(text)}</p>`,
+          )
+          .join("")}</section>`
+      : ""
+  }<a class="button" href="#exams">Về phòng thi</a></div>`;
   on(
     "[data-exam-grade]",
     "click",
@@ -887,7 +1023,7 @@ function settingsView() {
       "Lịch học & sao lưu",
       "Bài làm lưu trong SQLite trên máy. Đổi lịch không xóa bài cũ; lịch ôn từng câu vẫn theo ngày thực tế.",
     ) +
-    `<div class="grid"><section class="panel"><h2>Dời các phiên học</h2><p class="hint-text">Ngày gốc 12/10–01/12. Đặt lại một ngày hoặc dùng chức năng dời phần còn lại.</p><div class="form-grid"><label>Từ ngày số<input id="shift-day" type="number" min="1" max="51" value="${day}"></label><label>Ngày mới<input id="shift-date" type="date" value="${schedule[day] || bank.plan[day - 1].date}"></label></div><button class="primary" id="shift-all" style="margin:17px 0">Dời từ ngày này trở đi</button><details><summary>Điều chỉnh từng ngày</summary>${bank.plan.map((p) => `<label class="schedule-row"><span>${p.day}. ${esc(p.title)}</span><input type="date" data-schedule="${p.day}" value="${schedule[p.day] || p.date}"></label>`).join("")}<button id="save-schedule" style="margin-top:15px">Lưu lịch từng ngày</button></details></section><section class="panel"><h2>Sao lưu bài làm</h2><p>Xuất bản sao JSON để chuyển máy hoặc giữ một bản riêng. Khôi phục sẽ hợp nhất lịch sử, giữ bài đã có.</p><button class="primary" id="export">Tải bản sao tiến độ</button><label class="field" for="restore">Khôi phục từ bản sao JSON</label><input class="file-input" id="restore" type="file" accept="application/json,.json"><div class="info">Không có tài khoản hay đồng bộ đám mây. Đừng đưa bản sao bài làm vào kho tài liệu công khai nếu không cần.</div><h3>Phạm vi bản hiện tại</h3><p class="hint-text">80 câu gốc, 51 phiên học; 23 đáp án lý thuyết tuần đầu, 5 bảng thuật toán, 4 sơ đồ, 2 bài đọc mã, 2 bài thi có rubric sẵn sàng. Ba đề mẫu gốc có đồng hồ/lưu bài, chưa đủ đáp án kiểm chứng.</p></section></div>`;
+    `<div class="grid"><section class="panel"><h2>Dời các phiên học</h2><p class="hint-text">Ngày gốc 12/10–01/12. Đặt lại một ngày hoặc dùng chức năng dời phần còn lại.</p><div class="form-grid"><label>Từ ngày số<input id="shift-day" type="number" min="1" max="51" value="${day}"></label><label>Ngày mới<input id="shift-date" type="date" value="${schedule[day] || bank.plan[day - 1].date}"></label></div><button class="primary" id="shift-all" style="margin:17px 0">Dời từ ngày này trở đi</button><details><summary>Điều chỉnh từng ngày</summary>${bank.plan.map((p) => `<label class="schedule-row"><span>${p.day}. ${esc(p.title)}</span><input type="date" data-schedule="${p.day}" value="${schedule[p.day] || p.date}"></label>`).join("")}<button id="save-schedule" style="margin-top:15px">Lưu lịch từng ngày</button></details></section><section class="panel"><h2>Sao lưu bài làm</h2><p>Xuất bản sao JSON để chuyển máy hoặc giữ một bản riêng. Khôi phục sẽ hợp nhất lịch sử, giữ bài đã có.</p><button class="primary" id="export">Tải bản sao tiến độ</button><label class="field" for="restore">Khôi phục từ bản sao JSON</label><input class="file-input" id="restore" type="file" accept="application/json,.json"><div class="info">Không có tài khoản hay đồng bộ đám mây. Đừng đưa bản sao bài làm vào kho tài liệu công khai nếu không cần.</div><h3>Phạm vi bản hiện tại</h3><p class="hint-text">80 câu gốc, 51 phiên học; ${bank.reviewed} đáp án lý thuyết đã kiểm chứng, 5 bảng thuật toán, 4 sơ đồ, 2 bài đọc mã, 2 bài thi có rubric sẵn sàng. Ba đề mẫu gốc có đồng hồ/lưu bài, chưa đủ đáp án kiểm chứng.</p></section></div>`;
   on(
     "#export",
     "click",
@@ -952,7 +1088,9 @@ function settingsView() {
     }),
   );
 }
+let routeVersion = 0;
 async function route() {
+  const version = ++routeVersion;
   clearInterval(examTimer);
   const [name, arg, n] = (location.hash.slice(1) || "day/" + day).split("/");
   document
@@ -982,6 +1120,7 @@ async function route() {
   try {
     await flushSaves();
     await refresh();
+    if (version !== routeVersion) return;
     (
       ({
         day: () => dayView(arg),
@@ -999,6 +1138,7 @@ async function route() {
     )();
     window.scrollTo(0, 0);
   } catch (e) {
+    if (version !== routeVersion) return;
     main.innerHTML = `<div class="error-box">Không mở được phiên học: ${esc(e.message)}. Kiểm tra cửa sổ chạy ứng dụng rồi tải lại.</div>`;
   }
 }

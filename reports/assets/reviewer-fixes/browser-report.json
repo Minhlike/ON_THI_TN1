@@ -1,0 +1,65 @@
+{
+  "status": "PASS",
+  "passed": [
+    "hidden_answer_hints_rubric_wrong_review",
+    "exact_RSA_KaTeX_ECC_SVG",
+    "diagram_hide_highlight_fill",
+    "source_reader_answer_before_feedback",
+    "draft_close_tab_reopen_browser_day_navigation",
+    "P0A_new_exam_backup_merge_old_cannot_overwrite_no_duplicate",
+    "backup_UI_restore_and_shift_to_2027_final_eight_global_coverage",
+    "P0B_fake_clock_received_pending_zero_freeze_preserve_reload_idempotent_reject_late",
+    "offline_recovery_kept_separate_from_submitted_answers",
+    "server_restart_preserves_all_six_tables",
+    "Vietnamese_390_and_1440_no_horizontal_overflow_offline_assets"
+  ],
+  "errors": [],
+  "external": [],
+  "deadline": {
+    "receipt": {
+      "received": "2026-10-12T10:44:55+00:00",
+      "id": "41601f00169b4f3db05480d6b489d04a"
+    },
+    "submitted": {
+      "TN1-Q032": "Ý cuối trước hạn, lưu đang chờ khi đồng hồ về 0."
+    },
+    "attempt_count": 4
+  },
+  "backup": {
+    "old_answers": {
+      "TN1-Q032": "Câu trả lời A: bảo vệ thông tin."
+    },
+    "new_answers": {
+      "TN1-Q032": "Câu trả lời A: bảo vệ thông tin.",
+      "TN1-Q002": "Câu trả lời B: xác thực danh tính."
+    },
+    "finished": true
+  },
+  "restart": {
+    "tables_preserved": [
+      "attempts",
+      "progress",
+      "drafts",
+      "practices",
+      "settings",
+      "exams"
+    ]
+  },
+  "screenshots": [
+    "code.png",
+    "day-8.png",
+    "deadline-preserved.png",
+    "diagram.png",
+    "ecc.png",
+    "exam.png",
+    "final-selective.png",
+    "home-1440.png",
+    "mobile-390.png",
+    "mobile-card.png",
+    "mobile-code.png",
+    "mobile-diagram.png",
+    "mobile-ecc.png",
+    "mobile-exam.png",
+    "recall.png"
+  ]
+}

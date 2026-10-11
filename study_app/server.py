@@ -1,5 +1,6 @@
 """Loopback-only study application, stdlib HTTP and SQLite storage."""
 import argparse
+import copy
 import hashlib
 import json
 import mimetypes
@@ -7,6 +8,7 @@ import os
 import re
 import sqlite3
 import uuid
+from threading import Condition
 from contextlib import contextmanager
 from datetime import date, datetime, timedelta, timezone
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
@@ -17,6 +19,8 @@ from study_app.math_engine import PRESETS, calculate, normalized_answer
 
 ROOT = Path(__file__).resolve().parents[1]
 APP = ROOT / 'study_app'
+BUILD_FILES=['server.py','math_engine.py','content/bank.json','static/app.js','static/index.html','static/style.css']
+APP_BUILD=hashlib.sha256(b''.join((APP/name).read_bytes() for name in BUILD_FILES)).hexdigest()
 BANK = json.loads((APP / 'content/bank.json').read_text('utf-8'))
 CARDS = {c['id']: c for c in BANK['cards']}
 QUESTIONS = {q['question_id']: q for q in BANK['questions']}
@@ -57,6 +61,8 @@ class Store:
                 CREATE TABLE IF NOT EXISTS settings(key TEXT PRIMARY KEY,value TEXT NOT NULL);
                 CREATE TABLE IF NOT EXISTS exams(id TEXT PRIMARY KEY,payload TEXT NOT NULL);
             ''')
+            if 'updated' not in {r['name'] for r in db.execute('PRAGMA table_info(settings)')}:
+                db.execute("ALTER TABLE settings ADD COLUMN updated TEXT NOT NULL DEFAULT ''")
     @contextmanager
     def connect(self):
         db=sqlite3.connect(self.path, timeout=10)
@@ -80,7 +86,8 @@ class Store:
                 'drafts':{r['key']:r['answer'] for r in db.execute('SELECT * FROM drafts')},
                 'practices':[dict(r) for r in db.execute('SELECT * FROM practices ORDER BY created DESC LIMIT 500')],
                 'settings':{r['key']:json.loads(r['value']) for r in db.execute('SELECT * FROM settings')},
-                'exams':exams}
+                'exams':exams,
+                'coverage':{'reviewed_count':db.execute('SELECT COUNT(DISTINCT card_id) FROM attempts WHERE graded IS NOT NULL').fetchone()[0]}}
     def submit(self, p):
         cid=p.get('card_id'); answer=str(p.get('answer','')).strip()
         if cid not in CARDS: raise ValueError('Câu này chưa có đáp án kiểm chứng.')
@@ -119,14 +126,61 @@ class Store:
         validate_practice(kind,payload)
         with self.connect() as db:
             db.execute('INSERT INTO practices VALUES(?,?,?,?)',(uuid.uuid4().hex,kind,json.dumps(payload,ensure_ascii=False),stamp()))
+    def setting(self, key, value):
+        validate_setting(key,value)
+        with self.connect() as db:
+            db.execute('INSERT INTO settings VALUES(?,?,?) ON CONFLICT(key) DO UPDATE SET value=excluded.value,updated=excluded.updated',(key,json.dumps(value),stamp()))
+    def start_exam(self, p):
+        kind=p.get('kind','baseline')
+        if kind not in EXAMS: raise ValueError('Đề thi không hợp lệ.')
+        minutes=45 if kind in ['baseline','week1'] else 180; eid=uuid.uuid4().hex
+        result={'id':eid,'kind':kind,'started':stamp(),'deadline':(datetime.now(timezone.utc)+timedelta(minutes=minutes)).isoformat(),'answers':{},'finished':False,'report':None,'revision':0,'updated':stamp()}
+        with self.connect() as db: db.execute('INSERT INTO exams VALUES(?,?)',(eid,json.dumps(result,ensure_ascii=False)))
+        return result
+
+    def update_exam(self, p, finish=False, received=None):
+        # Receipt means the complete JSON request reached this server, before DB work.
+        # Client timestamps cannot establish whether an answer was typed before expiry.
+        received=received or datetime.now(timezone.utc)
+        with self.connect() as db:
+            db.execute('BEGIN IMMEDIATE'); row=db.execute('SELECT payload FROM exams WHERE id=?',(p.get('id'),)).fetchone()
+            if not row: raise ValueError('Không tìm thấy phiên thi.')
+            result=json.loads(row['payload'])
+            if result['finished']: return result
+            answers=p.get('answers',result['answers'])
+            if not isinstance(answers,dict) or any(k not in EXAMS[result['kind']] or not isinstance(v,str) or len(v)>50000 for k,v in answers.items()): raise ValueError('Bài thi không hợp lệ.')
+            expired=received>=datetime.fromisoformat(result['deadline'])
+            revision=p.get('revision',result.get('revision',0)+1)
+            if not isinstance(revision,int) or isinstance(revision,bool) or not 0<=revision<=10**9: raise ValueError('Phiên bản bài làm không hợp lệ.')
+            if not expired and revision>result.get('revision',0):
+                result['answers'].update(answers)
+                result['revision']=revision
+                result['updated']=stamp()
+            if finish:
+                result['finished']=True; result['finished_at']=stamp(); result['report']={cid:{'card':CARDS.get(cid),'answer':result['answers'].get(cid,''),'status':'SELF_ASSESS' if cid in CARDS else 'AWAITING_REVIEW'} for cid in EXAMS[result['kind']]}
+                result['updated']=result['finished_at']
+                for cid, report in result['report'].items():
+                    if cid in CARDS and len(report['answer'].strip())>=3:
+                        aid=uuid.uuid4().hex
+                        db.execute('INSERT INTO attempts(id,card_id,answer,day,hints,created) VALUES(?,?,?,?,?,?)',(aid,cid,report['answer'],1 if result['kind']=='baseline' else 7,0,stamp()))
+                        report['attempt_id']=aid
+            db.execute('UPDATE exams SET payload=? WHERE id=?',(json.dumps(result,ensure_ascii=False),result['id']))
+        return result
+
     def export(self):
         with self.connect() as db:
-            return {'format':'TN1-progress-v1','exported':stamp(),'tables':{table:[dict(r) for r in db.execute('SELECT * FROM '+table)] for table in ['attempts','progress','drafts','practices','settings','exams']}}
+            return {'format':'TN1-progress-v2','exported':stamp(),'tables':{table:[dict(r) for r in db.execute('SELECT * FROM '+table)] for table in ['attempts','progress','drafts','practices','settings','exams']}}
     def restore(self, data):
-        if data.get('format')!='TN1-progress-v1': raise ValueError('Định dạng bản sao lưu không phù hợp.')
-        tables=data.get('tables',{})
+        if data.get('format') not in ['TN1-progress-v1','TN1-progress-v2']: raise ValueError('Định dạng bản sao lưu không phù hợp.')
+        tables=copy.deepcopy(data.get('tables',{}))
+        if not isinstance(tables,dict): raise ValueError('Các bảng sao lưu không hợp lệ.')
+        # Legacy settings have no modification time: they may seed a missing key,
+        # but never overwrite a timestamped setting already present.
+        if not isinstance(tables.get('settings',[]),list): raise ValueError('Bảng thiết lập không hợp lệ.')
+        for row in tables.get('settings',[]):
+            if isinstance(row,dict) and set(row)=={'key','value'}: row['updated']=''
         # Validate everything before entering the transaction; merge, never delete existing history.
-        schema={'attempts':['id','card_id','answer','day','hints','created','graded','score','checks','confidence','error','passed'], 'progress':['card_id','stage','due','streak','score','mastered','updated'],'drafts':['key','answer','updated'],'practices':['id','kind','payload','created'],'settings':['key','value'],'exams':['id','payload']}
+        schema={'attempts':['id','card_id','answer','day','hints','created','graded','score','checks','confidence','error','passed'], 'progress':['card_id','stage','due','streak','score','mastered','updated'],'drafts':['key','answer','updated'],'practices':['id','kind','payload','created'],'settings':['key','value','updated'],'exams':['id','payload']}
         for table,cols in schema.items():
             rows=tables.get(table,[])
             if not isinstance(rows,list) or len(rows)>20000: raise ValueError('Bản sao lưu vượt giới hạn.')
@@ -144,17 +198,27 @@ class Store:
                     if r['graded'] is not None: datetime.fromisoformat(r['graded'])
                 for c in ['payload','value','checks']:
                     if c in r and r[c] is not None: json.loads(r[c])
-                if table=='settings': validate_setting(r['key'],json.loads(r['value']))
+                if table=='settings':
+                    validate_setting(r['key'],json.loads(r['value']))
+                    if r['updated']: datetime.fromisoformat(r['updated'])
                 if table=='practices': validate_practice(r['kind'],json.loads(r['payload']))
                 if table=='exams':
                     exam=json.loads(r['payload'])
                     if exam.get('id')!=r['id'] or exam.get('kind') not in EXAMS: raise ValueError('Phiên thi không hợp lệ.')
                     datetime.fromisoformat(exam['started']);datetime.fromisoformat(exam['deadline'])
+                    if datetime.fromisoformat(exam['deadline'])<=datetime.fromisoformat(exam['started']): raise ValueError('Thời gian thi không hợp lệ.')
+                    if not isinstance(exam.get('finished'),bool) or not isinstance(exam.get('revision',0),int) or not 0<=exam.get('revision',0)<=10**9: raise ValueError('Trạng thái thi không hợp lệ.')
+                    if exam.get('updated'): datetime.fromisoformat(exam['updated'])
                     allowed=set(EXAMS[exam['kind']])
                     if not isinstance(exam.get('answers'),dict) or not set(exam['answers'])<=allowed or any(not isinstance(v,str) or len(v)>50000 for v in exam['answers'].values()): raise ValueError('Bài thi trong bản sao lưu không hợp lệ.')
                     report=exam.get('report')
                     if report is not None and (not isinstance(report,dict) or not set(report)<=allowed or any(not isinstance(v,dict) or not isinstance(v.get('answer'),str) for v in report.values())): raise ValueError('Báo cáo thi không hợp lệ.')
+                    if exam['finished']:
+                        datetime.fromisoformat(exam['finished_at'])
+                        if not report or set(report)!=allowed or any(report[cid]['answer']!=exam['answers'].get(cid,'') for cid in allowed): raise ValueError('Báo cáo khác bài đã nộp.')
+                    elif report is not None: raise ValueError('Bài chưa nộp có báo cáo không hợp lệ.')
         with self.connect() as db:
+            db.execute('BEGIN IMMEDIATE')
             for table,cols in schema.items():
                 for r in tables.get(table,[]):
                     if table=='attempts':
@@ -165,7 +229,26 @@ class Store:
                                 fields=['graded','score','checks','confidence','error','passed']
                                 db.execute('UPDATE attempts SET '+','.join(k+'=?' for k in fields)+' WHERE id=?',[r[k] for k in fields]+[r['id']])
                             continue
-                    if table in ['progress','drafts']:
+                    if table=='exams':
+                        row=db.execute('SELECT payload FROM exams WHERE id=?',(r['id'],)).fetchone()
+                        if row:
+                            old=json.loads(row['payload']);new=json.loads(r['payload'])
+                            if any(old[k]!=new[k] for k in ['id','kind','started','deadline']): raise ValueError('Trùng mã phiên nhưng khác đề/thời gian; hủy khôi phục.')
+                            def rank(e): return (e.get('revision',0),e.get('updated',e.get('finished_at',e['started'])))
+                            if old['finished']:
+                                if new['finished'] and (old['answers']!=new['answers'] or old['finished_at']!=new['finished_at'] or {k:v.get('attempt_id') for k,v in old['report'].items()}!={k:v.get('attempt_id') for k,v in new['report'].items()}): raise ValueError('Hai bản bài đã nộp xung đột; hủy khôi phục.')
+                                continue
+                            # A submission is terminal; active snapshots require a newer
+                            # revision (or a newer modification time for legacy records).
+                            if rank(new)<rank(old):
+                                if new['finished']: raise ValueError('Bản nộp cũ hơn bài đang làm; hủy khôi phục để giữ dữ liệu.')
+                                continue
+                            if not new['finished'] and rank(new)==rank(old):
+                                if new['answers']!=old['answers']: raise ValueError('Hai bản bài đang làm cùng phiên bản nhưng khác nội dung; hủy khôi phục.')
+                                continue
+                            db.execute('UPDATE exams SET payload=? WHERE id=?',(r['payload'],r['id']))
+                            continue
+                    if table in ['progress','drafts','settings']:
                         key=cols[0]; old=db.execute(f'SELECT updated FROM {table} WHERE {key}=?',(r[key],)).fetchone()
                         if old and old['updated']>=r['updated']: continue
                         if old: db.execute(f'DELETE FROM {table} WHERE {key}=?',(r[key],))
@@ -177,7 +260,7 @@ EXAMS={'baseline':['TN1-Q032','TN1-Q002','TN1-Q069','TN1-Q001','TN1-Q009'], 'wee
 
 def public_bank():
     cards=[{k:v for k,v in c.items() if k not in ['answer','rubric','sources','note','derivations']} for c in BANK['cards']]
-    return {'cards':cards,'questions':BANK['questions'],'subquestions':BANK['subquestions'],'plan':BANK['plan'],'start':BANK['start'],'end':BANK['end'],'reviewed':len(cards),'total':len(QUESTIONS),'sha':BANK['slide_sha256']}
+    return {'cards':cards,'questions':BANK['questions'],'subquestions':BANK['subquestions'],'child_coverage':BANK.get('child_coverage',[]),'plan':BANK['plan'],'start':BANK['start'],'end':BANK['end'],'reviewed':len(cards),'total':len(QUESTIONS),'sha':BANK['slide_sha256']}
 
 
 class Handler(BaseHTTPRequestHandler):
@@ -197,7 +280,7 @@ class Handler(BaseHTTPRequestHandler):
     def do_GET(self):
         if not self.allowed(): return self.reply(403,{'error':'Chỉ chấp nhận truy cập localhost.'})
         path=unquote(urlsplit(self.path).path)
-        if path=='/api/bootstrap': return self.reply(200,{'bank':public_bank(),'state':self.server.store.state(),'today':today(),'math':PRESETS,'exam_sets':EXAMS})
+        if path=='/api/bootstrap': return self.reply(200,{'bank':public_bank(),'state':self.server.store.state(),'today':today(),'server_time':stamp(),'app_build':APP_BUILD,'math':PRESETS,'exam_sets':EXAMS})
         if path=='/api/export': return self.reply(200,self.server.store.export())
         if path.startswith('/api/'): return self.reply(404,{'error':'Không có đường dẫn này.'})
         if path=='/sources/slide.pdf': file=ROOT/'CSATTT_SLIDE_FULL.pdf'
@@ -215,6 +298,25 @@ class Handler(BaseHTTPRequestHandler):
             if self.headers.get('Content-Type','').split(';')[0]!='application/json' or not 0<size<=8_000_000: raise ValueError('Cần dữ liệu JSON trong giới hạn 8 MB.')
             p=json.loads(self.rfile.read(size)); path=urlsplit(self.path).path; store=self.server.store
             if not isinstance(p,dict): raise ValueError('Cần một đối tượng JSON.')
+        except (ValueError,KeyError,TypeError,OverflowError,json.JSONDecodeError) as exc:
+            return self.reply(400,{'error':str(exc)})
+        # FIFO for fully received mutations: finish cannot overtake a save already
+        # received before deadline, even while another worker holds the DB lock.
+        with self.server.mutations:
+            received=datetime.now(timezone.utc)
+            ticket=self.server.issued
+            self.server.issued+=1
+            self.server.mutations.wait_for(lambda: ticket==self.server.serving)
+        try:
+            self.execute_post(p,path,received)
+        finally:
+            with self.server.mutations:
+                self.server.serving+=1
+                self.server.mutations.notify_all()
+
+    def execute_post(self,p,path,received):
+        store=self.server.store
+        try:
             if path=='/api/submit': result=store.submit(p)
             elif path=='/api/resume':
                 with store.connect() as db: row=db.execute('SELECT * FROM attempts WHERE id=?',(p.get('attempt_id'),)).fetchone()
@@ -227,8 +329,7 @@ class Handler(BaseHTTPRequestHandler):
                 with store.connect() as db: db.execute('INSERT INTO drafts VALUES(?,?,?) ON CONFLICT(key) DO UPDATE SET answer=excluded.answer,updated=excluded.updated',(key,answer,stamp()))
                 result={'saved':True}
             elif path=='/api/settings':
-                value=p.get('value');validate_setting(p.get('key'),value)
-                with store.connect() as db: db.execute('INSERT INTO settings VALUES(?,?) ON CONFLICT(key) DO UPDATE SET value=excluded.value',(p['key'],json.dumps(value),))
+                store.setting(p.get('key'),p.get('value'))
                 result={'saved':True}
             elif path=='/api/math':
                 kind=p['kind']; result=calculate(kind,p['values']); mode=p.get('mode','worked')
@@ -242,29 +343,9 @@ class Handler(BaseHTTPRequestHandler):
                 # This API records self-assessed mechanisms separately from machine checked math.
                 store.practice(p['kind'],p.get('payload',{})); result={'saved':True}
             elif path=='/api/exam/start':
-                kind=p.get('kind','baseline')
-                if kind not in EXAMS: raise ValueError('Đề thi không hợp lệ.')
-                minutes=45 if kind in ['baseline','week1'] else 180; eid=uuid.uuid4().hex
-                result={'id':eid,'kind':kind,'started':stamp(),'deadline':(datetime.now(timezone.utc)+timedelta(minutes=minutes)).isoformat(),'answers':{},'finished':False,'report':None}
-                with store.connect() as db: db.execute('INSERT INTO exams VALUES(?,?)',(eid,json.dumps(result,ensure_ascii=False)))
+                result=store.start_exam(p)
             elif path in ['/api/exam/save','/api/exam/finish']:
-                with store.connect() as db:
-                    db.execute('BEGIN IMMEDIATE'); row=db.execute('SELECT payload FROM exams WHERE id=?',(p.get('id'),)).fetchone()
-                    if not row: raise ValueError('Không tìm thấy phiên thi.')
-                    result=json.loads(row['payload'])
-                    if result['finished']: raise ValueError('Phiên thi đã kết thúc.')
-                    answers=p.get('answers',{})
-                    if not isinstance(answers,dict) or any(k not in EXAMS[result['kind']] or not isinstance(v,str) or len(v)>50000 for k,v in answers.items()): raise ValueError('Bài thi không hợp lệ.')
-                    expired=datetime.now(timezone.utc)>datetime.fromisoformat(result['deadline'])
-                    if not expired: result['answers']=answers
-                    if path.endswith('finish') or expired:
-                        result['finished']=True; result['finished_at']=stamp(); result['report']={cid:{'card':CARDS.get(cid),'answer':result['answers'].get(cid,''),'status':'SELF_ASSESS' if cid in CARDS else 'AWAITING_REVIEW'} for cid in EXAMS[result['kind']]}
-                        for cid, report in result['report'].items():
-                            if cid in CARDS and len(report['answer'].strip())>=3:
-                                aid=uuid.uuid4().hex
-                                db.execute('INSERT INTO attempts(id,card_id,answer,day,hints,created) VALUES(?,?,?,?,?,?)',(aid,cid,report['answer'],1 if result['kind']=='baseline' else 7,0,stamp()))
-                                report['attempt_id']=aid
-                    db.execute('UPDATE exams SET payload=? WHERE id=?',(json.dumps(result,ensure_ascii=False),result['id']))
+                result=store.update_exam(p, path.endswith('finish'),received)
             elif path=='/api/restore': store.restore(p); result={'restored':True}
             else: return self.reply(404,{'error':'Không có đường dẫn này.'})
             self.reply(200,result)
@@ -280,6 +361,7 @@ def main():
         source=ROOT/manifest['sources'][key]['file']
         if hashlib.sha256(source.read_bytes()).hexdigest()!=expected: raise SystemExit('Nguồn đã thay đổi; cần kiểm chứng lại ngân hàng câu hỏi: '+key)
     server=ThreadingHTTPServer(('127.0.0.1',args.port),Handler); server.store=Store(data/'study.sqlite3')
+    server.mutations=Condition();server.issued=0;server.serving=0
     print(f'TN1: http://127.0.0.1:{args.port} | Progress: {server.store.path}',flush=True)
     try: server.serve_forever()
     except KeyboardInterrupt: pass

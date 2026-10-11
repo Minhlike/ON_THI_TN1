@@ -1,15 +1,29 @@
 $ErrorActionPreference = 'Stop'
 $projectRoot = Split-Path -Parent $PSScriptRoot
 $appUrl = 'http://127.0.0.1:8765'
+$buildFiles = @('server.py','math_engine.py','content/bank.json','static/app.js','static/index.html','static/style.css')
+$buildBytes = New-Object System.IO.MemoryStream
+foreach ($name in $buildFiles) {
+    $bytes = [System.IO.File]::ReadAllBytes((Join-Path $PSScriptRoot $name))
+    $buildBytes.Write($bytes, 0, $bytes.Length)
+}
+$buildHasher = [System.Security.Cryptography.SHA256]::Create()
+$expectedBuild = ([BitConverter]::ToString($buildHasher.ComputeHash($buildBytes.ToArray()))).Replace('-','').ToLowerInvariant()
+$buildHasher.Dispose()
+$buildBytes.Dispose()
+$current = $null
 try {
     $current = Invoke-RestMethod "$appUrl/api/bootstrap" -TimeoutSec 2
-    if ($current.bank.sha -eq '75e22524b318039d960b72339afed37b56b492e94d60e5f1e03aada2ddfe7ec6') {
+} catch { }
+if ($current) {
+    if ($current.bank.sha -ne '75e22524b318039d960b72339afed37b56b492e94d60e5f1e03aada2ddfe7ec6') { throw 'Port 8765 is used by another app.' }
+    if ($current.app_build -eq $expectedBuild) {
         Start-Process $appUrl
         exit 0
     }
-    throw 'Port 8765 is used by another app.'
-} catch {
-    if ($_.Exception.Message -like '*another app*') { throw }
+    # Reuse only the exact loaded build. Stop only a verified launcher-owned PID.
+    & (Join-Path $PSScriptRoot 'stop.ps1')
+    if (Get-NetTCPConnection -LocalAddress '127.0.0.1' -LocalPort 8765 -State Listen -ErrorAction SilentlyContinue) { throw 'An old TN1 server is still running. Close its terminal before opening again.' }
 }
 $pythonCandidates = @('python.exe', 'py.exe')
 $pythonPath = $null
@@ -33,7 +47,7 @@ for ($attempt=0; $attempt -lt 30; $attempt++) {
     Start-Sleep -Milliseconds 300
     try {
         $ready = Invoke-RestMethod "$appUrl/api/bootstrap" -TimeoutSec 1
-        if ($ready.bank.sha -eq '75e22524b318039d960b72339afed37b56b492e94d60e5f1e03aada2ddfe7ec6') { Start-Process $appUrl; exit 0 }
+        if ($ready.app_build -eq $expectedBuild) { Start-Process $appUrl; exit 0 }
     } catch { }
     if ($backend.HasExited) { throw "App could not start. See $dataFolder\server-error.log" }
 }

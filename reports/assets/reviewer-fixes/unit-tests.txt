@@ -1,0 +1,38 @@
+test_children_have_explicit_status_rubric_and_steps (test_exam_regressions.ContentMilestoneTests.test_children_have_explicit_status_rubric_and_steps) ... ok
+test_day_eight_and_selective_final_preserve_bank_scope (test_exam_regressions.ContentMilestoneTests.test_day_eight_and_selective_final_preserve_bank_scope) ... ok
+test_new_cards_have_real_excerpts_and_separate_derivations (test_exam_regressions.ContentMilestoneTests.test_new_cards_have_real_excerpts_and_separate_derivations) ... ok
+test_conflicting_submission_rolls_back_all_tables (test_exam_regressions.ExamRegressionTests.test_conflicting_submission_rolls_back_all_tables) ... ok
+test_invalid_exam_backup_is_atomic (test_exam_regressions.ExamRegressionTests.test_invalid_exam_backup_is_atomic) ... ok
+test_new_backup_updates_existing_exam_without_regression (test_exam_regressions.ExamRegressionTests.test_new_backup_updates_existing_exam_without_regression) ... ok
+test_predeadline_received_save_survives_delayed_processing (test_exam_regressions.ExamRegressionTests.test_predeadline_received_save_survives_delayed_processing) ... ok
+test_revision_order_and_deadline_reject_late_changes (test_exam_regressions.ExamRegressionTests.test_revision_order_and_deadline_reject_late_changes) ... ok
+test_settings_newer_wins_and_legacy_does_not_regress (test_exam_regressions.ExamRegressionTests.test_settings_newer_wins_and_legacy_does_not_regress) ... ok
+test_ambiguous_math_and_diagrams_keep_pdf_evidence (test_extraction.ExtractionIntegrity.test_ambiguous_math_and_diagrams_keep_pdf_evidence) ... ok
+test_each_source_page_has_record_and_matching_hash (test_extraction.ExtractionIntegrity.test_each_source_page_has_record_and_matching_hash) ... ok
+test_visual_risk_is_not_marked_verified (test_extraction.ExtractionIntegrity.test_visual_risk_is_not_marked_verified) ... ok
+test_unchanged_sources_do_not_reextract_pages_or_reindex (test_incremental_build.IncrementalBuild.test_unchanged_sources_do_not_reextract_pages_or_reindex) ... ok
+test_ids_unique_and_every_excerpt_exists_on_claimed_page (test_mapping.Mapping.test_ids_unique_and_every_excerpt_exists_on_claimed_page) ... ok
+test_multi_page_question_retains_its_continuation (test_mapping.Mapping.test_multi_page_question_retains_its_continuation) ... ok
+test_full_audit (test_provenance.Provenance.test_full_audit) ... ok
+test_controlled_english_alias (test_retrieval.Retrieval.test_controlled_english_alias) ... ok
+test_exact_question_id (test_retrieval.Retrieval.test_exact_question_id) ... ok
+test_negative_query_returns_no_evidence (test_retrieval.Retrieval.test_negative_query_returns_no_evidence) ... ok
+test_vietnamese_accent_variant (test_retrieval.Retrieval.test_vietnamese_accent_variant) ... ok
+test_group_law_and_infinity (test_study_app.ArithmeticTests.test_group_law_and_infinity) ... ok
+test_invalid_and_missing_parameters (test_study_app.ArithmeticTests.test_invalid_and_missing_parameters) ... ok
+test_source_vectors (test_study_app.ArithmeticTests.test_source_vectors) ... ok
+test_calendar_and_week_one_coverage (test_study_app.ContentTests.test_calendar_and_week_one_coverage) ... ok
+test_initial_answers_hidden (test_study_app.ContentTests.test_initial_answers_hidden) ... ok
+test_original_questions_and_sources_preserved (test_study_app.ContentTests.test_original_questions_and_sources_preserved) ... ok
+test_backup_merge_and_atomic_rejection (test_study_app.ProgressTests.test_backup_merge_and_atomic_rejection) ... ok
+test_backup_updates_grade_and_rejects_html_id (test_study_app.ProgressTests.test_backup_updates_grade_and_rejects_html_id) ... ok
+test_grade_exactly_once (test_study_app.ProgressTests.test_grade_exactly_once) ... ok
+test_hint_wrong_or_uncertain_resets (test_study_app.ProgressTests.test_hint_wrong_or_uncertain_resets) ... ok
+test_interval_ladder_and_no_same_day_mastery (test_study_app.ProgressTests.test_interval_ladder_and_no_same_day_mastery) ... ok
+test_reopening_preserves_history (test_study_app.ProgressTests.test_reopening_preserves_history) ... ok
+test_unreviewed_cannot_be_graded (test_study_app.ProgressTests.test_unreviewed_cannot_be_graded) ... ok
+
+----------------------------------------------------------------------
+Ran 33 tests in 7.335s
+
+OK

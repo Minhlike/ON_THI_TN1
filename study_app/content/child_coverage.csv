@@ -1,0 +1,76 @@
+﻿id,parent_id,first_day,status,rubric_ids,slide_pages,required_steps,note,question
+TN1-Q009-a,TN1-Q009,1,REVIEWED,r1,139;141,a) Điều kiện ban đầu của giao thức,,a) Điều kiện ban đầu của giao thức
+TN1-Q009-b,TN1-Q009,1,REVIEWED,r2,139;141,b) Các bước hoạt động của giao thức,,b) Các bước hoạt động của giao thức
+TN1-Q009-c,TN1-Q009,1,REVIEWED,r3,139;141,c) Cơ sở cho quyết định cuối cùng của bên xác thực,,c) Cơ sở cho quyết định cuối cùng của bên xác thực
+TN1-Q009-d,TN1-Q009,1,REVIEWED,r4,139;141,"d) Tấn công từ điển sử dụng bảng băm sẵn (precomputed hash table) lên cơ sở
+dữ liệu tài khoản người dùng trong trường hợp có được cơ sở dữ liệu đó.",,"d) Tấn công từ điển sử dụng bảng băm sẵn (precomputed hash table) lên cơ sở
+dữ liệu tài khoản người dùng trong trường hợp có được cơ sở dữ liệu đó."
+TN1-Q010-a,TN1-Q010,7,REVIEWED,r1,140;141,a) Điều kiện ban đầu của giao thức,,a) Điều kiện ban đầu của giao thức
+TN1-Q010-b,TN1-Q010,7,REVIEWED,r2,140;141,b) Các bước hoạt động của giao thức,,b) Các bước hoạt động của giao thức
+TN1-Q010-c,TN1-Q010,7,REVIEWED,r3,140;141,c) Cơ sở cho quyết định cuối cùng của bên xác thực,,c) Cơ sở cho quyết định cuối cùng của bên xác thực
+TN1-Q010-d,TN1-Q010,7,REVIEWED,r4,140;141,"d) Ý nghĩa của việc sử dụng ""salt"" trong giao thức",,"d) Ý nghĩa của việc sử dụng ""salt"" trong giao thức"
+TN1-Q011-a,TN1-Q011,7,REVIEWED,r1,142,a) Điều kiện ban đầu của giao thức,,a) Điều kiện ban đầu của giao thức
+TN1-Q011-b,TN1-Q011,7,REVIEWED,r2,142,b) Các bước hoạt động của giao thức,,b) Các bước hoạt động của giao thức
+TN1-Q011-c,TN1-Q011,7,REVIEWED,r3,142,c) Cơ sở cho quyết định cuối cùng của bên xác thực,,c) Cơ sở cho quyết định cuối cùng của bên xác thực
+TN1-Q011-d,TN1-Q011,7,REVIEWED,r4,142,d) Tấn công kiểu man-in-the-middle lên giao thức,,d) Tấn công kiểu man-in-the-middle lên giao thức
+TN1-Q039-a,TN1-Q039,20,AWAITING_REVIEW,,,"-
+Xác định khoá bí mật",,"-
+Xác định khoá bí mật"
+TN1-Q039-b,TN1-Q039,20,AWAITING_REVIEW,,,"-
+Tìm M",,"-
+Tìm M"
+TN1-Q040-a,TN1-Q040,20,AWAITING_REVIEW,,,"-
+Xác định khoá bí mật",,"-
+Xác định khoá bí mật"
+TN1-Q040-b,TN1-Q040,20,AWAITING_REVIEW,,,"-
+Tìm M",,"-
+Tìm M"
+TN1-Q041-a,TN1-Q041,21,AWAITING_REVIEW,,,"-
+Tìm khoá bí mật",,"-
+Tìm khoá bí mật"
+TN1-Q041-b,TN1-Q041,21,AWAITING_REVIEW,,,"-
+Giải mã thông điệp (111,4,88,57,116,67) (chuyển đổi bản rõ ra dạng ASCII",,"-
+Giải mã thông điệp (111,4,88,57,116,67) (chuyển đổi bản rõ ra dạng ASCII"
+TN1-Q042-a,TN1-Q042,21,AWAITING_REVIEW,,,"-
+Hãy mã hóa ký tự A trong bảng mã ASCII sử dụng khóa công khai trên",,"-
+Hãy mã hóa ký tự A trong bảng mã ASCII sử dụng khóa công khai trên"
+TN1-Q042-b,TN1-Q042,21,AWAITING_REVIEW,,,Tìm khóa giải mã; Giải mã đủ 11 khối; Ghép thông điệp,,"-
+Cho văn bản bí mật là 247, 337, 322, 463, 15, 73, 440, 15, 342, 323, 435
+được mã bằng khóa công khai trên. Hãy tìm cách giải mật thông điệp trên."
+TN1-Q046-a,TN1-Q046,22,PRACTICE_READY_PARTIAL,,,- Hãy tìm khoá công khai của A?,,- Hãy tìm khoá công khai của A?
+TN1-Q046-b,TN1-Q046,22,PRACTICE_READY_PARTIAL,,,Mã hóa với k=23; Giải mã bản mã vừa tạo; Kiểm chứng bản rõ,,"- Giả sử chọn số ngẫu nhiên k = 23, hãy thực hiện mã hoá bản tin x = 34 với
+khoá công khai của A, và giả mã bản mã vừa thu được."
+TN1-Q048-a,TN1-Q048,23,PRACTICE_READY_PARTIAL,,,- Xác định tất cả các điểm của đường cong,,- Xác định tất cả các điểm của đường cong
+TN1-Q048-b,TN1-Q048,23,PRACTICE_READY_PARTIAL,,,"- Tính tất cả các giá trị của kα với 1< k <14, trong đó α= (2,7)",,"- Tính tất cả các giá trị của kα với 1< k <14, trong đó α= (2,7)"
+TN1-Q048-c,TN1-Q048,23,PRACTICE_READY_PARTIAL,,,Khóa công khai với d=6; Khóa công khai với d=2; Khóa công khai với d=7,,"- ECC ElGamal encryption:
++ Tính khóa công khai biết khóa bí mật là 6
++ Tính khóa công khai biết khóa bí mật là 2
++ Tính khóa công khai biết khóa bí mật là 7"
+TN1-Q048-d,TN1-Q048,23,PRACTICE_READY_PARTIAL,,,"Xác định ánh xạ thông điệp 10 (đề thiếu); Mã hóa với d=7, k=3; Giải mã; Kiểm chứng",Thiếu ánh xạ thông điệp số sang điểm; không có bản mã duy nhất.,"- Với khóa bí mật của người nhận là 7. Tham số ngẫu nhiên là 3.
++ Mã hóa thông điệp 10
++ Giải mã và kiểm chứng"
+TN1-Q049-a,TN1-Q049,26,AWAITING_REVIEW,,,"-
+Tìm khoá công khai",Đề ghi mod 1; chưa xác định miền ECC hợp lệ.,"-
+Tìm khoá công khai"
+TN1-Q049-b,TN1-Q049,26,AWAITING_REVIEW,,,"-
+Chọn ngẫu nhiên k=2, mã hoá thông điệp x=(2,0)",Đề ghi mod 1; chưa xác định miền ECC hợp lệ.,"-
+Chọn ngẫu nhiên k=2, mã hoá thông điệp x=(2,0)"
+TN1-Q049-c,TN1-Q049,26,AWAITING_REVIEW,,,"-
+Giải mã ngược lại",Đề ghi mod 1; chưa xác định miền ECC hợp lệ.,"-
+Giải mã ngược lại"
+TN1-Q054-a,TN1-Q054,36,AWAITING_REVIEW,,,a) Tính giá trị công khai yA của A và yB của B.,,a) Tính giá trị công khai yA của A và yB của B.
+TN1-Q054-b,TN1-Q054,36,AWAITING_REVIEW,,,b) Tính giá trị của khóa chia sẻ ZAB giữa A và B.,,b) Tính giá trị của khóa chia sẻ ZAB giữa A và B.
+TN1-Q055-a,TN1-Q055,36,AWAITING_REVIEW,,,a) Điều kiện ban đầu của giao thức,,a) Điều kiện ban đầu của giao thức
+TN1-Q055-b,TN1-Q055,36,AWAITING_REVIEW,,,b) Các bước hoạt động của giao thức,,b) Các bước hoạt động của giao thức
+TN1-Q055-c,TN1-Q055,36,AWAITING_REVIEW,,,c) Cơ sở cho quyết định cuối cùng của bên xác thực,,c) Cơ sở cho quyết định cuối cùng của bên xác thực
+TN1-Q055-d,TN1-Q055,36,AWAITING_REVIEW,,,"d) Tấn công từ điển sử dụng bảng băm sẵn (precomputed hash table) lên cơ sở dữ liệu tài
+khoản người dùng trong trường hợp có được cơ sở dữ liệu đó.",,"d) Tấn công từ điển sử dụng bảng băm sẵn (precomputed hash table) lên cơ sở dữ liệu tài
+khoản người dùng trong trường hợp có được cơ sở dữ liệu đó."
+TN1-Q060-a,TN1-Q060,38,AWAITING_REVIEW,,,a) Điều kiện ban đầu của giao thức,,a) Điều kiện ban đầu của giao thức
+TN1-Q060-b,TN1-Q060,38,AWAITING_REVIEW,,,b) Các bước hoạt động của giao thức,,b) Các bước hoạt động của giao thức
+TN1-Q060-c,TN1-Q060,38,AWAITING_REVIEW,,,c) Cơ sở cho quyết định cuối cùng của bên xác thực,,c) Cơ sở cho quyết định cuối cùng của bên xác thực
+TN1-Q060-d,TN1-Q060,38,AWAITING_REVIEW,,,"d) Ý nghĩa của việc sử dụng ""salt"" trong giao thức",,"d) Ý nghĩa của việc sử dụng ""salt"" trong giao thức"
+TN1-Q065-a,TN1-Q065,40,AWAITING_REVIEW,,,a) Điều kiện ban đầu của giao thức,,a) Điều kiện ban đầu của giao thức
+TN1-Q065-b,TN1-Q065,40,AWAITING_REVIEW,,,b) Các bước hoạt động của giao thức,,b) Các bước hoạt động của giao thức
+TN1-Q065-c,TN1-Q065,40,AWAITING_REVIEW,,,c) Cơ sở cho quyết định cuối cùng của bên xác thực,,c) Cơ sở cho quyết định cuối cùng của bên xác thực
+TN1-Q065-d,TN1-Q065,40,AWAITING_REVIEW,,,d) Tấn công kiểu man-in-the-middle lên giao thức,,d) Tấn công kiểu man-in-the-middle lên giao thức

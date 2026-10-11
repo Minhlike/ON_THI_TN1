@@ -35,15 +35,15 @@ a) Điều kiện ban đầu của giao thức
 b) Các bước hoạt động của giao thức
 c) Cơ sở cho quyết định cuối cùng của bên xác thực
 d) Tấn công kiểu man-in-the-middle lên giao thức"
-TN1-Q012,ÔN TẬP KIỂM SOÁT TRUY CẬP,4,AWAITING_REVIEW,,UNVERIFIED,8,"Câu 12. Trình bày khái niệm kiểm soát truy cập và ý nghĩa của nó trong việc đảm
+TN1-Q012,ÔN TẬP KIỂM SOÁT TRUY CẬP,4,REVIEWED,149;150,VERIFIED_WITH_DERIVATIONS,8,"Câu 12. Trình bày khái niệm kiểm soát truy cập và ý nghĩa của nó trong việc đảm
 bảo an toàn thông tin cho hệ thống"
-TN1-Q013,ÔN TẬP KIỂM SOÁT TRUY CẬP,4,AWAITING_REVIEW,,UNVERIFIED,8,"Câu 13. Trình bày nguyên tắc đặc quyền tối thiểu. Hãy lấy một ví dụ thể hiện nguyên
+TN1-Q013,ÔN TẬP KIỂM SOÁT TRUY CẬP,4,REVIEWED,148,VERIFIED_WITH_DERIVATIONS,8,"Câu 13. Trình bày nguyên tắc đặc quyền tối thiểu. Hãy lấy một ví dụ thể hiện nguyên
 tắc này trong thực tế."
-TN1-Q014,ÔN TẬP KIỂM SOÁT TRUY CẬP,4,AWAITING_REVIEW,,UNVERIFIED,8,"Câu 14. Trình bày đặc điểm của mô hình kiểm soát truy cập tùy chọn. Nó thường
+TN1-Q014,ÔN TẬP KIỂM SOÁT TRUY CẬP,4,REVIEWED,154;155;156;157;162,VERIFIED_WITH_DERIVATIONS,8,"Câu 14. Trình bày đặc điểm của mô hình kiểm soát truy cập tùy chọn. Nó thường
 được sử dụng trong những hệ thống nào? Tại sao"
-TN1-Q015,ÔN TẬP KIỂM SOÁT TRUY CẬP,4,AWAITING_REVIEW,,UNVERIFIED,8,"Câu 15. Trình bày đặc điểm của mô hình kiểm soát truy cập bắt buộc. Nó thường
+TN1-Q015,ÔN TẬP KIỂM SOÁT TRUY CẬP,4,REVIEWED,164;165;167,VERIFIED_WITH_DERIVATIONS,8,"Câu 15. Trình bày đặc điểm của mô hình kiểm soát truy cập bắt buộc. Nó thường
 được sử dụng trong những hệ thống nào? Tại sao?"
-TN1-Q016,ÔN TẬP KIỂM SOÁT TRUY CẬP,4,AWAITING_REVIEW,,UNVERIFIED,8,"Câu 16. Trình bày đặc điểm của mô hình kiểm soát truy cập dựa trên vai trò. Nó
+TN1-Q016,ÔN TẬP KIỂM SOÁT TRUY CẬP,4,REVIEWED,148;170;171,VERIFIED_WITH_DERIVATIONS,8,"Câu 16. Trình bày đặc điểm của mô hình kiểm soát truy cập dựa trên vai trò. Nó
 thường được sử dụng trong những hệ thống nào? Tại sao?"
 TN1-Q017,MẬT MÃ + MÃ ĐỘC,5,AWAITING_REVIEW,,UNVERIFIED,9,"Câu 17. Trình bày khái niệm mật mã khóa bí mật và mật mã khóa công khai. Nêu sự
 khác biệt và các trường hợp ứng dụng của hai loại nguyên thủy mật mã này."

@@ -79,7 +79,6 @@ python tools/study.py audit
 - 23/80 mục có đáp án lý thuyết đầy đủ trong thẻ; 7 mục khác có thực hành hỗ trợ một phần. Các mục còn lại có câu gốc và lịch, đáp án vẫn `UNVERIFIED`.
 - Ba đề mẫu gốc lưu được bài nhưng chưa có đầy đủ rubric đã kiểm chứng; không cho điểm giả.
 - Chưa phủ hết yêu cầu RSA/ElGamal/ECC; chưa có bài PHP/XSS, Snort/iptables và sơ đồ VPN/IPsec hoàn chỉnh.
-- Chưa có nhập đề cương mới theo phiên bản và so khớp/gộp câu. Lịch dời thủ công đã hoạt động; lập lịch lại theo đề cương mới là giai đoạn sau.
 - Sao lưu thủ công, chưa tự đồng bộ giữa máy. Các liên kết nguồn ngoài cần mạng khi mở; bài học, công thức và phép tính không cần mạng.
 
 ## Các file sản phẩm
