@@ -223,6 +223,30 @@ def annotate_slide_sections(manifest: dict) -> None:
             source["pages"][page_number - 1]["flags"] = meta["flags"]
 
 
+def annotate_outline_sections(manifest: dict) -> None:
+    """Record explicit outline headings; leave mixed pages unassigned."""
+    import pymupdf
+    source = manifest["sources"]["outline"]
+    section = None
+    with pymupdf.open(ROOT / source["file"]) as doc:
+        for number, page in enumerate(doc, 1):
+            lines = [line.strip() for line in page.get_text().splitlines() if line.strip()]
+            headings = [line for line in lines if SECTION.match(line)]
+            if lines and SECTION.match(lines[0]):
+                section = "; ".join(headings) if lines[0].startswith("Dạng ") and len(headings) > 1 else lines[0]
+            elif any(line.startswith("ĐỀ SỐ") for line in headings):
+                section = next(line for line in headings if line.startswith("ĐỀ SỐ"))
+            elif headings:
+                section = None
+            pp = page_path("outline", number)
+            meta, body = parse_page(pp)
+            meta["section"] = section
+            meta["chapter"] = section if section and section.startswith("Chương ") else None
+            rendered = "<!-- " + json.dumps(meta, ensure_ascii=False) + " -->\n\n" + body + "\n"
+            if pp.read_text(encoding="utf-8") != rendered:
+                pp.write_text(rendered, encoding="utf-8")
+
+
 def normalize_generated_markdown(manifest: dict) -> None:
     """Remove extractor trailing spaces without changing words or line order."""
     for source_id in ("slide", "outline"):
@@ -551,6 +575,7 @@ def cmd_build(_args) -> None:
         new["sources"][source_id] = extract_source(source_id, src[source_id], previous.get("sources", {}).get(source_id))
     normalize_generated_markdown(new)
     annotate_slide_sections(new)
+    annotate_outline_sections(new)
     extract_outline_diagrams(new)
     law = src["law"]
     new["sources"]["law"] = {"file": law.name, "sha256": sha(law), "page_count": len(pymupdf.open(law)), "processing": "not extracted; supplementary source only"}
