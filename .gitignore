@@ -3,3 +3,4 @@ __pycache__/
 .pytest_cache/
 knowledge/index/*.sqlite3
 knowledge/index/*.sqlite3-*
+.qa/
