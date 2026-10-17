@@ -2,7 +2,7 @@
 
 Ngày kiểm tra: 17/10/2026. Nhánh: `codex/week1-offline-study`.
 
-Baseline: `a587bbb3de07d50c8c22fe9f837734cc1fc08835`.
+Baseline kiểm toán toán học: `a587bbb3de07d50c8c22fe9f837734cc1fc08835`. Baseline bổ sung ảnh slide: `16da57041a16cddb01f53d277edd7e2a4cf7ec07`.
 
 Tệp bàn giao: `co_so_matmahoc/toan_matma.docx`.
 
@@ -46,15 +46,15 @@ Giữ nguyên dữ kiện bất thường: modulo 57 ở bài căn được phâ
 - **35 hướng dẫn Casio chi tiết**: 28 vị trí bài mẫu và bảy bài về nhà. Có mục tiêu, chế độ, vị trí phím, chuỗi nhập, kết quả dự kiến và cách đưa kết quả vào bài thi. Các bài chứng minh/nhẩm ngắn có chỉ dẫn làm tay.
 - Phân phối nội dung có ích của chương Casio, chương luyện/đáp án, bảng nhớ và phụ lục Casio cũ vào bài học; bỏ các kho tra cứu và mã K1–K9/C1–C3.
 - Chương cuối vẫn giữ đủ bảy câu về nhà và cả năm ảnh đề gốc, kể cả ảnh hai câu ECC trùng slide 144.
-- Kiểm tra tự động không còn chỉ dẫn buộc tra phụ lục/chương khác; dẫn nguồn slide được giữ để truy vết.
+- Kiểm tra tự động không còn chỉ dẫn buộc tra phụ lục/chương khác; ảnh gốc slide được nhúng tại dạng bài; số slide chỉ là chú thích nhận dạng ảnh, không thay nội dung học.
 
 ## C Kiểm toán Word
 
 | Thành phần bản cuối | Số lượng |
 |---|---:|
-| Trang sau render bằng Microsoft Word | 108 |
+| Trang sau render bằng Microsoft Word | 140 |
 | Bảng native Word | 76 |
-| Hình nhúng | 9 |
+| Hình nhúng | 75 (9 cũ và 66 ảnh slide bổ sung) |
 | Công thức native OMML | 1.344 |
 | Chú thích trên dấu bằng còn nguyên sau Word lưu | 70 |
 
@@ -69,7 +69,18 @@ Giữ nguyên dữ kiện bất thường: modulo 57 ở bài căn được phâ
 - Các phím và giới hạn Casio được đối chiếu [hướng dẫn chính thức đúng fx-580VN X](https://support.casio.com/global/vi/fx/manual/fx-580VNX/), gồm PDF có biểu tượng bàn phím. **Chưa thao tác trên máy vật lý hoặc trình giả lập**; giá trị màn hình là kết quả dự kiến được kiểm tra số học.
 - Cấu trúc chú thích dùng [OMML `limUpp` của Microsoft](https://learn.microsoft.com/en-us/dotnet/api/documentformat.openxml.math.limitupper?view=openxml-3.0.1), đã kiểm tra tồn tại và hiển thị sau Word lưu.
 - Bản gốc được sao lưu trước sửa; bản bàn giao chỉ thay sau khi kiểm tra bản dựng và đối chiếu hash tệp đang dùng. Không sửa tài liệu nguồn hoặc ứng dụng học.
-- SHA256 bản DOCX: `cb605c50e0c4d915234842db3d3f0a40874d201716ea96c53ebbdbb1a40717d3`.
-- SHA256 bản baseline: `afdced96268deb25fe310f757f35044e4612813d26d285a1a6bf5ba2c08c0db7`.
+- SHA256 bản DOCX: `123eefd939a5769d0e003b345014544c636eb8a0bac76e0179f05fd6bcd973d4`.
+- SHA256 bản baseline trước bổ sung ảnh: `cb605c50e0c4d915234842db3d3f0a40874d201716ea96c53ebbdbb1a40717d3`.
 
-Commit bàn giao được báo trong tin nhắn kết thúc; báo cáo này và DOCX nằm cùng commit.
+## E Học trong một tệp Word với hình gốc
+
+- Nhúng **66 ảnh slide gốc**, phân bổ đủ **27 dạng bài**, gồm lưu đồ Euclid, nhân bình phương, CRT, Jacobi, căn modulo, BSGS, RSA, Rabin, ElGamal, ba lô, Merkle–Hellman, ECC, các sơ đồ băm/xác thực, hàm nén, chứng thư và chữ ký. Mỗi ảnh là một slide riêng, không phải ảnh trang PDF sáu slide thu nhỏ.
+- Ảnh được render từ PDF ở 350 dpi, cắt theo khung slide đầy đủ và thêm lề trắng 1 point; đưa vào Word rộng 16,5 cm. Không vẽ lại, không sửa nội dung ảnh. Một số sơ đồ CA vốn là ảnh độ phân giải thấp trong slide; giữ ảnh gốc và giải thích các nhãn bằng chữ ngay bên dưới.
+- Bỏ **71 dòng nguồn rời**; giữ phân biệt bài gốc và bài bổ sung. Chú thích tên hình và số slide nằm ngay cạnh ảnh; thông tin trang PDF và vùng cắt để đối chiếu nằm ở `reports/TOAN_MATMA_HINH_SLIDE.json`.
+- Đặt ghi chú sửa thiếu/sai ngay dưới ảnh: điều kiện modulo Merkle–Hellman lớn hơn tổng dãy; hai điều kiện Blum; tổng dư của ba lô; điểm vô cực và nghịch đảo ECC; xác suất ngày sinh nhật; điều kiện nghịch đảo k trong chữ ký ElGamal. Ảnh có dấu hỏi trong sơ đồ chữ ký được giải thích vai trò và thứ tự xử lý ngay dưới hình.
+- Đối chiếu trực tiếp slide 16 và sửa mô tả bài mẫu 31: **K trong hình là khóa đối xứng chung** của lớp bảo mật; PR_a/PU_a là cặp khóa người ký. Trường hợp lớp ngoài dùng mã hóa công khai được nói riêng, không gán cho hình dùng K.
+- So sánh trước và sau khi Word lưu: **nội dung toàn bộ 1.344 phương trình OMML và 76 bảng giống baseline**; 70 nhãn trên dấu bằng giữ nguyên; toàn bộ 9 ảnh cũ và 66 ảnh mới khớp hash từng tệp nhúng; không dùng ảnh liên kết ngoài. Giữ 37 bài mẫu, 35 mục Casio chi tiết và chương bài tập về nhà.
+- Render bản cuối bằng Word 16.0: **140 trang**, cập nhật mục lục và số trang. Kiểm tra toàn bộ qua ảnh trang; mở riêng các trang Jacobi, Merkle–Hellman và băm/xác thực để xem độ rõ, ghi chú và dấu công thức. Không phát hiện cắt mất nội dung, ảnh lấn lề hoặc chú thích rơi sang trang riêng.
+- 64 tệp nguồn tiếp tục khớp SHA256. Bản trước được giữ trong thư mục QA local; chỉ thay tệp bàn giao sau khi đối chiếu hash và kiểm tra bản dựng.
+
+Commit bàn giao được báo trong tin nhắn kết thúc; báo cáo, danh mục hình và DOCX nằm cùng commit.

@@ -1,0 +1,1200 @@
+{
+  "document": "co_so_matmahoc/toan_matma.docx",
+  "baseline_commit": "16da57041a16cddb01f53d277edd7e2a4cf7ec07",
+  "source_pdf_sha256": {
+    "Chuong 03_NMMMH.pdf": "42967e827fefadaaa103ccc85ea669098d1f8c6161c8d1ec314a83d8787f311d",
+    "Chuong 04_NMMMH.pdf": "9e8ade5b30a2d7597c03071767e556d3e7f8bd51078bc7c9bba4b0148eeefda1"
+  },
+  "render_dpi": 350,
+  "selection": "Original individual slide panels, cropped from verified PDF rectangles without redrawing. Full panel plus one-point margin.",
+  "slides": [
+    {
+      "lesson": 1,
+      "chapter": 3,
+      "example": 1,
+      "slide": 17,
+      "page": 3,
+      "title": "Rút gọn từng phép cộng và nhân theo modulo",
+      "note": "",
+      "bbox_points": [
+        36.8,
+        505.4,
+        260.2,
+        631.96
+      ],
+      "width": 1086,
+      "height": 615,
+      "sha256": "794d5c43c047b1b6462f06b1ed9b5407ec7254e5cde7373f03f574bd23be4f62"
+    },
+    {
+      "lesson": 1,
+      "chapter": 3,
+      "example": 1,
+      "slide": 19,
+      "page": 4,
+      "title": "Biểu thức mẫu được biến đổi ngay trên slide",
+      "note": "",
+      "bbox_points": [
+        36.8,
+        87.92,
+        260.2,
+        214.48000000000002
+      ],
+      "width": 1086,
+      "height": 616,
+      "sha256": "008c8d5610b4e38db96df2ada88e95449ac476d31b16e9e1b5863a6ffd7bd7a6"
+    },
+    {
+      "lesson": 2,
+      "chapter": 3,
+      "example": 3,
+      "slide": 22,
+      "page": 4,
+      "title": "Lưu đồ Euclid tìm ước chung lớn nhất",
+      "note": "",
+      "bbox_points": [
+        279.8,
+        296.6,
+        503.20000000000005,
+        423.16
+      ],
+      "width": 1086,
+      "height": 615,
+      "sha256": "eca53eed5a7277ec0f87eb664fe15b3ca5bd1631fdc6b31534a9a93a9114c6f1"
+    },
+    {
+      "lesson": 2,
+      "chapter": 3,
+      "example": 3,
+      "slide": 23,
+      "page": 4,
+      "title": "Các bước cập nhật của thuật toán Euclid",
+      "note": "",
+      "bbox_points": [
+        36.8,
+        505.4,
+        260.2,
+        631.96
+      ],
+      "width": 1086,
+      "height": 615,
+      "sha256": "6f253c99264c897af6b94280b09874233627a63b1af070f301bd8f11c3790940"
+    },
+    {
+      "lesson": 3,
+      "chapter": 3,
+      "example": 4,
+      "slide": 26,
+      "page": 5,
+      "title": "Thuật toán Euclid mở rộng và các biến cập nhật",
+      "note": "",
+      "bbox_points": [
+        279.8,
+        87.92,
+        503.20000000000005,
+        214.48000000000002
+      ],
+      "width": 1086,
+      "height": 616,
+      "sha256": "d4d5f89835c0d8779edd4d77dc0b4b5861ebe3a9716ea4fcbfa11bd1a62fbf52"
+    },
+    {
+      "lesson": 4,
+      "chapter": 3,
+      "example": 5,
+      "slide": 33,
+      "page": 6,
+      "title": "Định lý Fermat nhỏ và điều kiện nguyên tố cùng nhau",
+      "note": "",
+      "bbox_points": [
+        36.8,
+        296.6,
+        260.2,
+        423.16
+      ],
+      "width": 1086,
+      "height": 615,
+      "sha256": "c92332b00d8ab2e0b186782d976b57baff1def7561705e4ad298a841113db219"
+    },
+    {
+      "lesson": 4,
+      "chapter": 3,
+      "example": 5,
+      "slide": 36,
+      "page": 6,
+      "title": "Các tính chất và công thức tính phi",
+      "note": "",
+      "bbox_points": [
+        279.8,
+        505.4,
+        503.20000000000005,
+        631.96
+      ],
+      "width": 1086,
+      "height": 615,
+      "sha256": "8c09cb3c3f1ed42d04900a885c17474a525a7e09a1a410efb7c98b2c264f9e8d"
+    },
+    {
+      "lesson": 4,
+      "chapter": 3,
+      "example": 5,
+      "slide": 38,
+      "page": 7,
+      "title": "Định lý Euler và điều kiện áp dụng",
+      "note": "",
+      "bbox_points": [
+        279.8,
+        87.92,
+        503.20000000000005,
+        214.48000000000002
+      ],
+      "width": 1086,
+      "height": 616,
+      "sha256": "f6e96581051576425b09860bab1bd4fbe47bab29cd1b11b3869c56f5d7acbcea"
+    },
+    {
+      "lesson": 5,
+      "chapter": 3,
+      "example": 6,
+      "slide": 41,
+      "page": 7,
+      "title": "Định nghĩa và tiêu chuẩn kiểm tra phần tử sinh",
+      "note": "",
+      "bbox_points": [
+        36.8,
+        505.4,
+        260.2,
+        631.96
+      ],
+      "width": 1086,
+      "height": 615,
+      "sha256": "17f5cfd6779634f7e8ef8feeca09f36508c31046443a5e83b27ae2c37d66806a"
+    },
+    {
+      "lesson": 5,
+      "chapter": 3,
+      "example": 6,
+      "slide": 44,
+      "page": 8,
+      "title": "Kiểm tra phần tử sinh modulo 37",
+      "note": "",
+      "bbox_points": [
+        279.8,
+        87.92,
+        503.20000000000005,
+        214.48000000000002
+      ],
+      "width": 1086,
+      "height": 616,
+      "sha256": "8a40bb5e45eba1d0884938108e8e077bff99b262a40b9d5903cb4f322cf8e313"
+    },
+    {
+      "lesson": 6,
+      "chapter": 3,
+      "example": 8,
+      "slide": 68,
+      "page": 12,
+      "title": "Lưu đồ nhân bình phương có lặp",
+      "note": "",
+      "bbox_points": [
+        279.8,
+        87.92,
+        503.20000000000005,
+        214.48000000000002
+      ],
+      "width": 1086,
+      "height": 616,
+      "sha256": "333bbfcf6c8b6e3efa9d28e394a337a10c0f5c6919793ed5f8a343388ff3e830"
+    },
+    {
+      "lesson": 6,
+      "chapter": 3,
+      "example": 8,
+      "slide": 69,
+      "page": 12,
+      "title": "Bảng nhân bình phương của bài mẫu",
+      "note": "",
+      "bbox_points": [
+        36.8,
+        296.6,
+        260.2,
+        423.16
+      ],
+      "width": 1086,
+      "height": 615,
+      "sha256": "6d731b0d2550b567883e65e2926b14d3a8e2cf7ec331ed639cfc6e7bbfb41d41"
+    },
+    {
+      "lesson": 7,
+      "chapter": 3,
+      "example": 9,
+      "slide": 47,
+      "page": 8,
+      "title": "Công thức dựng nghiệm CRT",
+      "note": "",
+      "bbox_points": [
+        36.8,
+        505.4,
+        260.2,
+        631.96
+      ],
+      "width": 1086,
+      "height": 615,
+      "sha256": "de999fe70d2521067a81224e766ee306a2d98a554358be7d2bf95d13cc4a247f"
+    },
+    {
+      "lesson": 7,
+      "chapter": 3,
+      "example": 9,
+      "slide": 48,
+      "page": 8,
+      "title": "Hai hệ đồng dư và nghiệm trong bài giảng",
+      "note": "",
+      "bbox_points": [
+        279.8,
+        505.4,
+        503.20000000000005,
+        631.96
+      ],
+      "width": 1086,
+      "height": 615,
+      "sha256": "597aa59bde9ab5cb44b895709272218c45a5dc69ac3cc27af9555e9b6a5404f8"
+    },
+    {
+      "lesson": 8,
+      "chapter": 3,
+      "example": 11,
+      "slide": 50,
+      "page": 9,
+      "title": "Thặng dư và bất thặng dư bậc hai",
+      "note": "",
+      "bbox_points": [
+        279.8,
+        87.92,
+        503.20000000000005,
+        214.48000000000002
+      ],
+      "width": 1086,
+      "height": 616,
+      "sha256": "1457acfe0975c3cea31e33da00cd8cff230e64160f2323388ce535ccbceff172"
+    },
+    {
+      "lesson": 8,
+      "chapter": 3,
+      "example": 11,
+      "slide": 55,
+      "page": 10,
+      "title": "Định nghĩa ký hiệu Legendre",
+      "note": "",
+      "bbox_points": [
+        36.8,
+        87.92,
+        260.2,
+        214.48000000000002
+      ],
+      "width": 1086,
+      "height": 616,
+      "sha256": "2b3138240b25b103b704cc1ff6ec69e44c78f444ad70eca3dd7b9f6972a2b17d"
+    },
+    {
+      "lesson": 9,
+      "chapter": 3,
+      "example": 13,
+      "slide": 57,
+      "page": 10,
+      "title": "Bốn tính chất dùng để biến đổi ký hiệu Jacobi",
+      "note": "",
+      "bbox_points": [
+        36.8,
+        296.6,
+        260.2,
+        423.16
+      ],
+      "width": 1086,
+      "height": 615,
+      "sha256": "b3173256bc6ca34bcc053c448a61f59a0ad392d5f9654d5dbbc1b1a0e438c3e8"
+    },
+    {
+      "lesson": 9,
+      "chapter": 3,
+      "example": 13,
+      "slide": 59,
+      "page": 10,
+      "title": "Chuỗi Jacobi mẫu với nhãn tính chất trên dấu bằng",
+      "note": "",
+      "bbox_points": [
+        36.8,
+        505.4,
+        260.2,
+        631.96
+      ],
+      "width": 1086,
+      "height": 615,
+      "sha256": "0f43c87ed72ebca4cc7ca6305de6b97ccbd0a57ea3ab902b0f9b66672b1da1b8"
+    },
+    {
+      "lesson": 9,
+      "chapter": 3,
+      "example": 14,
+      "slide": 60,
+      "page": 10,
+      "title": "Ví dụ Jacobi bằng cách tách mẫu số",
+      "note": "",
+      "bbox_points": [
+        279.8,
+        505.4,
+        503.20000000000005,
+        631.96
+      ],
+      "width": 1086,
+      "height": 615,
+      "sha256": "7aa461705d070de6d2e1f3652632fcda3a06514aa67aa01cb4c038c9e5aab11e"
+    },
+    {
+      "lesson": 10,
+      "chapter": 3,
+      "example": 16,
+      "slide": 63,
+      "page": 11,
+      "title": "Thuật toán 1 khi p đồng dư 3 modulo 4",
+      "note": "",
+      "bbox_points": [
+        36.8,
+        296.6,
+        260.2,
+        423.16
+      ],
+      "width": 1086,
+      "height": 615,
+      "sha256": "54b9dbba3e79463548ef76183f4cb182aafeea91ac7b14b27d215528a15a9ed8"
+    },
+    {
+      "lesson": 10,
+      "chapter": 3,
+      "example": 17,
+      "slide": 64,
+      "page": 11,
+      "title": "Thuật toán 2 khi p đồng dư 5 modulo 8",
+      "note": "",
+      "bbox_points": [
+        279.8,
+        296.6,
+        503.20000000000005,
+        423.16
+      ],
+      "width": 1086,
+      "height": 615,
+      "sha256": "70f38e715fcd598114b0edf702dc4c92c20bc692d949c3f45c6bb6e152a02cab"
+    },
+    {
+      "lesson": 10,
+      "chapter": 3,
+      "example": 18,
+      "slide": 66,
+      "page": 11,
+      "title": "Thuật toán 4 cho modulo nguyên tố lẻ",
+      "note": "",
+      "bbox_points": [
+        279.8,
+        505.4,
+        503.20000000000005,
+        631.96
+      ],
+      "width": 1086,
+      "height": 615,
+      "sha256": "c8b8270acd9cd4d6c7f9bcb884659fa79a8a94c2c235633553593cb9e9fd5523"
+    },
+    {
+      "lesson": 11,
+      "chapter": 3,
+      "example": 19,
+      "slide": 61,
+      "page": 11,
+      "title": "Số Blum và căn bậc hai chính",
+      "note": "",
+      "bbox_points": [
+        36.8,
+        87.92,
+        260.2,
+        214.48000000000002
+      ],
+      "width": 1086,
+      "height": 616,
+      "sha256": "27e2613ba5500258a2b5db14e9c4b226e0f333d29759da96b7139fa27775de70"
+    },
+    {
+      "lesson": 11,
+      "chapter": 3,
+      "example": 19,
+      "slide": 65,
+      "page": 11,
+      "title": "Thuật toán 3 ghép bốn căn modulo hợp số",
+      "note": "Đọc đúng điều kiện: cả p và q đều phải đồng dư 3 modulo 4; tiêu đề ảnh gốc lặp chữ p. Cách ghép và kiểm tra bốn căn được viết đầy đủ bên dưới.",
+      "bbox_points": [
+        36.8,
+        505.4,
+        260.2,
+        631.96
+      ],
+      "width": 1086,
+      "height": 615,
+      "sha256": "a2b54cca15d0c54c4bcf40541583cb03f6d7e7b50b4b3b5157a0438e0d435a7e"
+    },
+    {
+      "lesson": 12,
+      "chapter": 3,
+      "example": 21,
+      "slide": 73,
+      "page": 13,
+      "title": "Thuật toán bước lớn bước nhỏ",
+      "note": "",
+      "bbox_points": [
+        36.8,
+        87.92,
+        260.2,
+        214.48000000000002
+      ],
+      "width": 1086,
+      "height": 616,
+      "sha256": "72a094b80dc4c42d6e9c8b533c08dd6765ad9b1348981bff14f58598f4ca8373"
+    },
+    {
+      "lesson": 12,
+      "chapter": 3,
+      "example": 21,
+      "slide": 75,
+      "page": 13,
+      "title": "Hai bảng gặp nhau trong ví dụ logarit rời rạc",
+      "note": "",
+      "bbox_points": [
+        36.8,
+        296.6,
+        260.2,
+        423.16
+      ],
+      "width": 1086,
+      "height": 615,
+      "sha256": "5f202a926465d3499a8e591e58f3ef7ad88fe3a9b95784a4cf15f75017851437"
+    },
+    {
+      "lesson": 13,
+      "chapter": 3,
+      "example": 22,
+      "slide": 94,
+      "page": 16,
+      "title": "Lưu đồ tạo khóa mã hóa và giải mã RSA",
+      "note": "",
+      "bbox_points": [
+        279.8,
+        296.6,
+        503.20000000000005,
+        423.16
+      ],
+      "width": 1086,
+      "height": 615,
+      "sha256": "eb9db35e3efe47ef73a61af5e5261c0e0ee48a46416e8d2f7575de708e44aa24"
+    },
+    {
+      "lesson": 14,
+      "chapter": 3,
+      "example": 23,
+      "slide": 101,
+      "page": 17,
+      "title": "Công thức đếm điểm bất động RSA",
+      "note": "",
+      "bbox_points": [
+        36.8,
+        505.4,
+        260.2,
+        631.96
+      ],
+      "width": 1086,
+      "height": 615,
+      "sha256": "be94b81b52fc365d2210850f6d505bd39207b02b62fc7da362710e8c9988761b"
+    },
+    {
+      "lesson": 15,
+      "chapter": 3,
+      "example": 24,
+      "slide": 103,
+      "page": 18,
+      "title": "Lược đồ khóa mã hóa và giải mã Rabin",
+      "note": "",
+      "bbox_points": [
+        36.8,
+        87.92,
+        260.2,
+        214.48000000000002
+      ],
+      "width": 1086,
+      "height": 616,
+      "sha256": "47093f79d101de7b478c8bf2024050a2c6b6306014b893c6bbe66df59d8befb8"
+    },
+    {
+      "lesson": 15,
+      "chapter": 3,
+      "example": 24,
+      "slide": 106,
+      "page": 18,
+      "title": "Bốn căn Rabin và bước chọn bản rõ",
+      "note": "",
+      "bbox_points": [
+        279.8,
+        296.6,
+        503.20000000000005,
+        423.16
+      ],
+      "width": 1086,
+      "height": 615,
+      "sha256": "de21852321395ba18717c678617b2e5442c8b567b85f8d50e026aadaf99d2c1f"
+    },
+    {
+      "lesson": 16,
+      "chapter": 3,
+      "example": 25,
+      "slide": 108,
+      "page": 18,
+      "title": "Lược đồ tạo khóa mã hóa và giải mã ElGamal",
+      "note": "",
+      "bbox_points": [
+        279.8,
+        505.4,
+        503.20000000000005,
+        631.96
+      ],
+      "width": 1086,
+      "height": 615,
+      "sha256": "39742d3c549679f5e9a2fbf70452eafebb800e9c6040ca71f27709a48f22294e"
+    },
+    {
+      "lesson": 17,
+      "chapter": 3,
+      "example": 26,
+      "slide": 119,
+      "page": 20,
+      "title": "Hai đường đi tham lam với tổng 96 và 95",
+      "note": "",
+      "bbox_points": [
+        36.8,
+        505.4,
+        260.2,
+        631.96
+      ],
+      "width": 1086,
+      "height": 615,
+      "sha256": "7ca0b63bf6a97fb28dfc8a0881ffa41e334a460401265be9bff47eaa52517097"
+    },
+    {
+      "lesson": 17,
+      "chapter": 3,
+      "example": 26,
+      "slide": 121,
+      "page": 21,
+      "title": "Thuật toán ba lô siêu tăng",
+      "note": "Sau vòng lặp phải kiểm tra tổng dư bằng 0. Nếu vẫn còn dư thì không có lời giải cho tổng đã cho; không trả một chuỗi bit như thể đã giải được.",
+      "bbox_points": [
+        36.8,
+        87.92,
+        260.2,
+        214.48000000000002
+      ],
+      "width": 1086,
+      "height": 616,
+      "sha256": "d8fe508376ec6b5a6d229e9bd3397c33591ffa607fc019b6cd47b3dc1e63fe3d"
+    },
+    {
+      "lesson": 18,
+      "chapter": 3,
+      "example": 27,
+      "slide": 124,
+      "page": 21,
+      "title": "Cách tạo khóa Merkle Hellman",
+      "note": "Sửa điều kiện trong ảnh gốc: modulo M phải lớn hơn TỔNG cả dãy riêng, không chỉ lớn hơn từng phần tử. Khi mã hóa, gửi tổng nguyên y; chỉ lấy modulo khi bỏ hệ số W ở bước giải mã.",
+      "bbox_points": [
+        279.8,
+        296.6,
+        503.20000000000005,
+        423.16
+      ],
+      "width": 1086,
+      "height": 615,
+      "sha256": "a53144382a0811d3d5deb93cc44a647eb386aa5e3306951f32900f21dcd27e0d"
+    },
+    {
+      "lesson": 18,
+      "chapter": 3,
+      "example": 27,
+      "slide": 126,
+      "page": 21,
+      "title": "Sơ đồ mã hóa Merkle Hellman",
+      "note": "",
+      "bbox_points": [
+        279.8,
+        505.4,
+        503.20000000000005,
+        631.96
+      ],
+      "width": 1086,
+      "height": 615,
+      "sha256": "ab73d0a594cec4343f6a258dac6bcf32f1b2d5bdf938570c9b8bdcb80636d672"
+    },
+    {
+      "lesson": 18,
+      "chapter": 3,
+      "example": 27,
+      "slide": 127,
+      "page": 22,
+      "title": "Sơ đồ giải mã và hoàn nguyên hoán vị",
+      "note": "",
+      "bbox_points": [
+        36.8,
+        87.92,
+        260.2,
+        214.48000000000002
+      ],
+      "width": 1086,
+      "height": 616,
+      "sha256": "e716049847b7d7de4e79091721112877cbda65852f5b43aa7e2e049e699f297f"
+    },
+    {
+      "lesson": 19,
+      "chapter": 3,
+      "example": 28,
+      "slide": 136,
+      "page": 23,
+      "title": "Điều kiện đường cong elliptic trên trường hữu hạn",
+      "note": "",
+      "bbox_points": [
+        279.8,
+        296.6,
+        503.20000000000005,
+        423.16
+      ],
+      "width": 1086,
+      "height": 615,
+      "sha256": "db4585b2e9e51b4f6582259e011b6b3777a9cb5be0b39ba1fbb4c320b6425082"
+    },
+    {
+      "lesson": 19,
+      "chapter": 3,
+      "example": 28,
+      "slide": 140,
+      "page": 24,
+      "title": "Bảng liệt kê điểm của đường cong modulo 11",
+      "note": "",
+      "bbox_points": [
+        279.8,
+        87.92,
+        503.20000000000005,
+        214.48000000000002
+      ],
+      "width": 1086,
+      "height": 616,
+      "sha256": "2bff8189e35e8fbb39fc0a73671b165338ae13b3856218b28813415734755424"
+    },
+    {
+      "lesson": 20,
+      "chapter": 3,
+      "example": 29,
+      "slide": 137,
+      "page": 23,
+      "title": "Công thức cộng điểm và nhân đôi trên ECC",
+      "note": "Các phân thức ở ảnh là phép nhân nghịch đảo modulo p. Nếu hai điểm đối nhau, hoặc nhân đôi điểm có y = 0, kết quả là điểm vô cực; không chia cho 0.",
+      "bbox_points": [
+        36.8,
+        505.4,
+        260.2,
+        631.96
+      ],
+      "width": 1086,
+      "height": 615,
+      "sha256": "74623725893990b338876d48830beb44daeae21d80d7ebc0fd9a8281f83abe38"
+    },
+    {
+      "lesson": 20,
+      "chapter": 3,
+      "example": 29,
+      "slide": 138,
+      "page": 23,
+      "title": "Điểm vô cực và điểm đối trên ECC",
+      "note": "",
+      "bbox_points": [
+        279.8,
+        505.4,
+        503.20000000000005,
+        631.96
+      ],
+      "width": 1086,
+      "height": 615,
+      "sha256": "87fc35fe1f61b26343ada664a8cf9c762f9dc48d94ec5378628850f96d45d306"
+    },
+    {
+      "lesson": 21,
+      "chapter": 3,
+      "example": 30,
+      "slide": 142,
+      "page": 24,
+      "title": "Tạo khóa trên nhóm điểm elliptic",
+      "note": "",
+      "bbox_points": [
+        279.8,
+        296.6,
+        503.20000000000005,
+        423.16
+      ],
+      "width": 1086,
+      "height": 615,
+      "sha256": "cec1d268728e4e78df405f60cc09b1324aff25868ea2915e9f79b7fc8052de5a"
+    },
+    {
+      "lesson": 21,
+      "chapter": 3,
+      "example": 30,
+      "slide": 143,
+      "page": 24,
+      "title": "Hai thành phần bản mã và công thức giải mã ECC",
+      "note": "Làm việc trong nhóm E có điểm vô cực O; các tập E* trong ảnh là cách viết giản lược của slide. Khi điểm trung gian bằng O phải dùng quy tắc nhóm, không gán tọa độ hữu hạn cho O.",
+      "bbox_points": [
+        36.8,
+        505.4,
+        260.2,
+        631.96
+      ],
+      "width": 1086,
+      "height": 615,
+      "sha256": "4f6879190f40f4b5ed386ac51df6e238705e0d8d95ea655eca3871029180c009"
+    },
+    {
+      "lesson": 22,
+      "chapter": 4,
+      "example": 31,
+      "slide": 14,
+      "page": 3,
+      "title": "Hai cơ chế kết hợp băm với mã hóa",
+      "note": "Đọc khóa và đối tượng được bảo vệ ở từng nhánh. Phép băm công khai gửi kèm thông điệp không tự xác thực nguồn; bản băm tham chiếu phải được bảo vệ.",
+      "bbox_points": [
+        279.8,
+        87.92,
+        503.20000000000005,
+        214.48000000000002
+      ],
+      "width": 1086,
+      "height": 616,
+      "sha256": "eb4ab80cbac25d7a598eb4a7341b6bcfdd97c464eb74f8fdc1d56299bfb7adae"
+    },
+    {
+      "lesson": 22,
+      "chapter": 4,
+      "example": 31,
+      "slide": 15,
+      "page": 3,
+      "title": "Băm kết hợp bí mật chung",
+      "note": "S là bí mật chung dùng cùng bản tin trong phép băm; K là khóa mã hóa đối xứng ở nhánh dưới. Không suy ra rằng mọi hàm H(M || S) đều là MAC an toàn; cần cơ chế kết hợp phù hợp.",
+      "bbox_points": [
+        36.8,
+        296.6,
+        260.2,
+        423.16
+      ],
+      "width": 1086,
+      "height": 615,
+      "sha256": "86a84a1fc5509fd471cca5c7f671fc829d32283699d1fddb997c1f9ce25dbfa6"
+    },
+    {
+      "lesson": 22,
+      "chapter": 4,
+      "example": 31,
+      "slide": 16,
+      "page": 3,
+      "title": "Băm kết hợp chữ ký và lớp mã hóa",
+      "note": "PR_a là khóa riêng người ký A; PU_a là khóa công khai đã xác thực của A. Nhánh trên gửi M và chữ ký trên H(M); nhánh dưới mã hóa cả gói bằng khóa đối xứng chung K. K trong hình không phải khóa công khai của người nhận.",
+      "bbox_points": [
+        279.8,
+        296.6,
+        503.20000000000005,
+        423.16
+      ],
+      "width": 1086,
+      "height": 615,
+      "sha256": "ccfed55defc706d9f73a32003d5a8e9e05de99d7b2fa53c6160f4f7ad87565fd"
+    },
+    {
+      "lesson": 22,
+      "chapter": 4,
+      "example": 31,
+      "slide": 19,
+      "page": 4,
+      "title": "Sơ đồ mục tiêu của tấn công tiền ảnh",
+      "note": "Từ “không thể” trong hình được hiểu là không khả thi về tính toán trong mô hình an toàn, không phải bất khả thi về mặt toán học.",
+      "bbox_points": [
+        36.8,
+        87.92,
+        260.2,
+        214.48000000000002
+      ],
+      "width": 1086,
+      "height": 616,
+      "sha256": "9bca31d86a2918cc6166bdaf5ac851597a98c24a62c6a754fc5c171ee034a005"
+    },
+    {
+      "lesson": 22,
+      "chapter": 4,
+      "example": 31,
+      "slide": 20,
+      "page": 4,
+      "title": "Sơ đồ mục tiêu của tấn công tiền ảnh thứ hai",
+      "note": "Tiền ảnh thứ hai: một thông điệp M đã cố định; phải tìm M′ khác M có cùng băm. “Không thể” ở đây là không khả thi về tính toán.",
+      "bbox_points": [
+        279.8,
+        87.92,
+        503.20000000000005,
+        214.48000000000002
+      ],
+      "width": 1086,
+      "height": 616,
+      "sha256": "eb18eb1cc66415023c716c6c4525dd7be8662da601a8d45d8551c2eeefb77361"
+    },
+    {
+      "lesson": 22,
+      "chapter": 4,
+      "example": 31,
+      "slide": 21,
+      "page": 4,
+      "title": "Sơ đồ mục tiêu của tấn công va chạm",
+      "note": "Va chạm: được chọn cả hai thông điệp khác nhau. Kháng va chạm là mục tiêu tính toán; nguyên lý ngăn kéo vẫn bảo đảm tồn tại va chạm với miền đầu vào đủ lớn.",
+      "bbox_points": [
+        36.8,
+        296.6,
+        260.2,
+        423.16
+      ],
+      "width": 1086,
+      "height": 615,
+      "sha256": "7a1d5af77893f29fad1f1e2bdbdd715613f1a2cf9ea22ffcfd8b4b12c2618f8f"
+    },
+    {
+      "lesson": 22,
+      "chapter": 4,
+      "example": 31,
+      "slide": 22,
+      "page": 4,
+      "title": "Phân loại hàm băm và mã xác thực",
+      "note": "",
+      "bbox_points": [
+        279.8,
+        296.6,
+        503.20000000000005,
+        423.16
+      ],
+      "width": 1086,
+      "height": 615,
+      "sha256": "f113c98f19accc7af4d048ebead25a34629f425b083f78537168dd4fea28ea58"
+    },
+    {
+      "lesson": 23,
+      "chapter": 4,
+      "example": 32,
+      "slide": 25,
+      "page": 5,
+      "title": "Sơ đồ và thuật toán Matyas Mayer Oseas",
+      "note": "",
+      "bbox_points": [
+        36.8,
+        87.92,
+        260.2,
+        214.48000000000002
+      ],
+      "width": 1086,
+      "height": 616,
+      "sha256": "8a61d835e05b7ddc496cc407e254118059237d44e499902c309badd4b3e2ad5c"
+    },
+    {
+      "lesson": 23,
+      "chapter": 4,
+      "example": 32,
+      "slide": 26,
+      "page": 5,
+      "title": "Sơ đồ và thuật toán Davies Mayer",
+      "note": "",
+      "bbox_points": [
+        279.8,
+        87.92,
+        503.20000000000005,
+        214.48000000000002
+      ],
+      "width": 1086,
+      "height": 616,
+      "sha256": "d1d6e3d3df67a28e45821bd920a938728b53a95daeaa4a6f34857ec6da298ed5"
+    },
+    {
+      "lesson": 23,
+      "chapter": 4,
+      "example": 32,
+      "slide": 27,
+      "page": 5,
+      "title": "Sơ đồ và thuật toán Miyaguchi Preneel",
+      "note": "",
+      "bbox_points": [
+        36.8,
+        296.6,
+        260.2,
+        423.16
+      ],
+      "width": 1086,
+      "height": 615,
+      "sha256": "5347f3c2c2510db5bf06e5240b8af4e8ac95b8248b07d1714f6bc59e05d9b5a9"
+    },
+    {
+      "lesson": 24,
+      "chapter": 4,
+      "example": 33,
+      "slide": 30,
+      "page": 5,
+      "title": "Mô hình tấn công ngày sinh nhật",
+      "note": "Sửa cách đọc câu về 23 người: xác suất có ít nhất một cặp trùng ngày sinh lớn hơn 50%, không phải chắc chắn có cặp trùng. Với giả thiết 365 ngày đồng đều độc lập, xác suất là 0,5072972343.",
+      "bbox_points": [
+        279.8,
+        505.4,
+        503.20000000000005,
+        631.96
+      ],
+      "width": 1086,
+      "height": 615,
+      "sha256": "b0e28c41acc4c02ef8456f95d13bfeaa7d2ff0ff040f20bc1269c3a5b9b2eaf0"
+    },
+    {
+      "lesson": 25,
+      "chapter": 4,
+      "example": 34,
+      "slide": 48,
+      "page": 8,
+      "title": "Tấn công thay khóa khi mã hóa cho người nhận",
+      "note": "",
+      "bbox_points": [
+        279.8,
+        505.4,
+        503.20000000000005,
+        631.96
+      ],
+      "width": 1086,
+      "height": 615,
+      "sha256": "6d5504694c78e1e3d56b2913f10f03b6397d84567bec7ee0e36684a4a53a8f7a"
+    },
+    {
+      "lesson": 25,
+      "chapter": 4,
+      "example": 34,
+      "slide": 49,
+      "page": 9,
+      "title": "Tấn công thay khóa khi kiểm tra chữ ký",
+      "note": "",
+      "bbox_points": [
+        36.8,
+        87.92,
+        260.2,
+        214.48000000000002
+      ],
+      "width": 1086,
+      "height": 616,
+      "sha256": "67e010bee3275df49bd6330871e6422a2474dba2bda12076534b967611c3da71"
+    },
+    {
+      "lesson": 25,
+      "chapter": 4,
+      "example": 34,
+      "slide": 51,
+      "page": 9,
+      "title": "CA ràng buộc thực thể với khóa công khai",
+      "note": "",
+      "bbox_points": [
+        36.8,
+        296.6,
+        260.2,
+        423.16
+      ],
+      "width": 1086,
+      "height": 615,
+      "sha256": "d7bb9bde480709302c6d52223c949b79c87c7ba00fe5ebcf9adc07b39f5bdeeb"
+    },
+    {
+      "lesson": 25,
+      "chapter": 4,
+      "example": 34,
+      "slide": 53,
+      "page": 9,
+      "title": "Kiểm tra chứng thư bằng khóa CA",
+      "note": "CA ký phần thông tin gắn danh tính với khóa công khai. Người dùng kiểm tra chữ ký đó bằng khóa công khai CA đã tin cậy; lấy khóa đối tác từ chứng thư sau khi kiểm tra, không tin khóa chỉ vì nó có trong một tệp chứng thư.",
+      "bbox_points": [
+        36.8,
+        505.4,
+        260.2,
+        631.96
+      ],
+      "width": 1086,
+      "height": 615,
+      "sha256": "9fb3031981b16a3790af5a69dbcc6779e84bc1cbfd7e2869007da641d2ef9d94"
+    },
+    {
+      "lesson": 25,
+      "chapter": 4,
+      "example": 34,
+      "slide": 54,
+      "page": 9,
+      "title": "Các trường chứng thư và chữ ký của CA",
+      "note": "Đọc các trường chính: Version là phiên bản; Serial Number là số sê-ri; Issuer Name là bên phát hành; Validity Period là thời hạn; Subject Name là chủ thể; Subject Public Key là khóa chủ thể. Signature Value là chữ ký CA trên phần thông tin chứng thư.",
+      "bbox_points": [
+        279.8,
+        505.4,
+        503.20000000000005,
+        631.96
+      ],
+      "width": 1086,
+      "height": 615,
+      "sha256": "3561bb5007a2ab02ec2c592ee471f7998dc3a8c514f8aec512ffed20d4cd4aed"
+    },
+    {
+      "lesson": 25,
+      "chapter": 4,
+      "example": 34,
+      "slide": 55,
+      "page": 10,
+      "title": "Sơ đồ cấp phát và sử dụng chứng thư",
+      "note": "Luồng trên hình: người dùng gửi yêu cầu; CA cấp chứng thư có chữ ký của CA; chứng thư được chuyển hoặc lấy từ kho thông tin; người nhận dùng khóa CA tin cậy để kiểm tra chứng thư trước khi dùng khóa của đối tác.",
+      "bbox_points": [
+        36.8,
+        87.92,
+        260.2,
+        214.48000000000002
+      ],
+      "width": 1086,
+      "height": 616,
+      "sha256": "db26b65f1414daf9fd4f9b8a77b2745906abd14d8ab5e73f95d4027dd43bc613"
+    },
+    {
+      "lesson": 25,
+      "chapter": 4,
+      "example": 34,
+      "slide": 56,
+      "page": 10,
+      "title": "Mô hình hệ thống chứng thực đơn giản",
+      "note": "Đọc các vai trò trên hình: người dùng gửi yêu cầu chứng chỉ qua mạng; RA xử lý đăng ký; CA phát hành chứng thư; kho Certs, CRLs lưu chứng thư và danh sách thu hồi. Đây là mô hình minh họa, không phải toàn bộ quy trình kiểm tra một hệ PKI thực tế.",
+      "bbox_points": [
+        279.8,
+        87.92,
+        503.20000000000005,
+        214.48000000000002
+      ],
+      "width": 1086,
+      "height": 616,
+      "sha256": "3ad9370deaae510090c898c22f6a7e3f2499235b48e2732e190eb61136a9dd16"
+    },
+    {
+      "lesson": 26,
+      "chapter": 4,
+      "example": 35,
+      "slide": 34,
+      "page": 6,
+      "title": "Vai trò khóa của người gửi trong chữ ký",
+      "note": "Điền vai trò khóa ở các dấu hỏi: bên gửi ký bằng khóa riêng của mình; bên nhận kiểm tra bằng khóa công khai đã xác thực của bên gửi. Đây là hai vai trò của cùng người ký.",
+      "bbox_points": [
+        279.8,
+        296.6,
+        503.20000000000005,
+        423.16
+      ],
+      "width": 1086,
+      "height": 615,
+      "sha256": "6877a0ceb2de52a0da8616aedb513254cd8e4c1a9a03b49bd9f0573fb46b534d"
+    },
+    {
+      "lesson": 26,
+      "chapter": 4,
+      "example": 35,
+      "slide": 35,
+      "page": 6,
+      "title": "Sơ đồ chữ ký kết hợp hàm băm",
+      "note": "Đọc từ trái sang phải: băm thông điệp M; ký bản băm bằng khóa riêng người gửi. Bên nhận băm lại M và kiểm tra chữ ký bằng khóa công khai đã xác thực của người gửi, rồi đối chiếu hai giá trị băm.",
+      "bbox_points": [
+        36.8,
+        505.4,
+        260.2,
+        631.96
+      ],
+      "width": 1086,
+      "height": 615,
+      "sha256": "8fde74b482a177b156e0c5089fda0592d4ca6117ee88f7fd0747420880077a1c"
+    },
+    {
+      "lesson": 26,
+      "chapter": 4,
+      "example": 35,
+      "slide": 36,
+      "page": 6,
+      "title": "Sơ đồ chữ ký kết hợp bảo mật",
+      "note": "Đọc các lớp từ trong ra ngoài: người gửi ký bằng khóa riêng của mình, sau đó mã hóa gói cho người nhận bằng khóa công khai người nhận. Người nhận giải lớp ngoài bằng khóa riêng của mình rồi kiểm tra chữ ký bằng khóa công khai người gửi.",
+      "bbox_points": [
+        279.8,
+        505.4,
+        503.20000000000005,
+        631.96
+      ],
+      "width": 1086,
+      "height": 615,
+      "sha256": "2708f12d60c3676a9e2d85bfec0d08e01dadc8ef30f829329399bb1c6d0d021f"
+    },
+    {
+      "lesson": 26,
+      "chapter": 4,
+      "example": 35,
+      "slide": 39,
+      "page": 7,
+      "title": "Hàm ký và hàm kiểm tra RSA",
+      "note": "",
+      "bbox_points": [
+        36.8,
+        296.6,
+        260.2,
+        423.16
+      ],
+      "width": 1086,
+      "height": 615,
+      "sha256": "28bd963eb75a8f62aa0b664aef40e83ce42e541816fdc774566eeef688957903"
+    },
+    {
+      "lesson": 27,
+      "chapter": 4,
+      "example": 37,
+      "slide": 44,
+      "page": 8,
+      "title": "Tính ngẫu nhiên của chữ ký ElGamal",
+      "note": "",
+      "bbox_points": [
+        279.8,
+        87.92,
+        503.20000000000005,
+        214.48000000000002
+      ],
+      "width": 1086,
+      "height": 616,
+      "sha256": "8be4c9344904433349c702159f85a65b065deb8ed7a171a2e1c4d37311412faa"
+    },
+    {
+      "lesson": 27,
+      "chapter": 4,
+      "example": 37,
+      "slide": 45,
+      "page": 8,
+      "title": "Hàm ký và phương trình xác minh ElGamal",
+      "note": "Điều kiện bắt buộc trước khi lấy k⁻¹ modulo p−1: gcd(k,p−1) = 1. Khóa bí mật a và số ngẫu nhiên k phải theo đúng miền và điều kiện đã nêu trong lời giải; không chỉ chọn tùy ý trong Z_p.",
+      "bbox_points": [
+        36.8,
+        296.6,
+        260.2,
+        423.16
+      ],
+      "width": 1086,
+      "height": 615,
+      "sha256": "b403820fc9e9ba36f070bda787eba11f857ebe0d36cf5298ff44387d0b34da4b"
+    }
+  ]
+}
