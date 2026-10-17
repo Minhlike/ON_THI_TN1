@@ -1,0 +1,1834 @@
+{
+  "baseline_commit": "1179eca2ac9740b0e99a753b4f96bd6ac86f2de8",
+  "scope": "Layout and formatting only; no academic content edit",
+  "pages_before": 144,
+  "pages_after": 143,
+  "content": {
+    "content_identical_in_order": true,
+    "equation_structure_and_text_identical": true,
+    "omml": 1360,
+    "jacobi_limUpp": 70,
+    "tables": 76,
+    "embedded_images": 75,
+    "media_bytes_and_order_identical": true,
+    "headings_text_and_order_identical": true,
+    "generated_toc_page_numbers_excluded": true,
+    "math_formatting_exclusions": "w:rPr and Word metadata only; no m:* operation structure excluded",
+    "baseline_sha256": "4bced2ea03d0f8a6ca9d51ebaf5716379145ea4f12bcc4187e9224566db2c746",
+    "candidate_sha256": "4d3d6c9dbe87d212e5bc51cbfb9786c8ad35a164de096050e8e39b77ab90b9f9"
+  },
+  "word": {
+    "version": "16.0",
+    "build": "16.0.4756",
+    "nativeOMaths": 1360,
+    "buildUpAll": true,
+    "tables": 76,
+    "savedProbe": false
+  },
+  "glyph_presence": {
+    "equations": 1360,
+    "pages_with_equations": 125,
+    "pdf_pages": 143,
+    "expected_text_glyphs": 15174,
+    "pages_with_missing_glyphs": {},
+    "method": "Per-page character multiset of native m:t text versus visible Cambria/Cambria Math PDF text, normalized mathematical alphabet and structural glyph variants; supplemented by visual page review. This is a rendering-presence check, not a proof of equation meaning or positioning."
+  },
+  "body_style_fonts_pt": 14,
+  "wide_numeric_table_fonts_pt": 13,
+  "ordinary_table_fonts_pt": 14,
+  "caption_fonts_pt": 11.5,
+  "table_header_repeat_count": 76,
+  "table_row_split_prohibited_count": 466,
+  "tables_crossing_pages": [
+    {
+      "index": 52,
+      "rows": 20,
+      "firstPage": 88,
+      "lastPage": 89
+    }
+  ],
+  "unchanged_source_files": 64,
+  "pdf_sha256": "9103b5945b416d29a4a4b2da7c399352c380b1725ea0bbe8e9f8c1155e317a16",
+  "styles": {
+    "Title": 1,
+    "Subtitle": 1,
+    "TNTheory": 169,
+    "TNContentsTitle": 1,
+    "TOC1": 8,
+    "TOC2": 32,
+    "TNSpacer": 1,
+    "Heading1": 8,
+    "Heading2": 32,
+    "TNLabel": 27,
+    "TNMethod": 27,
+    "TNEquation": 805,
+    "TNFigure": 75,
+    "Caption": 75,
+    "TNWorkedProblem": 37,
+    "TNConclusion": 37,
+    "TNSolution": 164,
+    "TNCasioHeading": 35,
+    "TNCasioStep": 396,
+    "TNSource": 10,
+    "TNPracticeHeading": 27,
+    "TNPractice": 103,
+    "TNAnswerHeading": 27,
+    "TNAnswer": 176,
+    "TNWarningHeading": 27,
+    "TNWarning": 38,
+    "Heading3": 4
+  },
+  "image_display_geometry": [
+    {
+      "caption": "Ảnh slide gốc Chương 3 số 17 — Rút gọn từng phép cộng và nhân theo modulo.",
+      "width_cm": 16.94,
+      "height_cm": 9.6,
+      "original_ratio": 1.7658537397452652
+    },
+    {
+      "caption": "Ảnh slide gốc Chương 3 số 19 — Biểu thức mẫu được biến đổi ngay trên slide.",
+      "width_cm": 16.94,
+      "height_cm": 9.61,
+      "original_ratio": 1.762986891569183
+    },
+    {
+      "caption": "Ảnh slide gốc Chương 3 số 22 — Lưu đồ Euclid tìm ước chung lớn nhất.",
+      "width_cm": 14.72,
+      "height_cm": 8.34,
+      "original_ratio": 1.7658537397452652
+    },
+    {
+      "caption": "Ảnh slide gốc Chương 3 số 23 — Các bước cập nhật của thuật toán Euclid.",
+      "width_cm": 16.94,
+      "height_cm": 9.6,
+      "original_ratio": 1.7658537397452652
+    },
+    {
+      "caption": "Ảnh slide gốc Chương 3 số 26 — Thuật toán Euclid mở rộng và các biến cập nhật.",
+      "width_cm": 16.94,
+      "height_cm": 9.61,
+      "original_ratio": 1.762986891569183
+    },
+    {
+      "caption": "Ảnh slide gốc Chương 3 số 33 — Định lý Fermat nhỏ và điều kiện nguyên tố cùng nhau.",
+      "width_cm": 16.94,
+      "height_cm": 9.6,
+      "original_ratio": 1.7658537397452652
+    },
+    {
+      "caption": "Ảnh slide gốc Chương 3 số 36 — Các tính chất và công thức tính phi.",
+      "width_cm": 16.94,
+      "height_cm": 9.6,
+      "original_ratio": 1.7658537397452652
+    },
+    {
+      "caption": "Ảnh slide gốc Chương 3 số 38 — Định lý Euler và điều kiện áp dụng.",
+      "width_cm": 16.94,
+      "height_cm": 9.61,
+      "original_ratio": 1.762986891569183
+    },
+    {
+      "caption": "Ảnh slide gốc Chương 3 số 41 — Định nghĩa và tiêu chuẩn kiểm tra phần tử sinh.",
+      "width_cm": 16.94,
+      "height_cm": 9.6,
+      "original_ratio": 1.7658537397452652
+    },
+    {
+      "caption": "Ảnh slide gốc Chương 3 số 44 — Kiểm tra phần tử sinh modulo 37.",
+      "width_cm": 16.94,
+      "height_cm": 9.61,
+      "original_ratio": 1.762986891569183
+    },
+    {
+      "caption": "Ảnh slide gốc Chương 3 số 68 — Lưu đồ nhân bình phương có lặp.",
+      "width_cm": 16.94,
+      "height_cm": 9.61,
+      "original_ratio": 1.762986891569183
+    },
+    {
+      "caption": "Ảnh slide gốc Chương 3 số 69 — Bảng nhân bình phương của bài mẫu.",
+      "width_cm": 16.94,
+      "height_cm": 9.6,
+      "original_ratio": 1.7658537397452652
+    },
+    {
+      "caption": "Ảnh slide gốc Chương 3 số 47 — Công thức dựng nghiệm CRT.",
+      "width_cm": 16.94,
+      "height_cm": 9.6,
+      "original_ratio": 1.7658537397452652
+    },
+    {
+      "caption": "Ảnh slide gốc Chương 3 số 48 — Hai hệ đồng dư và nghiệm trong bài giảng.",
+      "width_cm": 16.94,
+      "height_cm": 9.6,
+      "original_ratio": 1.7658537397452652
+    },
+    {
+      "caption": "Ảnh slide gốc Chương 3 số 50 — Thặng dư và bất thặng dư bậc hai.",
+      "width_cm": 16.94,
+      "height_cm": 9.61,
+      "original_ratio": 1.762986891569183
+    },
+    {
+      "caption": "Ảnh slide gốc Chương 3 số 55 — Định nghĩa ký hiệu Legendre.",
+      "width_cm": 16.94,
+      "height_cm": 9.61,
+      "original_ratio": 1.762986891569183
+    },
+    {
+      "caption": "Ảnh slide gốc Chương 3 số 57 — Bốn tính chất dùng để biến đổi ký hiệu Jacobi.",
+      "width_cm": 16.94,
+      "height_cm": 9.6,
+      "original_ratio": 1.7658537397452652
+    },
+    {
+      "caption": "Ảnh slide gốc Chương 3 số 59 — Chuỗi Jacobi mẫu với nhãn tính chất trên dấu bằng.",
+      "width_cm": 16.94,
+      "height_cm": 9.6,
+      "original_ratio": 1.7658537397452652
+    },
+    {
+      "caption": "Ảnh slide gốc Chương 3 số 60 — Ví dụ Jacobi bằng cách tách mẫu số.",
+      "width_cm": 16.94,
+      "height_cm": 9.6,
+      "original_ratio": 1.7658537397452652
+    },
+    {
+      "caption": "Ảnh slide gốc Chương 3 số 63 — Thuật toán 1 khi p đồng dư 3 modulo 4.",
+      "width_cm": 16.94,
+      "height_cm": 9.6,
+      "original_ratio": 1.7658537397452652
+    },
+    {
+      "caption": "Ảnh slide gốc Chương 3 số 64 — Thuật toán 2 khi p đồng dư 5 modulo 8.",
+      "width_cm": 16.94,
+      "height_cm": 9.6,
+      "original_ratio": 1.7658537397452652
+    },
+    {
+      "caption": "Ảnh slide gốc Chương 3 số 66 — Thuật toán 4 cho modulo nguyên tố lẻ.",
+      "width_cm": 16.94,
+      "height_cm": 9.6,
+      "original_ratio": 1.7658537397452652
+    },
+    {
+      "caption": "Ảnh slide gốc Chương 3 số 61 — Số Blum và căn bậc hai chính.",
+      "width_cm": 16.94,
+      "height_cm": 9.61,
+      "original_ratio": 1.762986891569183
+    },
+    {
+      "caption": "Ảnh slide gốc Chương 3 số 65 — Thuật toán 3 ghép bốn căn modulo hợp số.",
+      "width_cm": 16.94,
+      "height_cm": 9.6,
+      "original_ratio": 1.7658537397452652
+    },
+    {
+      "caption": "Ảnh slide gốc Chương 3 số 73 — Thuật toán bước lớn bước nhỏ.",
+      "width_cm": 16.94,
+      "height_cm": 9.61,
+      "original_ratio": 1.762986891569183
+    },
+    {
+      "caption": "Ảnh slide gốc Chương 3 số 75 — Hai bảng gặp nhau trong ví dụ logarit rời rạc.",
+      "width_cm": 16.94,
+      "height_cm": 9.6,
+      "original_ratio": 1.7658537397452652
+    },
+    {
+      "caption": "Ảnh slide gốc Chương 3 số 94 — Lưu đồ tạo khóa mã hóa và giải mã RSA.",
+      "width_cm": 16.94,
+      "height_cm": 9.6,
+      "original_ratio": 1.7658537397452652
+    },
+    {
+      "caption": "Ảnh slide gốc Chương 3 số 101 — Công thức đếm điểm bất động RSA.",
+      "width_cm": 16.94,
+      "height_cm": 9.6,
+      "original_ratio": 1.7658537397452652
+    },
+    {
+      "caption": "Ảnh slide gốc Chương 3 số 103 — Lược đồ khóa mã hóa và giải mã Rabin.",
+      "width_cm": 16.94,
+      "height_cm": 9.61,
+      "original_ratio": 1.762986891569183
+    },
+    {
+      "caption": "Ảnh slide gốc Chương 3 số 106 — Bốn căn Rabin và bước chọn bản rõ.",
+      "width_cm": 16.94,
+      "height_cm": 9.6,
+      "original_ratio": 1.7658537397452652
+    },
+    {
+      "caption": "Ảnh slide gốc Chương 3 số 108 — Lược đồ tạo khóa mã hóa và giải mã ElGamal.",
+      "width_cm": 14.72,
+      "height_cm": 8.34,
+      "original_ratio": 1.7658537397452652
+    },
+    {
+      "caption": "Ảnh slide gốc Chương 3 số 119 — Hai đường đi tham lam với tổng 96 và 95.",
+      "width_cm": 16.94,
+      "height_cm": 9.6,
+      "original_ratio": 1.7658537397452652
+    },
+    {
+      "caption": "Ảnh slide gốc Chương 3 số 121 — Thuật toán ba lô siêu tăng.",
+      "width_cm": 16.94,
+      "height_cm": 9.61,
+      "original_ratio": 1.762986891569183
+    },
+    {
+      "caption": "Ảnh slide gốc Chương 3 số 124 — Cách tạo khóa Merkle Hellman.",
+      "width_cm": 16.94,
+      "height_cm": 9.6,
+      "original_ratio": 1.7658537397452652
+    },
+    {
+      "caption": "Ảnh slide gốc Chương 3 số 126 — Sơ đồ mã hóa Merkle Hellman.",
+      "width_cm": 16.94,
+      "height_cm": 9.6,
+      "original_ratio": 1.7658537397452652
+    },
+    {
+      "caption": "Ảnh slide gốc Chương 3 số 127 — Sơ đồ giải mã và hoàn nguyên hoán vị.",
+      "width_cm": 16.94,
+      "height_cm": 9.61,
+      "original_ratio": 1.762986891569183
+    },
+    {
+      "caption": "Hình 1 Cộng điểm trên đường cong thực — ảnh gốc Chương 3, slide 134. Hình giúp hiểu phép đối xứng; tọa độ trên trường hữu hạn phải tính bằng modulo theo lời giải.",
+      "width_cm": 16.94,
+      "height_cm": 8.89,
+      "original_ratio": 1.905303290176515
+    },
+    {
+      "caption": "Ảnh slide gốc Chương 3 số 136 — Điều kiện đường cong elliptic trên trường hữu hạn.",
+      "width_cm": 16.94,
+      "height_cm": 9.6,
+      "original_ratio": 1.7658537397452652
+    },
+    {
+      "caption": "Ảnh slide gốc Chương 3 số 140 — Bảng liệt kê điểm của đường cong modulo 11.",
+      "width_cm": 16.94,
+      "height_cm": 9.61,
+      "original_ratio": 1.762986891569183
+    },
+    {
+      "caption": "Ảnh slide gốc Chương 3 số 137 — Công thức cộng điểm và nhân đôi trên ECC.",
+      "width_cm": 16.94,
+      "height_cm": 9.6,
+      "original_ratio": 1.7658537397452652
+    },
+    {
+      "caption": "Ảnh slide gốc Chương 3 số 138 — Điểm vô cực và điểm đối trên ECC.",
+      "width_cm": 16.94,
+      "height_cm": 9.6,
+      "original_ratio": 1.7658537397452652
+    },
+    {
+      "caption": "Ảnh slide gốc Chương 3 số 142 — Tạo khóa trên nhóm điểm elliptic.",
+      "width_cm": 16.94,
+      "height_cm": 9.6,
+      "original_ratio": 1.7658537397452652
+    },
+    {
+      "caption": "Ảnh slide gốc Chương 3 số 143 — Hai thành phần bản mã và công thức giải mã ECC.",
+      "width_cm": 16.94,
+      "height_cm": 9.6,
+      "original_ratio": 1.7658537397452652
+    },
+    {
+      "caption": "Hình 2 Hai bên tính và đối chiếu MAC bằng cùng bí mật — ảnh gốc Chương 4, slide 13.",
+      "width_cm": 16.94,
+      "height_cm": 9.03,
+      "original_ratio": 1.8757065161210722
+    },
+    {
+      "caption": "Ảnh slide gốc Chương 4 số 14 — Hai cơ chế kết hợp băm với mã hóa.",
+      "width_cm": 16.94,
+      "height_cm": 9.61,
+      "original_ratio": 1.762986891569183
+    },
+    {
+      "caption": "Ảnh slide gốc Chương 4 số 15 — Băm kết hợp bí mật chung.",
+      "width_cm": 16.94,
+      "height_cm": 9.6,
+      "original_ratio": 1.7658537397452652
+    },
+    {
+      "caption": "Ảnh slide gốc Chương 4 số 16 — Băm kết hợp chữ ký và lớp mã hóa.",
+      "width_cm": 16.94,
+      "height_cm": 9.6,
+      "original_ratio": 1.7658537397452652
+    },
+    {
+      "caption": "Ảnh slide gốc Chương 4 số 19 — Sơ đồ mục tiêu của tấn công tiền ảnh.",
+      "width_cm": 16.94,
+      "height_cm": 9.61,
+      "original_ratio": 1.762986891569183
+    },
+    {
+      "caption": "Ảnh slide gốc Chương 4 số 20 — Sơ đồ mục tiêu của tấn công tiền ảnh thứ hai.",
+      "width_cm": 16.94,
+      "height_cm": 9.61,
+      "original_ratio": 1.762986891569183
+    },
+    {
+      "caption": "Ảnh slide gốc Chương 4 số 21 — Sơ đồ mục tiêu của tấn công va chạm.",
+      "width_cm": 16.94,
+      "height_cm": 9.6,
+      "original_ratio": 1.7658537397452652
+    },
+    {
+      "caption": "Ảnh slide gốc Chương 4 số 22 — Phân loại hàm băm và mã xác thực.",
+      "width_cm": 14.72,
+      "height_cm": 8.34,
+      "original_ratio": 1.7658537397452652
+    },
+    {
+      "caption": "Hình 3 Lặp hàm nén và đệm độ dài — ảnh gốc Chương 4, slide 23. Các ký hiệu trạng thái đã được giải thích bằng phương trình Word ngay trên.",
+      "width_cm": 16.94,
+      "height_cm": 4.65,
+      "original_ratio": 3.641791837454691
+    },
+    {
+      "caption": "Hình 4 Ba cách nối mã khối và nhánh XOR — ảnh gốc Chương 4, slide 24. Công thức tương ứng được viết bằng phương trình Word ngay dưới.",
+      "width_cm": 16.94,
+      "height_cm": 6.65,
+      "original_ratio": 2.5465688300859424
+    },
+    {
+      "caption": "Ảnh slide gốc Chương 4 số 25 — Sơ đồ và thuật toán Matyas Mayer Oseas.",
+      "width_cm": 16.94,
+      "height_cm": 9.61,
+      "original_ratio": 1.762986891569183
+    },
+    {
+      "caption": "Ảnh slide gốc Chương 4 số 26 — Sơ đồ và thuật toán Davies Mayer.",
+      "width_cm": 16.94,
+      "height_cm": 9.61,
+      "original_ratio": 1.762986891569183
+    },
+    {
+      "caption": "Ảnh slide gốc Chương 4 số 27 — Sơ đồ và thuật toán Miyaguchi Preneel.",
+      "width_cm": 16.94,
+      "height_cm": 9.6,
+      "original_ratio": 1.7658537397452652
+    },
+    {
+      "caption": "Ảnh slide gốc Chương 4 số 30 — Mô hình tấn công ngày sinh nhật.",
+      "width_cm": 16.94,
+      "height_cm": 9.6,
+      "original_ratio": 1.7658537397452652
+    },
+    {
+      "caption": "Ảnh slide gốc Chương 4 số 48 — Tấn công thay khóa khi mã hóa cho người nhận.",
+      "width_cm": 16.94,
+      "height_cm": 9.6,
+      "original_ratio": 1.7658537397452652
+    },
+    {
+      "caption": "Ảnh slide gốc Chương 4 số 49 — Tấn công thay khóa khi kiểm tra chữ ký.",
+      "width_cm": 16.94,
+      "height_cm": 9.61,
+      "original_ratio": 1.762986891569183
+    },
+    {
+      "caption": "Ảnh slide gốc Chương 4 số 51 — CA ràng buộc thực thể với khóa công khai.",
+      "width_cm": 16.94,
+      "height_cm": 9.6,
+      "original_ratio": 1.7658537397452652
+    },
+    {
+      "caption": "Ảnh slide gốc Chương 4 số 53 — Kiểm tra chứng thư bằng khóa CA.",
+      "width_cm": 16.94,
+      "height_cm": 9.6,
+      "original_ratio": 1.7658537397452652
+    },
+    {
+      "caption": "Ảnh slide gốc Chương 4 số 54 — Các trường chứng thư và chữ ký của CA.",
+      "width_cm": 16.94,
+      "height_cm": 9.6,
+      "original_ratio": 1.7658537397452652
+    },
+    {
+      "caption": "Ảnh slide gốc Chương 4 số 55 — Sơ đồ cấp phát và sử dụng chứng thư.",
+      "width_cm": 16.94,
+      "height_cm": 9.61,
+      "original_ratio": 1.762986891569183
+    },
+    {
+      "caption": "Ảnh slide gốc Chương 4 số 56 — Mô hình hệ thống chứng thực đơn giản.",
+      "width_cm": 16.94,
+      "height_cm": 9.61,
+      "original_ratio": 1.762986891569183
+    },
+    {
+      "caption": "Ảnh slide gốc Chương 4 số 34 — Vai trò khóa của người gửi trong chữ ký.",
+      "width_cm": 16.94,
+      "height_cm": 9.6,
+      "original_ratio": 1.7658537397452652
+    },
+    {
+      "caption": "Ảnh slide gốc Chương 4 số 35 — Sơ đồ chữ ký kết hợp hàm băm.",
+      "width_cm": 16.94,
+      "height_cm": 9.6,
+      "original_ratio": 1.7658537397452652
+    },
+    {
+      "caption": "Ảnh slide gốc Chương 4 số 36 — Sơ đồ chữ ký kết hợp bảo mật.",
+      "width_cm": 16.94,
+      "height_cm": 9.6,
+      "original_ratio": 1.7658537397452652
+    },
+    {
+      "caption": "Ảnh slide gốc Chương 4 số 39 — Hàm ký và hàm kiểm tra RSA.",
+      "width_cm": 16.94,
+      "height_cm": 9.6,
+      "original_ratio": 1.7658537397452652
+    },
+    {
+      "caption": "Ảnh slide gốc Chương 4 số 44 — Tính ngẫu nhiên của chữ ký ElGamal.",
+      "width_cm": 16.94,
+      "height_cm": 9.61,
+      "original_ratio": 1.762986891569183
+    },
+    {
+      "caption": "Ảnh slide gốc Chương 4 số 45 — Hàm ký và phương trình xác minh ElGamal.",
+      "width_cm": 16.94,
+      "height_cm": 9.6,
+      "original_ratio": 1.7658537397452652
+    },
+    {
+      "caption": "Ảnh đề gốc hình ảnh (4).png; giữ nguyên tỉ lệ, không sửa dữ kiện.",
+      "width_cm": 16.94,
+      "height_cm": 7.99,
+      "original_ratio": 2.1195781485346337
+    },
+    {
+      "caption": "Ảnh đề gốc hình ảnh (5).png; giữ nguyên tỉ lệ, không sửa dữ kiện.",
+      "width_cm": 16.94,
+      "height_cm": 8.07,
+      "original_ratio": 2.099143364288838
+    },
+    {
+      "caption": "Ảnh đề gốc hình ảnh (6).png; giữ nguyên tỉ lệ, không sửa dữ kiện.",
+      "width_cm": 16.94,
+      "height_cm": 5.85,
+      "original_ratio": 2.8963312191377453
+    },
+    {
+      "caption": "Ảnh đề gốc hình ảnh (7).png; giữ nguyên tỉ lệ, không sửa dữ kiện.",
+      "width_cm": 16.94,
+      "height_cm": 4.21,
+      "original_ratio": 4.026315789473684
+    },
+    {
+      "caption": "Ảnh đề gốc hình ảnh (3).png; giữ nguyên tỉ lệ, không sửa dữ kiện.",
+      "width_cm": 16.94,
+      "height_cm": 7.02,
+      "original_ratio": 2.413489989340419
+    }
+  ],
+  "page_geometry": [
+    {
+      "page": 1,
+      "top": 60.3,
+      "bottom": 376.5,
+      "used_height": 316.3,
+      "chars": 862,
+      "images": 0,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 2,
+      "top": 59.6,
+      "bottom": 694.5,
+      "used_height": 634.8,
+      "chars": 4754,
+      "images": 0,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 3,
+      "top": 59.4,
+      "bottom": 734.1,
+      "used_height": 674.7,
+      "chars": 827,
+      "images": 1,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 4,
+      "top": 56.7,
+      "bottom": 752.9,
+      "used_height": 696.2,
+      "chars": 991,
+      "images": 1,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 5,
+      "top": 58.4,
+      "bottom": 721.7,
+      "used_height": 663.3,
+      "chars": 1253,
+      "images": 0,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 6,
+      "top": 59.1,
+      "bottom": 494.3,
+      "used_height": 435.2,
+      "chars": 460,
+      "images": 1,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 7,
+      "top": 56.7,
+      "bottom": 732.0,
+      "used_height": 675.3,
+      "chars": 531,
+      "images": 1,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 8,
+      "top": 58.6,
+      "bottom": 743.9,
+      "used_height": 685.3,
+      "chars": 1291,
+      "images": 0,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 9,
+      "top": 58.7,
+      "bottom": 779.7,
+      "used_height": 721.0,
+      "chars": 865,
+      "images": 1,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 10,
+      "top": 58.7,
+      "bottom": 784.7,
+      "used_height": 725.9,
+      "chars": 1809,
+      "images": 0,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 11,
+      "top": 57.1,
+      "bottom": 753.9,
+      "used_height": 696.9,
+      "chars": 664,
+      "images": 0,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 12,
+      "top": 58.7,
+      "bottom": 615.6,
+      "used_height": 556.9,
+      "chars": 427,
+      "images": 0,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 13,
+      "top": 58.4,
+      "bottom": 631.0,
+      "used_height": 572.6,
+      "chars": 539,
+      "images": 0,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 14,
+      "top": 58.4,
+      "bottom": 689.3,
+      "used_height": 630.9,
+      "chars": 1089,
+      "images": 0,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 15,
+      "top": 56.7,
+      "bottom": 636.9,
+      "used_height": 580.2,
+      "chars": 117,
+      "images": 2,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 16,
+      "top": 56.7,
+      "bottom": 707.8,
+      "used_height": 651.1,
+      "chars": 457,
+      "images": 1,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 17,
+      "top": 58.6,
+      "bottom": 722.5,
+      "used_height": 663.9,
+      "chars": 1159,
+      "images": 0,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 18,
+      "top": 58.6,
+      "bottom": 589.3,
+      "used_height": 530.7,
+      "chars": 1283,
+      "images": 0,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 19,
+      "top": 56.7,
+      "bottom": 637.4,
+      "used_height": 580.7,
+      "chars": 110,
+      "images": 2,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 20,
+      "top": 58.7,
+      "bottom": 745.1,
+      "used_height": 686.4,
+      "chars": 580,
+      "images": 0,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 21,
+      "top": 58.4,
+      "bottom": 739.2,
+      "used_height": 680.9,
+      "chars": 1315,
+      "images": 0,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 22,
+      "top": 58.6,
+      "bottom": 782.9,
+      "used_height": 724.3,
+      "chars": 1060,
+      "images": 0,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 23,
+      "top": 58.9,
+      "bottom": 765.5,
+      "used_height": 706.6,
+      "chars": 956,
+      "images": 1,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 24,
+      "top": 56.7,
+      "bottom": 736.5,
+      "used_height": 679.8,
+      "chars": 555,
+      "images": 1,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 25,
+      "top": 58.4,
+      "bottom": 770.0,
+      "used_height": 711.7,
+      "chars": 1949,
+      "images": 0,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 26,
+      "top": 58.0,
+      "bottom": 747.5,
+      "used_height": 689.4,
+      "chars": 1043,
+      "images": 0,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 27,
+      "top": 58.4,
+      "bottom": 500.5,
+      "used_height": 442.2,
+      "chars": 897,
+      "images": 0,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 28,
+      "top": 56.7,
+      "bottom": 756.6,
+      "used_height": 699.9,
+      "chars": 286,
+      "images": 2,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 29,
+      "top": 57.2,
+      "bottom": 742.0,
+      "used_height": 684.8,
+      "chars": 1315,
+      "images": 0,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 30,
+      "top": 58.6,
+      "bottom": 746.6,
+      "used_height": 688.1,
+      "chars": 1244,
+      "images": 0,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 31,
+      "top": 58.4,
+      "bottom": 769.9,
+      "used_height": 711.5,
+      "chars": 939,
+      "images": 0,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 32,
+      "top": 58.9,
+      "bottom": 773.9,
+      "used_height": 715.0,
+      "chars": 1293,
+      "images": 0,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 33,
+      "top": 57.0,
+      "bottom": 518.1,
+      "used_height": 461.1,
+      "chars": 383,
+      "images": 1,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 34,
+      "top": 56.7,
+      "bottom": 757.7,
+      "used_height": 701.0,
+      "chars": 573,
+      "images": 1,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 35,
+      "top": 58.4,
+      "bottom": 783.0,
+      "used_height": 724.7,
+      "chars": 1563,
+      "images": 0,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 36,
+      "top": 58.6,
+      "bottom": 734.7,
+      "used_height": 676.1,
+      "chars": 1316,
+      "images": 0,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 37,
+      "top": 58.5,
+      "bottom": 516.8,
+      "used_height": 458.3,
+      "chars": 238,
+      "images": 1,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 38,
+      "top": 56.7,
+      "bottom": 753.8,
+      "used_height": 697.1,
+      "chars": 496,
+      "images": 1,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 39,
+      "top": 57.4,
+      "bottom": 672.0,
+      "used_height": 614.7,
+      "chars": 1129,
+      "images": 0,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 40,
+      "top": 56.7,
+      "bottom": 772.0,
+      "used_height": 715.3,
+      "chars": 768,
+      "images": 1,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 41,
+      "top": 58.4,
+      "bottom": 759.4,
+      "used_height": 701.0,
+      "chars": 823,
+      "images": 0,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 42,
+      "top": 58.6,
+      "bottom": 754.3,
+      "used_height": 695.7,
+      "chars": 1175,
+      "images": 0,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 43,
+      "top": 57.1,
+      "bottom": 778.3,
+      "used_height": 721.2,
+      "chars": 524,
+      "images": 0,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 44,
+      "top": 57.1,
+      "bottom": 779.4,
+      "used_height": 722.3,
+      "chars": 517,
+      "images": 0,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 45,
+      "top": 57.4,
+      "bottom": 759.9,
+      "used_height": 702.6,
+      "chars": 521,
+      "images": 0,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 46,
+      "top": 57.1,
+      "bottom": 773.5,
+      "used_height": 716.4,
+      "chars": 1061,
+      "images": 0,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 47,
+      "top": 57.8,
+      "bottom": 719.5,
+      "used_height": 661.7,
+      "chars": 795,
+      "images": 1,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 48,
+      "top": 57.4,
+      "bottom": 775.0,
+      "used_height": 717.6,
+      "chars": 1199,
+      "images": 0,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 49,
+      "top": 58.4,
+      "bottom": 729.6,
+      "used_height": 671.3,
+      "chars": 467,
+      "images": 1,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 50,
+      "top": 57.2,
+      "bottom": 761.9,
+      "used_height": 704.7,
+      "chars": 1416,
+      "images": 0,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 51,
+      "top": 56.7,
+      "bottom": 692.6,
+      "used_height": 635.9,
+      "chars": 404,
+      "images": 1,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 52,
+      "top": 57.4,
+      "bottom": 765.5,
+      "used_height": 708.1,
+      "chars": 1476,
+      "images": 0,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 53,
+      "top": 58.6,
+      "bottom": 732.7,
+      "used_height": 674.1,
+      "chars": 861,
+      "images": 0,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 54,
+      "top": 57.4,
+      "bottom": 601.3,
+      "used_height": 543.9,
+      "chars": 379,
+      "images": 0,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 55,
+      "top": 57.2,
+      "bottom": 742.6,
+      "used_height": 685.4,
+      "chars": 1093,
+      "images": 0,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 56,
+      "top": 58.0,
+      "bottom": 736.5,
+      "used_height": 678.4,
+      "chars": 313,
+      "images": 2,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 57,
+      "top": 58.6,
+      "bottom": 765.8,
+      "used_height": 707.3,
+      "chars": 1184,
+      "images": 0,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 58,
+      "top": 58.4,
+      "bottom": 755.4,
+      "used_height": 697.1,
+      "chars": 1478,
+      "images": 0,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 59,
+      "top": 58.6,
+      "bottom": 569.2,
+      "used_height": 510.6,
+      "chars": 1049,
+      "images": 0,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 60,
+      "top": 56.7,
+      "bottom": 637.4,
+      "used_height": 580.7,
+      "chars": 107,
+      "images": 2,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 61,
+      "top": 58.7,
+      "bottom": 769.4,
+      "used_height": 710.7,
+      "chars": 1275,
+      "images": 0,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 62,
+      "top": 56.9,
+      "bottom": 738.7,
+      "used_height": 681.8,
+      "chars": 728,
+      "images": 0,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 63,
+      "top": 61.0,
+      "bottom": 771.7,
+      "used_height": 710.8,
+      "chars": 1422,
+      "images": 0,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 64,
+      "top": 58.4,
+      "bottom": 545.0,
+      "used_height": 486.6,
+      "chars": 423,
+      "images": 1,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 65,
+      "top": 58.4,
+      "bottom": 774.1,
+      "used_height": 715.7,
+      "chars": 649,
+      "images": 0,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 66,
+      "top": 58.3,
+      "bottom": 741.1,
+      "used_height": 682.8,
+      "chars": 1771,
+      "images": 0,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 67,
+      "top": 58.6,
+      "bottom": 763.9,
+      "used_height": 705.3,
+      "chars": 1387,
+      "images": 0,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 68,
+      "top": 56.7,
+      "bottom": 759.9,
+      "used_height": 703.2,
+      "chars": 846,
+      "images": 1,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 69,
+      "top": 58.4,
+      "bottom": 531.6,
+      "used_height": 473.2,
+      "chars": 1022,
+      "images": 0,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 70,
+      "top": 56.7,
+      "bottom": 757.3,
+      "used_height": 700.6,
+      "chars": 317,
+      "images": 2,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 71,
+      "top": 58.4,
+      "bottom": 733.3,
+      "used_height": 675.0,
+      "chars": 661,
+      "images": 0,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 72,
+      "top": 58.6,
+      "bottom": 769.9,
+      "used_height": 711.3,
+      "chars": 1699,
+      "images": 0,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 73,
+      "top": 58.7,
+      "bottom": 584.0,
+      "used_height": 525.3,
+      "chars": 1151,
+      "images": 0,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 74,
+      "top": 56.7,
+      "bottom": 778.8,
+      "used_height": 722.1,
+      "chars": 518,
+      "images": 1,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 75,
+      "top": 58.4,
+      "bottom": 754.0,
+      "used_height": 695.5,
+      "chars": 1589,
+      "images": 0,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 76,
+      "top": 58.4,
+      "bottom": 762.0,
+      "used_height": 703.7,
+      "chars": 1405,
+      "images": 0,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 77,
+      "top": 58.4,
+      "bottom": 769.1,
+      "used_height": 710.8,
+      "chars": 361,
+      "images": 2,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 78,
+      "top": 58.4,
+      "bottom": 689.9,
+      "used_height": 631.5,
+      "chars": 894,
+      "images": 0,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 79,
+      "top": 58.6,
+      "bottom": 649.7,
+      "used_height": 591.1,
+      "chars": 832,
+      "images": 0,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 80,
+      "top": 58.7,
+      "bottom": 714.9,
+      "used_height": 656.2,
+      "chars": 1058,
+      "images": 0,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 81,
+      "top": 55.9,
+      "bottom": 548.9,
+      "used_height": 493.0,
+      "chars": 275,
+      "images": 1,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 82,
+      "top": 56.7,
+      "bottom": 701.1,
+      "used_height": 644.4,
+      "chars": 201,
+      "images": 2,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 83,
+      "top": 58.4,
+      "bottom": 711.3,
+      "used_height": 652.9,
+      "chars": 1148,
+      "images": 0,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 84,
+      "top": 58.6,
+      "bottom": 758.6,
+      "used_height": 700.1,
+      "chars": 1499,
+      "images": 0,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 85,
+      "top": 58.6,
+      "bottom": 776.4,
+      "used_height": 717.8,
+      "chars": 1132,
+      "images": 1,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 86,
+      "top": 57.2,
+      "bottom": 770.5,
+      "used_height": 713.3,
+      "chars": 494,
+      "images": 2,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 87,
+      "top": 58.7,
+      "bottom": 749.0,
+      "used_height": 690.3,
+      "chars": 1118,
+      "images": 0,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 88,
+      "top": 58.4,
+      "bottom": 766.2,
+      "used_height": 707.9,
+      "chars": 1014,
+      "images": 0,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 89,
+      "top": 58.7,
+      "bottom": 702.9,
+      "used_height": 644.2,
+      "chars": 1306,
+      "images": 0,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 90,
+      "top": 56.7,
+      "bottom": 778.3,
+      "used_height": 721.6,
+      "chars": 448,
+      "images": 2,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 91,
+      "top": 57.2,
+      "bottom": 777.0,
+      "used_height": 719.8,
+      "chars": 618,
+      "images": 0,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 92,
+      "top": 58.4,
+      "bottom": 780.5,
+      "used_height": 722.1,
+      "chars": 1434,
+      "images": 0,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 93,
+      "top": 57.1,
+      "bottom": 665.4,
+      "used_height": 608.4,
+      "chars": 1378,
+      "images": 0,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 94,
+      "top": 56.7,
+      "bottom": 774.4,
+      "used_height": 717.7,
+      "chars": 453,
+      "images": 2,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 95,
+      "top": 58.4,
+      "bottom": 775.5,
+      "used_height": 717.1,
+      "chars": 765,
+      "images": 0,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 96,
+      "top": 58.4,
+      "bottom": 776.3,
+      "used_height": 717.9,
+      "chars": 1547,
+      "images": 0,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 97,
+      "top": 59.6,
+      "bottom": 753.1,
+      "used_height": 693.5,
+      "chars": 952,
+      "images": 1,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 98,
+      "top": 58.7,
+      "bottom": 747.9,
+      "used_height": 689.2,
+      "chars": 1109,
+      "images": 1,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 99,
+      "top": 58.4,
+      "bottom": 733.5,
+      "used_height": 675.2,
+      "chars": 364,
+      "images": 2,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 100,
+      "top": 58.4,
+      "bottom": 773.8,
+      "used_height": 715.4,
+      "chars": 515,
+      "images": 2,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 101,
+      "top": 56.7,
+      "bottom": 772.3,
+      "used_height": 715.6,
+      "chars": 550,
+      "images": 2,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 102,
+      "top": 58.4,
+      "bottom": 739.0,
+      "used_height": 680.6,
+      "chars": 1531,
+      "images": 0,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 103,
+      "top": 58.7,
+      "bottom": 733.4,
+      "used_height": 674.7,
+      "chars": 840,
+      "images": 2,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 104,
+      "top": 56.7,
+      "bottom": 637.7,
+      "used_height": 581.0,
+      "chars": 105,
+      "images": 2,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 105,
+      "top": 56.7,
+      "bottom": 747.1,
+      "used_height": 690.4,
+      "chars": 928,
+      "images": 1,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 106,
+      "top": 58.7,
+      "bottom": 619.6,
+      "used_height": 560.9,
+      "chars": 1070,
+      "images": 0,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 107,
+      "top": 56.7,
+      "bottom": 726.4,
+      "used_height": 669.7,
+      "chars": 921,
+      "images": 1,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 108,
+      "top": 58.6,
+      "bottom": 768.6,
+      "used_height": 710.0,
+      "chars": 1611,
+      "images": 0,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 109,
+      "top": 58.6,
+      "bottom": 721.9,
+      "used_height": 663.3,
+      "chars": 955,
+      "images": 1,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 110,
+      "top": 56.7,
+      "bottom": 637.4,
+      "used_height": 580.7,
+      "chars": 110,
+      "images": 2,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 111,
+      "top": 56.7,
+      "bottom": 768.0,
+      "used_height": 711.3,
+      "chars": 500,
+      "images": 2,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 112,
+      "top": 56.7,
+      "bottom": 768.7,
+      "used_height": 712.0,
+      "chars": 486,
+      "images": 2,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 113,
+      "top": 58.6,
+      "bottom": 701.3,
+      "used_height": 642.7,
+      "chars": 1525,
+      "images": 0,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 114,
+      "top": 59.3,
+      "bottom": 732.0,
+      "used_height": 672.7,
+      "chars": 994,
+      "images": 1,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 115,
+      "top": 56.7,
+      "bottom": 768.0,
+      "used_height": 711.3,
+      "chars": 452,
+      "images": 2,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 116,
+      "top": 56.7,
+      "bottom": 427.7,
+      "used_height": 371.0,
+      "chars": 233,
+      "images": 1,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 117,
+      "top": 58.4,
+      "bottom": 784.1,
+      "used_height": 725.7,
+      "chars": 743,
+      "images": 0,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 118,
+      "top": 58.6,
+      "bottom": 781.7,
+      "used_height": 723.1,
+      "chars": 1850,
+      "images": 0,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 119,
+      "top": 58.5,
+      "bottom": 767.3,
+      "used_height": 708.8,
+      "chars": 1514,
+      "images": 0,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 120,
+      "top": 56.9,
+      "bottom": 735.2,
+      "used_height": 678.3,
+      "chars": 257,
+      "images": 2,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 121,
+      "top": 58.4,
+      "bottom": 771.9,
+      "used_height": 713.6,
+      "chars": 823,
+      "images": 0,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 122,
+      "top": 57.2,
+      "bottom": 767.8,
+      "used_height": 710.6,
+      "chars": 1098,
+      "images": 0,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 123,
+      "top": 58.4,
+      "bottom": 775.7,
+      "used_height": 717.3,
+      "chars": 1580,
+      "images": 0,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 124,
+      "top": 58.4,
+      "bottom": 717.0,
+      "used_height": 658.6,
+      "chars": 976,
+      "images": 1,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 125,
+      "top": 58.4,
+      "bottom": 773.5,
+      "used_height": 715.2,
+      "chars": 858,
+      "images": 0,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 126,
+      "top": 58.6,
+      "bottom": 778.0,
+      "used_height": 719.4,
+      "chars": 1731,
+      "images": 0,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 127,
+      "top": 57.2,
+      "bottom": 778.9,
+      "used_height": 721.7,
+      "chars": 729,
+      "images": 0,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 128,
+      "top": 58.4,
+      "bottom": 773.7,
+      "used_height": 715.3,
+      "chars": 655,
+      "images": 0,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 129,
+      "top": 58.3,
+      "bottom": 512.5,
+      "used_height": 454.2,
+      "chars": 1195,
+      "images": 0,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 130,
+      "top": 59.1,
+      "bottom": 588.8,
+      "used_height": 529.7,
+      "chars": 725,
+      "images": 1,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 131,
+      "top": 58.4,
+      "bottom": 774.7,
+      "used_height": 716.3,
+      "chars": 747,
+      "images": 0,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 132,
+      "top": 58.4,
+      "bottom": 626.7,
+      "used_height": 568.3,
+      "chars": 1578,
+      "images": 0,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 133,
+      "top": 59.1,
+      "bottom": 490.4,
+      "used_height": 431.3,
+      "chars": 594,
+      "images": 1,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 134,
+      "top": 57.4,
+      "bottom": 739.6,
+      "used_height": 682.2,
+      "chars": 696,
+      "images": 0,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 135,
+      "top": 58.4,
+      "bottom": 697.7,
+      "used_height": 639.3,
+      "chars": 1265,
+      "images": 1,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 136,
+      "top": 58.4,
+      "bottom": 741.5,
+      "used_height": 683.2,
+      "chars": 597,
+      "images": 0,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 137,
+      "top": 58.4,
+      "bottom": 545.7,
+      "used_height": 487.4,
+      "chars": 1400,
+      "images": 0,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 138,
+      "top": 59.1,
+      "bottom": 781.7,
+      "used_height": 722.5,
+      "chars": 803,
+      "images": 1,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 139,
+      "top": 58.9,
+      "bottom": 776.0,
+      "used_height": 717.1,
+      "chars": 727,
+      "images": 0,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 140,
+      "top": 57.2,
+      "bottom": 783.1,
+      "used_height": 726.0,
+      "chars": 1404,
+      "images": 0,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 141,
+      "top": 58.4,
+      "bottom": 780.2,
+      "used_height": 721.9,
+      "chars": 1043,
+      "images": 0,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 142,
+      "top": 58.7,
+      "bottom": 779.1,
+      "used_height": 720.4,
+      "chars": 635,
+      "images": 0,
+      "out_of_bounds_text": ""
+    },
+    {
+      "page": 143,
+      "top": 59.6,
+      "bottom": 734.3,
+      "used_height": 674.7,
+      "chars": 1383,
+      "images": 0,
+      "out_of_bounds_text": ""
+    }
+  ],
+  "text_colors": {
+    "(0.0,)": 134423
+  },
+  "qa": {
+    "contact_sheet_review": "All final pages reviewed in overview sheets; critical pages additionally opened individually",
+    "native_math_editability": "All 1360 equations BuildUp successfully in an unsaved Word QA copy; equation structures preserved",
+    "limits": [
+      "No physical print proof",
+      "Source slide image colors preserved as original media",
+      "Per-page math glyph presence does not independently prove mathematical meaning; academic content locked by exact semantic fingerprint"
+    ]
+  }
+}

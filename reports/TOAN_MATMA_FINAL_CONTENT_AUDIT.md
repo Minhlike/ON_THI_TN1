@@ -1,5 +1,7 @@
 # Kiểm toán nội dung cuối giáo trình Toán mật mã
 
+> Báo cáo khóa nội dung tại commit `1179eca`. Số trang và hash dưới đây thuộc bản trước dàn trang; bản xuất bản kế tiếp được ghi nhận trong [nghiệm thu bố cục](TOAN_MATMA_PUBLICATION_LAYOUT.md).
+
 Ngày 17/10/2026 · Nhánh `codex/week1-offline-study` · Baseline `acea81ef155abb34104dd6034fc2d66f8aa0f943`.
 
 ## Kết luận
