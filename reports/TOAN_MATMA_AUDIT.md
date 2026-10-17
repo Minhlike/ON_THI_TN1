@@ -1,5 +1,7 @@
 # Nghiệm thu giáo trình Toán mật mã
 
+> Báo cáo của đợt trước. Kết quả chốt nội dung mới nằm trong [kiểm toán nội dung cuối](TOAN_MATMA_FINAL_CONTENT_AUDIT.md), kèm PDF xuất từ Word 2016.
+
 Ngày kiểm tra: 17/10/2026. Nhánh: `codex/week1-offline-study`.
 
 Baseline kiểm toán toán học: `a587bbb3de07d50c8c22fe9f837734cc1fc08835`. Baseline bổ sung ảnh slide: `16da57041a16cddb01f53d277edd7e2a4cf7ec07`.

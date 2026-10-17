@@ -1,0 +1,1227 @@
+{
+  "baseline_commit": "acea81ef155abb34104dd6034fc2d66f8aa0f943",
+  "document_sha256": "4bced2ea03d0f8a6ca9d51ebaf5716379145ea4f12bcc4187e9224566db2c746",
+  "word_pdf_sha256": "7ac3e0f9553f591d7e3fd06659ce085cd3c74846421953eb16fc357fc61839e2",
+  "counts": {
+    "worked_examples": 37,
+    "practice_answers": 69,
+    "original_practice": 37,
+    "supplemental_practice": 32,
+    "homework": 7,
+    "units": 113,
+    "casio_sections_total": 35,
+    "casio_sections_extended": 24,
+    "math_notation_errors_fixed": 2,
+    "misleading_casio_interpretations_fixed": 1,
+    "missing_input_condition_or_reasoning_locations": 4
+  },
+  "verification": {
+    "table_and_numeric_checks": 735,
+    "numeric_omml_checks": 666,
+    "extended_checks": 352,
+    "casio_numeric_checks": 234,
+    "jacobi_labels": 70,
+    "ecc_operations_reconstructed": 32,
+    "bsgs_tables_checked": 2,
+    "pdf_pages": 144,
+    "native_omml": 1360,
+    "glyph_render_check": {
+      "equations": 1360,
+      "pages_with_equations": 129,
+      "pdf_pages": 144,
+      "expected_text_glyphs": 15174,
+      "pages_with_missing_glyphs": {},
+      "method": "Per-page character multiset of native m:t text versus visible Cambria/Cambria Math PDF text, normalized mathematical alphabet and structural glyph variants; supplemented by visual page review. This is a rendering-presence check, not a proof of equation meaning or positioning."
+    },
+    "preservation": {
+      "original_omml_preserved": 1344,
+      "native_omml_final": 1360,
+      "tables_content_and_format_preserved": 76,
+      "styles_and_headings_unchanged": true,
+      "embedded_images_unchanged": 75,
+      "source_files_unchanged": 64,
+      "table_comparison_ignores": "Word rsid/paraId/textId metadata and lastRenderedPageBreak pagination cache only",
+      "docx_sha256": "4bced2ea03d0f8a6ca9d51ebaf5716379145ea4f12bcc4187e9224566db2c746",
+      "pdf_sha256": "7ac3e0f9553f591d7e3fd06659ce085cd3c74846421953eb16fc357fc61839e2"
+    }
+  },
+  "word": {
+    "product": "Microsoft Office Professional Plus 2016",
+    "version": "16.0.4756",
+    "native_engine_test": "1344 baseline equations BuildUp;16 new equations BuildUp;existing native equation edited on unsaved QA copies",
+    "render": "ExportAsFixedFormat via Microsoft Word on Windows"
+  },
+  "limits": [
+    "No physical fx-580VN X or emulator test; key paths checked against official Casio manual and expected numbers independently calculated.",
+    "LibreOffice failure not independently reproduced; no compatibility rewrite applied because Word2016 rendering passed.",
+    "Per-page glyph multiset is a presence check, supplemented by visual review, not by itself proof of mathematical correctness."
+  ],
+  "units": [
+    {
+      "id": "M01",
+      "kind": "worked_example",
+      "title": "Bài mẫu 1 Biểu thức trong slide 19",
+      "verification": "Dư 4; mọi bình phương và tích rút gọn đúng modulo 7.",
+      "method": "exact numeric expressions and intermediate tables plus manual condition/method review",
+      "status": "pass"
+    },
+    {
+      "id": "M02",
+      "kind": "worked_example",
+      "title": "Bài mẫu 2 Rút số mũ như screenshot 07 giờ 34",
+      "verification": "Fermat với gcd(11,13)=1; mũ dư 3, kết quả 5.",
+      "method": "exact numeric expressions and intermediate tables plus manual condition/method review",
+      "status": "pass"
+    },
+    {
+      "id": "M03",
+      "kind": "worked_example",
+      "title": "Bài mẫu 3 UCLN 1970 và 1066",
+      "verification": "Từng phép chia Euclid và UCLN 2.",
+      "method": "exact numeric expressions and intermediate tables plus manual condition/method review",
+      "status": "pass"
+    },
+    {
+      "id": "M04",
+      "kind": "worked_example",
+      "title": "Bài mẫu 4 Bảng chuẩn với 1759 và 550",
+      "verification": "Mọi hàng EEA, Bézout và hai nghịch đảo 355,439.",
+      "method": "exact numeric expressions and intermediate tables plus manual condition/method review",
+      "status": "pass"
+    },
+    {
+      "id": "M05",
+      "kind": "worked_example",
+      "title": "Bài mẫu 5 Các giá trị phi trong slide và screenshot",
+      "verification": "Phân tích nguyên tố và phi:36,20,6,12,8832.",
+      "method": "exact numeric expressions and intermediate tables plus manual condition/method review",
+      "status": "pass"
+    },
+    {
+      "id": "M06",
+      "kind": "worked_example",
+      "title": "Bài mẫu 6 Tìm các phần tử sinh modulo 37",
+      "verification": "Mọi bit/A/b, tiêu chuẩn sinh và đủ 12 phần tử sinh modulo37.",
+      "method": "exact numeric expressions and intermediate tables plus manual condition/method review",
+      "status": "pass"
+    },
+    {
+      "id": "M07",
+      "kind": "worked_example",
+      "title": "Bài mẫu 7 Cấp các phần tử modulo 20 và trường hợp không có phần tử sinh",
+      "verification": "Cấp của đủ tám phần tử nhóm nhân modulo20; không cyclic.",
+      "method": "exact numeric expressions and intermediate tables plus manual condition/method review",
+      "status": "pass"
+    },
+    {
+      "id": "M08",
+      "kind": "worked_example",
+      "title": "Bài mẫu 8 Bảng nhân bình phương của slide 69",
+      "verification": "Đủ10 cột bit/A/b; kết quả1013.",
+      "method": "exact numeric expressions and intermediate tables plus manual condition/method review",
+      "status": "pass"
+    },
+    {
+      "id": "M09",
+      "kind": "worked_example",
+      "title": "Bài mẫu 9 Hệ đầu tiên trong slide 48",
+      "verification": "Từng Ni,Mi,hạng ghép; nghiệm670 và ba phép thử.",
+      "method": "exact numeric expressions and intermediate tables plus manual condition/method review",
+      "status": "pass"
+    },
+    {
+      "id": "M10",
+      "kind": "worked_example",
+      "title": "Bài mẫu 10 Hệ trong ảnh bài làm viết tay",
+      "verification": "Từng Ni,Mi,hạng ghép; nghiệm1924 và ba phép thử.",
+      "method": "exact numeric expressions and intermediate tables plus manual condition/method review",
+      "status": "pass"
+    },
+    {
+      "id": "M11",
+      "kind": "worked_example",
+      "title": "Bài mẫu 11 Thặng dư modulo 17 theo phần tử sinh 3",
+      "verification": "Cấp3 modulo17; bảng đủ8 thặng dư.",
+      "method": "exact numeric expressions and intermediate tables plus manual condition/method review",
+      "status": "pass"
+    },
+    {
+      "id": "M12",
+      "kind": "worked_example",
+      "title": "Bài mẫu 12 Vì sao Jacobi bằng một chưa đủ",
+      "verification": "Jacobi(5,21)=1 nhưng không có căn ở modulo3 và7.",
+      "method": "exact numeric expressions and intermediate tables plus manual condition/method review",
+      "status": "pass"
+    },
+    {
+      "id": "M13",
+      "kind": "worked_example",
+      "title": "Bài mẫu 13 Chuỗi Jacobi 7411 trên 9283",
+      "verification": "Từng phép đổi tử/mẫu,tách2,dấu và nhãn TC; kết quả−1.",
+      "method": "exact numeric expressions and intermediate tables plus manual condition/method review",
+      "status": "pass"
+    },
+    {
+      "id": "M14",
+      "kind": "worked_example",
+      "title": "Bài mẫu 14 Tách mẫu như lời giải slide 60",
+      "verification": "Phân tích9975,từngLegendre và tích dấu−1.",
+      "method": "exact numeric expressions and intermediate tables plus manual condition/method review",
+      "status": "pass"
+    },
+    {
+      "id": "M15",
+      "kind": "worked_example",
+      "title": "Bài mẫu 15 Bài thêm trong screenshot 08 giờ 12",
+      "verification": "Từng chuyển Jacobi và nhãn TC; kết quả1.",
+      "method": "exact numeric expressions and intermediate tables plus manual condition/method review",
+      "status": "pass"
+    },
+    {
+      "id": "M16",
+      "kind": "worked_example",
+      "title": "Bài mẫu 16 TT1 với căn của 184 modulo 211",
+      "verification": "Legendre,nhánhTT1,hai bảng lũy thừa,căn87,124,thử ngược.",
+      "method": "exact numeric expressions and intermediate tables plus manual condition/method review",
+      "status": "pass"
+    },
+    {
+      "id": "M17",
+      "kind": "worked_example",
+      "title": "Bài mẫu 17 TT2 với căn của 40 modulo 53",
+      "verification": "Legendre,nhánhTT2 d=52,căn26,27; ví dụ nhánh d=1 cho16.",
+      "method": "exact numeric expressions and intermediate tables plus manual condition/method review",
+      "status": "pass"
+    },
+    {
+      "id": "M18",
+      "kind": "worked_example",
+      "title": "Bài mẫu 18 TT4 với căn của 47 modulo 97",
+      "verification": "Mọi trường trong bốn vòngTT4,bất thặng dư5,căn12,85.",
+      "method": "exact numeric expressions and intermediate tables plus manual condition/method review",
+      "status": "pass"
+    },
+    {
+      "id": "M19",
+      "kind": "worked_example",
+      "title": "Bài mẫu 19 Căn của 4 modulo 21 và căn chính",
+      "verification": "Đủ bốn cặpCRT,căn2,5,16,19; căn chính16.",
+      "method": "exact numeric expressions and intermediate tables plus manual condition/method review",
+      "status": "pass"
+    },
+    {
+      "id": "M20",
+      "kind": "worked_example",
+      "title": "Bài mẫu 20 Dữ kiện hợp số 43 modulo 57 trong slide 78",
+      "verification": "Giữ57=3·19,căn con và bốn cặpCRT,căn10,28,29,47.",
+      "method": "exact numeric expressions and intermediate tables plus manual condition/method review",
+      "status": "pass"
+    },
+    {
+      "id": "M21",
+      "kind": "worked_example",
+      "title": "Bài mẫu 21 Logarit cơ số 31 của 45 modulo 61",
+      "verification": "Cấp60,hai bảngBSGS từng ô,lần gặp(3,2),mũ26,thử ngược.",
+      "method": "exact numeric expressions and intermediate tables plus manual condition/method review",
+      "status": "pass"
+    },
+    {
+      "id": "M22",
+      "kind": "worked_example",
+      "title": "Bài mẫu 22 RSA theo chuỗi slide 95 đến 99",
+      "verification": "Khóa1051,mọi hàngEEA và hai bảng,c=602,m=47; đúng cả thông điệp không khả nghịch.",
+      "method": "exact numeric expressions and intermediate tables plus manual condition/method review",
+      "status": "pass"
+    },
+    {
+      "id": "M23",
+      "kind": "worked_example",
+      "title": "Bài mẫu 23 Đếm điểm bất động khi n bằng 33 và e bằng 3",
+      "verification": "Công thức đếm9 điểm bất động và liệt kê bằngCRT.",
+      "method": "exact numeric expressions and intermediate tables plus manual condition/method review",
+      "status": "pass"
+    },
+    {
+      "id": "M24",
+      "kind": "worked_example",
+      "title": "Bài mẫu 24 Rabin với 19 và 23",
+      "verification": "Mọi hàngEEA,hai bảng,cănCRT,bốn nhị phân9bit,quy tắc lặpbit.",
+      "method": "exact numeric expressions and intermediate tables plus manual condition/method review",
+      "status": "pass"
+    },
+    {
+      "id": "M25",
+      "kind": "worked_example",
+      "title": "Bài mẫu 25 ElGamal theo slide 109 đến 113",
+      "verification": "Kiểm sinh39,khóa108,từng bảng,cặp145,140; giải mã34.",
+      "method": "exact numeric expressions and intermediate tables plus manual condition/method review",
+      "status": "pass"
+    },
+    {
+      "id": "M26",
+      "kind": "worked_example",
+      "title": "Bài mẫu 26 Hai tổng trong slide 118 đến 119",
+      "verification": "Từng bước tham lam;95 có nghiệm,96 còn dư1; ví dụ53 dãy tổng quát.",
+      "method": "exact numeric expressions and intermediate tables plus manual condition/method review",
+      "status": "pass"
+    },
+    {
+      "id": "M27",
+      "kind": "worked_example",
+      "title": "Bài mẫu 27 Merkle Hellman theo slide 128 đến 130",
+      "verification": "Siêu tăng,modulo,hoán vị,khóa319,196,250,477,200,559;c1605;v và x101101.",
+      "method": "exact numeric expressions and intermediate tables plus manual condition/method review",
+      "status": "pass"
+    },
+    {
+      "id": "M28",
+      "kind": "worked_example",
+      "title": "Bài mẫu 28 Các điểm trên E theo modulo 11",
+      "verification": "Biệt thức8,từngx và tất cảy;12 điểm hữu hạn vàO.",
+      "method": "exact numeric expressions and intermediate tables plus manual condition/method review",
+      "status": "pass"
+    },
+    {
+      "id": "M29",
+      "kind": "worked_example",
+      "title": "Bài mẫu 29 Tính khóa công khai 7G trên E modulo 11",
+      "verification": "Mỗi tử/mẫu/nghịch đảo/lambda/tọa độ của2G,4G,6G,7G.",
+      "method": "exact numeric expressions and intermediate tables plus manual condition/method review",
+      "status": "pass"
+    },
+    {
+      "id": "M30",
+      "kind": "worked_example",
+      "title": "Bài mẫu 30 Kiểm tra giải mã bằng cùng điểm che giấu",
+      "verification": "Mỗi phép cộng/nhân đôi,mã hóa và giải mã; cùng điểm che7P1=3PB.",
+      "method": "exact numeric expressions and intermediate tables plus manual condition/method review",
+      "status": "pass"
+    },
+    {
+      "id": "M31",
+      "kind": "worked_example",
+      "title": "Bài mẫu 31 Đọc các cơ chế của slide 14 đến 16",
+      "verification": "Đọc sơ đồ băm/MAC/chữ ký theo các khóa gốc;phân biệt bí mật,toàn vẹn,chống chối bỏ.",
+      "method": "manual semantic/conditions/proof review",
+      "status": "pass"
+    },
+    {
+      "id": "M32",
+      "kind": "worked_example",
+      "title": "Bài mẫu 32 Nhận diện khóa và tín hiệu XOR",
+      "verification": "Đối chiếu cổng khóa,bản rõ và mọi nhánhXOR trongMMO/DM/MP.",
+      "method": "manual semantic/conditions/proof review",
+      "status": "pass"
+    },
+    {
+      "id": "M33",
+      "kind": "worked_example",
+      "title": "Bài mẫu 33 23 người và băm 40 bit",
+      "verification": "Tích xác suất chính xác22/23người,mốc40bit chỉ xấp xỉ.",
+      "method": "exact numeric expressions and intermediate tables plus manual condition/method review",
+      "status": "pass"
+    },
+    {
+      "id": "M34",
+      "kind": "worked_example",
+      "title": "Bài mẫu 34 Tấn công thay khóa trong sơ đồ slide 48",
+      "verification": "Kiểm tra kịch bản thay khóa và điểm tin cậyCA theo hình gốc.",
+      "method": "manual semantic/conditions/proof review",
+      "status": "pass"
+    },
+    {
+      "id": "M35",
+      "kind": "worked_example",
+      "title": "Bài mẫu 35 Chữ ký RSA theo slide 42 đến 43",
+      "verification": "Từng hàngEEA và hai bảngRSA;chữ ký284,kiểm439.",
+      "method": "exact numeric expressions and intermediate tables plus manual condition/method review",
+      "status": "pass"
+    },
+    {
+      "id": "M36",
+      "kind": "worked_example",
+      "title": "Bài mẫu 36 Giả mạo theo tính nhân của RSA thô là phần suy diễn",
+      "verification": "Chứng minh đại số tính nhân RSA thô;phân biệt giả mạo với chuẩn ký có đệm.",
+      "method": "manual semantic/conditions/proof review",
+      "status": "pass"
+    },
+    {
+      "id": "M37",
+      "kind": "worked_example",
+      "title": "Bài mẫu 37 Chữ ký ElGamal theo slide 46 đến 47",
+      "verification": "Cấp2 modulo467,k khả nghịch466,mọi bảng,gamma29,delta51,hai vế189.",
+      "method": "exact numeric expressions and intermediate tables plus manual condition/method review",
+      "status": "pass"
+    },
+    {
+      "id": "B01.1",
+      "kind": "supplemental_practice",
+      "lesson": 1,
+      "question": "B01.1. Tính  ⟦(3)^(4)⟧  mod 7 bằng các bình phương nhỏ.",
+      "answer_paragraphs_checked": 3,
+      "verification": "Question data and answer matched; exact native numeric statements/tables independently recomputed where applicable; reasoning and conditions reviewed",
+      "status": "pass"
+    },
+    {
+      "id": "B01.2",
+      "kind": "supplemental_practice",
+      "lesson": 1,
+      "question": "B01.2. Chuẩn hóa −31 modulo 11; có được rút 2 khỏi 2x = 2 mod 6 không?",
+      "answer_paragraphs_checked": 3,
+      "verification": "Question data and answer matched; exact native numeric statements/tables independently recomputed where applicable; reasoning and conditions reviewed",
+      "status": "pass"
+    },
+    {
+      "id": "B02.1",
+      "kind": "supplemental_practice",
+      "lesson": 2,
+      "question": "B02.1. Tính gcd(28,35) bằng Euclid.",
+      "answer_paragraphs_checked": 3,
+      "verification": "Question data and answer matched; exact native numeric statements/tables independently recomputed where applicable; reasoning and conditions reviewed",
+      "status": "pass"
+    },
+    {
+      "id": "B02.2",
+      "kind": "supplemental_practice",
+      "lesson": 2,
+      "question": "B02.2. Tính gcd(0,17) và gcd(−42,30).",
+      "answer_paragraphs_checked": 3,
+      "verification": "Question data and answer matched; exact native numeric statements/tables independently recomputed where applicable; reasoning and conditions reviewed",
+      "status": "pass"
+    },
+    {
+      "id": "T01",
+      "kind": "original_practice",
+      "lesson": 3,
+      "question": "T01. Tìm nghịch đảo  ⟦(127)^(-1) mod 319⟧  nếu có.",
+      "answer_paragraphs_checked": 10,
+      "verification": "Question data and answer matched; exact native numeric statements/tables independently recomputed where applicable; reasoning and conditions reviewed",
+      "status": "pass"
+    },
+    {
+      "id": "T02",
+      "kind": "original_practice",
+      "lesson": 3,
+      "question": "T02. Tìm nghịch đảo  ⟦(254)^(-1) mod 1028⟧  nếu có.",
+      "answer_paragraphs_checked": 6,
+      "verification": "Question data and answer matched; exact native numeric statements/tables independently recomputed where applicable; reasoning and conditions reviewed",
+      "status": "pass"
+    },
+    {
+      "id": "T03",
+      "kind": "original_practice",
+      "lesson": 3,
+      "question": "T03. Tìm nghịch đảo  ⟦(1031)^(-1) mod 3713⟧  nếu có.",
+      "answer_paragraphs_checked": 12,
+      "verification": "Question data and answer matched; exact native numeric statements/tables independently recomputed where applicable; reasoning and conditions reviewed",
+      "status": "pass"
+    },
+    {
+      "id": "T04",
+      "kind": "original_practice",
+      "lesson": 3,
+      "question": "T04. Tìm nghịch đảo  ⟦(508)^(-1) mod 819⟧  nếu có.",
+      "answer_paragraphs_checked": 13,
+      "verification": "Question data and answer matched; exact native numeric statements/tables independently recomputed where applicable; reasoning and conditions reviewed",
+      "status": "pass"
+    },
+    {
+      "id": "T05",
+      "kind": "original_practice",
+      "lesson": 3,
+      "question": "T05. Tìm nghịch đảo  ⟦(9773)^(-1) mod 7079⟧  nếu có.",
+      "answer_paragraphs_checked": 15,
+      "verification": "Question data and answer matched; exact native numeric statements/tables independently recomputed where applicable; reasoning and conditions reviewed",
+      "status": "pass"
+    },
+    {
+      "id": "T06",
+      "kind": "original_practice",
+      "lesson": 3,
+      "question": "T06. Tìm UCLN và hệ số Bézout của 3458, 4864.",
+      "answer_paragraphs_checked": 4,
+      "verification": "Question data and answer matched; exact native numeric statements/tables independently recomputed where applicable; reasoning and conditions reviewed",
+      "status": "pass"
+    },
+    {
+      "id": "T12",
+      "kind": "original_practice",
+      "lesson": 3,
+      "question": "T12. Tìm  ⟦(357)^(-1) mod 1137⟧ .",
+      "answer_paragraphs_checked": 8,
+      "verification": "Question data and answer matched; exact native numeric statements/tables independently recomputed where applicable; reasoning and conditions reviewed",
+      "status": "pass"
+    },
+    {
+      "id": "T13",
+      "kind": "original_practice",
+      "lesson": 3,
+      "question": "T13. Tìm  ⟦(213)^(-1) mod 1577⟧ .",
+      "answer_paragraphs_checked": 9,
+      "verification": "Question data and answer matched; exact native numeric statements/tables independently recomputed where applicable; reasoning and conditions reviewed",
+      "status": "pass"
+    },
+    {
+      "id": "T17",
+      "kind": "original_practice",
+      "lesson": 3,
+      "question": "T17. Tìm UCLN của 1573 và 308; tìm x, y sao cho  ⟦1573x+308y=gcd(1573,308)⟧ . Chia lượt làm. Lượt 1: T01–T02; lượt 2: T03–T05; lượt 3: T06 và T17; lượt 4: T12–T13. Giữ đủ các câu cũ để luyện nhiều trường hợp.",
+      "answer_paragraphs_checked": 4,
+      "verification": "Question data and answer matched; exact native numeric statements/tables independently recomputed where applicable; reasoning and conditions reviewed",
+      "status": "pass"
+    },
+    {
+      "id": "T15",
+      "kind": "original_practice",
+      "lesson": 4,
+      "question": "T15. Tính  ⟦φ(490)⟧ .",
+      "answer_paragraphs_checked": 4,
+      "verification": "Question data and answer matched; exact native numeric statements/tables independently recomputed where applicable; reasoning and conditions reviewed",
+      "status": "pass"
+    },
+    {
+      "id": "T16",
+      "kind": "original_practice",
+      "lesson": 4,
+      "question": "T16. Tính  ⟦φ(768)⟧ .",
+      "answer_paragraphs_checked": 4,
+      "verification": "Question data and answer matched; exact native numeric statements/tables independently recomputed where applicable; reasoning and conditions reviewed",
+      "status": "pass"
+    },
+    {
+      "id": "T07",
+      "kind": "original_practice",
+      "lesson": 5,
+      "question": "T07. Tìm tất cả phần tử sinh của  ⟦(Z_25)^(*)⟧ .",
+      "answer_paragraphs_checked": 8,
+      "verification": "Question data and answer matched; exact native numeric statements/tables independently recomputed where applicable; reasoning and conditions reviewed",
+      "status": "pass"
+    },
+    {
+      "id": "T08",
+      "kind": "original_practice",
+      "lesson": 5,
+      "question": "T08. Tìm tất cả phần tử sinh của  ⟦(Z_59)^(*)⟧ .",
+      "answer_paragraphs_checked": 10,
+      "verification": "Question data and answer matched; exact native numeric statements/tables independently recomputed where applicable; reasoning and conditions reviewed",
+      "status": "pass"
+    },
+    {
+      "id": "T09",
+      "kind": "original_practice",
+      "lesson": 5,
+      "question": "T09. Tìm tất cả phần tử sinh của  ⟦(Z_41)^(*)⟧ .",
+      "answer_paragraphs_checked": 9,
+      "verification": "Question data and answer matched; exact native numeric statements/tables independently recomputed where applicable; reasoning and conditions reviewed",
+      "status": "pass"
+    },
+    {
+      "id": "T10",
+      "kind": "original_practice",
+      "lesson": 6,
+      "question": "T10. Tính  ⟦(25)^(705) mod 3542⟧ .",
+      "answer_paragraphs_checked": 4,
+      "verification": "Question data and answer matched; exact native numeric statements/tables independently recomputed where applicable; reasoning and conditions reviewed",
+      "status": "pass"
+    },
+    {
+      "id": "B06.1",
+      "kind": "supplemental_practice",
+      "lesson": 6,
+      "question": "B06.1. Tính  ⟦(3)^(13)⟧  mod 17 theo bảng bit từ phải sang trái.",
+      "answer_paragraphs_checked": 5,
+      "verification": "Question data and answer matched; exact native numeric statements/tables independently recomputed where applicable; reasoning and conditions reviewed",
+      "status": "pass"
+    },
+    {
+      "id": "T14",
+      "kind": "original_practice",
+      "lesson": 7,
+      "question": "T14. Giải hệ  ⟦5x≡13(mod 17)⟧ ,  ⟦4x≡39(mod 53)⟧ ,  ⟦7x≡9(mod 19)⟧ .",
+      "answer_paragraphs_checked": 29,
+      "verification": "Question data and answer matched; exact native numeric statements/tables independently recomputed where applicable; reasoning and conditions reviewed",
+      "status": "pass"
+    },
+    {
+      "id": "B07.1",
+      "kind": "supplemental_practice",
+      "lesson": 7,
+      "question": "B07.1. Giải x = 2 mod 3, x = 3 mod 5 bằng CRT.",
+      "answer_paragraphs_checked": 4,
+      "verification": "Question data and answer matched; exact native numeric statements/tables independently recomputed where applicable; reasoning and conditions reviewed",
+      "status": "pass"
+    },
+    {
+      "id": "T33",
+      "kind": "original_practice",
+      "lesson": 8,
+      "question": "T33. Vì sao Jacobi của 5 modulo 21 bằng một nhưng không có căn? Bài bổ sung trong phạm vi kiến thức vừa học; lời giải là phần triển khai toán học.",
+      "answer_paragraphs_checked": 3,
+      "verification": "Question data and answer matched; exact native numeric statements/tables independently recomputed where applicable; reasoning and conditions reviewed",
+      "status": "pass"
+    },
+    {
+      "id": "B08.1",
+      "kind": "supplemental_practice",
+      "lesson": 8,
+      "question": "B08.1. Dùng tiêu chuẩn Euler xác định 3 có là thặng dư modulo 7 không.",
+      "answer_paragraphs_checked": 3,
+      "verification": "Question data and answer matched; exact native numeric statements/tables independently recomputed where applicable; reasoning and conditions reviewed",
+      "status": "pass"
+    },
+    {
+      "id": "T18",
+      "kind": "original_practice",
+      "lesson": 9,
+      "question": "T18. Tính  ⟦((29)/(199))⟧ .",
+      "answer_paragraphs_checked": 12,
+      "verification": "Question data and answer matched; exact native numeric statements/tables independently recomputed where applicable; reasoning and conditions reviewed",
+      "status": "pass"
+    },
+    {
+      "id": "T19",
+      "kind": "original_practice",
+      "lesson": 9,
+      "question": "T19. Tính  ⟦((21)/(211))⟧ .",
+      "answer_paragraphs_checked": 7,
+      "verification": "Question data and answer matched; exact native numeric statements/tables independently recomputed where applicable; reasoning and conditions reviewed",
+      "status": "pass"
+    },
+    {
+      "id": "T20",
+      "kind": "original_practice",
+      "lesson": 9,
+      "question": "T20. Tính  ⟦((47)/(97))⟧ .",
+      "answer_paragraphs_checked": 12,
+      "verification": "Question data and answer matched; exact native numeric statements/tables independently recomputed where applicable; reasoning and conditions reviewed",
+      "status": "pass"
+    },
+    {
+      "id": "T21",
+      "kind": "original_practice",
+      "lesson": 9,
+      "question": "T21. Tính  ⟦((5)/(97))⟧ .",
+      "answer_paragraphs_checked": 9,
+      "verification": "Question data and answer matched; exact native numeric statements/tables independently recomputed where applicable; reasoning and conditions reviewed",
+      "status": "pass"
+    },
+    {
+      "id": "T22",
+      "kind": "original_practice",
+      "lesson": 9,
+      "question": "T22. Tính  ⟦((113)/(457))⟧ .",
+      "answer_paragraphs_checked": 15,
+      "verification": "Question data and answer matched; exact native numeric statements/tables independently recomputed where applicable; reasoning and conditions reviewed",
+      "status": "pass"
+    },
+    {
+      "id": "T23",
+      "kind": "original_practice",
+      "lesson": 9,
+      "question": "T23. Tính  ⟦((3297)/(3659))⟧ . Chia lượt làm. Ba lượt: T18–T19, T20–T21, T22–T23; mỗi lượt kiểm tra riêng dấu và tính chất.",
+      "answer_paragraphs_checked": 25,
+      "verification": "Question data and answer matched; exact native numeric statements/tables independently recomputed where applicable; reasoning and conditions reviewed",
+      "status": "pass"
+    },
+    {
+      "id": "T24",
+      "kind": "original_practice",
+      "lesson": 10,
+      "question": "T24. Tìm tất cả căn bậc hai của  ⟦47 mod 97⟧ .",
+      "answer_paragraphs_checked": 4,
+      "verification": "Question data and answer matched; exact native numeric statements/tables independently recomputed where applicable; reasoning and conditions reviewed",
+      "status": "pass"
+    },
+    {
+      "id": "T26",
+      "kind": "original_practice",
+      "lesson": 10,
+      "question": "T26. Tìm tất cả căn bậc hai của  ⟦184 mod 211⟧ .",
+      "answer_paragraphs_checked": 6,
+      "verification": "Question data and answer matched; exact native numeric statements/tables independently recomputed where applicable; reasoning and conditions reviewed",
+      "status": "pass"
+    },
+    {
+      "id": "T27",
+      "kind": "original_practice",
+      "lesson": 10,
+      "question": "T27. Tìm tất cả căn bậc hai của  ⟦44 mod 211⟧ .",
+      "answer_paragraphs_checked": 6,
+      "verification": "Question data and answer matched; exact native numeric statements/tables independently recomputed where applicable; reasoning and conditions reviewed",
+      "status": "pass"
+    },
+    {
+      "id": "T28",
+      "kind": "original_practice",
+      "lesson": 10,
+      "question": "T28. Tìm tất cả căn bậc hai của  ⟦40 mod 53⟧ .",
+      "answer_paragraphs_checked": 9,
+      "verification": "Question data and answer matched; exact native numeric statements/tables independently recomputed where applicable; reasoning and conditions reviewed",
+      "status": "pass"
+    },
+    {
+      "id": "T29",
+      "kind": "original_practice",
+      "lesson": 10,
+      "question": "T29. Tìm tất cả căn bậc hai của  ⟦29 mod 53⟧ . Chia lượt làm. Ba lượt: T24 dùng TT4; T26–T27 dùng TT1; T28–T29 dùng TT2. Mỗi câu trả đủ hai căn.",
+      "answer_paragraphs_checked": 9,
+      "verification": "Question data and answer matched; exact native numeric statements/tables independently recomputed where applicable; reasoning and conditions reviewed",
+      "status": "pass"
+    },
+    {
+      "id": "T25",
+      "kind": "original_practice",
+      "lesson": 11,
+      "question": "T25. Tìm tất cả căn bậc hai của  ⟦43 mod 57⟧ .",
+      "answer_paragraphs_checked": 8,
+      "verification": "Question data and answer matched; exact native numeric statements/tables independently recomputed where applicable; reasoning and conditions reviewed",
+      "status": "pass"
+    },
+    {
+      "id": "B11.1",
+      "kind": "supplemental_practice",
+      "lesson": 11,
+      "question": "B11.1. Tìm bốn căn của 1 modulo 21 và căn chính.",
+      "answer_paragraphs_checked": 3,
+      "verification": "Question data and answer matched; exact native numeric statements/tables independently recomputed where applicable; reasoning and conditions reviewed",
+      "status": "pass"
+    },
+    {
+      "id": "T11",
+      "kind": "original_practice",
+      "lesson": 12,
+      "question": "T11. Tìm  ⟦log_1715⟧  trên  ⟦(Z_97)^(*)⟧ .",
+      "answer_paragraphs_checked": 8,
+      "verification": "Question data and answer matched; exact native numeric statements/tables independently recomputed where applicable; reasoning and conditions reviewed",
+      "status": "pass"
+    },
+    {
+      "id": "B12.1",
+      "kind": "supplemental_practice",
+      "lesson": 12,
+      "question": "B12.1. Tìm log₂3 trên nhóm nhân modulo 5.",
+      "answer_paragraphs_checked": 3,
+      "verification": "Question data and answer matched; exact native numeric statements/tables independently recomputed where applicable; reasoning and conditions reviewed",
+      "status": "pass"
+    },
+    {
+      "id": "B13.1",
+      "kind": "supplemental_practice",
+      "lesson": 13,
+      "question": "B13.1. RSA p = 3, q = 11, e = 3, m = 4: tìm d, mã hóa và giải mã.",
+      "answer_paragraphs_checked": 5,
+      "verification": "Question data and answer matched; exact native numeric statements/tables independently recomputed where applicable; reasoning and conditions reviewed",
+      "status": "pass"
+    },
+    {
+      "id": "B13.2",
+      "kind": "supplemental_practice",
+      "lesson": 13,
+      "question": "B13.2. Vẫn khóa trên, m = 3 không khả nghịch modulo 33. RSA có giải mã đúng không?",
+      "answer_paragraphs_checked": 4,
+      "verification": "Question data and answer matched; exact native numeric statements/tables independently recomputed where applicable; reasoning and conditions reviewed",
+      "status": "pass"
+    },
+    {
+      "id": "B14.1",
+      "kind": "supplemental_practice",
+      "lesson": 14,
+      "question": "B14.1. Đếm điểm bất động khi p = 5, q = 7, e = 5.",
+      "answer_paragraphs_checked": 3,
+      "verification": "Question data and answer matched; exact native numeric statements/tables independently recomputed where applicable; reasoning and conditions reviewed",
+      "status": "pass"
+    },
+    {
+      "id": "B14.2",
+      "kind": "supplemental_practice",
+      "lesson": 14,
+      "question": "B14.2. Vì sao luôn phải đếm thêm nghiệm 0 ở mỗi modulo nguyên tố?",
+      "answer_paragraphs_checked": 2,
+      "verification": "Question data and answer matched; exact native numeric statements/tables independently recomputed where applicable; reasoning and conditions reviewed",
+      "status": "pass"
+    },
+    {
+      "id": "B15.1",
+      "kind": "supplemental_practice",
+      "lesson": 15,
+      "question": "B15.1. Rabin p = 3, q = 7, m = 2: mã hóa, tìm mọi bản giải mã.",
+      "answer_paragraphs_checked": 3,
+      "verification": "Question data and answer matched; exact native numeric statements/tables independently recomputed where applicable; reasoning and conditions reviewed",
+      "status": "pass"
+    },
+    {
+      "id": "B15.2",
+      "kind": "supplemental_practice",
+      "lesson": 15,
+      "question": "B15.2. Với n = 21, c = 0 có bốn căn không?",
+      "answer_paragraphs_checked": 2,
+      "verification": "Question data and answer matched; exact native numeric statements/tables independently recomputed where applicable; reasoning and conditions reviewed",
+      "status": "pass"
+    },
+    {
+      "id": "B16.1",
+      "kind": "supplemental_practice",
+      "lesson": 16,
+      "question": "B16.1. ElGamal p = 23, alpha = 5, a = 6, k = 3, m = 10. Mã hóa và giải mã.",
+      "answer_paragraphs_checked": 8,
+      "verification": "Question data and answer matched; exact native numeric statements/tables independently recomputed where applicable; reasoning and conditions reviewed",
+      "status": "pass"
+    },
+    {
+      "id": "B16.2",
+      "kind": "supplemental_practice",
+      "lesson": 16,
+      "question": "B16.2. Có bắt buộc gcd(k,p−1) = 1 trong ElGamal mã hóa không?",
+      "answer_paragraphs_checked": 2,
+      "verification": "Question data and answer matched; exact native numeric statements/tables independently recomputed where applicable; reasoning and conditions reviewed",
+      "status": "pass"
+    },
+    {
+      "id": "T30",
+      "kind": "original_practice",
+      "lesson": 17,
+      "question": "T30. Tìm vector nhị phân v của dãy  ⟦(12,17,33,74,157,316,620,1230,2460)⟧  với tổng  ⟦4401⟧ .",
+      "answer_paragraphs_checked": 4,
+      "verification": "Question data and answer matched; exact native numeric statements/tables independently recomputed where applicable; reasoning and conditions reviewed",
+      "status": "pass"
+    },
+    {
+      "id": "T31",
+      "kind": "original_practice",
+      "lesson": 17,
+      "question": "T31. Tìm vector nhị phân v của dãy  ⟦(5,7,13,30,57,116,230,460,920)⟧  với tổng  ⟦1508⟧ .",
+      "answer_paragraphs_checked": 4,
+      "verification": "Question data and answer matched; exact native numeric statements/tables independently recomputed where applicable; reasoning and conditions reviewed",
+      "status": "pass"
+    },
+    {
+      "id": "B18.1",
+      "kind": "supplemental_practice",
+      "lesson": 18,
+      "question": "B18.1. Cho dãy riêng (2,3,7), M = 13, W = 5, hoán vị đồng nhất. Mã hóa 101 rồi giải mã.",
+      "answer_paragraphs_checked": 6,
+      "verification": "Question data and answer matched; exact native numeric statements/tables independently recomputed where applicable; reasoning and conditions reviewed",
+      "status": "pass"
+    },
+    {
+      "id": "B18.2",
+      "kind": "supplemental_practice",
+      "lesson": 18,
+      "question": "B18.2. Nếu thay M = 10, giữ dãy (2,3,7) và W = 3, điều kiện nào bị thiếu?",
+      "answer_paragraphs_checked": 2,
+      "verification": "Question data and answer matched; exact native numeric statements/tables independently recomputed where applicable; reasoning and conditions reviewed",
+      "status": "pass"
+    },
+    {
+      "id": "T32",
+      "kind": "original_practice",
+      "lesson": 19,
+      "question": "T32. Tìm toàn bộ điểm trên  ⟦(y)^(2)≡ (x)^(3)+x+1(mod 19)⟧ .",
+      "answer_paragraphs_checked": 4,
+      "verification": "Question data and answer matched; exact native numeric statements/tables independently recomputed where applicable; reasoning and conditions reviewed",
+      "status": "pass"
+    },
+    {
+      "id": "B19.1",
+      "kind": "supplemental_practice",
+      "lesson": 19,
+      "question": "B19.1. Trên E₁₁(1,6), x = 7 và x = 9 cho những điểm nào?",
+      "answer_paragraphs_checked": 3,
+      "verification": "Question data and answer matched; exact native numeric statements/tables independently recomputed where applicable; reasoning and conditions reviewed",
+      "status": "pass"
+    },
+    {
+      "id": "B20.1",
+      "kind": "supplemental_practice",
+      "lesson": 20,
+      "question": "B20.1. E₁₁(1,6), P = (2,7): tính 2P và thử lại.",
+      "answer_paragraphs_checked": 5,
+      "verification": "Question data and answer matched; exact native numeric statements/tables independently recomputed where applicable; reasoning and conditions reviewed",
+      "status": "pass"
+    },
+    {
+      "id": "B20.2",
+      "kind": "supplemental_practice",
+      "lesson": 20,
+      "question": "B20.2. Tính (2,7)+(2,4) trên cùng đường cong.",
+      "answer_paragraphs_checked": 2,
+      "verification": "Question data and answer matched; exact native numeric statements/tables independently recomputed where applicable; reasoning and conditions reviewed",
+      "status": "pass"
+    },
+    {
+      "id": "B21.1",
+      "kind": "supplemental_practice",
+      "lesson": 21,
+      "question": "B21.1. E₁₁(1,6), G=(2,7), khóa người nhận nA=2, k=1, P_M=G. Tính bản mã rồi giải mã.",
+      "answer_paragraphs_checked": 5,
+      "verification": "Question data and answer matched; exact native numeric statements/tables independently recomputed where applicable; reasoning and conditions reviewed",
+      "status": "pass"
+    },
+    {
+      "id": "B21.2",
+      "kind": "supplemental_practice",
+      "lesson": 21,
+      "question": "B21.2. Với nA=2, nB=7 trên cùng G, điểm chung ECDH là gì?",
+      "answer_paragraphs_checked": 3,
+      "verification": "Question data and answer matched; exact native numeric statements/tables independently recomputed where applicable; reasoning and conditions reviewed",
+      "status": "pass"
+    },
+    {
+      "id": "T34",
+      "kind": "original_practice",
+      "lesson": 22,
+      "question": "T34. Cơ chế gửi M và H(M) có tự bảo đảm nguồn gốc nếu kẻ tấn công sửa được cả hai? Bài bổ sung trong phạm vi kiến thức vừa học; lời giải là phần triển khai toán học.",
+      "answer_paragraphs_checked": 3,
+      "verification": "Question data and answer matched; exact native numeric statements/tables independently recomputed where applicable; reasoning and conditions reviewed",
+      "status": "pass"
+    },
+    {
+      "id": "B22.1",
+      "kind": "supplemental_practice",
+      "lesson": 22,
+      "question": "B22.1. Biết x, tìm x′ khác x cùng băm thuộc mục tiêu nào? MAC có chống chối bỏ giữa hai bên không?",
+      "answer_paragraphs_checked": 2,
+      "verification": "Question data and answer matched; exact native numeric statements/tables independently recomputed where applicable; reasoning and conditions reviewed",
+      "status": "pass"
+    },
+    {
+      "id": "B23.1",
+      "kind": "supplemental_practice",
+      "lesson": 23,
+      "question": "B23.1. Trong Davies–Mayer, E nhận khóa và bản rõ nào? XOR với gì?",
+      "answer_paragraphs_checked": 3,
+      "verification": "Question data and answer matched; exact native numeric statements/tables independently recomputed where applicable; reasoning and conditions reviewed",
+      "status": "pass"
+    },
+    {
+      "id": "B23.2",
+      "kind": "supplemental_practice",
+      "lesson": 23,
+      "question": "B23.2. MMO và Miyaguchi–Preneel khác nhau ở nhánh nào?",
+      "answer_paragraphs_checked": 4,
+      "verification": "Question data and answer matched; exact native numeric statements/tables independently recomputed where applicable; reasoning and conditions reviewed",
+      "status": "pass"
+    },
+    {
+      "id": "T35",
+      "kind": "original_practice",
+      "lesson": 24,
+      "question": "T35. Giá trị băm L bit lý tưởng cần khoảng bao nhiêu phép băm để tìm tiền ảnh và va chạm? Bài bổ sung trong phạm vi kiến thức vừa học; lời giải là phần triển khai toán học.",
+      "answer_paragraphs_checked": 3,
+      "verification": "Question data and answer matched; exact native numeric statements/tables independently recomputed where applicable; reasoning and conditions reviewed",
+      "status": "pass"
+    },
+    {
+      "id": "B24.1",
+      "kind": "supplemental_practice",
+      "lesson": 24,
+      "question": "B24.1. Với 3 mẫu độc lập đều trên N=10 giá trị, xác suất va chạm chính xác là bao nhiêu?",
+      "answer_paragraphs_checked": 3,
+      "verification": "Question data and answer matched; exact native numeric statements/tables independently recomputed where applicable; reasoning and conditions reviewed",
+      "status": "pass"
+    },
+    {
+      "id": "T37",
+      "kind": "original_practice",
+      "lesson": 25,
+      "question": "T37. Sau khi kiểm tra RSA, vì sao cần chứng thực khóa công khai?",
+      "answer_paragraphs_checked": 3,
+      "verification": "Question data and answer matched; exact native numeric statements/tables independently recomputed where applicable; reasoning and conditions reviewed",
+      "status": "pass"
+    },
+    {
+      "id": "B25.1",
+      "kind": "supplemental_practice",
+      "lesson": 25,
+      "question": "B25.1. Chứng thư có chữ ký kiểm đúng bằng một khóa CA tải cùng kênh không tin cậy. Đã xác thực danh tính chưa?",
+      "answer_paragraphs_checked": 2,
+      "verification": "Question data and answer matched; exact native numeric statements/tables independently recomputed where applicable; reasoning and conditions reviewed",
+      "status": "pass"
+    },
+    {
+      "id": "B26.1",
+      "kind": "supplemental_practice",
+      "lesson": 26,
+      "question": "B26.1. RSA ký thô n=33, e=3, d=7, m=4. Tạo chữ ký và xác minh.",
+      "answer_paragraphs_checked": 5,
+      "verification": "Question data and answer matched; exact native numeric statements/tables independently recomputed where applicable; reasoning and conditions reviewed",
+      "status": "pass"
+    },
+    {
+      "id": "B26.2",
+      "kind": "supplemental_practice",
+      "lesson": 26,
+      "question": "B26.2. Dùng khóa này, chọn chữ ký s=2 trước. Đại diện nào sẽ kiểm đúng?",
+      "answer_paragraphs_checked": 3,
+      "verification": "Question data and answer matched; exact native numeric statements/tables independently recomputed where applicable; reasoning and conditions reviewed",
+      "status": "pass"
+    },
+    {
+      "id": "T36",
+      "kind": "original_practice",
+      "lesson": 27,
+      "question": "T36. Trong chữ ký ElGamal theo p bằng 467, có dùng k bằng 214 không? Bài bổ sung trong phạm vi kiến thức vừa học; lời giải là phần triển khai toán học.",
+      "answer_paragraphs_checked": 3,
+      "verification": "Question data and answer matched; exact native numeric statements/tables independently recomputed where applicable; reasoning and conditions reviewed",
+      "status": "pass"
+    },
+    {
+      "id": "B27.1",
+      "kind": "supplemental_practice",
+      "lesson": 27,
+      "question": "B27.1. ElGamal p=23, alpha=5, a=6, x=10, k=3. Ký và xác minh.",
+      "answer_paragraphs_checked": 7,
+      "verification": "Question data and answer matched; exact native numeric statements/tables independently recomputed where applicable; reasoning and conditions reviewed",
+      "status": "pass"
+    },
+    {
+      "id": "H01",
+      "kind": "homework",
+      "title": "Rabin199,211;1234",
+      "verification": "Original data preserved; each EEA/power/CRT/knapsack/ECC operation checked, including reverse test; no universal MH validity claimed for insufficient modulo",
+      "status": "pass"
+    },
+    {
+      "id": "H02",
+      "kind": "homework",
+      "title": "ECC11;khóaA2;PM(3,5)",
+      "verification": "Original data preserved; each EEA/power/CRT/knapsack/ECC operation checked, including reverse test; no universal MH validity claimed for insufficient modulo",
+      "status": "pass"
+    },
+    {
+      "id": "H03",
+      "kind": "homework",
+      "title": "Merkle–Hellman317,737;1011011",
+      "verification": "Original data preserved; each EEA/power/CRT/knapsack/ECC operation checked, including reverse test; no universal MH validity claimed for insufficient modulo",
+      "status": "pass"
+    },
+    {
+      "id": "H04",
+      "kind": "homework",
+      "title": "ElGamal211,41,117;k33;m56",
+      "verification": "Original data preserved; each EEA/power/CRT/knapsack/ECC operation checked, including reverse test; no universal MH validity claimed for insufficient modulo",
+      "status": "pass"
+    },
+    {
+      "id": "H05",
+      "kind": "homework",
+      "title": "RSA37,41;e223;m33",
+      "verification": "Original data preserved; each EEA/power/CRT/knapsack/ECC operation checked, including reverse test; no universal MH validity claimed for insufficient modulo",
+      "status": "pass"
+    },
+    {
+      "id": "H06",
+      "kind": "homework",
+      "title": "ECC17;A3,B4;k2;PM(10,12)",
+      "verification": "Original data preserved; each EEA/power/CRT/knapsack/ECC operation checked, including reverse test; no universal MH validity claimed for insufficient modulo",
+      "status": "pass"
+    },
+    {
+      "id": "H07",
+      "kind": "homework",
+      "title": "ECC11;B7;k3;PM(10,9)",
+      "verification": "Original data preserved; each EEA/power/CRT/knapsack/ECC operation checked, including reverse test; no universal MH validity claimed for insufficient modulo",
+      "status": "pass"
+    }
+  ],
+  "changes": [
+    {
+      "kind": "Lỗi toán học hiển thị FACT",
+      "body": 707,
+      "before": "[AC] [9975] [=] [SHIFT] [°′″] (FACT) → 3·52·7·19.",
+      "after": "[AC] [9975] [=] [SHIFT] [°′″] (FACT) → $3\\cdot5^{2}\\cdot7\\cdot19$. Số 2 là số mũ của 5, không phải chữ số ghép thành 52."
+    },
+    {
+      "kind": "Lỗi toán học hiển thị FACT",
+      "body": 736,
+      "before": "[AC] [2032] [=] [SHIFT] [°′″] (FACT) → 24·127.",
+      "after": "[AC] [2032] [=] [SHIFT] [°′″] (FACT) → $2^{4}\\cdot127$. Số 4 là số mũ của 2, không phải chữ số ghép thành 24."
+    },
+    {
+      "kind": "Sửa cách diễn giải kết quả Casio",
+      "body": 619,
+      "before": "6 Ghi vào bài và tiếp tục. So số dư với 1 hoặc p−1, ghi Legendre tương ứng +1 hoặc −1. Chỉ kết luận có căn trực tiếp khi mẫu là nguyên tố.",
+      "after": "6 Ghi vào bài và tiếp tục. Lấy số dư của từng bình phương rồi hợp các giá trị khác 0 thành Q₁₇. Một số a thuộc tập này có Legendre +1; các lớp khác 0 còn lại có Legendre −1. Phép so với 1 hoặc p−1 chỉ dùng khi đã tính lũy thừa Euler $a^{(p-1)/2}$, không áp vào từng bình phương của bảng."
+    },
+    {
+      "kind": "Casio bổ sung",
+      "body_after": 178,
+      "label": "M04",
+      "text": "Một hàng hệ số nhập đầy đủ. Với q=5 và trạng thái hệ số cũ x₂=0,x₁=1,y₂=1,y₁=−3: [AC] [0] [−] [5] [×] [1] [=] → −5; [AC] [1] [−] [5] [×] [(] [(-)] [3] [)] [=] → 16. Điền x=−5,y=16, rồi chuyển (x₂,x₁) thành (1,−5), (y₂,y₁) thành (−3,16). Hàng kế dùng q=21 và các hệ số vừa chuyển; không dùng lại trạng thái cũ."
+    },
+    {
+      "kind": "Casio bổ sung",
+      "body_after": 365,
+      "label": "M06",
+      "text": "Tạo các số trong bảng từ đầu. Nhập [AC] [2] [x²] [=] → 4; [AC] [4] [x²] [=] → 16. Tiếp tục [AC] [16] [x²] [÷R] [37] [=] → thương 6, R = 34; [AC] [34] [x²] [÷R] [37] [=] → thương 31, R = 9. Mỗi lần lấy R làm cơ số bình phương kế tiếp. Các số tương ứng với mũ 2,4,8,16; ghép mũ 18=16+2 và 12=8+4 bằng nhân các số dư cần dùng như hai chuỗi bên dưới."
+    },
+    {
+      "kind": "Casio bổ sung",
+      "body_after": 617,
+      "label": "M11",
+      "text": "Đi hết bước lấy dư. Các bình phương 1,4,9,16 đã nhỏ hơn 17 nên giữ nguyên. [AC] [36] [÷R] [17] [=] → thương 2, R = 2; [AC] [49] [÷R] [17] [=] → thương 2, R = 15; [AC] [64] [÷R] [17] [=] → thương 3, R = 13. Kết hợp R=8 của 25 được tập {1,2,4,8,9,13,15,16}. Bảng này liệt kê Q₁₇; muốn xét một a, kiểm tra a có nằm trong tập hay không."
+    },
+    {
+      "kind": "Casio bổ sung",
+      "body_after": 688,
+      "label": "M13",
+      "text": "Một chu trình quyết định dấu. [AC] [7411] [÷R] [4] [=] → thương 1852, R = 3; [AC] [9283] [÷R] [4] [=] → thương 2320, R = 3. Cả hai dư 3 nên TC4 thêm một dấu âm. Sau khi TC1 cho 1872, [AC] [1872] [÷] [16] [=] → 117, tức tách 2⁴·117 theo TC3. [AC] [7411] [÷R] [8] [=] → thương 926, R = 3, nên (2/7411)=−1; lũy thừa bậc 4 của nó bằng +1. Dấu âm đang có vẫn giữ. Tử lẻ mới 117 được chuyển sang lần xét tương hỗ tiếp theo; mỗi lần đổi chỉ đổi dấu khi cả hai số dư modulo 4 bằng 3."
+    },
+    {
+      "kind": "Casio bổ sung",
+      "body_after": 871,
+      "label": "M16",
+      "text": "Chu trình điền bảng mũ 53. Khởi tạo A=184,b=184 vì bit i=0 bằng 1. Sau i=1 có A=96 và bit 0 nên b vẫn 184. Ở i=2: [AC] [96] [x²] [÷R] [211] [=] → thương 43, R = 143; [AC] [184] [×] [143] [÷R] [211] [=] → thương 124, R = 148. Ghi A=143,b=148. Ở i=3: [AC] [143] [x²] [÷R] [211] [=] → thương 96, R = 193; bit 0 nên giữ b=148. Lặp quy tắc đó ở bit 1 của i=4,5 để nhận b=55,87. Bảng mũ 105 kiểm Legendre dùng cùng thao tác nhưng đọc đúng các bit riêng của 105."
+    },
+    {
+      "kind": "Casio bổ sung",
+      "body_after": 900,
+      "label": "M17",
+      "text": "Tính d đến khi chọn được nhánh. Mũ 13 có các bit i=0…3 là 1,0,1,1; bắt đầu A=40,b=40. Sau phép bình phương đầu A=10, bit 0 nên b vẫn 40. [AC] [10] [x²] [÷R] [53] [=] → thương 1, R = 47; [AC] [40] [×] [47] [÷R] [53] [=] → thương 35, R = 25. Ghi A=47,b=25 ở i=2. [AC] [47] [x²] [÷R] [53] [=] → thương 41, R = 36; [AC] [25] [×] [36] [÷R] [53] [=] → thương 16, R = 52. Do đó d=52. Trong nhánh hai, [AC] [160] [÷R] [53] [=] → thương 3, R = 1; mọi bình phương và tích của 1 vẫn bằng 1, nên phần mũ 6 cho 1. Sau đó tính 2a·1 bằng chuỗi tiếp theo."
+    },
+    {
+      "kind": "Casio bổ sung",
+      "body_after": 928,
+      "label": "M18",
+      "text": "Đi trọn vòng TT4 đầu tiên. Khởi tạo r=75,c=28,a⁻¹=64,s=5. [AC] [75] [x²] [×] [64] [=] → 360000; [AC] [360000] [÷R] [97] [=] → thương 3711, R = 33. Ở i=1 cần mũ 8: [AC] [33] [x²] [÷R] [97] [=] → thương 11, R = 22; [AC] [22] [x²] [÷R] [97] [=] → thương 4, R = 96; [AC] [96] [x²] [÷R] [97] [=] → thương 95, R = 1. Vì d=1, giữ r=75. [AC] [28] [x²] [÷R] [97] [=] → thương 8, R = 8, ghi c mới=8. Sang i=2 dùng r=75,c=8; cơ số vẫn 33 nhưng số mũ chỉ còn 4, nên d=96. Sau khi tính r mới=18 bằng chuỗi dưới, [AC] [8] [x²] [=] → 64 làm c mới. Mỗi vòng luôn cập nhật c sau khi đã quyết định r."
+    },
+    {
+      "kind": "Casio bổ sung",
+      "body_after": 1033,
+      "label": "M20",
+      "text": "Tạo hạng ghép từ căn con. [AC] [19] [×] [1] [+] [39] [×] [9] [=] → 370; lấy R=28 theo chuỗi trên. Đổi căn modulo 19 sang 10: [AC] [19] [×] [1] [+] [39] [×] [10] [=] → 409; [AC] [409] [÷R] [57] [=] → thương 7, R = 10. Sau đó đổi căn modulo 3 từ 1 sang 2, giữ nguyên hai căn 9 và 10, cho 47 và 29. Mỗi ô là một cặp căn con khác nhau, không chỉ đổi dấu tùy ý của tổng."
+    },
+    {
+      "kind": "Casio bổ sung",
+      "body_after": 1086,
+      "label": "M21",
+      "text": "Lập cả hai bảng từ đầu. Ghi bảng nhỏ j=0 là 1, j=1 là 31. Phép bình phương trên cho j=2 là 46. [AC] [46] [×] [31] [÷R] [61] [=] → thương 23, R = 23, ghi j=3. Mỗi ô kế tiếp nhân số dư vừa ghi với 31, lấy R; lần lượt thu 42,21,41,51 ở j=4…7. Chu trình mẫu này áp dụng tới hết bảng, không nhân 31 với thương hiển thị."
+    },
+    {
+      "kind": "Casio bổ sung",
+      "body_after": 1087,
+      "label": "M21",
+      "text": "Lập bảng lớn. Từ 31⁻¹=2 trên giấy, [AC] [2] [x²] [=] → 4; [AC] [4] [x²] [=] → 16; [AC] [16] [x²] [÷R] [61] [=] → thương 4, R = 12. Đây là hệ số 31⁻⁸. Ghi i=0 là 45. [AC] [45] [×] [12] [÷R] [61] [=] → thương 8, R = 52, ghi i=1. [AC] [52] [×] [12] [÷R] [61] [=] → thương 10, R = 14, ghi i=2. Dùng 14 cho chuỗi trên để có i=3 là 46; gặp j=2 thì dừng tìm. [AC] [8] [×] [3] [+] [2] [=] → 26. Nếu đi tiếp để kiểm cả bảng, các giá trị ở i=4…7 là 3,36,5,60. Thử lũy thừa 31²⁶ bằng bình phương từng bước trên giấy đã cho; không dùng log hoặc ln của số thực."
+    },
+    {
+      "kind": "Casio bổ sung",
+      "body_after": 1149,
+      "label": "M22",
+      "text": "Bắt đầu chu trình mã hóa và giải mã. Mã hóa: i=0 có A=b=47. Khi chuỗi dưới cho A mới=692 tại i=1, bit 1 nên [AC] [47] [×] [692] [÷R] [1517] [=] → thương 21, R = 667, ghi b=667. Ở i=2: [AC] [692] [x²] [÷R] [1517] [=] → thương 315, R = 1009; bit 0 nên b vẫn 667. Giải mã: i=0 có A=b=602. Sau A mới=1358 tại i=1, bit 1 nên [AC] [602] [×] [1358] [÷R] [1517] [=] → thương 538, R = 1370. Ở i=2: [AC] [1358] [x²] [÷R] [1517] [=] → thương 1215, R = 1009; bit 0 nên b giữ 1370. Lặp tới cột cuối bằng bit của từng số mũ, không dùng chung hàng bit 211 cho mũ 1051."
+    },
+    {
+      "kind": "Casio bổ sung",
+      "body_after": 1242,
+      "label": "M24",
+      "text": "Hoàn thành vòng căn con và ghép. Với modulo 19, sau A=4 ở i=1, bit 0 giữ b=17; [AC] [4] [x²] [=] → 16, bit i=2 bằng 1 nên nhân với b=17 như chuỗi trên để nhận r=6. Với modulo 23, từ A=3,b=1 ở i=0, [AC] [3] [x²] [=] → 9; bit i=1 bằng 1 nên b=9; chuỗi i=2 trên cho s=16. Để ghép, [AC] [(-)] [6] [×] [19] [×] [16] [+] [5] [×] [23] [×] [6] [=] → −1134. Cộng 3·437: [AC] [(-)] [1134] [+] [3] [×] [437] [=] → 177. Thay dấu cộng giữa hai hạng bằng trừ cho −2514; cộng 6·437 được 108. Hai nghiệm đối là 437−177=260 và 437−108=329. Không dùng ÷R trực tiếp cho tổng âm."
+    },
+    {
+      "kind": "Casio bổ sung",
+      "body_after": 1294,
+      "label": "M25",
+      "text": "Một chu trình tạo khóa beta. Khởi tạo A=39,b=39. i=1 cho A=44, bit 0 nên giữ b=39. [AC] [44] [x²] [÷R] [211] [=] → thương 9, R = 37, bit i=2 bằng 0 vẫn giữ b. [AC] [37] [x²] [÷R] [211] [=] → thương 6, R = 103 ở i=3, bit 0. [AC] [103] [x²] [÷R] [211] [=] → thương 50, R = 59 ở i=4; bit 1 nên [AC] [39] [×] [59] [÷R] [211] [=] → thương 10, R = 191. Hai số 59 và 191 là đầu vào A,b cho i=5. Với y₁ dùng lại các A nhưng đổi hàng bit sang mũ 23: ở i=1, [AC] [39] [×] [44] [÷R] [211] [=] → thương 8, R = 28. Với beta²³, khởi tạo A=b=108; [AC] [108] [x²] [÷R] [211] [=] → thương 55, R = 59; [AC] [108] [×] [59] [÷R] [211] [=] → thương 30, R = 42. Tiếp tục cùng quy tắc với đúng cơ số và hàng bit của từng bảng."
+    },
+    {
+      "kind": "Casio bổ sung",
+      "body_after": 1401,
+      "label": "M27",
+      "text": "Đi sang ô khóa thứ hai. pi(2)=6 nên lấy M₆=316, không lấy M₂=17. [AC] [635] [×] [316] [÷R] [737] [=] → thương 272, R = 196. Mỗi vị trí i tiếp theo lại đọc pi(i), lấy đúng phần tử dãy riêng rồi nhân W và lấy R. Với bản tin 101101, [AC] [319] [+] [250] [+] [477] [+] [559] [=] → 1605. Sau d=136, tham lam bỏ 316,157; lấy 74,33,17,12, ghi v rồi dùng pi để trả bit về thứ tự bản tin."
+    },
+    {
+      "kind": "Casio bổ sung",
+      "body_after": 1455,
+      "label": "M28",
+      "text": "Ghép tung độ ngay tại bài. Với x=2, vế phải 16 dư 5. [AC] [4] [x²] [÷R] [11] [=] → thương 1, R = 5, nên y=4 và 11−4=7. Với x=3, vế phải 36 dư 3; [AC] [5] [x²] [÷R] [11] [=] → thương 2, R = 3, nên y=5,6. Các bình phương của y=0…5 có dư lần lượt 0,1,4,9,5,3; ghép từng số dư của vế phải với bảng đó, nếu không trùng thì không có điểm tại x đang xét."
+    },
+    {
+      "kind": "Casio bổ sung",
+      "body_after": 1627,
+      "label": "M30",
+      "text": "Một phép cộng trọn vẹn để tạo P₂. Dùng P_M=(10,9) và điểm che (3,5); tử −4 dư 7, mẫu −7 dư 4, nghịch đảo của 4 là 3. [AC] [7] [×] [3] [÷R] [11] [=] → thương 1, R = 10, ghi lambda=10. [AC] [(] [10] [x²] [−] [10] [−] [3] [)] [÷R] [11] [=] → thương 7, R = 10, ghi x₃=10. [AC] [10] [×] [(] [10] [−] [10] [)] [−] [9] [+] [11] [=] → 2, ghi y₃=2. P₂=(10,2). Để giải mã, đổi điểm che thành (3,6), dùng tử 4 và cùng nghịch đảo 3; lambda=1, kết quả (10,9)."
+    },
+    {
+      "kind": "Casio bổ sung",
+      "body_after": 1863,
+      "label": "M35",
+      "text": "Chu trình hai bảng chữ ký RSA. Ký: i=0 có A=b=439; sau khi A=211 tại i=1, bit 1 nên [AC] [439] [×] [211] [÷R] [713] [=] → thương 129, R = 652. [AC] [211] [x²] [÷R] [713] [=] → thương 62, R = 315; bit i=2 bằng 1 nên [AC] [652] [×] [315] [÷R] [713] [=] → thương 288, R = 36. Xác minh: i=0 có A=b=284; sau A=87 ở i=1, bit 1 nên [AC] [284] [×] [87] [÷R] [713] [=] → thương 34, R = 466. [AC] [87] [x²] [÷R] [713] [=] → thương 10, R = 439; [AC] [466] [×] [439] [÷R] [713] [=] → thương 286, R = 656. Lấy A,b mới điền cột i=2 rồi tiếp tục; gặp bit 0 chỉ bình phương A và giữ b."
+    },
+    {
+      "kind": "Casio bổ sung",
+      "body_after": 1938,
+      "label": "M37",
+      "text": "Kiểm điều kiện và tính delta. GCD gọi bằng [ALPHA] [×], dấu phẩy bằng [SHIFT] [)]. [AC] [ALPHA] [×] [213] [SHIFT] [)] [466] [)] [=] → 1. Bảng Euclid cho hệ số −35 của 213: [AC] [(-)] [35] [+] [466] [=] → 431, dùng làm k⁻¹. [AC] [100] [−] [127] [×] [29] [=] → −3583; [AC] [(-)] [3583] [+] [8] [×] [466] [=] → 145. Sau đó dùng chuỗi 145·431 dưới đây; không dùng ÷R trực tiếp cho −3583."
+    },
+    {
+      "kind": "Casio bổ sung",
+      "body_after": 1940,
+      "label": "M37",
+      "text": "Chu trình lũy thừa để tạo và kiểm chữ ký. Với gamma=2²¹³ mod 467: i=0 có A=b=2; [AC] [2] [x²] [=] → 4, bit i=1 bằng 0 nên giữ b=2. [AC] [4] [x²] [=] → 16, bit i=2 bằng 1 nên [AC] [2] [×] [16] [=] → 32; ghi A=16,b=32 rồi lặp tới gamma=29. Khi kiểm beta²⁹, bắt đầu A=b=132: [AC] [132] [x²] [÷R] [467] [=] → thương 37, R = 145; bit i=1 bằng 0 giữ b. [AC] [145] [x²] [÷R] [467] [=] → thương 45, R = 10; bit i=2 bằng 1 nên [AC] [132] [×] [10] [÷R] [467] [=] → thương 2, R = 386. Điền A=10,b=386 và tiếp tục đúng hàng bit của mũ 29. Bảng 29⁵¹ và 2¹⁰⁰ dùng cùng hai thao tác với cơ số, số mũ của chính bảng đó; lấy hai số dư 216 và 176 để ghép như chuỗi trên."
+    },
+    {
+      "kind": "Casio bổ sung",
+      "body_after": 1998,
+      "label": "H01",
+      "text": "Một vòng đầy đủ ở mỗi modulo con. Modulo 199: i=0 có A=8,b=1; [AC] [8] [x²] [=] → 64, bit i=1 bằng 1 nên b=64. Sang i=2 dùng chuỗi bình phương 64 trên, bit 0 giữ b=64. Modulo 211: [AC] [11152] [÷R] [211] [=] → thương 52, R = 180. i=0 có A=b=180; [AC] [180] [x²] [÷R] [211] [=] → thương 153, R = 117; bit i=1 bằng 0 nên b giữ 180. [AC] [117] [x²] [÷R] [211] [=] → thương 64, R = 185; bit i=2 bằng 1 nên [AC] [180] [×] [185] [÷R] [211] [=] → thương 157, R = 173. Ghi A=185,b=173 rồi tiếp tục bảng mũ 53."
+    },
+    {
+      "kind": "Casio bổ sung",
+      "body_after": 2093,
+      "label": "H02",
+      "text": "Điền luôn tung độ của 3G. [AC] [2] [×] [(] [2] [−] [8] [)] [−] [7] [+] [2] [×] [11] [=] → 3, ghi P₁=(8,3). Để tạo P₂=(3,5)+(7,9), chuỗi dưới cho lambda=1; [AC] [1] [x²] [−] [3] [−] [7] [+] [11] [=] → 2; [AC] [1] [×] [(] [3] [−] [2] [)] [−] [5] [+] [11] [=] → 7. Ghi P₂=(2,7); các phép cộng tiếp theo dùng cặp tọa độ mới và cùng quy trình tử, nghịch đảo, lambda, x₃,y₃."
+    },
+    {
+      "kind": "Casio bổ sung",
+      "body_after": 2130,
+      "label": "H03",
+      "text": "Vòng tạo khóa tiếp theo. pi(2)=6 nên lấy M₆=240: [AC] [317] [×] [240] [÷R] [737] [=] → thương 103, R = 169. Chép vào a₂ rồi lặp với pi(3)=5 và M₅=120. Khi d=705, [AC] [705] [−] [480] [=] → 225, ghi v₇=1; 225<240 nên v₆=0 và giữ dư 225. Lần kế [AC] [225] [−] [120] [=] → 105, ghi v₅=1. Cứ so sánh trước, trừ khi chọn, rồi hoàn nguyên bit bằng pi như bảng trên."
+    },
+    {
+      "kind": "Casio bổ sung",
+      "body_after": 2167,
+      "label": "H04",
+      "text": "Chu trình tạo beta theo mũ 117. i=0 có A=b=41; sau A=204 ở i=1, bit 0 giữ b=41. [AC] [204] [x²] [÷R] [211] [=] → thương 197, R = 49; bit i=2 bằng 1 nên [AC] [41] [×] [49] [÷R] [211] [=] → thương 9, R = 110. Ghi A=49,b=110 rồi dùng làm đầu vào i=3. Với bảng mũ 33, các A giống bảng này nhưng i=1…4 có bit 0 nên b giữ cơ số; đến bit i=5 mới nhân vào b. Với bảng 28⁹³, đọc hàng bit mới và khởi tạo A=b=28, không mang b=110 sang."
+    },
+    {
+      "kind": "Casio bổ sung",
+      "body_after": 2198,
+      "label": "H05",
+      "text": "Đi từ đầu cả hai bảng RSA. Mã hóa: i=0 có A=b=33; [AC] [33] [x²] [=] → 1089; bit i=1 bằng 1 nên [AC] [33] [×] [1089] [÷R] [1517] [=] → thương 23, R = 1046. Ở i=2, chuỗi trên cho A=1144; [AC] [1046] [×] [1144] [÷R] [1517] [=] → thương 788, R = 1228. Giải mã: i=0 có A=b=636; sau A=974 tại i=1, [AC] [636] [×] [974] [÷R] [1517] [=] → thương 408, R = 528. Mỗi cột sau lại bình phương A, rồi cập nhật b nếu bit của mũ tương ứng bằng 1; chép số dư, không chép thương."
+    },
+    {
+      "kind": "Casio bổ sung",
+      "body_after": 2289,
+      "label": "H06",
+      "text": "Hoàn thành tọa độ khi nhân đôi P_B. Lambda=13, x₁=9,y₁=12. [AC] [(] [13] [x²] [−] [9] [−] [9] [)] [÷R] [17] [=] → thương 8, R = 15, ghi x₃=15. [AC] [13] [×] [(] [9] [−] [15] [)] [−] [12] [+] [6] [×] [17] [=] → 12, ghi 2P_B=(15,12). Dùng điểm này ở phép cộng bản rõ; khi giải mã thay tung độ 12 bằng 17−12=5 để cộng điểm đối."
+    },
+    {
+      "kind": "Casio bổ sung",
+      "body_after": 2384,
+      "label": "H07",
+      "text": "Tọa độ sau khi có lambda=10 ở phép mã hóa. [AC] [(] [10] [x²] [−] [10] [−] [3] [)] [÷R] [11] [=] → thương 7, R = 10. [AC] [10] [×] [(] [10] [−] [10] [)] [−] [9] [+] [11] [=] → 2. Ghi P₂=(10,2). Khi giải mã dùng điểm đối (3,6), chuỗi dưới cho lambda=1: hoành độ 1−10−3=−12 cộng 2·11 được 10; tung độ 1(10−10)−2 cộng 11 được 9. Kết quả (10,9) là đầu ra của phép cộng nhóm, không phải phép trừ từng tọa độ."
+    },
+    {
+      "kind": "Thiếu bước lập luận",
+      "body_after": 343,
+      "label": "M06",
+      "text": "Cách tính các mũ nhỏ trong bảng kế tiếp. Từ 2, bình phương liên tiếp rồi giảm modulo 37 cho 4,16,34,9, tương ứng các mũ 2,4,8,16. Vì 18=16+2 và 12=8+4, nhân đúng hai số dư để kiểm hai mũ. Đây chỉ là cách triển khai phép lũy thừa nhỏ, không cần biết trước thuật toán bảng bit."
+    },
+    {
+      "kind": "Thiếu dữ kiện và điều kiện",
+      "body_after": 1385,
+      "label": "M27",
+      "text": "Đề và điều kiện ngay tại bài. Mã hóa bản tin 101101 rồi giải mã bản mã vừa thu được. Dãy riêng siêu tăng vì 17>12, 33>29, 74>62, 157>136, 316>293; tổng 609 nhỏ hơn 737. Bảng Euclid dưới đây xác nhận gcd(635,737)=1, nên W có nghịch đảo."
+    },
+    {
+      "kind": "Thiếu điều kiện",
+      "body_after": 1466,
+      "label": "T32",
+      "text": "Kiểm tra trước khi lập bảng. 19 là số nguyên tố lớn hơn 3; biệt thức $4\\cdot1^3+27\\cdot1^2=31\\equiv12\\ne0\\pmod{19}$. Vì thế công thức đường cong và phép đếm thêm O áp dụng được."
+    },
+    {
+      "kind": "Thiếu điều kiện",
+      "body_after": 1581,
+      "label": "M30",
+      "text": "Kiểm tra cấp và phạm vi khóa. Nhóm E₁₁(1,6) có 13 điểm; G khác O nên có cấp 13 theo Lagrange. nB=7 và k=3 đều thuộc khoảng 1 đến 12; điểm bản rõ thuộc đường cong. Vì vậy các phép nhân vô hướng và công thức mã hóa ở bài này thỏa điều kiện đã nêu."
+    }
+  ]
+}
